@@ -1,0 +1,309 @@
+---
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, 
+                      fig.height = 8, 
+                      fig.path = 'figure/',
+                      echo = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+#Explore and Summarize Data
+###Project: ND_Project4
+
+
+###Introduction
+This repository holds results for the Udacity Nanodegree Project: Explore and Summarize Data. For this project, I selected the 'White Wine Quality' dataset and exercised some Exploratory Data Analysis techniques in order to investigate properties related to fee sulfer dioxide within each wine.
+
+
+###Data
+The dataset contains information on 11 chemical and physical properties for 4,898 white wines. Also included in the data set is a quality ranking and an explicit ID.
+
+The dataset was obtained from: [Dataset link](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityReds.csv)
+
+Chemical Prperties:
+
+fixed acidity: most acids involved with wine or fixed or nonvolatile (do not evaporate readily) (tartaric acid - g / dm^3)
+
+volatile acidity: the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
+
+citric acid: found in small quantities, citric acid can add 'freshness' and flavor to wines (g / dm^3)
+
+residual sugar: the amount of sugar remaining after fermentation stops (g / dm^3)
+
+chlorides: the amount of salt in the wine (sodium chloride - g / dm^3
+
+free sulfur dioxide: he free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion (mg / dm^3)
+
+total sulfur dioxide: amount of free and bound forms of S02 (mg / dm^3)
+
+density: the density of water is close to that of water depending on the percent alcohol and sugar content (g / cm^3)
+
+pH: describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic)
+
+sulphates: a wine additive which can contribute to sulfur dioxide gas (S02) levels (potassium sulphate - g / dm3)
+
+alcohol: the percent alcohol content of the wine (% by volume)
+
+
+Output variable (based on sensory data):
+
+quality (score between 0 and 10)
+
+
+###1. Loading Packages/ Data
+```{r}
+for (package in c('ggplot2', 'gridExtra', 'GGally', 'data.table')) {
+  
+  if (!require(package, character.only = TRUE, quietly = FALSE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+  
+}
+
+dfname <- c("wineQualityWhites.csv")
+dfpath <- paste(getwd(), "/data", sep = "/")
+
+dtrawname <- c("data_wine.raw")
+dtname <- c("data_wine")
+
+for (i in 1:length(dtrawname)){
+  
+  assign(dtrawname[i], read.csv(paste(dfpath, dfname[i], sep = "/"), 
+                                    na.strings = c("NA", "")))
+  
+  assign(dtname[i], get(dtrawname[i]))
+  
+}
+```
+
+
+###2. Pre-process the Data
+Check the original data:
+```{r}
+## dim(data_wine.raw)
+## str(data_wine.raw)
+summary(data_wine.raw)
+```
+
+Create a new series which shows the ratio of free sulfur dioxide to total sulfur dioxide.
+```{r}
+data_wine$sulf.ratio <- data_wine$free.sulfur.dioxide / data_wine$total.sulfur.dioxide
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+## dim(data_wine)
+str(data_wine)
+summary(data_wine)
+```
+
+
+###3. Univariate Analysis
+The univariate analysis is intended to provide insights of absolute and relative levels of free sulfur dioxide for each wine within our dataset.
+
+```{r}
+datacolnames <- colnames(data_wine)
+
+for (i in 2:length(datacolnames)) {
+  
+  plot <- ggplot(data = data_wine, aes_string(x = datacolnames[i])) +
+    geom_histogram()
+  
+  assign(paste("plot", i, sep = ""), plot)
+
+}
+
+grid.arrange(plot2, plot3, plot4, plot5, plot6, plot7, 
+             plot8, plot9, plot10, plot11, plot12, plot13, ncol = 3)
+```
+The majority of variables are approximately normally distributed, many have a positive skew.
+
+```{r}
+ggplot(data = data_wine, aes(x = free.sulfur.dioxide)) +
+  geom_histogram(binwidth = 5)
+
+summary(data_wine$free.sulfur.dioxide)
+```
+The min free sulfur dioxide value is [] mg/dm^3, the max is [] mg/dm^3. The below shows a plot and summary exluding observations where free sulfure dioxide is greater than 100 mg/dm^3.
+
+```{r}
+ggplot(data = data_wine, aes(x = free.sulfur.dioxide)) +
+  geom_histogram(binwidth = 5) +
+  coord_cartesian(xlim = c(0, 100))
+
+data_winesub <- subset(data_wine, data_wine$free.sulfur.dioxide < 100)
+```
+Each wine has both a free sulfur dioxide count and total sulfur dioxide count. The below shows a histogram of the ratio between the two.
+
+```{r}
+ggplot(data = data_wine, aes(x = sulf.ratio)) +
+  geom_histogram()
+
+summary(data_wine$sulf.ratio)
+```
+
+```{r}
+plot1 <- ggplot(data = data_wine, aes(x = data_wine$quality, y = data_wine$quality)) + 
+  geom_boxplot()
+
+plot2 <- ggplot(data = data_wine, aes(x = as.factor(data_wine$quality))) + 
+  geom_histogram()
+
+grid.arrange(plot1, plot2, ncol = 2)
+```
+
+
+What is the structure of your dataset?
+The raw dataset has [] columns representing various wine properties and [] rows each representing recorded observations. The majority of variables are quantitative measurements of a chemical or physical property. One variable is a subjective labeling of the quality of wine taste.
+
+
+What is/are the main feature(s) of interest in your dataset?
+The main feautre of interest is the 'free sulfer dioxide' variable.
+
+
+What other features in the dataset do you think will help support your investigation into your feature(s) of interest?
+At this stage, it is difficult to rule out any relationships between the level of free sulfer dioxide and other recorded variables.
+
+
+Did you create any new variables from existing variables in the dataset?
+Yes, [] which shows the ratio of free sulfur dioxide to total sulfur dioxide.
+
+
+Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
+The majority of variables are approximately normally distributed, however, residual sugar has quite a heavy positive skew. No data transformations have been performed, however some additional analysis was perfomed on observations which excluded outlier free sulfur dioxide levels.
+
+
+###4. Bivariate Analysis
+The bivariate analysis is intended to provide insights of the relationship between free sulfur dioxide and the other variables within the dataset.
+
+```{r}
+##ggpairs(data_wine, colour = 'free.sulfur.dioxide', alpha = 0.5, upper = "blank",
+##  axisLabels = "internal",
+##  title = "Figure 1: Pair Relationships")
+
+colref <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N")
+
+temp <- data_wine
+
+for (i in 1:length(colref)) {
+  
+  names(temp)[i] <- colref[i]
+  
+}
+
+round(cor(temp[, c(1:14)]),2)
+
+data_corleg <- matrix(nrow = 14, ncol = 2)
+
+for (i in 1:length(colref)) {
+  
+  data_corleg[i, 1] <- names(data_wine)[i]
+  data_corleg[i, 2] <- colref[i]
+  
+}
+
+data_corleg
+```
+
+The strongest linear correlations for free sulfer dioxide are with 'residual sugar', 'total sulfur dioxide' 'density' and 'alcohol'.
+
+```{r}
+plot1 <- ggplot(data = data_wine, aes(x = residual.sugar, y = free.sulfur.dioxide)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,30), ylim = c(0,100))
+
+plot2 <- ggplot(data = data_wine, aes(x = total.sulfur.dioxide, y = free.sulfur.dioxide)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,300), ylim = c(0, 100))
+
+plot3 <- ggplot(data = data_wine, aes(x = density, y = free.sulfur.dioxide)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0.985, 1.005), ylim = c(0, 100))
+
+plot4 <- ggplot(data = data_wine, aes(x = alcohol, y = free.sulfur.dioxide)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(ylim = c(0, 100))
+
+
+grid.arrange(plot1, plot2, plot3, plot4, nrow = 2, ncol = 2)
+```
+It is intuitive that free sulfur dioxide would have a strong correlation with total sulfer dioxide as it is one of its sums. Interestingly the linear relationship between free sulfer dioxide and density has a step at a density level ~0.9995.
+
+
+```{r}
+plot1 <- ggplot(data = data_wine, aes(x = free.sulfur.dioxide, y = residual.sugar)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,100), c(0,30))
+
+plot2 <- ggplot(data = data_wine, aes(x = total.sulfur.dioxide, y = residual.sugar)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,300), ylim = c(0,30))
+
+plot3 <- ggplot(data = data_wine, aes(x = density, y = residual.sugar)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0.985, 1.005), ylim = c(0,30))
+
+plot4 <- ggplot(data = data_wine, aes(x = alcohol, y = residual.sugar)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(ylim = c(0,30))
+
+
+grid.arrange(plot1, plot2, plot3, plot4, nrow = 2, ncol = 2)
+```
+
+
+```{r}
+plot1 <- ggplot(data = data_wine, aes(x = free.sulfur.dioxide, y = alcohol)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,100))
+
+plot2 <- ggplot(data = data_wine, aes(x = total.sulfur.dioxide, y = alcohol)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,300))
+
+plot3 <- ggplot(data = data_wine, aes(x = density, y = alcohol)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0.985, 1.005))
+
+plot4 <- ggplot(data = data_wine, aes(x = residual.sugar, y = alcohol)) +
+  geom_point(position = "jitter") +
+  geom_smooth(formula = y ~ x) +
+  coord_cartesian(xlim = c(0,30))
+
+
+grid.arrange(plot1, plot2, plot3, plot4, nrow = 2, ncol = 2)
+```
+
+
+
+Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
+
+Relationships between features show that a lower (higher) amount of residual sugars and/or density in any given wine will tend to bring with it a lower (higher) amount of free sulfur dioxide. While, a lower (higher) amount of alcohol will tend to bring with it a higher (lower) amount of free sulphur dioxide.
+
+
+Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
+
+A lower (higher) amount of residual sugars in a given wine will tend to bring with it a higher (lower) amount of alcohol. However, this relationship tends to only hold for those wines which do not have a relatively low sugar level. The level of residual sugars and density are the two most strongly correlated properties in the dataset. The relationship shows that a lower (higher) amount of residual sugars in a given wine will trend to bring with it a lower (higher) density. Again, this relationship is not as strong for wines with a low sugar level.
