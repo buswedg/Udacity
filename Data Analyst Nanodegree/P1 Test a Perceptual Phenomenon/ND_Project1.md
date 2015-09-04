@@ -40,11 +40,11 @@ $( document ).ready(code_toggle);
 #Data Analyst Nanodegree
 ##Project 1: Test a Perceptual Phenomenon
 
-###1. What is our independent variable? What is our dependent variable?
+####1. What is our independent variable? What is our dependent variable?
 
 Independent variable: Word condition (i.e. Congruent or Incongruent), Dependent variable: Response time
 
-###2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.
+####2. What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform? Justify your choices.
 
 Null Hypothesis: There 'is no significant difference' in the population average response time viewing words which are congruent compared to average response time viewing words which are incongruent.
 
@@ -54,7 +54,7 @@ Expect to perform a paired-samples t-test as the same group of subjects have bee
 
 After taking the online test, I expect there will be statistically significant difference between average response times of the two conditions, as the second condition took noteably longer to complete.
 
-###3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
+####3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
 
 
 ```python
@@ -271,7 +271,7 @@ dataFrame['Incongruent'].std()
 
 
 
-###4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.
+####4. Provide one or two visualizations that show the distribution of the sample data. Write one or two sentences noting what you observe about the plot or plots.
 
 
 ```python
@@ -323,7 +323,7 @@ The congruent words sample ranges between ~8 and ~22, while the incongruent word
 
 It is worth pointing out the two longest completion time samples (~34 & ~35) of the incongruent sample could be labeled as outliers from the wider sample set. These outliers will somewhat bias both the mean and standard deviation measures reported earlier, however the wider sample set confirms the greater reported mean.
 
-###5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
+####5. Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
 
 
 ```python

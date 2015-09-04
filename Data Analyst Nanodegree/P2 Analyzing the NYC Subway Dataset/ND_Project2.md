@@ -40,11 +40,11 @@ $( document ).ready(code_toggle);
 #Data Analyst Nanodegree
 ##Project 2: Analyzing the NYC Subway Dataset
 
-##Section 1. Statistical Test
+###Section 1. Statistical Test
 
-###1.1 Which statistical test did you use to analyze the NYC subway data? Did you use a one-tail or a two-tail P value? What is the null hypothesis? What is your p-critical value?
+####1.1 Which statistical test did you use to analyze the NYC subway data? Did you use a one-tail or a two-tail P value? What is the null hypothesis? What is your p-critical value?
 
-###1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples. 
+####1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples. 
 
 The Mann-Whitney U-test was used to compare the mean ridership of rainy days vs non-rainy days. This test is suitable as the underlying distributions are not normally distributed (non-parametric test).
 
@@ -1716,13 +1716,13 @@ p
 
 We reject the Null Hypothesis that there 'is no significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days at the 5% significance level. (5.48e-06 < 0.05)
 
-##Section 2. Linear Regression
+###Section 2. Linear Regression
 
-###2.1 What approach did you use to compute the coefficients theta and produce prediction for ENTRIESn_hourly in your regression model: OLS using Statsmodels or Scikit Learn, Gradient descent using Scikit Learn, Or something different?
+####2.1 What approach did you use to compute the coefficients theta and produce prediction for ENTRIESn_hourly in your regression model: OLS using Statsmodels or Scikit Learn, Gradient descent using Scikit Learn, Or something different?
 
-###2.2 What features (input variables) did you use in your model? Did you use any dummy variables as part of your features?
+####2.2 What features (input variables) did you use in your model? Did you use any dummy variables as part of your features?
 
-###2.3 Why did you select these features in your model? We are looking for specific reasons that lead you to believe that the selected features will contribute to the predictive power of your model. 
+####2.3 Why did you select these features in your model? We are looking for specific reasons that lead you to believe that the selected features will contribute to the predictive power of your model. 
 
 OLS (using statsmodels) was used to compute the coefficients theta and produce prediction for ENTRIESn_hourly (hourly number of entries).
 
@@ -2573,9 +2573,9 @@ The final R2 (coefficient of determination) value for the fitted model was 0.481
 
 The low R2 value suggests that caution should be exercised when using this model in order to generate a prediction of future ridership.
 
-##Section 3. Visualization
+###Section 3. Visualization
 
-###Please include two visualizations that show the relationships between two or more variables in the NYC subway data. Remember to add appropriate titles and axes labels to your plots. Also, please add a short description below each figure commenting on the key insights depicted in the figure. 
+####Please include two visualizations that show the relationships between two or more variables in the NYC subway data. Remember to add appropriate titles and axes labels to your plots. Also, please add a short description below each figure commenting on the key insights depicted in the figure. 
 
 
 ```python
@@ -3370,18 +3370,18 @@ plot_meanentbyhr
 
 Average entry data over a single day shows a greater ridership from midday onwards.
 
-##Section 4. Conclusion
+###Section 4. Conclusion
 
-###4.1 From your analysis and interpretation of the data, do more people ride the NYC subway when it is raining or when it is not raining?  
-###4.2 What analyses lead you to this conclusion? You should use results from both your statistical tests and your linear regression to support your analysis.
+####4.1 From your analysis and interpretation of the data, do more people ride the NYC subway when it is raining or when it is not raining?  
+####4.2 What analyses lead you to this conclusion? You should use results from both your statistical tests and your linear regression to support your analysis.
 
-From the analysis and interpreation of data, I have concluded that (for the provided dataset) people did tend to ride the subway in New York more often on days which had rain compared to days which did not have rain. This is supported by the conducted Mann-Whitney U Test outlined above. 
+From the analysis and interpretation of data, I have concluded that (for the provided dataset) people did tend to ride the subway in New York more often on days which had rain compared to days which did not have rain. This is supported by the conducted Mann-Whitney U Test outlined above. 
 
 However, when estimating an OLS relationship for ridership, I found that rain did not provide any significant benefit to the models predictive power. Instead, the day of week provided much greater predictive power. Suitability of an OLS model for this dataset may be a concern, however this result suggests to me that more observations of days with/without rain over each day of the week would be beneficial in determining whether rain is able to effect the level of ridership.
 
-##Section 5. Reflection
+###Section 5. Reflection
 
-###5.1 Please discuss potential shortcomings of the methods of your analysis, including: Dataset, Analysis, such as the linear regression model or statistical test.
-###5.2 (Optional) Do you have any other insight about the dataset that you would like to share with us?
+####5.1 Please discuss potential shortcomings of the methods of your analysis, including: Dataset, Analysis, such as the linear regression model or statistical test.
+####5.2 (Optional) Do you have any other insight about the dataset that you would like to share with us?
 
 The dataset is one of the major shortcomings of this analysis. Although there is a fair amount of scope to the data in terms of number of features, it contains observations for only a single month (May 2011). This can lead to inconsistencies in recognizing relationships between data variables but also has the potential to hide longer-term relationships such as seasonality factors. The decision to opt for only a single type of linear model and to make no mathematical transformations to the modelled variables may also prove as shortcomings of this analysis.
