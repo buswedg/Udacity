@@ -1,628 +1,305 @@
 
-#Kaggle
-###Titanic: Machine Learning from Disaster
+#Explore and Summarize Data
+###Project: ND_Project4
 
 
 ###Introduction
-This repository holds results for the Kaggle competition: Titanic: Machine Learning from Disaster.
+This repository holds results for the Udacity Nanodegree Project: Explore and Summarize Data. For this project, I selected the 'White Wine Quality' dataset and exercised  Exploratory Data Analysis techniques in order to investigate property relationships.
 
 
 ###Data
-The datasets were obtained from the Kaggle Titanic Challenge: [Kaggle page](https://www.kaggle.com/c/titanic)
+The dataset contains information on 11 chemical and physical properties for 4,898 white wines. Also included in the data set is a quality ranking and an explicit ID.
 
-* Training Dataset: [training data](https://www.kaggle.com/c/titanic-gettingStarted/download/train.csv)
-* Testing Dataset: [test data](https://www.kaggle.com/c/titanic-gettingStarted/download/test.csv)
+The dataset was obtained from: [Dataset link](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityReds.csv)
+
+Chemical Prperties:
+
+* fixed acidity: most acids involved with wine or fixed or nonvolatile (do not evaporate readily) (tartaric acid - g / dm^3)
+* volatile acidity: the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
+* citric acid: found in small quantities, citric acid can add 'freshness' and flavor to wines (g / dm^3)
+* residual sugar: the amount of sugar remaining after fermentation stops (g / dm^3)
+* chlorides: the amount of salt in the wine (sodium chloride - g / dm^3
+* free sulfur dioxide: he free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion (mg / dm^3)
+* total sulfur dioxide: amount of free and bound forms of S02 (mg / dm^3)
+* density: the density of water is close to that of water depending on the percent alcohol and sugar content (g / cm^3)
+* pH: describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic)
+* sulphates: a wine additive which can contribute to sulfur dioxide gas (S02) levels (potassium sulphate - g / dm3)
+* alcohol: the percent alcohol content of the wine (% by volume)
+
+Output variable (based on sensory data):
+
+* Quality (score of wine between 0 and 10)
 
 
 ###1. Loading Packages/ Data
 
+
+
 ```r
-for (package in c('knitr', 'caret', 'randomForest', 'e1071', 'gbm', 'rpart', 'rpart.plot', 'ggplot2', 'gridExtra')) {
-  
-  if (!require(package, character.only = TRUE, quietly = FALSE)) {
-    install.packages(package)
-    library(package, character.only = TRUE)
-  }
-  
-}
-
-val_dfname <- c("train.csv", "test.csv")
-val_dfpath <- paste(getwd(), "/data", sep = "/")
-
-val_dtrawname <- c("data_training.raw", "data_testing.raw")
-val_dtname <- c("data_training", "data_testing")
-
-val_dtclass <- c("val_trainclass", "val_testclass")
-
-val_trainclass <- c("integer",   ## PassengerId
-                    "factor",    ## Survived 
-                    "factor",    ## Pclass
-                    "character", ## Name
-                    "factor",    ## Sex
-                    "numeric",   ## Age
-                    "integer",   ## SibSp
-                    "integer",   ## Parch
-                    "character", ## Ticket
-                    "numeric",   ## Fare
-                    "character", ## Cabin
-                    "factor")    ## Embarked
-
-val_testclass <- val_trainclass[-2]
-
-for (i in 1:length(val_dtrawname)){
-  
-  assign(val_dtrawname[i], read.csv(paste(val_dfpath, val_dfname[i], sep = "/"), 
-                                    na.strings = c("NA", ""), 
-                                    colClasses = get(val_dtclass[i])))
-  
-  assign(val_dtname[i], get(val_dtrawname[i]))
-  
-}
+##dim(data_wine.raw)
+str(data_wine.raw)
 ```
 
+```
+## 'data.frame':	4898 obs. of  13 variables:
+##  $ X                   : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ fixed.acidity       : num  7 6.3 8.1 7.2 7.2 8.1 6.2 7 6.3 8.1 ...
+##  $ volatile.acidity    : num  0.27 0.3 0.28 0.23 0.23 0.28 0.32 0.27 0.3 0.22 ...
+##  $ citric.acid         : num  0.36 0.34 0.4 0.32 0.32 0.4 0.16 0.36 0.34 0.43 ...
+##  $ residual.sugar      : num  20.7 1.6 6.9 8.5 8.5 6.9 7 20.7 1.6 1.5 ...
+##  $ chlorides           : num  0.045 0.049 0.05 0.058 0.058 0.05 0.045 0.045 0.049 0.044 ...
+##  $ free.sulfur.dioxide : num  45 14 30 47 47 30 30 45 14 28 ...
+##  $ total.sulfur.dioxide: num  170 132 97 186 186 97 136 170 132 129 ...
+##  $ density             : num  1.001 0.994 0.995 0.996 0.996 ...
+##  $ pH                  : num  3 3.3 3.26 3.19 3.19 3.26 3.18 3 3.3 3.22 ...
+##  $ sulphates           : num  0.45 0.49 0.44 0.4 0.4 0.44 0.47 0.45 0.49 0.45 ...
+##  $ alcohol             : num  8.8 9.5 10.1 9.9 9.9 10.1 9.6 8.8 9.5 11 ...
+##  $ quality             : int  6 6 6 6 6 6 6 6 6 6 ...
+```
+
+```r
+##summary(data_wine.raw)
+```
 
 ###2. Pre-process the Data
-Check the original data:
+Create a new series which shows the ratio of free sulfur dioxide to total sulfur dioxide.
 
-```r
-## dim(data_training.raw)
-## str(data_training.raw)
-summary(data_training.raw)
-```
-
-```
-##   PassengerId    Survived Pclass      Name               Sex     
-##  Min.   :  1.0   0:549    1:216   Length:891         female:314  
-##  1st Qu.:223.5   1:342    2:184   Class :character   male  :577  
-##  Median :446.0            3:491   Mode  :character               
-##  Mean   :446.0                                                   
-##  3rd Qu.:668.5                                                   
-##  Max.   :891.0                                                   
-##                                                                  
-##       Age            SibSp           Parch           Ticket         
-##  Min.   : 0.42   Min.   :0.000   Min.   :0.0000   Length:891        
-##  1st Qu.:20.12   1st Qu.:0.000   1st Qu.:0.0000   Class :character  
-##  Median :28.00   Median :0.000   Median :0.0000   Mode  :character  
-##  Mean   :29.70   Mean   :0.523   Mean   :0.3816                     
-##  3rd Qu.:38.00   3rd Qu.:1.000   3rd Qu.:0.0000                     
-##  Max.   :80.00   Max.   :8.000   Max.   :6.0000                     
-##  NA's   :177                                                        
-##       Fare           Cabin           Embarked  
-##  Min.   :  0.00   Length:891         C   :168  
-##  1st Qu.:  7.91   Class :character   Q   : 77  
-##  Median : 14.45   Mode  :character   S   :644  
-##  Mean   : 32.20                      NA's:  2  
-##  3rd Qu.: 31.00                                
-##  Max.   :512.33                                
-## 
-```
-
-Categorize passengers by 'Title', and create new 'FamilySize' Variable:
-
-```r
-for (i in 1:length(val_dtname)){
-  
-  temp_data <- get(val_dtname[i])
-  temp_data["Title"] <- NA
-  temp_data["FamilySize"] <- NA
-  
-  for (j in 1:nrow(temp_data)){
-    
-    temp_data[j, "Title"] <- strsplit(temp_data[j, "Name"], split='[,.]')[[1]][2]
-    temp_data[j, "FamilySize"] <- temp_data[j, "SibSp"] + temp_data[j, "Parch"] + 1
-    
-  }
-  
-  temp_data[temp_data == ""] <- NA
-  
-  temp_data$Title = as.character(temp_data$Title)
-  temp_data$FamilySize = as.integer(temp_data$FamilySize)
-  ## print(sum(is.na(temp_data$Title)))
-  ## print(sum(is.na(temp_data$FamilySize)))
-  assign(val_dtname[i], temp_data)
-  
-}
-
-rm(temp_data)
-```
-
-Replace NA values within numeric class columns with mean and NA values within other class columns with most common occurrence:
-
-```r
-for (i in 1:length(val_dtname)){
-  
-  temp_data <- get(val_dtname[i])
-  
-  for (j in 1:ncol(temp_data)) {
-    
-    if (class(temp_data[, j]) == "numeric") {
-      
-      temp_colmean <- mean(temp_data[, j], na.rm = TRUE)
-      temp_data[, j][which(is.na(temp_data[, j]))] <- temp_colmean
-      
-    } else {
-      
-      temp_colmode <- tail(names(sort(table(temp_data[, j]))), 1)
-      temp_data[, j][which(is.na(temp_data[, j]))] <- temp_colmode
-
-    }
-    
-  }
-   
-  assign(val_dtname[i], temp_data)
-
-}
-  
-rm(temp_data, temp_colmean, temp_colmode)
-```
-
-Check the processed data:
-
-```r
-## dim(data_training)
-## str(data_training)
-summary(data_training)
-```
-
-```
-##  PassengerId        Survived Pclass      Name               Sex     
-##  Length:891         0:549    1:216   Length:891         female:314  
-##  Class :character   1:342    2:184   Class :character   male  :577  
-##  Mode  :character            3:491   Mode  :character               
-##                                                                     
-##                                                                     
-##                                                                     
-##       Age           SibSp              Parch              Ticket         
-##  Min.   : 0.42   Length:891         Length:891         Length:891        
-##  1st Qu.:22.00   Class :character   Class :character   Class :character  
-##  Median :29.70   Mode  :character   Mode  :character   Mode  :character  
-##  Mean   :29.70                                                           
-##  3rd Qu.:35.00                                                           
-##  Max.   :80.00                                                           
-##       Fare           Cabin           Embarked    Title          
-##  Min.   :  0.00   Length:891         C:168    Length:891        
-##  1st Qu.:  7.91   Class :character   Q: 77    Class :character  
-##  Median : 14.45   Mode  :character   S:646    Mode  :character  
-##  Mean   : 32.20                                                 
-##  3rd Qu.: 31.00                                                 
-##  Max.   :512.33                                                 
-##   FamilySize       
-##  Length:891        
-##  Class :character  
-##  Mode  :character  
-##                    
-##                    
-## 
-```
-
-Check the processed data:
-
-```r
-tblsumfunc <- function(x){
-
-  temp_data <- data.frame(Survived = data_training$Survived, Title = data_training[[x]], stringsAsFactors = FALSE)
-  temp_obscount <- sort(table(temp_data[, 2]), decreasing = FALSE)
-  
-  if (nrow(temp_obscount) > 10) {
-    
-    if (class(temp_data[, 2]) == "numeric") {
-      
-      temp_data[, 2] <- 10 * ceiling(temp_data[, 2] / 10)
-      ## table(temp_data)
-      
-    } else {
-    
-      temp_lfobsnm <- names(temp_obscount[1:(dim(temp_obscount) - 10)])
-      temp_data[, 2][which(is.element(temp_data[, 2], temp_lfobsnm))] <- "Other"
-      ## table(temp_data)
-      
-    }
-    
-  }
-  
-  temp_table <- table(temp_data)
-  temp_sumtable <- addmargins(temp_table, FUN = list(Total = sum), quiet = TRUE)
-  temp_proptable <- prop.table(temp_sumtable[c(1, 2),], 2)
-  temp_mergedtable <- rbind(temp_sumtable[1, ], 
-                            temp_proptable[1, ], 
-                            temp_sumtable[2, ], 
-                            temp_proptable[2, ], 
-                            temp_sumtable[3, ])
-  rownames(temp_mergedtable) <- c("Didn't Survive", "%", "Survived", "%", "Total")
-  
-  print(x)
-  temp_kabletable <- kable(temp_mergedtable, digits = 2, caption = "test", output = FALSE)
-  cat(temp_kabletable, sep="\n")
-  cat(sep="\n\n")
-  
-  rm(temp_data, temp_table, temp_sumtable, temp_proptable, temp_mergedtable)
-  
-}
-  
-val_sumcolname <- list("Pclass", "Title", "Sex", "Age", "FamilySize")
-
-for(colname in val_sumcolname) { tblsumfunc(colname) }
-```
-
-```
-## [1] "Pclass"
-## Table: test
-## 
-##                        1        2        3    Total
-## ---------------  -------  -------  -------  -------
-## Didn't Survive     80.00    97.00   372.00   549.00
-## %                   0.37     0.53     0.76     0.62
-## Survived          136.00    87.00   119.00   342.00
-## %                   0.63     0.47     0.24     0.38
-## Total             216.00   184.00   491.00   891.00
-## 
-## [1] "Title"
-## Table: test
-## 
-##                    Col     Dr    Major    Master    Miss    Mlle       Mr      Mrs    Rev    the Countess   Other    Total
-## ---------------  -----  -----  -------  --------  ------  ------  -------  -------  -----  --------------  ------  -------
-## Didn't Survive     1.0   4.00      1.0     17.00    55.0       0   436.00    26.00      6               0    3.00   549.00
-## %                  0.5   0.57      0.5      0.42     0.3       0     0.84     0.21      1               0    0.43     0.62
-## Survived           1.0   3.00      1.0     23.00   127.0       2    81.00    99.00      0               1    4.00   342.00
-## %                  0.5   0.43      0.5      0.57     0.7       1     0.16     0.79      0               1    0.57     0.38
-## Total              2.0   7.00      2.0     40.00   182.0       2   517.00   125.00      6               1    7.00   891.00
-## 
-## [1] "Sex"
-## Table: test
-## 
-##                   female     male    Total
-## ---------------  -------  -------  -------
-## Didn't Survive     81.00   468.00   549.00
-## %                   0.26     0.81     0.62
-## Survived          233.00   109.00   342.00
-## %                   0.74     0.19     0.38
-## Total             314.00   577.00   891.00
-## 
-## [1] "Age"
-## Table: test
-## 
-##                      10       20       30       40      50     60      70    80    Total
-## ---------------  ------  -------  -------  -------  ------  -----  ------  ----  -------
-## Didn't Survive    26.00    71.00   271.00    86.00   53.00   25.0   13.00   4.0   549.00
-## %                  0.41     0.62     0.67     0.55    0.62    0.6    0.76   0.8     0.62
-## Survived          38.00    44.00   136.00    69.00   33.00   17.0    4.00   1.0   342.00
-## %                  0.59     0.38     0.33     0.45    0.38    0.4    0.24   0.2     0.38
-## Total             64.00   115.00   407.00   155.00   86.00   42.0   17.00   5.0   891.00
-## 
-## [1] "FamilySize"
-## Table: test
-## 
-##                       1   11        2        3       4      5       6       7    8    Total
-## ---------------  ------  ---  -------  -------  ------  -----  ------  ------  ---  -------
-## Didn't Survive    374.0    7    72.00    43.00    8.00   12.0   19.00    8.00    6   549.00
-## %                   0.7    1     0.45     0.42    0.28    0.8    0.86    0.67    1     0.62
-## Survived          163.0    0    89.00    59.00   21.00    3.0    3.00    4.00    0   342.00
-## %                   0.3    0     0.55     0.58    0.72    0.2    0.14    0.33    0     0.38
-## Total             537.0    7   161.00   102.00   29.00   15.0   22.00   12.00    6   891.00
-```
-At a high level, the data suggests that passengers within the following groups had an improved survival rate:
-* Were Class 1 passengers
-* Had a title of 'Master' / aged 0-10
-* Were female
-* Boarded with a family of size 2-4
-
-Chart the processed data:
-
-```r
-val_agehist <- ggplot(data_training, aes(x = Age, fill = Survived)) +
-                      geom_histogram() +
-                      ggtitle("Age vs Survival") +
-                      theme(legend.position = "bottom") +
-                      scale_fill_discrete(labels = c("No", "Yes"))
-
-val_sexhist <- ggplot(data_training, aes(x = Sex, fill = Survived)) +
-                      geom_histogram() +
-                      ggtitle("Age vs Survival") +
-                      theme(legend.position = "bottom") +
-                      scale_fill_discrete(labels = c("No", "Yes"))
-
-grid.arrange(val_agehist, val_sexhist, ncol = 2)
-```
-
-![](figure/unnamed-chunk-7-1.png) 
-
-```r
-val_pclasshist <- ggplot(data_training, aes(x = Pclass, fill = Survived)) +
-                        geom_histogram() +
-                        ggtitle("Passenger Class vs Survival") +
-                        theme(legend.position = "right") +
-                        scale_fill_discrete(labels = c("No", "Yes"))
-
-val_titlehist <- ggplot(data_training, aes(x = Title, fill = Survived)) +
-                        geom_histogram() +
-                        ggtitle("Title vs Survival") +
-                        theme(legend.position = "right") +
-                        scale_fill_discrete(labels = c("No", "Yes"))
-
-val_familyhist <- ggplot(data_training, aes(x = FamilySize, fill = Survived)) +
-                        geom_histogram() +
-                        ggtitle("Family Size vs Survival") +
-                        theme(legend.position = "right") +
-                        scale_fill_discrete(labels = c("No", "Yes"))
-
-grid.arrange(val_pclasshist, val_titlehist, val_familyhist, nrow = 3)
-```
-
-![](figure/unnamed-chunk-7-2.png) 
-
-
-###3. Prediction Modelling
-
-Split the training data:
-
-```r
-set.seed(12345)
-data_training.rows <- createDataPartition(data_training$Survived, p = 0.7, list = FALSE)
-
-data_training.train <- data_training[data_training.rows, ]
-data_training.test <- data_training[-data_training.rows, ]
-```
-
-Check the split data:
-
-```r
-## dim(data_training.train)
-str(data_training.train)
-```
-
-```
-## 'data.frame':	625 obs. of  14 variables:
-##  $ PassengerId: chr  "1" "3" "4" "6" ...
-##  $ Survived   : Factor w/ 2 levels "0","1": 1 2 2 1 1 1 2 2 2 1 ...
-##  $ Pclass     : Factor w/ 3 levels "1","2","3": 3 3 1 3 1 3 3 2 1 3 ...
-##  $ Name       : chr  "Braund, Mr. Owen Harris" "Heikkinen, Miss. Laina" "Futrelle, Mrs. Jacques Heath (Lily May Peel)" "Moran, Mr. James" ...
-##  $ Sex        : Factor w/ 2 levels "female","male": 2 1 1 2 2 2 1 1 1 2 ...
-##  $ Age        : num  22 26 35 29.7 54 ...
-##  $ SibSp      : chr  "1" "0" "1" "0" ...
-##  $ Parch      : chr  "0" "0" "0" "0" ...
-##  $ Ticket     : chr  "A/5 21171" "STON/O2. 3101282" "113803" "330877" ...
-##  $ Fare       : num  7.25 7.92 53.1 8.46 51.86 ...
-##  $ Cabin      : chr  "G6" "G6" "C123" "G6" ...
-##  $ Embarked   : Factor w/ 3 levels "C","Q","S": 3 3 3 2 3 3 3 1 3 3 ...
-##  $ Title      : chr  " Mr" " Miss" " Mrs" " Mr" ...
-##  $ FamilySize : chr  "2" "1" "2" "1" ...
-```
-
-```r
-## summary(data_training.train)
-
-## dim(data_training.test)
-str(data_training.test)
-```
-
-```
-## 'data.frame':	266 obs. of  14 variables:
-##  $ PassengerId: chr  "2" "5" "11" "16" ...
-##  $ Survived   : Factor w/ 2 levels "0","1": 2 1 2 2 2 1 1 2 1 2 ...
-##  $ Pclass     : Factor w/ 3 levels "1","2","3": 1 3 3 2 3 2 3 3 2 3 ...
-##  $ Name       : chr  "Cumings, Mrs. John Bradley (Florence Briggs Thayer)" "Allen, Mr. William Henry" "Sandstrom, Miss. Marguerite Rut" "Hewlett, Mrs. (Mary D Kingcome) " ...
-##  $ Sex        : Factor w/ 2 levels "female","male": 1 2 1 1 1 2 1 1 2 2 ...
-##  $ Age        : num  38 35 4 55 29.7 ...
-##  $ SibSp      : chr  "1" "0" "1" "0" ...
-##  $ Parch      : chr  "0" "0" "1" "0" ...
-##  $ Ticket     : chr  "PC 17599" "373450" "PP 9549" "248706" ...
-##  $ Fare       : num  71.28 8.05 16.7 16 7.22 ...
-##  $ Cabin      : chr  "C85" "G6" "G6" "G6" ...
-##  $ Embarked   : Factor w/ 3 levels "C","Q","S": 1 3 3 3 1 3 3 3 3 1 ...
-##  $ Title      : chr  " Mrs" " Mr" " Miss" " Mrs" ...
-##  $ FamilySize : chr  "2" "1" "3" "1" ...
-```
-
-```r
-## summary(data_training.test)
-```
-
-####Decision tree prediction
-
-```r
-set.seed(12345)
-val_dtmodel <- rpart(Survived ~ Pclass + Sex + Age + Fare + Embarked + FamilySize, data = data_training.train, method = "class")
-val_dtmodel.predict <- predict(val_dtmodel, data_training.test, type = "class")
-val_dtcm <- confusionMatrix(val_dtmodel.predict, data_training.test$Survived)
-val_dtcm
-```
-
-```
-## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction   0   1
-##          0 145  38
-##          1  19  64
-##                                           
-##                Accuracy : 0.7857          
-##                  95% CI : (0.7315, 0.8335)
-##     No Information Rate : 0.6165          
-##     P-Value [Acc > NIR] : 2.603e-09       
-##                                           
-##                   Kappa : 0.5303          
-##  Mcnemar's Test P-Value : 0.01712         
-##                                           
-##             Sensitivity : 0.8841          
-##             Specificity : 0.6275          
-##          Pos Pred Value : 0.7923          
-##          Neg Pred Value : 0.7711          
-##              Prevalence : 0.6165          
-##          Detection Rate : 0.5451          
-##    Detection Prevalence : 0.6880          
-##       Balanced Accuracy : 0.7558          
-##                                           
-##        'Positive' Class : 0               
-## 
-```
-
-Decision tree prediction has a reported accuracy against the training dataset:
-
-```r
-round(val_dtcm$overall['Accuracy'], 4)
-```
-
-```
-## Accuracy 
-##   0.7857
-```
 
 
 ```r
-plot(val_dtcm$table, 
-    col = val_dtcm$byClass, 
-    main = paste("Decision Tree Confusion Matrix: Accuracy =", 
-    round(val_dtcm$overall['Accuracy'], 4)))
+summary(data_wine$sulf.ratio)
 ```
 
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+## 0.02362 0.19090 0.25370 0.25560 0.31580 0.71050
+```
+
+Bucket wine quality score into three new categories: 1:Poor (5 score or less), 2:Good (6 score), 3:Great (7 score or greater).
+
+
+
+```r
+summary(data_wine$quality.rating)
+```
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   1.000   1.000   2.000   1.882   2.000   3.000
+```
+
+Bucket wine alcohol content into three new categories: 1:Light (9% or less), 2:Mild (between 10% and 12%), 3:Strong (12% or greater).
+
+
+
+```r
+summary(data_wine$alcohol.rating)
+```
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    1.00    1.00    2.00    1.74    2.00    3.00
+```
+
+
+
+
+###3. Univariate Analysis
+Univariate analysis is intended to provide insights of absolute levels of individual series within the dataset.
+
+The below shows histograms for all original dataset variables.
+![](figure/unnamed-chunk-10-1.png) 
+The majority of variables are approximately normally distributed and many have a positive skew. Judging by the automatically adjusted scale on each distribution, it seems there are also a small number of outliers within some variables.
+
+The below shows a histogram and summary metrics for total sulfur dioxide.
+![](figure/unnamed-chunk-11-1.png) 
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##     9.0   108.0   134.0   138.4   167.0   440.0
+```
+The min free sulfur dioxide value is 9.0 mg/dm^3, the max is 440.0 mg/dm^3. As per the comment made above, it seems the 440 mg/dm^3 is an outlier.
+
+The below shows a histogram and summary metrics exluding observations where free sulfure dioxide is greater than 300 mg/dm^3.
 ![](figure/unnamed-chunk-12-1.png) 
 
-#### Random forest prediction
-
-```r
-set.seed(12345)
-val_rfmodel <- randomForest(Survived ~ Pclass + Sex + Age + Fare + Embarked + FamilySize, data = data_training.train)
-val_rfmodel.predict <- predict(val_rfmodel, data_training.test, type = "class")
-val_rfcm <- confusionMatrix(val_rfmodel.predict, data_training.test$Survived)
-val_rfcm
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##     9.0   108.0   134.0   138.1   167.0   294.0
 ```
 
-```
-## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction   0   1
-##          0 149  33
-##          1  15  69
-##                                          
-##                Accuracy : 0.8195         
-##                  95% CI : (0.768, 0.8638)
-##     No Information Rate : 0.6165         
-##     P-Value [Acc > NIR] : 5.675e-13      
-##                                          
-##                   Kappa : 0.6052         
-##  Mcnemar's Test P-Value : 0.01414        
-##                                          
-##             Sensitivity : 0.9085         
-##             Specificity : 0.6765         
-##          Pos Pred Value : 0.8187         
-##          Neg Pred Value : 0.8214         
-##              Prevalence : 0.6165         
-##          Detection Rate : 0.5602         
-##    Detection Prevalence : 0.6842         
-##       Balanced Accuracy : 0.7925         
-##                                          
-##        'Positive' Class : 0              
-## 
-```
-
-Random forest prediction has a reported accuracy against the training dataset:
-
-```r
-round(val_rfcm$overall['Accuracy'], 4)
-```
+Each wine has both a free sulfur dioxide count and total sulfur dioxide count. The below shows a histogram and summary metrics for the ratio of the two.
+![](figure/unnamed-chunk-13-1.png) 
 
 ```
-## Accuracy 
-##   0.8195
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+## 0.02362 0.19090 0.25370 0.25560 0.31580 0.71050
 ```
+Note that using a summary metric such as the one above provides another method of accounting for the extreme free/total sulfur dioxide outliers.
 
+The below shows a histogram and summary metrics for wine pH.
+![](figure/unnamed-chunk-14-1.png) 
 
-```r
-plot(val_rfcm$table, 
-    col = val_rfcm$byClass, 
-    main = paste("Random Forest Confusion Matrix: Accuracy =",
-    round(val_rfcm$overall['Accuracy'], 4)))
 ```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   2.720   3.090   3.180   3.188   3.280   3.820
+```
+Based on recorded pH levels, it seems the tested wines are acidic (pH < 7) falling within the range of 2.7 pH to 3.8 pH.
 
+The below shows a histogram and summary metrics for wine alcohol content.
 ![](figure/unnamed-chunk-15-1.png) 
 
-#### Generalized boosted regression prediction
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    8.00    9.50   10.40   10.51   11.40   14.20
+```
+It seems higher alcohol content wines (> 12%) are less common than lower alcohol content wines.
 
-```r
-set.seed(12345)
-val_fitControl <- trainControl(method = "repeatedcv", number = 5, repeats = 1)
-val_gbmmodel <- train(Survived ~ Pclass + Sex + Age + Fare + Embarked + FamilySize, data = data_training.train, method = "gbm", trControl = val_fitControl, verbose = FALSE)
-val_gbmmodel.predict <- predict(val_gbmmodel, newdata = data_training.test)
-val_gbmcm <- confusionMatrix(val_gbmmodel.predict, data_training.test$Survived)
-val_gbmcm
+The below shows a histogram and summary metrics for the wine quality ratings.
+![](figure/unnamed-chunk-16-1.png) 
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   3.000   5.000   6.000   5.878   6.000   9.000
+```
+For most wines, the quality score falls between 5 and 7. There are a few exceptions of wines with scores of 8 or above, and of 4 or below.
+
+Q: What is the structure of your dataset?
+The raw dataset has 12 columns representing various wine properties and 4,898 rows each representing recorded observations. The majority of variables are quantitative measurements of a chemical or physical property. One variable is a subjective labeling of the quality of wine taste.
+
+Q: What is/are the main feature(s) of interest in your dataset?
+As a first pass, the main feature of interest seems to be the wine quality, and whether the data supports a relationship between perceived quality and any/all of the recorded chemical properties.
+
+Q: What other features in the dataset do you think will help support your investigation into your feature(s) of interest?
+At this stage, it is difficult to rule out any relationships butI suspect sulphur content, acidity, pH and alcohol content will have a relationship with perceived quality.
+
+Q: Did you create any new variables from existing variables in the dataset?
+Yes, a variable which shows the ratio of free sulfur dioxide to total sulfur dioxide and a variable which recategorizes wine quality ratings.
+
+Q: Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
+The majority of variables are approximately normally distributed, however many have a positive skew. There also seems to be a number of outliers within each of the dataset variables. No data transformations have been performed at this stage as the intention at this stage is to limit axis ranges for plots in order to account for outliers within each visual representation.
+
+
+###4. Bivariate Analysis
+Bivariate analysis is intended to provide insights of the relationship between any pair of variables within the dataset.
+
+The below shows a correlation matrix between each of the original dataset variables.
+
+```
+##       A     B     C     D     E     F     G     H     I     J     K     L
+## A  1.00 -0.26  0.00 -0.15  0.01 -0.05 -0.01 -0.16 -0.19 -0.12  0.01  0.21
+## B -0.26  1.00 -0.02  0.29  0.09  0.02 -0.05  0.09  0.27 -0.43 -0.02 -0.12
+## C  0.00 -0.02  1.00 -0.15  0.06  0.07 -0.10  0.09  0.03 -0.03 -0.04  0.07
+## D -0.15  0.29 -0.15  1.00  0.09  0.11  0.09  0.12  0.15 -0.16  0.06 -0.08
+## E  0.01  0.09  0.06  0.09  1.00  0.09  0.30  0.40  0.84 -0.19 -0.03 -0.45
+## F -0.05  0.02  0.07  0.11  0.09  1.00  0.10  0.20  0.26 -0.09  0.02 -0.36
+## G -0.01 -0.05 -0.10  0.09  0.30  0.10  1.00  0.62  0.29  0.00  0.06 -0.25
+## H -0.16  0.09  0.09  0.12  0.40  0.20  0.62  1.00  0.53  0.00  0.13 -0.45
+## I -0.19  0.27  0.03  0.15  0.84  0.26  0.29  0.53  1.00 -0.09  0.07 -0.78
+## J -0.12 -0.43 -0.03 -0.16 -0.19 -0.09  0.00  0.00 -0.09  1.00  0.16  0.12
+## K  0.01 -0.02 -0.04  0.06 -0.03  0.02  0.06  0.13  0.07  0.16  1.00 -0.02
+## L  0.21 -0.12  0.07 -0.08 -0.45 -0.36 -0.25 -0.45 -0.78  0.12 -0.02  1.00
+## M  0.04 -0.11 -0.19 -0.01 -0.10 -0.21  0.01 -0.17 -0.31  0.10  0.05  0.44
+##       M
+## A  0.04
+## B -0.11
+## C -0.19
+## D -0.01
+## E -0.10
+## F -0.21
+## G  0.01
+## H -0.17
+## I -0.31
+## J  0.10
+## K  0.05
+## L  0.44
+## M  1.00
 ```
 
 ```
-## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction   0   1
-##          0 148  39
-##          1  16  63
-##                                           
-##                Accuracy : 0.7932          
-##                  95% CI : (0.7395, 0.8403)
-##     No Information Rate : 0.6165          
-##     P-Value [Acc > NIR] : 4.694e-10       
-##                                           
-##                   Kappa : 0.5432          
-##  Mcnemar's Test P-Value : 0.003012        
-##                                           
-##             Sensitivity : 0.9024          
-##             Specificity : 0.6176          
-##          Pos Pred Value : 0.7914          
-##          Neg Pred Value : 0.7975          
-##              Prevalence : 0.6165          
-##          Detection Rate : 0.5564          
-##    Detection Prevalence : 0.7030          
-##       Balanced Accuracy : 0.7600          
-##                                           
-##        'Positive' Class : 0               
-## 
+##       [,1]                   [,2]
+##  [1,] "X"                    "A" 
+##  [2,] "fixed.acidity"        "B" 
+##  [3,] "volatile.acidity"     "C" 
+##  [4,] "citric.acid"          "D" 
+##  [5,] "residual.sugar"       "E" 
+##  [6,] "chlorides"            "F" 
+##  [7,] "free.sulfur.dioxide"  "G" 
+##  [8,] "total.sulfur.dioxide" "H" 
+##  [9,] "density"              "I" 
+## [10,] "pH"                   "J" 
+## [11,] "sulphates"            "K" 
+## [12,] "alcohol"              "L" 
+## [13,] "quality"              "M"
 ```
 
-Generalized boosted regression prediction has a reported accuracy against the training dataset:
+The strongest correlations between the dataset variables are between:
 
-```r
-round(val_gbmcm$overall['Accuracy'], 4)
-```
+* Correl1: I:density and E:residual sugar
+* Correl2: I:density and H:total sulfur dioxide
+* Correl3: I:density and L:alcohol
+* Correl4: H:total sulfur dioxide and G:free sulfur dioxide
 
-```
-## Accuracy 
-##   0.7932
-```
+Correlation 4 is intuitive as these dataset variables are derivations of the other. Correlations 1, 2 and 3 are of interest however, and warrant further investigation. In the following plots, we will focus on the relationships between residual sugar, total sulfur dioxide, alcohol, density and wine quality rating.
 
-
-```r
-plot(val_gbmcm$table, 
-     col = val_gbmcm$byClass,
-     main = paste("Generalized Boosted Regression Confusion Matrix: Accuracy =",
-     round(val_gbmcm$overall['Accuracy'], 4)))
-```
-
+Scatterplots of correlations between the variables of interest and residual sugar are shown below.
 ![](figure/unnamed-chunk-18-1.png) 
+There is a positive relationship between residual sugar and total sulfur dioxide/density and a negative relationship between residual sugar and alcohol. It seems that the negative relationship between residual sugar and alcohol is strongest in wines with a low alcohol content (< ~10%). While the strong positive relationship between residual sugar and density is less strong for low residual sugar levels (< ~5 g/dm^3).
+
+Scatterplots of correlations between the variables of interest and total sulfur dioxide are shown below.
+![](figure/unnamed-chunk-19-1.png) 
+Both the negative correlation between total sulfur dioxide and alcohol as well as the positive correlation between total sulfur dioxide and density are confirmed in the scatterplots above. Interestingly the linear relationship between total sulfur dioxide and density seems to have a 'step' at a density level (~0.9995 g/cm^3).
+
+Scatterplots of correlations between the variables of interest and alcohol are shown below.
+![](figure/unnamed-chunk-20-1.png) 
+Again, the strong negative correlation between alcohol and density is immediately obvious. Interestingly, there also seems to be a positive correlation between alcohol and perceived wine quality. We investigate this further below.
+
+Histograms of wine quality ratings by alcohol content are shown below.
+![](figure/unnamed-chunk-21-1.png) 
+Higher alcohol content wines: 2:Mild (between 10% and 12%), 3:Strong (12% or greater) are more represented by higher wine quality ratings.
+
+Q: Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
+The key relationship is between the main feature of interest (wine quality) and alcohol. In general, as the level of alcohol increases (decreases), the perceived quality of the wine improves.
+
+Q: Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
+* A lower (higher) amount of residual sugars and/or density in a given wine will tend to bring with it a lower (higher) amount of sulfur dioxide.
+* A lower (higher) amount of residual sugars and/or density in a given wine will tend to bring with it a higher (lower) amount of alcohol. This relationship is strongest for those wines which have a relatively high sugar level.
+
+Q: What was the strongest relationship you found?
+The strongest correlation found was between density and residual sugar. Again, this relationship is strongest for wines with a high sugar level.
 
 
-###4. Model Selection
-The expected out-of-sample error is calculated as 1 - accuracy for predictions made against the cross-validation set:
+###5. Multivariate Analysis
+Multivariate analysis is intended to provide insights of the relationship between any three or more variables within the dataset.
 
-```r
-val_ooserror <- 1 - round(val_rfcm$overall['Accuracy'], 4)
-## val_ooserror <- 1 - round(val_gbmcm$overall['Accuracy'], 4)
-val_ooserror
-```
+Wine quality has a relationship with alcohol and an implied relationship with density and residual sugar. In order to visually respresent these relationships, we create scatterplots of alcohol, density and residual sugar whereby the scatter is colored by the quality rating.
+![](figure/unnamed-chunk-22-1.png) 
+Once again, the postive correlation between alcohol content and wine quality as well as the negative correlation between density and residual sugar are observed. However, it is difficult to see any relationship between density or residual sugar and level of percieved wine quality.
 
-```
-## Accuracy 
-##   0.1805
-```
+Q: Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
+We established a relationship between alcohol and wine quality as part of the bivariate analysis. As part of the multivariate analysis, effort was put towards establishing whether those factors which have an identified correlation with alcohol (density and residual sugar), would also demonstrate a relationship with wine quality. Unfortunately, there is no obvious relationship between wine quality and these factors.
 
-
-```r
-val_selmodel.final <- predict(val_rfmodel, data_testing)
-## val_selmodel.final <- predict(val_gbmmodel, data_testing)
-```
+Q: Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
+The negative correlation between alcohol and density once again presented itself as part of the multivariate analysis.
 
 
-###5. Kaggle Submission
+###6. Final Plots and Summary
+A summary of the key univariate, bivariate and multivariate plots.
 
-```r
-data_prediction <- data.frame(PassengerId = data_testing$PassengerId, Survived = val_selmodel.final)
-write.table(data_prediction,"data/prediction.csv", row.names = FALSE, sep=",", col.names = TRUE)
-```
+Revisting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 7.
+![](figure/unnamed-chunk-23-1.png) 
+
+As part of the bivariate analysis, a relationship between alcohol and wine quality was found.
+![](figure/unnamed-chunk-24-1.png) 
+Higher alcohol content wines: 2:Mild (between 10% and 12%), 3:Strong (12% or greater) are more represented by higher wine quality ratings.
+
+Although a relationship exists between alcohol and density/residual sugar, these alternative chemical properties show no noticeable relationship to wine quality.
+![](figure/unnamed-chunk-25-1.png) 
+
+
+###Reflection
+* I found a number of outliers within this dataset. Since this analysis focused on visual representation of data rather than statistical inference, I accounted for these outliers by manually setting plot ranges.
+
+* I initially struggled to see what insights could be gained from this dataset. However, going through each variable systematically as part of the univariate/bivariate analysis helped to narrow in the key data drivers/relationships.
+
+* It does not look like wine quality is well supported by the majority of chemical properties. Although there is a relationship between alcohol content and quality, I struggled to find similar relationships between quality and other chemical variables.
