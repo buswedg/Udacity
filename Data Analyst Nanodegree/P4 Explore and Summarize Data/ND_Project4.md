@@ -4,15 +4,15 @@
 
 
 ###Introduction
-This repository holds results for the Udacity Nanodegree Project: Explore and Summarize Data. For this project, I selected the 'White Wine Quality' dataset and exercised  Exploratory Data Analysis techniques in order to investigate property relationships.
+This repository holds results for the Udacity Nanodegree Project: Explore and Summarize Data. For this project, I selected the 'White Wine Quality' dataset and exercised Exploratory Data Analysis techniques in order to investigate property relationships.
 
 
 ###Data
-The dataset contains information on 11 chemical and physical properties for 4,898 white wines. Also included in the data set is a quality ranking and an explicit ID.
+The original datafile: 'WineQualityWhites.csv' contains information on 11 chemical and physical properties for 4,898 white wines. Also included is a quality ranking and an explicit ID.
 
-The dataset was obtained from: [Dataset link](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityReds.csv)
+The datafile was obtained from: [Dataset link](https://s3.amazonaws.com/udacity-hosted-downloads/ud651/wineQualityWhites.csv)
 
-Chemical Prperties:
+Chemical Properties:
 
 * fixed acidity: most acids involved with wine or fixed or nonvolatile (do not evaporate readily) (tartaric acid - g / dm^3)
 * volatile acidity: the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
@@ -32,8 +32,18 @@ Output variable (based on sensory data):
 
 
 ###1. Loading Packages/ Data
+The following packages are loaded for this exercise:
+
+* ggplot2: An implementation of the grammar of graphics in R. It combines the advantages of both base and lattice graphics: conditioning and shared axes are handled automatically, and you can still build up a plot step by step from multiple data sources. It also implements a sophisticated multidimensional conditioning system and a consistent interface to map data to aesthetic attributes.
+* GGally: GGally is designed to be a helper to ggplot2. It contains templates for different plots to be combined into a plot matrix, a parallel coordinate plot function, as well as a function for making a network plot.
+* gridExtra: Provides a number of user-level functions to work with "grid" graphics, notably to arrange multiple grid-based plots on a page, and draw tables.
+* data.table: Fast aggregation of large data (e.g. 100GB in RAM), fast ordered joins, fast add/modify/delete of columns by group using no copies at all, list columns and a fast file reader (fread). Offers a natural and flexible syntax, for faster development.
 
 
+The original datafile: WineQualityWhites.csv is loaded into a dataframe with any possible "NA" or blank entries tagged as na.strings.
+
+
+The below provides a summary of the raw dataframe structure.
 
 ```r
 ##dim(data_wine.raw)
@@ -62,9 +72,12 @@ str(data_wine.raw)
 ```
 
 ###2. Pre-process the Data
-Create a new series which shows the ratio of free sulfur dioxide to total sulfur dioxide.
+As part of the pre-processing routine, an effort was made to identify any potential new series which could be created from mathematical operations or categorization of the existing variables.
+
+A new series of the ratio between free sulfur dioxide and total sulfur dioxide was created named 'sulf.ratio'.
 
 
+The below Shows a summary of the generated sulf.ratio variable.
 
 ```r
 summary(data_wine$sulf.ratio)
@@ -75,9 +88,14 @@ summary(data_wine$sulf.ratio)
 ## 0.02362 0.19090 0.25370 0.25560 0.31580 0.71050
 ```
 
-Bucket wine quality score into three new categories: 1:Poor (5 score or less), 2:Good (6 score), 3:Great (7 score or greater).
+Additionally, two new category series were created:
+
+* 'quality.rating': Categorizes wine quality score into three new categories: 1:Poor (5 score or less), 2:Good (6 score), 3:Great (7 score or greater).
+* 'alcohol.rating': Categorizes wine alcohol content into three new categories: 1:Light (9% or less), 2:Mild (between 10% and 12%), 3:Strong (12% or greater).
 
 
+
+The below Shows a summary of the created quality.rating variable:
 
 ```r
 summary(data_wine$quality.rating)
@@ -88,9 +106,7 @@ summary(data_wine$quality.rating)
 ##   1.000   1.000   2.000   1.882   2.000   3.000
 ```
 
-Bucket wine alcohol content into three new categories: 1:Light (9% or less), 2:Mild (between 10% and 12%), 3:Strong (12% or greater).
-
-
+The below Shows a summary of the created alcohol.rating variable:
 
 ```r
 summary(data_wine$alcohol.rating)
@@ -101,13 +117,33 @@ summary(data_wine$alcohol.rating)
 ##    1.00    1.00    2.00    1.74    2.00    3.00
 ```
 
+A summary of the updated dataframe structure is shown, capturing the added variables.
 
+```
+## 'data.frame':	4898 obs. of  16 variables:
+##  $ X                   : int  1 2 3 4 5 6 7 8 9 10 ...
+##  $ fixed.acidity       : num  7 6.3 8.1 7.2 7.2 8.1 6.2 7 6.3 8.1 ...
+##  $ volatile.acidity    : num  0.27 0.3 0.28 0.23 0.23 0.28 0.32 0.27 0.3 0.22 ...
+##  $ citric.acid         : num  0.36 0.34 0.4 0.32 0.32 0.4 0.16 0.36 0.34 0.43 ...
+##  $ residual.sugar      : num  20.7 1.6 6.9 8.5 8.5 6.9 7 20.7 1.6 1.5 ...
+##  $ chlorides           : num  0.045 0.049 0.05 0.058 0.058 0.05 0.045 0.045 0.049 0.044 ...
+##  $ free.sulfur.dioxide : num  45 14 30 47 47 30 30 45 14 28 ...
+##  $ total.sulfur.dioxide: num  170 132 97 186 186 97 136 170 132 129 ...
+##  $ density             : num  1.001 0.994 0.995 0.996 0.996 ...
+##  $ pH                  : num  3 3.3 3.26 3.19 3.19 3.26 3.18 3 3.3 3.22 ...
+##  $ sulphates           : num  0.45 0.49 0.44 0.4 0.4 0.44 0.47 0.45 0.49 0.45 ...
+##  $ alcohol             : num  8.8 9.5 10.1 9.9 9.9 10.1 9.6 8.8 9.5 11 ...
+##  $ quality             : int  6 6 6 6 6 6 6 6 6 6 ...
+##  $ sulf.ratio          : num  0.265 0.106 0.309 0.253 0.253 ...
+##  $ quality.rating      : num  2 2 2 2 2 2 2 2 2 2 ...
+##  $ alcohol.rating      : num  1 1 2 1 1 2 1 1 1 2 ...
+```
 
 
 ###3. Univariate Analysis
 Univariate analysis is intended to provide insights of absolute levels of individual series within the dataset.
 
-The below shows histograms for all original dataset variables.
+As a first pass of univariate analysis, histograms were generated for each of the original dataset variables. This was done by looping the ggplot function for each variable and using grid.arrange to present all plots within the same plot space.
 ![](figure/unnamed-chunk-10-1.png) 
 The majority of variables are approximately normally distributed and many have a positive skew. Judging by the automatically adjusted scale on each distribution, it seems there are also a small number of outliers within some variables.
 
@@ -120,7 +156,7 @@ The below shows a histogram and summary metrics for total sulfur dioxide.
 ```
 The min free sulfur dioxide value is 9.0 mg/dm^3, the max is 440.0 mg/dm^3. As per the comment made above, it seems the 440 mg/dm^3 is an outlier.
 
-The below shows a histogram and summary metrics exluding observations where free sulfure dioxide is greater than 300 mg/dm^3.
+The below shows a histogram and summary metrics excluding observations where free sulfur dioxide is greater than 300 mg/dm^3.
 ![](figure/unnamed-chunk-12-1.png) 
 
 ```
@@ -162,7 +198,7 @@ The below shows a histogram and summary metrics for the wine quality ratings.
 ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   3.000   5.000   6.000   5.878   6.000   9.000
 ```
-For most wines, the quality score falls between 5 and 7. There are a few exceptions of wines with scores of 8 or above, and of 4 or below.
+For most wines, the quality score falls between 5 and 6. There are a few exceptions of wines with scores of 8 or above, and of 4 or below.
 
 Q: What is the structure of your dataset?
 The raw dataset has 12 columns representing various wine properties and 4,898 rows each representing recorded observations. The majority of variables are quantitative measurements of a chemical or physical property. One variable is a subjective labeling of the quality of wine taste.
@@ -174,7 +210,7 @@ Q: What other features in the dataset do you think will help support your invest
 At this stage, it is difficult to rule out any relationships butI suspect sulphur content, acidity, pH and alcohol content will have a relationship with perceived quality.
 
 Q: Did you create any new variables from existing variables in the dataset?
-Yes, a variable which shows the ratio of free sulfur dioxide to total sulfur dioxide and a variable which recategorizes wine quality ratings.
+Yes, a variable which shows the ratio of free sulfur dioxide to total sulfur dioxide and two variables which re-categorize wine quality ratings/alcohol content.
 
 Q: Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
 The majority of variables are approximately normally distributed, however many have a positive skew. There also seems to be a number of outliers within each of the dataset variables. No data transformations have been performed at this stage as the intention at this stage is to limit axis ranges for plots in order to account for outliers within each visual representation.
@@ -183,7 +219,7 @@ The majority of variables are approximately normally distributed, however many h
 ###4. Bivariate Analysis
 Bivariate analysis is intended to provide insights of the relationship between any pair of variables within the dataset.
 
-The below shows a correlation matrix between each of the original dataset variables.
+As a first pass of bivariate analysis, a correlation matrix was generated for each of the original dataset variables. The 'cor' function was used to generate the matrix while an alphabetical reference list was made for each variable.
 
 ```
 ##       A     B     C     D     E     F     G     H     I     J     K     L
@@ -235,10 +271,10 @@ The below shows a correlation matrix between each of the original dataset variab
 
 The strongest correlations between the dataset variables are between:
 
-* Correl1: I:density and E:residual sugar
-* Correl2: I:density and H:total sulfur dioxide
-* Correl3: I:density and L:alcohol
-* Correl4: H:total sulfur dioxide and G:free sulfur dioxide
+* Correl1: I:density and E:residual sugar (0.84)
+* Correl2: I:density and H:total sulfur dioxide (0.53)
+* Correl3: I:density and L:alcohol (-0.78)
+* Correl4: H:total sulfur dioxide and G:free sulfur dioxide (0.62)
 
 Correlation 4 is intuitive as these dataset variables are derivations of the other. Correlations 1, 2 and 3 are of interest however, and warrant further investigation. In the following plots, we will focus on the relationships between residual sugar, total sulfur dioxide, alcohol, density and wine quality rating.
 
@@ -248,11 +284,11 @@ There is a positive relationship between residual sugar and total sulfur dioxide
 
 Scatterplots of correlations between the variables of interest and total sulfur dioxide are shown below.
 ![](figure/unnamed-chunk-19-1.png) 
-Both the negative correlation between total sulfur dioxide and alcohol as well as the positive correlation between total sulfur dioxide and density are confirmed in the scatterplots above. Interestingly the linear relationship between total sulfur dioxide and density seems to have a 'step' at a density level (~0.9995 g/cm^3).
+Both the negative correlation between total sulfur dioxide and alcohol (-0.45) as well as the positive correlation between total sulfur dioxide and density (0.53) are confirmed in the scatterplots above. Interestingly the linear relationship between total sulfur dioxide and density seems to have a 'step' at a density level (~0.9995 g/cm^3).
 
 Scatterplots of correlations between the variables of interest and alcohol are shown below.
 ![](figure/unnamed-chunk-20-1.png) 
-Again, the strong negative correlation between alcohol and density is immediately obvious. Interestingly, there also seems to be a positive correlation between alcohol and perceived wine quality. We investigate this further below.
+Again, the strong negative correlation between alcohol and density (-0.78) is immediately obvious. Interestingly, there also seems to be a relationship between alcohol and perceived wine quality, which the correlation matrix above confirms (0.44). We investigate this further below.
 
 Histograms of wine quality ratings by alcohol content are shown below.
 ![](figure/unnamed-chunk-21-1.png) 
@@ -274,7 +310,7 @@ Multivariate analysis is intended to provide insights of the relationship betwee
 
 Wine quality has a relationship with alcohol and an implied relationship with density and residual sugar. In order to visually respresent these relationships, we create scatterplots of alcohol, density and residual sugar whereby the scatter is colored by the quality rating.
 ![](figure/unnamed-chunk-22-1.png) 
-Once again, the postive correlation between alcohol content and wine quality as well as the negative correlation between density and residual sugar are observed. However, it is difficult to see any relationship between density or residual sugar and level of percieved wine quality.
+Once again, the positive correlation between alcohol content and wine quality (0.44) can be observed by the scatterplot color transition moving along the x-axis. However, it is difficult to see any relationship between density or residual sugar and level of perceived wine quality.
 
 Q: Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
 We established a relationship between alcohol and wine quality as part of the bivariate analysis. As part of the multivariate analysis, effort was put towards establishing whether those factors which have an identified correlation with alcohol (density and residual sugar), would also demonstrate a relationship with wine quality. Unfortunately, there is no obvious relationship between wine quality and these factors.
@@ -286,7 +322,7 @@ The negative correlation between alcohol and density once again presented itself
 ###6. Final Plots and Summary
 A summary of the key univariate, bivariate and multivariate plots.
 
-Revisting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 7.
+Revisiting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 6.
 ![](figure/unnamed-chunk-23-1.png) 
 
 As part of the bivariate analysis, a relationship between alcohol and wine quality was found.
