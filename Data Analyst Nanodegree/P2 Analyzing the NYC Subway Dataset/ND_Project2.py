@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[74]:
 
 from IPython.display import HTML
 
@@ -29,35 +29,35 @@ $( document ).ready(code_toggle);
 # 
 # ####1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples. 
 
-# The Mann-Whitney U-test was used to compare the mean ridership of rainy days vs non-rainy days. This test is suitable as 1) the underlying distributions are not normally distributed, and 2) the Mann-Whitney U-test is a non-parametric test which does not assume any particular distribution, as opposed to Welch’s t-test.
+# The Mann-Whitney U-test was used to compare the ridership of rainy days vs non-rainy days. This test is suitable as 1) the underlying distributions are not normally distributed, and 2) the Mann-Whitney U-test is a non-parametric test which does not assume any particular distribution, as opposed to Welch’s t-test.
 # 
-# A two-tailed test and hence a two-tailed P value was used. A two-tailed test is suitable since 1) it is not yet known which of the two means will be the greater or lessor, and 2) such a test is able to establish whether either of the two distributions tends to have greater values than the other.
+# A two-tailed test and hence a two-tailed P value was used. A two-tailed test is suitable as such a test is able to establish whether either of the two distributions tends to have greater/lessor values than the other.
 # 
 # The two-tailed P value for this test is .05 (5% significance level).
 # 
-# Null Hypothesis: There 'is no significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days.
+# Null Hypothesis: There 'is no significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days.
 # 
-# Alternative Hypothesis: There 'is a significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days.
+# Alternative Hypothesis: There 'is a significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days.
 # 
 # Therefore, if (p * 2) < 0.05, we reject the null hypothesis.
 # 
 # Do note that as the sample size is > ~20, U is assumed to be approximately normally distributed and as such, U was found by employing 'method two' discussed here: https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test).
 
-# In[1]:
+# In[3]:
 
 import pandas as pd
 import numpy as np
 import scipy.stats
 
 
-# In[2]:
+# In[4]:
 
 path = r'data\turnstile_weather_v2.csv'
 dataFrame = pd.read_csv(path)
 dataFrame.head(5)
 
 
-# In[3]:
+# In[5]:
 
 df_rain = dataFrame[dataFrame.rain != 0]
 df_norain = dataFrame[dataFrame.rain == 0]
@@ -70,33 +70,33 @@ df_norainent = df_norain['ENTRIESn_hourly']
 # 
 # ####1.4 What is the significance and interpretation of these results?
 
-# In[4]:
+# In[6]:
 
 print "Mean ridership for rain group:"
 df_rainent.mean()
 
 
-# In[5]:
+# In[7]:
 
 print "Standard deviation of ridership for rain group:"
 df_rainent.std()
 
 
-# In[6]:
+# In[8]:
 
 print "Mean ridership for non-rain group:"
 df_norainent.mean()
 
 
-# In[7]:
+# In[9]:
 
 print "Standard deviation of ridership for non-rain group:"
 df_norainent.std()
 
 
-# The mean ridership for the rain group is higher than the non-rain group, however ridership datapoints for the rain group also have greater standard deviation than the non-rain group. Below forms the test for statistically significant difference between mean ridership of the two groups.
+# The mean ridership for the rain group is higher than the non-rain group, however ridership datapoints for the rain group also have greater standard deviation than the non-rain group. Below forms the test for statistically significant difference between the distribution of ridership between the two groups.
 
-# In[8]:
+# In[10]:
 
 n = len(df_rain)
 
@@ -104,7 +104,7 @@ print "Number of observations with rain:"
 n
 
 
-# In[9]:
+# In[11]:
 
 n = len(df_norain)
 
@@ -112,7 +112,7 @@ print "Number of observations without rain:"
 n
 
 
-# In[10]:
+# In[12]:
 
 U,p = scipy.stats.mannwhitneyu(df_rainent, df_norainent)
 m_u = (len(df_rainent) * len(df_norainent)) / 2
@@ -124,7 +124,7 @@ print "Mann-Whitney U-test statistic:"
 p
 
 
-# We reject the Null Hypothesis that there 'is no significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days at the 5% significance level. (5.48e-06 < 0.05)
+# We reject the null hypothesis that there 'is no significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days. We reject the null hypothesis at the 5% significance level. (5.48e-06 < 0.05). Note that we also found mean ridership of the rain group to be higher than the non-rain group as part of the descriptive statistics reported above. 
 
 # ###Section 2. Linear Regression
 
@@ -146,10 +146,10 @@ p
 # 2) 'weekday': ridership varies based on weekdays vs. weekends (business vs. leisure transit).
 # 3) 'rain': ridership varies based on whether it has rained that day.
 # 4) 'fog': ridership varies based on whether there is fog.
-# 5) 'tempi': ridership vari
+# 5) 'tempi': ridership varies based on temperature.
 # 6) 'UNIT': there is a disparity between stations average ridership due to (for example) whether the station is located in a heavy/less populated area. (UNIT feature is a transformed dummy variable to account for higher/lower trafficked units.)
 
-# In[11]:
+# In[13]:
 
 import pandas as pd
 import numpy as np
@@ -158,13 +158,13 @@ import matplotlib.pyplot as plt
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[12]:
+# In[14]:
 
 path = r'data\turnstile_weather_v2.csv'
 dataFrame = pd.read_csv(path)
 
 
-# In[13]:
+# In[15]:
 
 y = dataFrame['ENTRIESn_hourly']
 
@@ -176,7 +176,7 @@ x_noweather = x_noweather.join(unit_dum)
 x_weather = x_weather.join(unit_dum)
 
 
-# In[14]:
+# In[16]:
 
 fit_noweather = sm.OLS(y, x_noweather).fit()
 fit_weather = sm.OLS(y, x_weather).fit()
@@ -186,7 +186,7 @@ fit_weather = sm.OLS(y, x_weather).fit()
 # 
 # ###2.5 What is your model’s R2 (coefficients of determination) value?
 
-# In[15]:
+# In[17]:
 
 #fit_noweather.rsquared
 fit_noweather.summary()
@@ -194,7 +194,7 @@ fit_noweather.summary()
 
 # The R^2 value for OLS_noweather (excluding weather features) is 0.481. That is, just over 48% of the variation of number of ENTRIESn_hourly (hourly number of entries) can be explained by the included features: 'hour' (time of day), 'weekday' (day of week), and 'UNIT' (accounting for the disparity in average ridership between stations).
 
-# In[16]:
+# In[18]:
 
 #fit_weather.rsquared
 fit_weather.summary()
@@ -202,13 +202,13 @@ fit_weather.summary()
 
 # The R^2 value for OLS_weather (including weather features) is 0.482. That is, just over 48% of the variation of number of ENTRIESn_hourly (hourly number of entries) can be explained by the included features: 'hour' (time of day), 'weekday' (day of week), 'rain' (if rain), 'fog' (if fog), 'tempi' (temperature) and 'UNIT' (accounting for the disparity in average ridership between stations).
 # 
-# Since 'rain', 'fog' and 'tempi' were not found to significantly improve predictive power (R^2), OLS_noweather is selected as the final model. However, the low R^2 value of both models suggests caution should be exercised when using either to  generate a prediction of future ridership.
+# Since 'rain', 'fog' and 'tempi' were not found to significantly improve predictive power (R^2), OLS_noweather is selected as the final model. However, the low R^2 value of both models suggests caution should be exercised when using either to generate a prediction of future ridership.
 
 # ###Section 3. Visualization
 
 # ####Please include two visualizations that show the relationships between two or more variables in the NYC subway data. Remember to add appropriate titles and axes labels to your plots. Also, please add a short description below each figure commenting on the key insights depicted in the figure. 
 
-# In[17]:
+# In[19]:
 
 import pandas as pd
 import numpy as np
@@ -218,7 +218,7 @@ from ggplot import * ## requires ggplot: $ pip install ggplot, also note: https:
 get_ipython().magic(u'matplotlib inline')
 
 
-# In[18]:
+# In[20]:
 
 path = r'data\turnstile_weather_v2.csv'
 df_raw = pd.read_csv(path)
@@ -259,7 +259,7 @@ df_raw = pd.read_csv(path)
 #plot_norainent
 
 
-# In[24]:
+# In[22]:
 
 plot_entbyrain = ggplot(df_raw, aes('ENTRIESn_hourly', fill = 'rain')) +    geom_histogram(position = 'dodge') +    facet_wrap('rain') +    ggtitle("Total Hourly Entries (Obs with(top)/without(bottom) Rain)") +    xlab('Entries Range') +    ylab('Density')
     
@@ -268,20 +268,20 @@ plot_entbyrain
 
 # Data suggests a similar distribution for entry data on days where it rained vs. days where it did not rain. Note that a greater amount of observations within the dataset were made on days where it did not rain.
 
-# In[25]:
+# In[23]:
 
 df_raw.station.unique()
 df_sumbystat = df_raw.groupby('station', as_index = False).sum()
 df_sumbystat = df_sumbystat.sort('ENTRIESn_hourly')
 
 
-# In[26]:
+# In[24]:
 
 df_sumbytopstat = df_sumbystat[-10:]
 df_sumbytopstat.head(5)
 
 
-# In[27]:
+# In[25]:
 
 #plot_sumentbydow = ggplot(df_sumbytopstat, aes(x = 'station', y = 'ENTRIESn')) \
 #    + geom_bar(stat = 'identity') \
@@ -291,19 +291,19 @@ df_sumbytopstat.head(5)
 #plot_sumentbydow
 
 
-# In[28]:
+# In[26]:
 
 # The number of entries varies greatly depending on the station. Ridership is greatest for '34 ST-HERALD SQ' and
 # '34 ST-PENN STA'.
 
 
-# In[29]:
+# In[27]:
 
 df_sumbybotstat = df_sumbystat[:10]
 df_sumbybotstat.head(5)
 
 
-# In[30]:
+# In[28]:
 
 #plot_sumentbydow = ggplot(df_sumbybotstat, aes(x = 'station', y = 'ENTRIESn')) \
 #    + geom_bar(stat = 'identity') \
@@ -313,24 +313,24 @@ df_sumbybotstat.head(5)
 #plot_sumentbydow
 
 
-# In[31]:
+# In[29]:
 
 # Ridership is lowest for 'OXFORD-104 ST' and '215 ST'.
 
 
-# In[32]:
+# In[30]:
 
 df_sumentbydow = df_raw.groupby('day_week', as_index = False).sum()
 df_meanentbydow = df_raw.groupby('day_week', as_index = False).mean()
 
 
-# In[33]:
+# In[31]:
 
 plot_sumentbydow = ggplot(df_sumentbydow, aes(x = 'day_week', y = 'ENTRIESn_hourly'))     + geom_bar(stat = 'identity')     + ggtitle('Total Entries by Day of Week')     + xlab('Day of Week (0 = Monday)')     + ylab('Total Entries')
 plot_sumentbydow
 
 
-# In[34]:
+# In[32]:
 
 plot_meanentbydow = ggplot(df_meanentbydow, aes(x = 'day_week', y = 'ENTRIESn_hourly'))     + geom_bar(stat = 'identity')     + ggtitle('Average Entries by Day of Week')     + xlab('Day of Week (0 = Monday)')     + ylab('Average Entries')
 plot_meanentbydow
@@ -338,21 +338,21 @@ plot_meanentbydow
 
 # Total/average entry data over a single week shows that weekdays have greater ridership than weekends.
 
-# In[35]:
+# In[33]:
 
 df_sumentbyhr = df_raw.groupby('hour', as_index = False).sum()
 df_meanentbyhr = df_raw.groupby('hour', as_index = False).mean()
 
 
-# In[36]:
+# In[72]:
 
-plot_sumentbyhr = ggplot(df_sumentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly'))     + geom_bar(stat = 'identity')     + ggtitle('Total Entries by Hour of Day')     + xlab('Hour of Day (0 = 12:00am)')     + ylab('Total Entries')
+plot_sumentbyhr = ggplot(df_sumentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly'))     + geom_histogram(stat = 'identity')     + scale_x_continuous(limits = (-1,24), breaks = range(0,24))     + ggtitle('Total Entries by Hour of Day')     + xlab('Hour of Day (0 = 12:00am)')     + ylab('Total Entries')
 plot_sumentbyhr
 
 
-# In[37]:
+# In[73]:
 
-plot_meanentbyhr = ggplot(df_meanentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly'))     + geom_bar(stat = 'identity')     + ggtitle('Average Entries by Hour of Day')     + xlab('Hour of Day (0 = 12:00am)')     + ylab('Total Entries')
+plot_meanentbyhr = ggplot(df_meanentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly'))     + geom_bar(stat = 'identity')     + scale_x_continuous(limits = (-1,24), breaks = range(0,24))     + ggtitle('Average Entries by Hour of Day')     + xlab('Hour of Day (0 = 12:00am)')     + ylab('Total Entries')
 plot_meanentbyhr
 
 

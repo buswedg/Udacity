@@ -46,15 +46,15 @@ $( document ).ready(code_toggle);
 
 ####1.2 Why is this statistical test applicable to the dataset? In particular, consider the assumptions that the test is making about the distribution of ridership in the two samples. 
 
-The Mann-Whitney U-test was used to compare the mean ridership of rainy days vs non-rainy days. This test is suitable as 1) the underlying distributions are not normally distributed, and 2) the Mann-Whitney U-test is a non-parametric test which does not assume any particular distribution, as opposed to Welch’s t-test.
+The Mann-Whitney U-test was used to compare the ridership of rainy days vs non-rainy days. This test is suitable as 1) the underlying distributions are not normally distributed, and 2) the Mann-Whitney U-test is a non-parametric test which does not assume any particular distribution, as opposed to Welch’s t-test.
 
-A two-tailed test and hence a two-tailed P value was used. A two-tailed test is suitable since 1) it is not yet known which of the two means will be the greater or lessor, and 2) such a test is able to establish whether either of the two distributions tends to have greater values than the other.
+A two-tailed test and hence a two-tailed P value was used. A two-tailed test is suitable as such a test is able to establish whether either of the two distributions tends to have greater/lessor values than the other.
 
 The two-tailed P value for this test is .05 (5% significance level).
 
-Null Hypothesis: There 'is no significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days.
+Null Hypothesis: There 'is no significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days.
 
-Alternative Hypothesis: There 'is a significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days.
+Alternative Hypothesis: There 'is a significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days.
 
 Therefore, if (p * 2) < 0.05, we reject the null hypothesis.
 
@@ -310,7 +310,7 @@ df_norainent.std()
 
 
 
-The mean ridership for the rain group is higher than the non-rain group, however ridership datapoints for the rain group also have greater standard deviation than the non-rain group. Below forms the test for statistically significant difference between mean ridership of the two groups.
+The mean ridership for the rain group is higher than the non-rain group, however ridership datapoints for the rain group also have greater standard deviation than the non-rain group. Below forms the test for statistically significant difference between the distribution of ridership between the two groups.
 
 
 ```python
@@ -370,7 +370,7 @@ p
 
 
 
-We reject the Null Hypothesis that there 'is no significant difference' in population average ridership on rainy days compared to the average ridership on non-rainy days at the 5% significance level. (5.48e-06 < 0.05)
+We reject the null hypothesis that there 'is no significant difference' between the distribution of ridership on rainy days compared to the distribution of ridership on non-rainy days. We reject the null hypothesis at the 5% significance level. (5.48e-06 < 0.05). Note that we also found mean ridership of the rain group to be higher than the non-rain group as part of the descriptive statistics reported above. 
 
 ###Section 2. Linear Regression
 
@@ -392,7 +392,7 @@ OLS_weather: features included based on the expectation that:
 2) 'weekday': ridership varies based on weekdays vs. weekends (business vs. leisure transit).
 3) 'rain': ridership varies based on whether it has rained that day.
 4) 'fog': ridership varies based on whether there is fog.
-5) 'tempi': ridership vari
+5) 'tempi': ridership varies based on temperature.
 6) 'UNIT': there is a disparity between stations average ridership due to (for example) whether the station is located in a heavy/less populated area. (UNIT feature is a transformed dummy variable to account for higher/lower trafficked units.)
 
 
@@ -453,10 +453,10 @@ fit_noweather.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>  <td>   163.3</td>  
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 08 Sep 2015</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>   
+  <th>Date:</th>             <td>Wed, 09 Sep 2015</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>   
 </tr>
 <tr>
-  <th>Time:</th>                 <td>15:54:41</td>     <th>  Log-Likelihood:    </th> <td>-3.8730e+05</td>
+  <th>Time:</th>                 <td>20:11:48</td>     <th>  Log-Likelihood:    </th> <td>-3.8730e+05</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td> 42649</td>      <th>  AIC:               </th>  <td>7.751e+05</td> 
@@ -1242,10 +1242,10 @@ fit_weather.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th>  <td>   161.6</td>  
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 08 Sep 2015</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>   
+  <th>Date:</th>             <td>Wed, 09 Sep 2015</td> <th>  Prob (F-statistic):</th>   <td>  0.00</td>   
 </tr>
 <tr>
-  <th>Time:</th>                 <td>15:54:49</td>     <th>  Log-Likelihood:    </th> <td>-3.8728e+05</td>
+  <th>Time:</th>                 <td>20:11:53</td>     <th>  Log-Likelihood:    </th> <td>-3.8728e+05</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td> 42649</td>      <th>  AIC:               </th>  <td>7.750e+05</td> 
@@ -2019,7 +2019,7 @@ fit_weather.summary()
 
 The R^2 value for OLS_weather (including weather features) is 0.482. That is, just over 48% of the variation of number of ENTRIESn_hourly (hourly number of entries) can be explained by the included features: 'hour' (time of day), 'weekday' (day of week), 'rain' (if rain), 'fog' (if fog), 'tempi' (temperature) and 'UNIT' (accounting for the disparity in average ridership between stations).
 
-Since 'rain', 'fog' and 'tempi' were not found to significantly improve predictive power (R^2), OLS_noweather is selected as the final model. However, the low R^2 value of both models suggests caution should be exercised when using either to  generate a prediction of future ridership.
+Since 'rain', 'fog' and 'tempi' were not found to significantly improve predictive power (R^2), OLS_noweather is selected as the final model. However, the low R^2 value of both models suggests caution should be exercised when using either to generate a prediction of future ridership.
 
 ###Section 3. Visualization
 
@@ -2095,7 +2095,7 @@ plot_entbyrain
 
 
 
-    <ggplot: (57840269)>
+    <ggplot: (33850361)>
 
 
 
@@ -2492,7 +2492,7 @@ plot_sumentbydow
 
 
 
-    <ggplot: (57937047)>
+    <ggplot: (91868150)>
 
 
 
@@ -2513,7 +2513,7 @@ plot_meanentbydow
 
 
 
-    <ggplot: (32622000)>
+    <ggplot: (34294967)>
 
 
 
@@ -2528,7 +2528,8 @@ df_meanentbyhr = df_raw.groupby('hour', as_index = False).mean()
 
 ```python
 plot_sumentbyhr = ggplot(df_sumentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly')) \
-    + geom_bar(stat = 'identity') \
+    + geom_histogram(stat = 'identity') \
+    + scale_x_continuous(limits = (-1,24), breaks = range(0,24)) \
     + ggtitle('Total Entries by Hour of Day') \
     + xlab('Hour of Day (0 = 12:00am)') \
     + ylab('Total Entries')
@@ -2542,7 +2543,7 @@ plot_sumentbyhr
 
 
 
-    <ggplot: (33252826)>
+    <ggplot: (99752301)>
 
 
 
@@ -2550,6 +2551,7 @@ plot_sumentbyhr
 ```python
 plot_meanentbyhr = ggplot(df_meanentbyhr, aes(x = 'hour', y = 'ENTRIESn_hourly')) \
     + geom_bar(stat = 'identity') \
+    + scale_x_continuous(limits = (-1,24), breaks = range(0,24)) \
     + ggtitle('Average Entries by Hour of Day') \
     + xlab('Hour of Day (0 = 12:00am)') \
     + ylab('Total Entries')
@@ -2563,7 +2565,7 @@ plot_meanentbyhr
 
 
 
-    <ggplot: (83711548)>
+    <ggplot: (99749275)>
 
 
 
