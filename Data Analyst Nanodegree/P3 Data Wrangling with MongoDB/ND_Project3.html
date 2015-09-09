@@ -171,7 +171,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -199,7 +199,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[47]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[1]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <script>
@@ -300,7 +300,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
@@ -354,7 +354,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">re</span>
@@ -419,14 +419,14 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The below shows an audit the map file to return a list of contributing users.</p>
+<p>The below shows an audit the map file to return a list of contributing users. Note, only the first five users are shown.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
@@ -451,7 +451,7 @@ $( document ).ready(code_toggle);
 
 
 <span class="n">users</span> <span class="o">=</span> <span class="n">process_map</span><span class="p">(</span><span class="n">osmfilenm</span><span class="p">)</span>
-<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+<span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">users</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -464,732 +464,7 @@ $( document ).ready(code_toggle);
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>set([&apos;(*steve*)&apos;,
-     &apos;037adventure&apos;,
-     &apos;2hands&apos;,
-     &apos;6wheels&apos;,
-     &apos;AGreig&apos;,
-     &apos;Abner&apos;,
-     &apos;AdmiralTriggerHappy&apos;,
-     &apos;Aidan82&apos;,
-     &apos;Airwalk&apos;,
-     &apos;AlainMehl&apos;,
-     &apos;AlanGraham&apos;,
-     &apos;Albany Canucks&apos;,
-     &apos;Alex Kwiatkowski&apos;,
-     &apos;Alex McKee&apos;,
-     &apos;Alex-7&apos;,
-     &apos;AlexOnTheBus&apos;,
-     &apos;Andre68&apos;,
-     &apos;Andrew Gregory&apos;,
-     &apos;AndrewC&apos;,
-     &apos;AndrianaTreasure&apos;,
-     &apos;Andy69&apos;,
-     &apos;Anirudhk1&apos;,
-     &apos;Apfelmaennchen&apos;,
-     &apos;Aredhel&apos;,
-     &apos;Arjanr&apos;,
-     &apos;AshKyd&apos;,
-     &apos;Ats!c&apos;,
-     u&apos;Aurimas Fi\u0161eras&apos;,
-     &apos;AusAviator&apos;,
-     &apos;Aushiker&apos;,
-     &apos;B Lue&apos;,
-     &apos;BJ Beej&apos;,
-     &apos;Babstar&apos;,
-     &apos;BalancingBean&apos;,
-     &apos;Basso&apos;,
-     &apos;Batesy&apos;,
-     &apos;Batty&apos;,
-     &apos;Beach Manor Bed and Breakfast Perth&apos;,
-     &apos;Befrasimo&apos;,
-     &apos;Ben Caldwell&apos;,
-     &apos;Bess&apos;,
-     &apos;BiIbo&apos;,
-     &apos;BinaryMe&apos;,
-     &apos;Blackcat&apos;,
-     &apos;BlueMM&apos;,
-     &apos;Bluey&apos;,
-     &apos;BoLLo__&apos;,
-     &apos;Bob Hoskins&apos;,
-     &apos;Brendan_Cherry&apos;,
-     &apos;Brown33z&apos;,
-     &apos;Bryce C Nesbitt&apos;,
-     u&apos;B\xfcrste&apos;,
-     &apos;CAMS&apos;,
-     &apos;CB89&apos;,
-     &apos;Cadpete&apos;,
-     &apos;Cannington Exhibition Centre&apos;,
-     &apos;CartoDIA&apos;,
-     &apos;Charles Kottler&apos;,
-     &apos;Chris Parker&apos;,
-     &apos;ChrisRG&apos;,
-     &apos;ChristoRowley&apos;,
-     &apos;Ciela&apos;,
-     &apos;Claudius Henrichs&apos;,
-     &apos;Clinton Gladstone&apos;,
-     &apos;CloCkWeRX&apos;,
-     &apos;Condor_25&apos;,
-     &apos;Corinna Conte&apos;,
-     &apos;Coxyb76&apos;,
-     &apos;CyFo&apos;,
-     &apos;D Worsdell&apos;,
-     &apos;DJT&apos;,
-     &apos;Daeron&apos;,
-     &apos;Damyon&apos;,
-     &apos;Dan101&apos;,
-     &apos;DanRyan&apos;,
-     &apos;Daniel Truslove&apos;,
-     &apos;Daniel-&apos;,
-     &apos;Darren Sampson&apos;,
-     &apos;Dave Bills&apos;,
-     &apos;Dave Rave&apos;,
-     &apos;David_mds&apos;,
-     &apos;Davoz&apos;,
-     &apos;Deadmeat&apos;,
-     &apos;Deanhaus&apos;,
-     &apos;Deezza&apos;,
-     &apos;Delbo&apos;,
-     &apos;Denning&apos;,
-     &apos;DennisL&apos;,
-     &apos;Dero Bike Racks&apos;,
-     &apos;DevehJ&apos;,
-     &apos;Dirk Lohse&apos;,
-     &apos;Don H&apos;,
-     &apos;DoubleA&apos;,
-     &apos;Drewboy&apos;,
-     &apos;Duncan1&apos;,
-     &apos;Echo63&apos;,
-     &apos;Elias&apos;,
-     &apos;ElliottPlack&apos;,
-     &apos;Elwell&apos;,
-     &apos;Eric-N&apos;,
-     &apos;Evaredy&apos;,
-     &apos;FXST01&apos;,
-     &apos;Feet First Podiatry&apos;,
-     &apos;FireLordScans&apos;,
-     &apos;Fletty&apos;,
-     &apos;Frankst&apos;,
-     &apos;Frederik&apos;,
-     &apos;Fremantle Stay WA&apos;,
-     &apos;FreoLocal&apos;,
-     &apos;FunFrogFacePainting&apos;,
-     &apos;FvGordon&apos;,
-     &apos;GLXdazz55&apos;,
-     &apos;Gareth in Perth&apos;,
-     &apos;GaryWA&apos;,
-     &apos;GavinX&apos;,
-     &apos;Geogast&apos;,
-     &apos;Glen Prideaux&apos;,
-     &apos;Godzookee&apos;,
-     &apos;GregMackay&apos;,
-     &apos;Gregory J Smith&apos;,
-     &apos;Gyaos&apos;,
-     &apos;H3rBz&apos;,
-     &apos;Hagman&apos;,
-     &apos;Hanggini Pradani&apos;,
-     &apos;HeckAreWe&apos;,
-     &apos;Helifella&apos;,
-     &apos;HellsBells&apos;,
-     &apos;HolgerJeromin&apos;,
-     &apos;HomerT51&apos;,
-     &apos;Hoppyz&apos;,
-     &apos;HungryHellcat&apos;,
-     &apos;HybridAU&apos;,
-     &apos;I_Spy&apos;,
-     &apos;I_vanl&apos;,
-     &apos;Ian Banks&apos;,
-     &apos;Ian McKellar&apos;,
-     &apos;IanKulin&apos;,
-     &apos;Indra Budiman&apos;,
-     &apos;JKhoo&apos;,
-     &apos;James Livingston&apos;,
-     &apos;Jameswa21&apos;,
-     &apos;JansenCordero&apos;,
-     &apos;JarmanImaging&apos;,
-     &apos;JayKae&apos;,
-     &apos;JennyH&apos;,
-     &apos;Jester16&apos;,
-     &apos;Jezagee&apos;,
-     &apos;Jezzamezzamy&apos;,
-     &apos;Jim Langford&apos;,
-     &apos;JimmyAt&apos;,
-     &apos;JohnElston&apos;,
-     &apos;JohnSmith&apos;,
-     &apos;Johnshares&apos;,
-     &apos;Jon Bright&apos;,
-     &apos;Josef73&apos;,
-     &apos;Joshua King&apos;,
-     &apos;Joslin42&apos;,
-     &apos;Juffles&apos;,
-     &apos;Juffy&apos;,
-     &apos;Justin Bedo&apos;,
-     &apos;JustinBrennan&apos;,
-     &apos;KDE&apos;,
-     &apos;Kai Jaeger&apos;,
-     &apos;KarlLukan&apos;,
-     &apos;Ketki Bhagwat&apos;,
-     &apos;Kie723&apos;,
-     &apos;Killa&apos;,
-     &apos;Kirstyr4&apos;,
-     &apos;Knoxy&apos;,
-     &apos;LSRONG&apos;,
-     &apos;Lambretta&apos;,
-     &apos;Latze&apos;,
-     &apos;Lawn Gnome&apos;,
-     &apos;Leon K&apos;,
-     &apos;Liam Jones&apos;,
-     &apos;Little Brother&apos;,
-     &apos;Lloyd268&apos;,
-     &apos;Luis36995&apos;,
-     &apos;Lumina&apos;,
-     &apos;Luminesse&apos;,
-     &apos;Lungfish83&apos;,
-     &apos;MCC&apos;,
-     &apos;MDGPS&apos;,
-     &apos;MDe&apos;,
-     &apos;Macca27&apos;,
-     &apos;Manu1400&apos;,
-     &apos;Map_baker&apos;,
-     u&apos;Marcos Ra\xfal Carot&apos;,
-     &apos;Mark Bolton&apos;,
-     &apos;Markus B&apos;,
-     &apos;Markus59&apos;,
-     &apos;Mathbau&apos;,
-     &apos;Matt Didcoe&apos;,
-     &apos;Mauls&apos;,
-     &apos;Maxwell Robinson &amp; Phelps&apos;,
-     &apos;MaxwellKeeble&apos;,
-     &apos;Melmann&apos;,
-     &apos;Michael Neville&apos;,
-     &apos;MichaelCollinson&apos;,
-     &apos;MidGe48&apos;,
-     &apos;Mike Haydon&apos;,
-     &apos;Mistikal&apos;,
-     &apos;Modernian&apos;,
-     &apos;Morgz64&apos;,
-     &apos;Mr Shush&apos;,
-     &apos;Mr_Q_&apos;,
-     &apos;NBN Choice&apos;,
-     &apos;NE2&apos;,
-     &apos;NKX&apos;,
-     &apos;NaFenn&apos;,
-     &apos;NakedChris&apos;,
-     &apos;Narilus&apos;,
-     &apos;Narx&apos;,
-     &apos;NearMap Pty Ltd&apos;,
-     &apos;Neil Penman&apos;,
-     &apos;Neil Spence&apos;,
-     &apos;NeilMoseley&apos;,
-     &apos;Netzwolf&apos;,
-     &apos;Nichalp&apos;,
-     &apos;NickNewton&apos;,
-     &apos;Nicko&apos;,
-     &apos;Nikki G&apos;,
-     &apos;Northern Sun Solar Power&apos;,
-     &apos;Nuko&apos;,
-     &apos;ORYX&apos;,
-     &apos;OSMF Redaction Account&apos;,
-     &apos;OSMNZ&apos;,
-     &apos;OSMcartay&apos;,
-     &apos;Odilo&apos;,
-     &apos;OhrImport&apos;,
-     &apos;Oliver Cooksey&apos;,
-     &apos;Optimo&apos;,
-     &apos;Ori952&apos;,
-     &apos;Oscar Chee&apos;,
-     &apos;Otto (aka JohnV)&apos;,
-     &apos;PERcyclist&apos;,
-     &apos;Palitu&apos;,
-     &apos;PaulFisher&apos;,
-     &apos;Perey&apos;,
-     &apos;Perth Girl&apos;,
-     &apos;Perth a la Carte&apos;,
-     &apos;PerthBitcoinATM&apos;,
-     &apos;Perthpulse&apos;,
-     &apos;Pete Northrop&apos;,
-     &apos;Peter H&apos;,
-     &apos;Peter Kovesi&apos;,
-     &apos;Peter W34&apos;,
-     &apos;PeterDdeL&apos;,
-     &apos;PeterMcM&apos;,
-     &apos;Phillip Jubb&apos;,
-     &apos;PlaneMad&apos;,
-     &apos;ProfChaos&apos;,
-     &apos;ProfSmiles&apos;,
-     &apos;Q4004&apos;,
-     &apos;RM87&apos;,
-     &apos;Ramzes&apos;,
-     &apos;Ransom&apos;,
-     &apos;RationalTangle&apos;,
-     &apos;Redbusa07&apos;,
-     &apos;ReindeerNinja&apos;,
-     &apos;ReinerMeyer&apos;,
-     &apos;Rekanlovei&apos;,
-     &apos;RhianJ&apos;,
-     &apos;Rhodry Korb&apos;,
-     &apos;RichRico&apos;,
-     &apos;Richard Press&apos;,
-     &apos;Richard Stallard&apos;,
-     &apos;Riyaz Mukarram&apos;,
-     &apos;Rob83&apos;,
-     &apos;RobertH[AU]&apos;,
-     &apos;RodCub&apos;,
-     &apos;RodPinna&apos;,
-     &apos;RodinPerth&apos;,
-     &apos;Rodney&apos;,
-     &apos;Rolly4x4&apos;,
-     &apos;Ronald Lopez&apos;,
-     &apos;Ropino&apos;,
-     &apos;Rosscoe&apos;,
-     &apos;Rovastar&apos;,
-     &apos;Rowanh&apos;,
-     &apos;Rub21&apos;,
-     &apos;Rudy355&apos;,
-     &apos;RusscO&apos;,
-     &apos;Russkel&apos;,
-     &apos;Ryan AU&apos;,
-     &apos;S2333&apos;,
-     &apos;SDavies&apos;,
-     &apos;Sam Wilson&apos;,
-     &apos;SauloCavalcante&apos;,
-     &apos;Sci Anderson&apos;,
-     &apos;ScottDavis&apos;,
-     &apos;SeanMack&apos;,
-     &apos;ShadowCyclist&apos;,
-     &apos;ShannonWAC&apos;,
-     &apos;ShayneM&apos;,
-     &apos;SimHayes&apos;,
-     &apos;Simon Cox&apos;,
-     &apos;Simon Sacro&apos;,
-     &apos;Skippern&apos;,
-     &apos;Sleepyhead&apos;,
-     &apos;SmokyAu&apos;,
-     &apos;SomeoneElse&apos;,
-     &apos;Spindoc Bob&apos;,
-     &apos;Spindustries&apos;,
-     &apos;Stazza&apos;,
-     &apos;Stemby&apos;,
-     &apos;StevePetty&apos;,
-     &apos;Stevew1954&apos;,
-     &apos;Stu274&apos;,
-     &apos;StuartG&apos;,
-     &apos;StuartL84&apos;,
-     &apos;Suhaimi2&apos;,
-     &apos;Swamp Ig&apos;,
-     &apos;Syl&apos;,
-     &apos;SyneRyder&apos;,
-     &apos;T2000&apos;,
-     &apos;TRS-80&apos;,
-     &apos;Team Teri&apos;,
-     &apos;Ted Williamson&apos;,
-     &apos;Test360&apos;,
-     &apos;The Process&apos;,
-     &apos;The Sound Factory&apos;,
-     &apos;The Vines Avenue Guesthouse&apos;,
-     &apos;ThePondBarista&apos;,
-     &apos;Theodin&apos;,
-     &apos;Thewinchester&apos;,
-     &apos;TimU&apos;,
-     &apos;Timmi27&apos;,
-     &apos;Tom Brownlie&apos;,
-     &apos;Tom Layo&apos;,
-     &apos;Tonky&apos;,
-     &apos;Treadly&apos;,
-     &apos;Trev&apos;,
-     &apos;Trevor in Ashfield&apos;,
-     &apos;Trevski&apos;,
-     &apos;UPnAWAY82&apos;,
-     &apos;UWAStudentGuild&apos;,
-     &apos;Ulmon Community&apos;,
-     &apos;Uncoordinated&apos;,
-     &apos;Unusual User Name&apos;,
-     &apos;Vader_oz&apos;,
-     &apos;Viet PHUNG&apos;,
-     &apos;Wakin&apos;,
-     u&apos;Walter Schl\xf6gl&apos;,
-     &apos;WanderingAus&apos;,
-     &apos;Warin61&apos;,
-     &apos;WarpSpider74&apos;,
-     &apos;WarrenP&apos;,
-     &apos;Wasps1&apos;,
-     &apos;Wayfarer9&apos;,
-     &apos;WayneLau&apos;,
-     &apos;Welshie&apos;,
-     &apos;Witters00&apos;,
-     &apos;Wood0362&apos;,
-     &apos;Woz&apos;,
-     &apos;Wozzich&apos;,
-     &apos;XJA&apos;,
-     &apos;Yoda&apos;,
-     &apos;Zesh&apos;,
-     &apos;Zignig&apos;,
-     &apos;Zulu99&apos;,
-     &apos;a_isaeva&apos;,
-     &apos;aaronsta&apos;,
-     &apos;abel801&apos;,
-     &apos;acv_critter&apos;,
-     &apos;adam111316&apos;,
-     &apos;adjuva&apos;,
-     &apos;adonm&apos;,
-     &apos;adonmetcalfe&apos;,
-     &apos;adriank&apos;,
-     &apos;aharvey&apos;,
-     &apos;aighes&apos;,
-     &apos;al-khowarizmi&apos;,
-     &apos;alester&apos;,
-     &apos;amanda dr&apos;,
-     &apos;amdjong&apos;,
-     &apos;andjam5&apos;,
-     &apos;andrew_dennison&apos;,
-     &apos;andrewpmk&apos;,
-     &apos;andrewpur&apos;,
-     &apos;andygol&apos;,
-     &apos;anthonyp0808&apos;,
-     &apos;antiussentiment&apos;,
-     &apos;asdfasdfasdfasdf&apos;,
-     &apos;astrant82&apos;,
-     &apos;awici&apos;,
-     &apos;back4osm&apos;,
-     &apos;bahnpirat&apos;,
-     &apos;baradhili&apos;,
-     &apos;batou&apos;,
-     &apos;beldin&apos;,
-     &apos;benshaw&apos;,
-     &apos;bilbster&apos;,
-     &apos;blebo&apos;,
-     &apos;blinken&apos;,
-     &apos;bluedragon&apos;,
-     &apos;bob-techniq&apos;,
-     &apos;bob64&apos;,
-     &apos;bonnydog&apos;,
-     &apos;botdidier2020&apos;,
-     &apos;brainwad&apos;,
-     &apos;browny_au&apos;,
-     &apos;busdriver12&apos;,
-     &apos;busybeexp&apos;,
-     &apos;cainechennatt&apos;,
-     &apos;calfarome&apos;,
-     &apos;cambalam&apos;,
-     &apos;cambodia&apos;,
-     &apos;cameron&apos;,
-     &apos;cameronb50&apos;,
-     &apos;caughtyou&apos;,
-     &apos;cdei&apos;,
-     &apos;cgu66&apos;,
-     &apos;chaesubrot&apos;,
-     &apos;chainsaw&apos;,
-     &apos;chdr&apos;,
-     &apos;chewym&apos;,
-     &apos;chippy&apos;,
-     &apos;chrisdennis&apos;,
-     &apos;christopherlam&apos;,
-     &apos;chultink&apos;,
-     &apos;cipherj&apos;,
-     &apos;colin_090&apos;,
-     &apos;coops92&apos;,
-     &apos;crislippi&apos;,
-     &apos;csdf&apos;,
-     &apos;csjohnst&apos;,
-     &apos;cvl&apos;,
-     &apos;d1g51&apos;,
-     &apos;dan-dan&apos;,
-     &apos;dannykath&apos;,
-     &apos;daveemtb&apos;,
-     &apos;davidrollinson&apos;,
-     &apos;davkni&apos;,
-     &apos;davoque&apos;,
-     &apos;dawilkieway&apos;,
-     &apos;dazr87&apos;,
-     &apos;dcorunna&apos;,
-     &apos;dcp&apos;,
-     &apos;dcs&apos;,
-     &apos;deanjevans&apos;,
-     &apos;derden&apos;,
-     &apos;dhx1&apos;,
-     &apos;dibouski&apos;,
-     &apos;dmgroom&apos;,
-     &apos;dmgroom_ct&apos;,
-     &apos;dnbastian&apos;,
-     &apos;domecoffees&apos;,
-     &apos;drgis&apos;,
-     &apos;dsafjnneijd&apos;,
-     &apos;dugite-code&apos;,
-     &apos;dvaey&apos;,
-     &apos;eBin&apos;,
-     &apos;ediyes&apos;,
-     &apos;ekul444&apos;,
-     &apos;elbatrop&apos;,
-     &apos;elemist&apos;,
-     &apos;elysianmapping&apos;,
-     &apos;emacsen_dwg&apos;,
-     &apos;emj&apos;,
-     &apos;epicsauce&apos;,
-     &apos;erinlee&apos;,
-     &apos;eross57&apos;,
-     &apos;etoastw&apos;,
-     &apos;explorer59&apos;,
-     &apos;fakeaccount2428&apos;,
-     &apos;fcremer&apos;,
-     &apos;flamed&apos;,
-     &apos;flangegas&apos;,
-     &apos;flashjones&apos;,
-     &apos;fluffylucy&apos;,
-     &apos;foodmapper&apos;,
-     &apos;freietonne-db&apos;,
-     &apos;fx99&apos;,
-     &apos;gb2516&apos;,
-     &apos;gdal&apos;,
-     &apos;geltmar&apos;,
-     &apos;geodreieck4711&apos;,
-     &apos;gerhard81&apos;,
-     &apos;gfpzzz&apos;,
-     &apos;ghoppy&apos;,
-     &apos;girlinabox&apos;,
-     &apos;goatcamp&apos;,
-     &apos;goldfishxyz&apos;,
-     &apos;gorj&apos;,
-     &apos;gormur&apos;,
-     &apos;grendel&apos;,
-     &apos;grizz123&apos;,
-     &apos;gromit60&apos;,
-     &apos;gvmsia&apos;,
-     &apos;gwillow&apos;,
-     &apos;hadry&apos;,
-     &apos;hank knah&apos;,
-     &apos;harshbutfair&apos;,
-     &apos;hashil&apos;,
-     &apos;hclark&apos;,
-     &apos;helent55&apos;,
-     &apos;ianbbear&apos;,
-     &apos;inas&apos;,
-     &apos;ivyclark&apos;,
-     &apos;iwantedue&apos;,
-     &apos;j_c_n&apos;,
-     &apos;james marcus&apos;,
-     &apos;jamesbryant&apos;,
-     &apos;jayb998&apos;,
-     &apos;jbyway&apos;,
-     &apos;jinalfoflia&apos;,
-     &apos;jjduncs&apos;,
-     &apos;jmlieon&apos;,
-     &apos;johndpaw&apos;,
-     &apos;johnrobot&apos;,
-     &apos;johnsmorgan&apos;,
-     &apos;jordanbrock&apos;,
-     &apos;josh64&apos;,
-     &apos;josho9&apos;,
-     &apos;jtb1965&apos;,
-     &apos;juniorwaugh&apos;,
-     &apos;karitotp&apos;,
-     &apos;katpatuka&apos;,
-     &apos;kerosin&apos;,
-     &apos;kesaph&apos;,
-     &apos;kevin mattsson&apos;,
-     &apos;kiemce&apos;,
-     &apos;kisaa&apos;,
-     &apos;kristianlawrence&apos;,
-     &apos;krw&apos;,
-     &apos;kshackleton&apos;,
-     &apos;kurtk&apos;,
-     &apos;lancep&apos;,
-     &apos;laughton_andrew&apos;,
-     &apos;lauradavidow&apos;,
-     &apos;lcmortensen&apos;,
-     &apos;leahcim&apos;,
-     &apos;liftarn&apos;,
-     &apos;locke&apos;,
-     &apos;loewenthal&apos;,
-     &apos;loubla&apos;,
-     &apos;lrhill&apos;,
-     &apos;mackerski&apos;,
-     &apos;maggot27&apos;,
-     &apos;major_eagle_eye&apos;,
-     &apos;malcolmh&apos;,
-     &apos;malenki&apos;,
-     &apos;mani100&apos;,
-     &apos;mappingisfun2&apos;,
-     &apos;mark_rat&apos;,
-     &apos;markus_g&apos;,
-     &apos;martotomato&apos;,
-     &apos;matt1legend&apos;,
-     &apos;matthewsheffield&apos;,
-     &apos;mawueth&apos;,
-     &apos;maxerickson&apos;,
-     &apos;mayad&apos;,
-     &apos;mccomatt&apos;,
-     &apos;mdk&apos;,
-     &apos;mdp553&apos;,
-     &apos;meihou&apos;,
-     &apos;melb_guy&apos;,
-     &apos;mic1&apos;,
-     &apos;mikedufty&apos;,
-     &apos;mikesala&apos;,
-     &apos;mikey_218&apos;,
-     &apos;milesrd&apos;,
-     &apos;mischaael&apos;,
-     &apos;missinglink&apos;,
-     &apos;mjulius&apos;,
-     &apos;mkg&apos;,
-     &apos;mkj&apos;,
-     &apos;mkuis&apos;,
-     &apos;modellerau&apos;,
-     &apos;morb_au&apos;,
-     &apos;morpheus_ws&apos;,
-     &apos;mos6510&apos;,
-     &apos;mparry&apos;,
-     &apos;mrpulley&apos;,
-     &apos;mtholen&apos;,
-     &apos;nailsub&apos;,
-     &apos;narazarth&apos;,
-     &apos;nhawk&apos;,
-     &apos;nikhilprabhakar&apos;,
-     &apos;njd27&apos;,
-     &apos;nm7s9&apos;,
-     &apos;northernNed&apos;,
-     &quot;o&apos;cholio&quot;,
-     &apos;oldenburg69&apos;,
-     &apos;om3g4&apos;,
-     &apos;one4all05&apos;,
-     &apos;orbut&apos;,
-     &apos;orderinchaos&apos;,
-     &apos;orion&apos;,
-     &apos;osmfd&apos;,
-     &apos;ozhamlet&apos;,
-     &apos;ozhound&apos;,
-     &apos;pabs&apos;,
-     &apos;paulg&apos;,
-     &apos;paulreidau&apos;,
-     &apos;pdaemon&apos;,
-     &apos;petdr&apos;,
-     &apos;petersfreeman&apos;,
-     &apos;phonetracks329387&apos;,
-     &apos;pingoo&apos;,
-     &apos;pjeaje&apos;,
-     &apos;plebian&apos;,
-     &apos;poindexter888&apos;,
-     &apos;poodle&apos;,
-     &apos;porjo&apos;,
-     &apos;pringle&apos;,
-     &apos;qbabooba&apos;,
-     &apos;raymond_loo&apos;,
-     &apos;rbuch703&apos;,
-     &apos;red5alex&apos;,
-     &apos;redmeetsblue&apos;,
-     &apos;reodge&apos;,
-     &apos;resistance&apos;,
-     &apos;revert_au&apos;,
-     &apos;richard worl&apos;,
-     &apos;robandwend&apos;,
-     &apos;robbage&apos;,
-     &apos;robgeb&apos;,
-     &apos;robisacommonusername&apos;,
-     &apos;robsyme&apos;,
-     &apos;roleyscout&apos;,
-     &apos;romge&apos;,
-     &apos;rp1220&apos;,
-     &apos;rroland60&apos;,
-     &apos;rsbarbosa&apos;,
-     &apos;rubai&apos;,
-     &apos;rund&apos;,
-     &apos;russells&apos;,
-     &apos;russj79&apos;,
-     &apos;s7209&apos;,
-     &apos;saaie&apos;,
-     &apos;salix01&apos;,
-     &apos;samely&apos;,
-     &apos;samps&apos;,
-     &apos;sb9576&apos;,
-     &apos;scai&apos;,
-     &apos;scottreed&apos;,
-     &apos;screenbr&apos;,
-     &apos;sfox&apos;,
-     &apos;shinjiman&apos;,
-     &apos;shravan91&apos;,
-     &apos;shthed&apos;,
-     &apos;siege65&apos;,
-     &apos;simex&apos;,
-     &apos;simmo&apos;,
-     &apos;simonkilbane&apos;,
-     &apos;skinsman&apos;,
-     &apos;sleeker&apos;,
-     &apos;smaprs&apos;,
-     &apos;soko&apos;,
-     &apos;spatialriq&apos;,
-     &apos;sperac01&apos;,
-     &apos;sprocket1597&apos;,
-     &apos;srividya_c&apos;,
-     &apos;staffijol&apos;,
-     &apos;steerage250&apos;,
-     &apos;stephen_le_page&apos;,
-     &apos;stephensharpaust&apos;,
-     &apos;steve91&apos;,
-     &apos;stuartskinner&apos;,
-     &apos;supamappa4123&apos;,
-     &apos;superfriendlyaviator&apos;,
-     &apos;swannie&apos;,
-     &apos;t-mil&apos;,
-     &apos;tadanet3&apos;,
-     &apos;tangoforsyth&apos;,
-     &apos;tapira&apos;,
-     &apos;thalass&apos;,
-     &apos;the Cannington&apos;,
-     &apos;thedavidthomas&apos;,
-     &apos;theophrastos&apos;,
-     &apos;thequickbrown&apos;,
-     &apos;tianan&apos;,
-     &apos;tiger&apos;,
-     &apos;tiger_old&apos;,
-     &apos;tinnedspicedham&apos;,
-     &apos;tinom&apos;,
-     &apos;tixuwuoz&apos;,
-     &apos;tlaslett&apos;,
-     &apos;tnreynolds&apos;,
-     &apos;toffo&apos;,
-     &apos;tom0485&apos;,
-     &apos;topstone&apos;,
-     &apos;tsg20100&apos;,
-     &apos;tubes41&apos;,
-     &apos;u14183&apos;,
-     &apos;uboot&apos;,
-     &apos;ulfl&apos;,
-     &apos;ultraBLUE&apos;,
-     &apos;updater&apos;,
-     &apos;user_1734&apos;,
-     &apos;user_5359&apos;,
-     &apos;user_7568&apos;,
-     &apos;vanpuk&apos;,
-     &apos;vkungys&apos;,
-     &apos;vlemaic&apos;,
-     &apos;vstm&apos;,
-     &apos;waosm&apos;,
-     &apos;watto70&apos;,
-     &apos;weirdunclebob&apos;,
-     &apos;werner2101&apos;,
-     &apos;wheelmap_android&apos;,
-     &apos;wheelmap_visitor&apos;,
-     &apos;wiedergaenger&apos;,
-     &apos;wieland&apos;,
-     &apos;wildmyron&apos;,
-     &apos;will2bill&apos;,
-     &apos;will_map&apos;,
-     &apos;willhops&apos;,
-     &apos;wilsonwaters&apos;,
-     &apos;wintersportler&apos;,
-     &apos;woodpeck&apos;,
-     &apos;woodpeck_repair&apos;,
-     &apos;wtdh&apos;,
-     &apos;wvdp&apos;,
-     &apos;xybot&apos;,
-     &apos;ypid&apos;,
-     &apos;z-dude&apos;,
-     &apos;zacmccormick&apos;,
-     &apos;zagam&apos;,
-     &apos;zaizone&apos;,
-     &apos;zeiphon&apos;,
-     &apos;zibbyc&apos;,
-     u&apos;\xc5ndrew&apos;,
-     u&apos;\xc6var Arnfj\xf6r\xf0 Bjarmason&apos;])
+<pre>[&apos;Lumina&apos;, &apos;explorer59&apos;, &apos;loewenthal&apos;, &apos;OSMcartay&apos;, &apos;resistance&apos;]
 </pre>
 </div>
 </div>
@@ -1203,18 +478,19 @@ $( document ).ready(code_toggle);
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The below shows an audit the map file to return a list of street names.</p>
+<p>The below shows an audit the map file to return a list of street names. Note, only the first five street names are shown.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
+<span class="kn">import</span> <span class="nn">collections</span>
 <span class="kn">import</span> <span class="nn">pprint</span>
 
 <span class="n">osmfilenm</span> <span class="o">=</span> <span class="s">&#39;data/perth_australia.osm&#39;</span>
@@ -1245,11 +521,16 @@ $( document ).ready(code_toggle);
 <span class="k">def</span> <span class="nf">print_sorted_dict</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="n">keys</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
     <span class="n">keys</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">:</span>
-        <span class="n">v</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-        <span class="k">print</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s">: </span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> 
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">):</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>    
+            <span class="n">v</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+            <span class="k">print</span> <span class="s">&quot;</span><span class="si">%s</span><span class="s">: </span><span class="si">%d</span><span class="s">, &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span>
 
-
+        
 <span class="n">streets</span> <span class="o">=</span> <span class="n">audit</span><span class="p">(</span><span class="n">osmfilenm</span><span class="p">)</span>
 <span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">streets</span><span class="p">)</span>
 </pre></div>
@@ -1264,104 +545,8 @@ $( document ).ready(code_toggle);
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Ave: 6
-Avenue: 328
-Avenuet: 1
-Beaufort: 1
-Boulevard: 185
-Boulevarde: 23
-Broadway: 2
-Circle: 62
-Circuit: 31
-Close: 129
-Corner: 9
-Court: 304
-Courtyard: 12
-Cove: 18
-Cres: 2
-Crescent: 108
-Cross: 153
-Crossway: 21
-Crs: 1
-CRT: 7
-Crt: 8
-Ct: 2
-Dale: 9
-Drive: 391
-drive: 1
-E/ENT: 3
-E/Ent: 1
-East: 7
-Edge: 8
-Elbow: 55
-Entrance: 153
-ENTRANCE: 1
-Esplanade: 9
-Fairway: 2
-Gap: 14
-Garden: 8
-Gardens: 135
-Gate: 3
-gate: 1
-Gates: 2
-Gelderland: 21
-Grade: 13
-Grange: 1
-Green: 22
-Grove: 87
-Haven: 3
-Heights: 3
-Highgate: 1
-Highway: 89
-Hill: 25
-Lane: 163
-Laneway): 1
-LANEWAY): 1
-Link: 3
-Loop: 29
-Mews: 112
-Morrison: 1
-North: 9
-Oxford: 1
-Parade: 45
-Parkway: 5
-Pass: 48
-Place: 306
-plaza: 1
-Promenade: 2
-Quarry: 10
-Quays: 1
-Ramble: 13
-Rd: 13
-RD: 14
-Retreat: 74
-Ridgeway: 19
-Rise: 98
-Road: 936
-Road,: 1
-Sava: 6
-Square: 54
-St: 20
-ST: 10
-st: 1
-St): 1
-Street: 1203
-Tce: 1
-Terrace: 96
-Terriace: 1
-Trail: 12
-Turn: 3
-University: 16
-Vale: 32
-View: 35
-Vista: 1
-W/ENT: 3
-WA: 1
-Way: 399
-WAY: 11
-West: 12
-Wharf: 1
-None
+<pre>Ave: 6,  Avenue: 328,  Avenuet: 1,  Beaufort: 1,  Boulevard: 185, None
+
 </pre>
 </div>
 </div>
@@ -1391,10 +576,11 @@ None
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
 <span class="kn">import</span> <span class="nn">collections</span>
 
 <span class="n">osmfilenm</span> <span class="o">=</span> <span class="s">&#39;data/perth_australia.osm&#39;</span>
@@ -1560,7 +746,7 @@ Magazine Ct =&gt; Magazine Court
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
@@ -1660,6 +846,166 @@ WA 6111 =&gt; 6000
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="c"># %load dataparse.py</span>
+<span class="c"># %%writefile dataparse.py</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">codecs</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="kn">as</span> <span class="nn">ET</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pprint</span>
+
+<span class="n">osmfilenm</span> <span class="o">=</span> <span class="s">&#39;data/perth_australia.osm&#39;</span>
+
+<span class="n">lower</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;^([a-z]|_)*$&#39;</span><span class="p">)</span>
+<span class="n">lower_colon</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;^([a-z]|_)*:([a-z]|_)*$&#39;</span><span class="p">)</span>
+<span class="n">problemchars</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;[=\+/&amp;&lt;&gt;;</span><span class="se">\&#39;</span><span class="s">&quot;\?%#$@\,\. \t\r\n]&#39;</span><span class="p">)</span>
+
+<span class="n">CREATED</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&quot;version&quot;</span><span class="p">,</span> <span class="s">&quot;changeset&quot;</span><span class="p">,</span> <span class="s">&quot;timestamp&quot;</span><span class="p">,</span> <span class="s">&quot;user&quot;</span><span class="p">,</span> <span class="s">&quot;uid&quot;</span><span class="p">]</span>
+
+<span class="n">street_name_map</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;ave&quot;</span> <span class="p">:</span> <span class="s">&quot;Avenue&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;avenuet&quot;</span> <span class="p">:</span> <span class="s">&quot;Avenue&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;cres&quot;</span> <span class="p">:</span> <span class="s">&quot;Crescent&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;crs&quot;</span> <span class="p">:</span> <span class="s">&quot;Cross&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;crt&quot;</span> <span class="p">:</span> <span class="s">&quot;Court&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;ct&quot;</span> <span class="p">:</span> <span class="s">&quot;Court&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;rd&quot;</span> <span class="p">:</span> <span class="s">&quot;Road&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;st&quot;</span> <span class="p">:</span> <span class="s">&quot;Street&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;tce&quot;</span> <span class="p">:</span> <span class="s">&quot;Terrace&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;terriace&quot;</span> <span class="p">:</span> <span class="s">&quot;Terrace&quot;</span><span class="p">,</span>
+                    <span class="s">&quot;wa&quot;</span> <span class="p">:</span> <span class="s">&quot;Way&quot;</span><span class="p">}</span>
+
+<span class="n">street_name_replace</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;Fitzgerald St (corner View St)&quot;</span> <span class="p">:</span> <span class="s">&quot;Fitzgerald Street&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;Tarata Wy E/Ent&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;TARATA WY E/ENT&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;TARATA WY W/ENT&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;TARATA WY E/ENT (LANEWAY)&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;TARATA WAY E/ENT&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;TARATA WAY SW ENTRANCE&quot;</span> <span class="p">:</span> <span class="s">&quot;Tarata Way&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;E Linden Way (In Laneway)&quot;</span> <span class="p">:</span> <span class="s">&quot;Linden Way&quot;</span> <span class="p">}</span>
+
+<span class="n">postal_code_range</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6000</span><span class="p">,</span><span class="mi">6999</span><span class="p">]</span>
+<span class="n">postal_code_default</span> <span class="o">=</span> <span class="mi">6000</span>
+
+
+<span class="k">def</span> <span class="nf">is_street_name</span><span class="p">(</span><span class="n">elem</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s">&#39;k&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;addr:street&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">is_postal_code</span><span class="p">(</span><span class="n">elem</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s">&#39;k&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;addr:postcode&quot;</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">update_street_name</span><span class="p">(</span><span class="n">street_name</span><span class="p">,</span> <span class="n">street_name_map</span><span class="p">,</span> <span class="n">street_name_replace</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">street_name</span> <span class="ow">in</span> <span class="n">street_name_replace</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">new_name</span> <span class="o">=</span> <span class="n">street_name_replace</span><span class="p">[</span><span class="n">street_name</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">new_name</span>
+    
+    <span class="n">after</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">street_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&quot; &quot;</span><span class="p">):</span>
+        <span class="n">part</span> <span class="o">=</span> <span class="n">part</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s">&quot;,\.&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+               
+        <span class="k">if</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">street_name_map</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">part</span> <span class="o">=</span> <span class="n">street_name_map</span><span class="p">[</span><span class="n">part</span><span class="p">]</span>
+        <span class="n">after</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+    
+    <span class="k">return</span> <span class="s">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">after</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">update_postal_code</span><span class="p">(</span><span class="n">postal_code</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">postal_code_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nb">int</span><span class="p">(</span><span class="n">postal_code</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">postal_code_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">postal_code</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">postal_code_default</span>
+
+
+<span class="k">def</span> <span class="nf">shape_element</span><span class="p">(</span><span class="n">e</span><span class="p">):</span>
+    <span class="n">node</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node</span><span class="p">[</span><span class="s">&#39;created&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node</span><span class="p">[</span><span class="s">&#39;pos&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s">&quot;way&quot;</span><span class="p">:</span>
+        <span class="n">node</span><span class="p">[</span><span class="s">&#39;node_refs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s">&quot;node&quot;</span> <span class="ow">or</span> <span class="n">e</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s">&quot;way&quot;</span> <span class="p">:</span>
+        <span class="n">node</span><span class="p">[</span><span class="s">&#39;type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">tag</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">attrib</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+            <span class="c">#latitude</span>
+            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s">&#39;lat&#39;</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">lat</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                    <span class="n">node</span><span class="p">[</span><span class="s">&#39;pos&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="c">#longitude</span>
+            <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s">&#39;lon&#39;</span><span class="p">:</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">lon</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                    <span class="n">node</span><span class="p">[</span><span class="s">&#39;pos&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">lon</span>
+                <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="k">elif</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">CREATED</span><span class="p">:</span>
+                <span class="n">node</span><span class="p">[</span><span class="s">&#39;created&#39;</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">node</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="s">&#39;tag&#39;</span><span class="p">):</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">tag</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s">&#39;k&#39;</span><span class="p">]</span>
+            <span class="n">v</span> <span class="o">=</span> <span class="n">tag</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s">&#39;v&#39;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">problemchars</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">elif</span> <span class="n">lower_colon</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+                <span class="n">k_split</span> <span class="o">=</span> <span class="n">k</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;:&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">k_split</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;addr&#39;</span><span class="p">:</span>
+                    <span class="n">k_item</span> <span class="o">=</span> <span class="n">k_split</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="s">&#39;address&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">node</span><span class="p">:</span>
+                        <span class="n">node</span><span class="p">[</span><span class="s">&#39;address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+                    <span class="c">#streets</span>
+                    <span class="k">if</span> <span class="n">k_item</span> <span class="o">==</span> <span class="s">&#39;street&#39;</span><span class="p">:</span>
+                        <span class="n">v</span> <span class="o">=</span> <span class="n">update_street_name</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">street_name_map</span><span class="p">,</span> <span class="n">street_name_replace</span><span class="p">)</span>                    
+                    <span class="c">#postal codes</span>
+                    <span class="k">if</span> <span class="n">k_item</span> <span class="o">==</span> <span class="s">&#39;postcode&#39;</span><span class="p">:</span>
+                        <span class="n">v</span> <span class="o">=</span> <span class="n">update_postal_code</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                    <span class="n">node</span><span class="p">[</span><span class="s">&#39;address&#39;</span><span class="p">][</span><span class="n">k_item</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+                    <span class="k">continue</span>
+            <span class="n">node</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">tag</span> <span class="o">==</span> <span class="s">&quot;way&quot;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">e</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="s">&#39;nd&#39;</span><span class="p">):</span>
+                <span class="n">ref</span> <span class="o">=</span> <span class="n">n</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s">&#39;ref&#39;</span><span class="p">]</span>
+                <span class="n">node</span><span class="p">[</span><span class="s">&#39;node_refs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ref</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">node</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">None</span>
+
+
+<span class="k">def</span> <span class="nf">process_map</span><span class="p">(</span><span class="n">file_in</span><span class="p">,</span> <span class="n">pretty</span> <span class="o">=</span> <span class="bp">False</span><span class="p">):</span>
+    <span class="n">file_out</span> <span class="o">=</span> <span class="s">&quot;{0}.json&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file_in</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">with</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_out</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fo</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ET</span><span class="o">.</span><span class="n">iterparse</span><span class="p">(</span><span class="n">file_in</span><span class="p">):</span>
+            <span class="n">el</span> <span class="o">=</span> <span class="n">shape_element</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">el</span><span class="p">:</span>
+                <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">pretty</span><span class="p">:</span>
+                    <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">fo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">el</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">process_map</span><span class="p">(</span><span class="n">osmfilenm</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -1672,7 +1018,7 @@ WA 6111 =&gt; 6000
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
@@ -1756,11 +1102,10 @@ WA 6111 =&gt; 6000
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
-<span class="c">#from data import *</span>
 
 <span class="k">def</span> <span class="nf">get_db</span><span class="p">(</span><span class="n">db_name</span><span class="p">):</span>
     <span class="n">client</span> <span class="o">=</span> <span class="n">MongoClient</span><span class="p">(</span><span class="s">&#39;localhost:27017&#39;</span><span class="p">)</span>
@@ -1768,10 +1113,15 @@ WA 6111 =&gt; 6000
     <span class="k">return</span> <span class="n">db</span>
 
 
-<span class="n">db</span> <span class="o">=</span> <span class="n">get_db</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
-<span class="c">#data = process_map(osmfilenm, True)</span>
+<span class="k">def</span> <span class="nf">add_data</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+   <span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
 
-<span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
+
+<span class="n">db</span> <span class="o">=</span> <span class="n">get_db</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">delete_many</span><span class="p">({})</span>
+
+<span class="c">#data = process_map(osmfilenm, True)</span>
+<span class="n">add_data</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1784,1018 +1134,9 @@ WA 6111 =&gt; 6000
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Anaconda\lib\site-packages\ipykernel\__main__.py:13: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
+<pre>C:\Anaconda\lib\site-packages\ipykernel\__main__.py:10: DeprecationWarning: insert is deprecated. Use insert_one or insert_many instead.
 </pre>
 </div>
-</div>
-
-<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[ObjectId(&apos;55ed6f634c859c4d50e89cba&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cbb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cbc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cbd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cbe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cbf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cc9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cca&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ccb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ccc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ccd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cce&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ccf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cd9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cda&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cdb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cdc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cdd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cde&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cdf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ce9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cea&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ceb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cec&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ced&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cee&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cef&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cf9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cfa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cfb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cfc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cfd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cfe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89cff&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d00&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d01&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d02&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d03&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d04&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d05&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d06&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d07&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d08&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d09&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d0f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d10&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d11&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d12&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d13&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d14&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d15&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d16&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d17&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d18&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d19&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d1f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d20&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d21&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d22&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d23&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d24&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d25&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d26&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d27&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d28&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d29&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d2f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d30&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d31&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d32&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d33&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d34&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d35&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d36&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d37&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d38&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d39&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d3f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d40&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d41&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d42&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d43&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d44&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d45&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d46&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d47&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d48&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d49&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d4f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d50&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d51&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d52&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d53&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d54&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d55&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d56&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d57&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d58&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d59&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d5f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d60&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d61&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d62&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d63&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d64&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d65&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d66&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d67&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d68&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d69&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d6f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d70&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d71&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d72&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d73&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d74&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d75&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d76&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d77&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d78&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d79&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d7f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d80&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d81&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d82&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d83&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d84&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d85&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d86&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d87&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d88&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d89&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d8f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d90&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d91&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d92&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d93&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d94&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d95&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d96&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d97&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d98&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d99&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89d9f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89da9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89daa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dab&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dac&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dad&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dae&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89daf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89db9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dba&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dbb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dbc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dbd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dbe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dbf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dc9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dca&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dcb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dcc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dcd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dce&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dcf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dd9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dda&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ddb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ddc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ddd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dde&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ddf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89de9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dea&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89deb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dec&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ded&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dee&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89def&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89df9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dfa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dfb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dfc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dfd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dfe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89dff&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e00&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e01&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e02&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e03&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e04&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e05&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e06&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e07&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e08&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e09&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e0f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e10&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e11&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e12&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e13&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e14&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e15&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e16&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e17&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e18&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e19&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e1f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e20&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e21&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e22&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e23&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e24&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e25&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e26&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e27&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e28&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e29&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e2f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e30&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e31&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e32&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e33&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e34&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e35&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e36&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e37&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e38&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e39&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e3f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e40&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e41&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e42&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e43&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e44&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e45&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e46&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e47&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e48&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e49&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e4f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e50&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e51&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e52&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e53&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e54&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e55&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e56&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e57&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e58&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e59&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e5f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e60&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e61&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e62&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e63&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e64&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e65&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e66&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e67&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e68&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e69&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e6f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e70&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e71&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e72&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e73&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e74&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e75&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e76&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e77&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e78&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e79&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e7f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e80&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e81&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e82&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e83&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e84&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e85&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e86&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e87&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e88&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e89&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e8f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e90&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e91&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e92&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e93&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e94&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e95&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e96&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e97&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e98&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e99&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89e9f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ea9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eaa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eab&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eac&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ead&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eae&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eaf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eb9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eba&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ebb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ebc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ebd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ebe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ebf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ec9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eca&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ecb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ecc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ecd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ece&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ecf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ed9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eda&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89edb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89edc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89edd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ede&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89edf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ee9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eea&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eeb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eec&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eed&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eee&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eef&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ef9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89efa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89efb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89efc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89efd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89efe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89eff&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f00&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f01&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f02&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f03&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f04&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f05&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f06&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f07&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f08&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f09&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f0f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f10&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f11&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f12&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f13&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f14&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f15&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f16&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f17&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f18&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f19&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f1f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f20&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f21&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f22&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f23&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f24&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f25&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f26&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f27&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f28&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f29&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f2f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f30&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f31&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f32&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f33&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f34&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f35&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f36&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f37&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f38&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f39&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f3f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f40&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f41&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f42&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f43&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f44&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f45&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f46&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f47&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f48&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f49&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f4f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f50&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f51&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f52&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f53&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f54&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f55&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f56&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f57&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f58&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f59&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f5f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f60&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f61&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f62&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f63&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f64&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f65&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f66&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f67&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f68&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f69&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f6f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f70&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f71&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f72&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f73&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f74&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f75&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f76&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f77&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f78&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f79&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f7f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f80&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f81&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f82&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f83&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f84&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f85&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f86&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f87&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f88&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f89&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f8f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f90&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f91&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f92&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f93&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f94&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f95&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f96&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f97&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f98&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f99&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89f9f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fa9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89faa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fab&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fac&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fad&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fae&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89faf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fb9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fba&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fbb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fbc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fbd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fbe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fbf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fc9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fca&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fcb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fcc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fcd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fce&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fcf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fd9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fda&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fdb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fdc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fdd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fde&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fdf&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fe9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fea&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89feb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fec&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fed&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fee&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fef&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff1&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff2&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff3&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff4&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff5&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff6&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff7&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff8&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ff9&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ffa&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ffb&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ffc&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ffd&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89ffe&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e89fff&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a000&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a001&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a002&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a003&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a004&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a005&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a006&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a007&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a008&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a009&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a00f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a010&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a011&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a012&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a013&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a014&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a015&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a016&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a017&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a018&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a019&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a01f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a020&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a021&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a022&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a023&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a024&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a025&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a026&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a027&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a028&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a029&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a02f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a030&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a031&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a032&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a033&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a034&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a035&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a036&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a037&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a038&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a039&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a03f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a040&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a041&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a042&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a043&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a044&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a045&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a046&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a047&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a048&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a049&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a04f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a050&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a051&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a052&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a053&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a054&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a055&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a056&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a057&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a058&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a059&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a05f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a060&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a061&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a062&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a063&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a064&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a065&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a066&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a067&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a068&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a069&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a06f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a070&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a071&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a072&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a073&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a074&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a075&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a076&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a077&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a078&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a079&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a07f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a080&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a081&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a082&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a083&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a084&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a085&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a086&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a087&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a088&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a089&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a08f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a090&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a091&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a092&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a093&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a094&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a095&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a096&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a097&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a098&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a099&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09a&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09b&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09c&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09d&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09e&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a09f&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a0a0&apos;),
- ObjectId(&apos;55ed6f634c859c4d50e8a0a1&apos;),
- ...]</pre>
-</div>
-
 </div>
 
 </div>
@@ -2816,38 +1157,20 @@ WA 6111 =&gt; 6000
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>File size comparison:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>perth_australia.osm: 204 MB (214,742,096 bytes)
+<p>File size comparison:
+perth_australia.osm: 204 MB (214,742,096 bytes)
 perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Total number of documents in database:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Total number of documents in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">()</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -2858,11 +1181,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Total number of documents in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2248470</pre>
+<pre>1124235</pre>
 </div>
 
 </div>
@@ -2870,23 +1200,14 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of nodes in database:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;type&#39;</span><span class="p">:</span><span class="s">&#39;node&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of nodes in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;type&#39;</span><span class="p">:</span><span class="s">&#39;node&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -2897,11 +1218,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of nodes in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>2000794</pre>
+<pre>1000397</pre>
 </div>
 
 </div>
@@ -2909,23 +1237,14 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of ways in database:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;type&#39;</span><span class="p">:</span><span class="s">&#39;way&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of ways in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;type&#39;</span><span class="p">:</span><span class="s">&#39;way&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -2936,11 +1255,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of ways in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>247600</pre>
+<pre>123800</pre>
 </div>
 
 </div>
@@ -2948,23 +1274,14 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of cafe's in database:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;cafe&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of cafe&#39;s in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;cafe&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -2975,11 +1292,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[46]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of cafe&apos;s in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>516</pre>
+<pre>258</pre>
 </div>
 
 </div>
@@ -2987,23 +1311,14 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of cinema's in database:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;cinema&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of cinema&#39;s in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;cinema&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -3014,11 +1329,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[42]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of cinema&apos;s in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>36</pre>
+<pre>18</pre>
 </div>
 
 </div>
@@ -3026,23 +1348,14 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Number of bank's in database:</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;bank&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of bank&#39;s in database:&quot;</span>
+<span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">find</span><span class="p">({</span><span class="s">&#39;amenity&#39;</span><span class="p">:</span><span class="s">&#39;bank&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -3053,11 +1366,18 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[43]:</div>
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Number of bank&apos;s in database:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[17]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>138</pre>
+<pre>69</pre>
 </div>
 
 </div>
@@ -3068,7 +1388,7 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">pymongo</span> <span class="kn">import</span> <span class="n">MongoClient</span>
@@ -3125,22 +1445,13 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>User with highest post count:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_post_user</span><span class="p">())))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Number of unique users who have made posts:&quot;</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">distinct</span><span class="p">(</span><span class="s">&#39;created.user&#39;</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -3153,7 +1464,45 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{u&apos;count&apos;: 725322, u&apos;_id&apos;: u&apos;SDavies&apos;}]
+<pre>Number of unique users who have made posts:
+</pre>
+</div>
+</div>
+
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>829</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;User with highest post count:&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_post_user</span><span class="p">())))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>User with highest post count:
+[{u&apos;count&apos;: 362661, u&apos;_id&apos;: u&apos;SDavies&apos;}]
 </pre>
 </div>
 </div>
@@ -3162,22 +1511,13 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Top three users by post count:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_three_post_users</span><span class="p">())))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Top three users by post count:&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_three_post_users</span><span class="p">())))</span>
 </pre></div>
 
 </div>
@@ -3190,7 +1530,8 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{u&apos;count&apos;: 725322, u&apos;_id&apos;: u&apos;SDavies&apos;}, {u&apos;count&apos;: 300128, u&apos;_id&apos;: u&apos;browny_au&apos;}, {u&apos;count&apos;: 155564, u&apos;_id&apos;: u&apos;sb9576&apos;}]
+<pre>Top three users by post count:
+[{u&apos;count&apos;: 362661, u&apos;_id&apos;: u&apos;SDavies&apos;}, {u&apos;count&apos;: 150064, u&apos;_id&apos;: u&apos;browny_au&apos;}, {u&apos;count&apos;: 77782, u&apos;_id&apos;: u&apos;sb9576&apos;}]
 </pre>
 </div>
 </div>
@@ -3199,22 +1540,13 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Count of users who have made a single post:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">single_post_users</span><span class="p">())))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Count of users who have made a single post:&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">single_post_users</span><span class="p">())))</span>
 </pre></div>
 
 </div>
@@ -3227,7 +1559,8 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{u&apos;num_users&apos;: 169, u&apos;_id&apos;: 2}]
+<pre>Count of users who have made a single post:
+[{u&apos;num_users&apos;: 169, u&apos;_id&apos;: 1}]
 </pre>
 </div>
 </div>
@@ -3236,22 +1569,13 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Top five amenity by count:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_five_amenity</span><span class="p">())))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Top five amenity by count:&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_five_amenity</span><span class="p">())))</span>
 </pre></div>
 
 </div>
@@ -3264,7 +1588,8 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{u&apos;count&apos;: 4486, u&apos;_id&apos;: u&apos;parking&apos;}, {u&apos;count&apos;: 926, u&apos;_id&apos;: u&apos;school&apos;}, {u&apos;count&apos;: 592, u&apos;_id&apos;: u&apos;fast_food&apos;}, {u&apos;count&apos;: 586, u&apos;_id&apos;: u&apos;bench&apos;}, {u&apos;count&apos;: 542, u&apos;_id&apos;: u&apos;restaurant&apos;}]
+<pre>Top five amenity by count:
+[{u&apos;count&apos;: 2243, u&apos;_id&apos;: u&apos;parking&apos;}, {u&apos;count&apos;: 463, u&apos;_id&apos;: u&apos;school&apos;}, {u&apos;count&apos;: 296, u&apos;_id&apos;: u&apos;fast_food&apos;}, {u&apos;count&apos;: 293, u&apos;_id&apos;: u&apos;bench&apos;}, {u&apos;count&apos;: 271, u&apos;_id&apos;: u&apos;restaurant&apos;}]
 </pre>
 </div>
 </div>
@@ -3273,22 +1598,13 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Top five fast food by count:</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_five_fastfood</span><span class="p">())))</span>
+<div class=" highlight hl-ipython2"><pre><span class="k">print</span> <span class="s">&quot;Top five fast food by count:&quot;</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">perth</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">pipeline</span><span class="o">.</span><span class="n">top_five_fastfood</span><span class="p">())))</span>
 </pre></div>
 
 </div>
@@ -3301,7 +1617,8 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{u&apos;count&apos;: 62, u&apos;_id&apos;: None}, {u&apos;count&apos;: 48, u&apos;_id&apos;: u&apos;Subway&apos;}, {u&apos;count&apos;: 42, u&apos;_id&apos;: u&quot;McDonald&apos;s&quot;}, {u&apos;count&apos;: 30, u&apos;_id&apos;: u&apos;Red Rooster&apos;}, {u&apos;count&apos;: 30, u&apos;_id&apos;: u&apos;KFC&apos;}]
+<pre>Top five fast food by count:
+[{u&apos;count&apos;: 31, u&apos;_id&apos;: None}, {u&apos;count&apos;: 24, u&apos;_id&apos;: u&apos;Subway&apos;}, {u&apos;count&apos;: 21, u&apos;_id&apos;: u&quot;McDonald&apos;s&quot;}, {u&apos;count&apos;: 15, u&apos;_id&apos;: u&apos;Red Rooster&apos;}, {u&apos;count&apos;: 15, u&apos;_id&apos;: u&apos;KFC&apos;}]
 </pre>
 </div>
 </div>
@@ -3321,7 +1638,7 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c">#!/usr/bin/env python</span>
@@ -3388,7 +1705,9 @@ perth_australia.osm.json: 320 MB (335,878,944 bytes)</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Overall, I didnt have too much trouble processing the dataset. There were no 'problemchars' identified as part of the first pass. Based on my memory of Perth, most of the reported amenity counts seem reasonable, however caution should be exercised when interpreting the presented results as the completeness of the data is unknown. Finally, I did not get a chance to exercise MonogDB's geospatial querying, however the original dataset contains a large amount of latitude/longitude data.</p>
+<p>Overall, I didnt have too much trouble processing the dataset. There were no 'problemchars' identified as part of the first pass and the dataset was generally clean. Based on my memory of Perth, most of the reported amenity counts seem reasonable, however caution should be exercised when interpreting the presented results as the completeness of the data is unknown. For example, there were a large number of reported fast_food amenity which had no _id.</p>
+<p>There are a number of options for improving data completeness. OpenStreetMap.org could integrate with a greater amount of mobile applications and allow automatic upload tagged/GPS locations to be provided by users. Users could be ranked on the OpenStreetMap.org website based on the number of uploads provided in order to provide additional incentive.</p>
+<p>Finally, I did not get a chance to exercise MonogDB's geospatial querying, however the original dataset contains a large amount of latitude/longitude data, so this is one potential option to expand on the analysis.</p>
 
 </div>
 </div>

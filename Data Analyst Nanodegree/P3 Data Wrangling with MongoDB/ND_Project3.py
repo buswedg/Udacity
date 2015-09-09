@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[47]:
+# In[1]:
 
 from IPython.display import HTML
 
@@ -37,7 +37,7 @@ $( document ).ready(code_toggle);
 
 # In order to audit the perth_australia.osm file, the map file was first processed to find tag properties. The output generated below is a dictionary with tag name as the key and number of times this tag can be found.
 
-# In[1]:
+# In[2]:
 
 import xml.etree.ElementTree as ET
 import collections
@@ -61,7 +61,7 @@ pprint.pprint(tags)
 
 # Each tag was checked against a string of valid keys in MongoDB in order to identify whether there are any problematic characters.
 
-# In[2]:
+# In[3]:
 
 import re
 import xml.etree.ElementTree as ET
@@ -101,9 +101,9 @@ keys = process_map(osmfilenm)
 pprint.pprint(keys)
 
 
-# The below shows an audit the map file to return a list of contributing users.
+# The below shows an audit the map file to return a list of contributing users. Note, only the first five users are shown.
 
-# In[7]:
+# In[4]:
 
 import xml.etree.ElementTree as ET
 import pprint
@@ -127,15 +127,16 @@ def process_map(filename):
 
 
 users = process_map(osmfilenm)
-pprint.pprint(users)
+pprint.pprint(list(users)[0:5])
 
 
-# The below shows an audit the map file to return a list of street names.
+# The below shows an audit the map file to return a list of street names. Note, only the first five street names are shown.
 
-# In[23]:
+# In[5]:
 
+import re
 import xml.etree.ElementTree as ET
-from collections import defaultdict
+import collections
 import pprint
 
 osmfilenm = 'data/perth_australia.osm'
@@ -166,11 +167,16 @@ def audit(filename):
 def print_sorted_dict(d):
     keys = d.keys()
     keys = sorted(keys, key=lambda s: s.lower())
+    i = 0
     for k in keys:
-        v = d[k]
-        print "%s: %d" % (k, v) 
+        i += 1
+        if (i > 5):
+            break
+        else:    
+            v = d[k]
+            print "%s: %d, " % (k, v),
 
-
+        
 streets = audit(osmfilenm)
 pprint.pprint(streets)
 
@@ -179,8 +185,9 @@ pprint.pprint(streets)
 
 # A number of street name abbreviations and errors were identified from the street name audit. In order to correct these for consistency, a list of expected street names were prepared and checked against. All street names which failed to match against the expected list were replaced with proposed correct names. A list of the identified street name errors and proposed changes are shown below.
 
-# In[24]:
+# In[6]:
 
+import re
 import xml.etree.ElementTree as ET
 import collections
 
@@ -269,7 +276,7 @@ for st_type, ways in ret_st_types.iteritems():
 
 # A number of postal code errors were also found within the original dataset. Each postcode was checked against a correct range (6000 to 6999), with errors replaced with a default code of 6000. Again, a list of the identified incorrect postal codes and proposed changes are shown below.
 
-# In[25]:
+# In[7]:
 
 import xml.etree.ElementTree as ET
 import collections
@@ -325,9 +332,161 @@ for ways in ret_codes.iteritems():
 
 # ####Creating the .json map file
 
+# In[8]:
+
+# %load dataparse.py
+# %%writefile dataparse.py
+
+import re
+import codecs
+import xml.etree.ElementTree as ET
+import json
+import pprint
+
+osmfilenm = 'data/perth_australia.osm'
+
+lower = re.compile(r'^([a-z]|_)*$')
+lower_colon = re.compile(r'^([a-z]|_)*:([a-z]|_)*$')
+problemchars = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]')
+
+CREATED = [ "version", "changeset", "timestamp", "user", "uid"]
+
+street_name_map = { "ave" : "Avenue",
+                    "avenuet" : "Avenue",
+                    "cres" : "Crescent",
+                    "crs" : "Cross",
+                    "crt" : "Court",
+                    "ct" : "Court",
+                    "rd" : "Road",
+                    "st" : "Street",
+                    "tce" : "Terrace",
+                    "terriace" : "Terrace",
+                    "wa" : "Way"}
+
+street_name_replace = { "Fitzgerald St (corner View St)" : "Fitzgerald Street",
+                        "Tarata Wy E/Ent" : "Tarata Way",
+                        "TARATA WY E/ENT" : "Tarata Way",
+                        "TARATA WY W/ENT" : "Tarata Way",
+                        "TARATA WY E/ENT (LANEWAY)" : "Tarata Way",
+                        "TARATA WAY E/ENT" : "Tarata Way",
+                        "TARATA WAY SW ENTRANCE" : "Tarata Way",
+                        "E Linden Way (In Laneway)" : "Linden Way" }
+
+postal_code_range = [6000,6999]
+postal_code_default = 6000
+
+
+def is_street_name(elem):
+    return (elem.attrib['k'] == "addr:street")
+
+
+def is_postal_code(elem):
+    return (elem.attrib['k'] == "addr:postcode")
+
+
+def update_street_name(street_name, street_name_map, street_name_replace):
+    if street_name in street_name_replace.keys():
+        new_name = street_name_replace[street_name]
+        return new_name
+    
+    after = []
+    for part in street_name.split(" "):
+        part = part.strip(",\.").lower()
+               
+        if part in street_name_map.keys():
+            part = street_name_map[part]
+        after.append(part.capitalize())
+    
+    return " ".join(after)
+
+
+def update_postal_code(postal_code):
+    try:
+        if not (postal_code_range[0] <= int(postal_code) <= postal_code_range[1]):
+            raise ValueError
+        else:
+            return int(postal_code)
+    except ValueError:
+        return postal_code_default
+
+
+def shape_element(e):
+    node = {}
+    node['created'] = {}
+    node['pos'] = [0,0]
+    if e.tag == "way":
+        node['node_refs'] = []
+    if e.tag == "node" or e.tag == "way" :
+        node['type'] = e.tag
+        for k, v in e.attrib.iteritems():
+            #latitude
+            if k == 'lat':
+                try:
+                    lat = float(v)
+                    node['pos'][0] = lat
+                except ValueError:
+                    pass
+            #longitude
+            elif k == 'lon':
+                try:
+                    lon = float(v)
+                    node['pos'][1] = lon
+                except ValueError:
+                    pass
+            elif k in CREATED:
+                node['created'][k] = v
+            else:
+                node[k] = v
+        for tag in e.iter('tag'):
+            k = tag.attrib['k']
+            v = tag.attrib['v']
+            if problemchars.match(k):
+                continue
+            elif lower_colon.match(k):
+                k_split = k.split(':')
+                if k_split[0] == 'addr':
+                    k_item = k_split[1]
+                    if 'address' not in node:
+                        node['address'] = {}
+                    #streets
+                    if k_item == 'street':
+                        v = update_street_name(v, street_name_map, street_name_replace)                    
+                    #postal codes
+                    if k_item == 'postcode':
+                        v = update_postal_code(v)
+                    node['address'][k_item] = v
+                    continue
+            node[k] = v
+        if e.tag == "way":
+            for n in e.iter('nd'):
+                ref = n.attrib['ref']
+                node['node_refs'].append(ref);
+        return node
+    else:
+        return None
+
+
+def process_map(file_in, pretty = False):
+    file_out = "{0}.json".format(file_in)
+    data = []
+    with codecs.open(file_out, "w") as fo:
+        for _, element in ET.iterparse(file_in):
+            el = shape_element(element)
+            if el:
+                data.append(el)
+                if pretty:
+                    fo.write(json.dumps(el, indent=2)+"\n")
+                else:
+                    fo.write(json.dumps(el) + "\n")
+    return data
+
+
+data = process_map(osmfilenm, True)
+
+
 # Check first five entries to see if data matches what is expected.
 
-# In[28]:
+# In[9]:
 
 pprint.pprint(data[0:5])
 
@@ -336,10 +495,9 @@ pprint.pprint(data[0:5])
 
 # ####Load data into MongoDB instance
 
-# In[29]:
+# In[11]:
 
 from pymongo import MongoClient
-#from data import *
 
 def get_db(db_name):
     client = MongoClient('localhost:27017')
@@ -347,62 +505,60 @@ def get_db(db_name):
     return db
 
 
-db = get_db('test')
-#data = process_map(osmfilenm, True)
+def add_data(data):
+   [db.perth.insert(e) for e in data]
 
-[db.perth.insert(e) for e in data]
+
+db = get_db('test')
+db.perth.delete_many({})
+
+#data = process_map(osmfilenm, True)
+add_data(data)
 
 
 # ####Database structure
 
 # File size comparison:
-
 # perth_australia.osm: 204 MB (214,742,096 bytes)
 # perth_australia.osm.json: 320 MB (335,878,944 bytes)
 
-# Total number of documents in database:
+# In[12]:
 
-# In[31]:
-
+print "Total number of documents in database:"
 db.perth.find().count()
 
 
-# Number of nodes in database:
+# In[13]:
 
-# In[32]:
-
+print "Number of nodes in database:"
 db.perth.find({'type':'node'}).count()
 
 
-# Number of ways in database:
+# In[14]:
 
-# In[33]:
-
+print "Number of ways in database:"
 db.perth.find({'type':'way'}).count()
 
 
-# Number of cafe's in database:
+# In[15]:
 
-# In[46]:
-
+print "Number of cafe's in database:"
 db.perth.find({'amenity':'cafe'}).count()
 
 
-# Number of cinema's in database:
+# In[16]:
 
-# In[42]:
-
+print "Number of cinema's in database:"
 db.perth.find({'amenity':'cinema'}).count()
 
 
-# Number of bank's in database:
+# In[17]:
 
-# In[43]:
-
+print "Number of bank's in database:"
 db.perth.find({'amenity':'bank'}).count()
 
 
-# In[35]:
+# In[18]:
 
 from pymongo import MongoClient
 from pprint import pprint
@@ -453,44 +609,45 @@ class pipe_list(object):
 pipeline = pipe_list()
 
 
-# User with highest post count:
+# In[19]:
 
-# In[36]:
+print "Number of unique users who have made posts:"
+len(db.perth.distinct('created.user'))
 
+
+# In[20]:
+
+print "User with highest post count:"
 print(list(db.perth.aggregate(pipeline.top_post_user())))
 
 
-# Top three users by post count:
+# In[21]:
 
-# In[37]:
-
+print "Top three users by post count:"
 print(list(db.perth.aggregate(pipeline.top_three_post_users())))
 
 
-# Count of users who have made a single post:
+# In[22]:
 
-# In[38]:
-
+print "Count of users who have made a single post:"
 print(list(db.perth.aggregate(pipeline.single_post_users())))
 
 
-# Top five amenity by count:
+# In[23]:
 
-# In[40]:
-
+print "Top five amenity by count:"
 print(list(db.perth.aggregate(pipeline.top_five_amenity())))
 
 
-# Top five fast food by count:
+# In[24]:
 
-# In[41]:
-
+print "Top five fast food by count:"
 print(list(db.perth.aggregate(pipeline.top_five_fastfood())))
 
 
 # ####Create a sample database
 
-# In[48]:
+# In[25]:
 
 #!/usr/bin/env python
 
@@ -531,7 +688,11 @@ with open(SAMPLE_FILE, 'wb') as output:
 
 # ###5.0 Conclusion
 
-# Overall, I didnt have too much trouble processing the dataset. There were no 'problemchars' identified as part of the first pass. Based on my memory of Perth, most of the reported amenity counts seem reasonable, however caution should be exercised when interpreting the presented results as the completeness of the data is unknown. Finally, I did not get a chance to exercise MonogDB's geospatial querying, however the original dataset contains a large amount of latitude/longitude data.
+# Overall, I didnt have too much trouble processing the dataset. There were no 'problemchars' identified as part of the first pass and the dataset was generally clean. Based on my memory of Perth, most of the reported amenity counts seem reasonable, however caution should be exercised when interpreting the presented results as the completeness of the data is unknown. For example, there were a large number of reported fast_food amenity which had no _id.
+# 
+# There are a number of options for improving data completeness. OpenStreetMap.org could integrate with a greater amount of mobile applications and allow automatic upload tagged/GPS locations to be provided by users. Users could be ranked on the OpenStreetMap.org website based on the number of uploads provided in order to provide additional incentive.
+# 
+# Finally, I did not get a chance to exercise MonogDB's geospatial querying, however the original dataset contains a large amount of latitude/longitude data, so this is one potential option to expand on the analysis.
 
 # ###References
 
