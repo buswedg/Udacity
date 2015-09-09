@@ -8,7 +8,7 @@ This repository holds results for the Udacity Nanodegree Project: Make Effective
 
 
 ###Data
-Flight delay statistics for this project were originally sourced from the Bureau of Transportation Statistics. The dataset contains 15 statistics on airports located within the USA, arranged by time and airport. This formed the primary dataset for this project, however additional data was also obtained from Openflights (airport latitude and longitude data) which was used to plot the location of each airport on the USA map. More information on each dataset and their source can be found in the Appendix.
+Flight delay statistics for this project were originally sourced from the Bureau of Transportation Statistics. The dataset contains 15 statistics on airports located within the USA, arranged by time and airport. This formed the primary dataset for this project, however additional data was also obtained from Openflights (airport latitude and longitude data) which was used to plot the location of each airport on the USA map. More information on each dataset and their source can be found in the data.Rmd file within this repo.
 
 
 ###Summary
