@@ -1,0 +1,208 @@
+---
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, 
+                      fig.height = 8, 
+                      fig.path = 'figure/',
+                      echo = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE)
+```
+#Make Effective Data Visualization
+###Project: data
+
+
+###Data
+Airport delay statistics (Bureau of Transportation Statistics):
+Dataset obtained from: [Dataset link](http://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp)
+
+Airport information:
+
+* carrier: Airline code.
+* carrier_name: Airline name.
+* airport: Airport code.
+* airport_name: Airport name.
+
+Airport statistics:
+
+* arr_flights: Number of flights which arrived at the airport.
+* arr_del15: Number of flights delayed (>= 15minutes late).
+* carrier_ct: Number of flights delayed due to air carrier (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.).
+* weather_ct: Number of flights delayed due to weather.
+* nas_ct: Number of flights delayed due to National Aviation System (e.g. non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control).
+* security_ct: Number of flights delayed due to security (e.g. evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas).
+* late_aircraft_ct: Number of flights delayed due to a previous flight using the same aircraft being late.
+* arr_cancelled: Number of cancelled flights.
+* arr_diverted: Number of diverted flights.
+* arr_delay: Total time (minutes) of delayed flights.
+* carrier_delay: Total time (minutes) of delayed flights due to air carrier.
+* weather_delay: Total time (minutes) of delayed flights due to weather.
+* nas_delay: Total time (minutes) of delayed flights due to National Aviation System.
+* security_delay: Total time (minutes) of delayed flights due to security.
+* late_aircraft_delay: Total time (minutes) of delayed flights due to a previous flight using the same aircraft being late.
+
+Airport Database (OpenFlights):
+Dataset obtained from: [Dataset link](http://openflights.org/data.html)
+
+Airport Database:
+
+* Airport ID: Unique OpenFlights identifier for this airport.
+* Name: Name of airport. May or may not contain the City name.
+* City: Main city served by airport. May be spelled differently from Name.
+* Country: Country or territory where airport is located.
+* airport/FAA: 3-letter FAA code, for airports located in Country "United States of America". 3-letter airport code, for all other airports. Blank if not assigned.
+* ICAO: 4-letter ICAO code.
+* Blank: if not assigned.
+* Latitude: Decimal degrees, usually to six significant digits. Negative is South, positive is North.
+* Longitude: Decimal degrees, usually to six significant digits. Negative is West, positive is East.
+* Altitude: In feet.
+* Timezone: Hours offset from UTC. Fractional hours are expressed as decimals, eg. India is 5.5.
+* DST: Daylight savings time. One of E (Europe), A (US/Canada), S (South America), O (Australia), Z (New Zealand), N (None) or U (Unknown). See also: Help: Time
+* Tz database time zone: Timezone in "tz" (Olson) format, eg. "America/Los_Angeles". 
+
+Routes Database (OpenFlights):
+Dataset obtained from: [Dataset link](http://openflights.org/data.html)
+
+* Airline: 2-letter (airport) or 3-letter (ICAO) code of the airline.
+* Airline ID: Unique OpenFlights identifier for airline (see Airline).
+* Source airport: 3-letter (airport) or 4-letter (ICAO) code of the source airport.
+* Source airport ID: Unique OpenFlights identifier for source airport (see Airport)
+* Destination airport: 3-letter (airport) or 4-letter (ICAO) code of the destination airport.
+* Destination airport ID: Unique OpenFlights identifier for destination airport (see Airport)
+* Codeshare: "Y" if this flight is a codeshare (that is, not operated by Airline, but another carrier), empty otherwise.
+* Stops: Number of stops on this flight ("0" for direct)
+* Equipment: 3-letter codes for plane type(s) generally used on this flight, separated by spaces.
+
+
+###1. Loading Packages/ Data
+```{r, echo = FALSE}
+for (package in c('plyr')) {
+  
+  if (!require(package, character.only = TRUE, quietly = FALSE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+  
+}
+```
+
+Load the full Bureau of Transportation Statistics dataset.
+```{r}
+df.raw <- read.csv("data/415580818_112014_2820_airline_delay_causes.csv", header = TRUE, na.strings = c("NA", ""), stringsAsFactors = FALSE)
+df_airdelays <- df.raw
+df_airdelays[is.na(df_airdelays)] <- 0
+```
+
+Load the airport code, latitude and longitude variables from the OpenFlights Airport Database.
+```{r}
+df.raw <- read.csv("data/airports.dat", header = FALSE, na.strings = c("NA", "NaN", "\\N", ""), stringsAsFactors = FALSE)
+#df_airports <- df.raw
+df_airports <- df.raw[df.raw[, 4] == "United States", ]
+df_airports[is.na(df_airports)] <- 0
+df_airports <- df_airports[, c(2, 5, 7, 8)]
+colnames(df_airports) <- c("airport_name", "airport", "latitude", "longitude")
+```
+
+Load the airport route origin and destination codes from theOpenFlights Route Database.
+```{r}
+df.raw <- read.csv("data/routes.dat", header = FALSE, na.strings = c("NA", "NaN", "\\N", ""), stringsAsFactors = FALSE)
+df_airroutes <- df.raw
+df_airroutes[is.na(df_airroutes)] <- 0
+df_airroutes <- df_airroutes[, c(3, 5)]
+colnames(df_airroutes) <- c("origin", "destination")
+df_airroutes <- unique(df_airroutes[, c("origin", "destination")])
+```
+
+###2. Pre-process the Data
+Ensure that airport codes match between each dataset. Drop any entries which do not appear in all three datasets.
+```{r}
+#Ensure common index between datasets (better way to do this?):
+for (i in 1:2) {
+
+  df_airdelays <- df_airdelays[(df_airdelays$airport %in% df_airports$airport), ]
+  df_airdelays <- df_airdelays[(df_airdelays$airport %in% df_airroutes$origin), ]
+  df_airdelays <- df_airdelays[(df_airdelays$airport %in% df_airroutes$destination), ]
+  
+  df_airports <- df_airports[(df_airports$airport %in% df_airroutes$origin), ]
+  df_airports <- df_airports[(df_airports$airport %in% df_airroutes$destination), ]
+  df_airports <- df_airports[(df_airports$airport %in% df_airdelays$airport), ]
+  
+  df_airroutes <- df_airroutes[(df_airroutes$origin %in% df_airports$airport), ]
+  df_airroutes <- df_airroutes[(df_airroutes$origin %in% df_airdelays$airport), ]
+  df_airroutes <- df_airroutes[(df_airroutes$destination %in% df_airports$airport), ]
+  df_airroutes <- df_airroutes[(df_airroutes$destination %in% df_airdelays$airport), ]
+
+}
+```
+
+Create flight delay summary metrics
+```{r}
+df_sumairdelays <- ddply(df_airdelays, .(airport), summarize,
+  arr_flights = sum(arr_flights),
+  arr_del15 = sum(arr_del15),
+  carrier_ct = sum(carrier_ct),
+  weather_ct = sum(X.weather_ct),
+  nas_ct = sum(nas_ct),
+  security_ct = sum(security_ct),
+  late_aircraft_ct = sum(late_aircraft_ct))
+```
+
+Create annual flight delay summary metrics
+```{r}
+df_annairdelays <- ddply(df_airdelays, .(year, airport, airport_name), summarize,
+  arr_flights = sum(arr_flights),
+  arr_del15 = sum(arr_del15),
+  carrier_ct = sum(carrier_ct),
+  weather_ct = sum(X.weather_ct),
+  nas_ct = sum(nas_ct),
+  security_ct = sum(security_ct),
+  late_aircraft_ct = sum(late_aircraft_ct))
+```
+
+Create airports dataset
+```{r}
+temp1 <- data.frame(year = numeric(),
+   airport = character(),
+   airport_name = character(),
+   latitude = numeric(),
+   longitude = numeric(),
+   delay_type = numeric(),
+   delay_prop = numeric())
+
+df_lbl <- c("Air Carrier", "Weather", "NAS", "Security", "Previous Flight")
+df_col <- c("carrier_ct", "weather_ct", "nas_ct", "security_ct", "late_aircraft_ct")
+
+
+for (i in 1:length(df_lbl)) {
+  
+  temp2 <- df_annairdelays
+  temp2$delay_type <- df_lbl[i]
+  temp2$delay_prop <- df_annairdelays[[df_col[i]]] / df_annairdelays$arr_flights
+  
+  for (i in 1:nrow(temp2)) {
+    
+    airport <- temp2[i, "airport"]
+    temp2[i, "latitude"] <- df_airports[which(df_airports$airport == airport), 3]
+    temp2[i, "longitude"] <- df_airports[which(df_airports$airport == airport), 4]
+    
+  }
+  
+  temp2 <- temp2[, c(1, 2, 3, 13, 14, 11, 12)]
+  
+  temp1 <- rbind(as.matrix(temp1), as.matrix(temp2))
+  
+}
+
+df_airports <- temp1
+```
+
+Write csv
+```{r}
+write.csv(df_airroutes, file = "data/airroutes.csv")
+write.csv(df_airports, file = "data/airports.csv")
+```

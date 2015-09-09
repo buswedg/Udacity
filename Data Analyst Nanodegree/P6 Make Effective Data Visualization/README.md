@@ -1,18 +1,4 @@
----
-output:
-  html_document:
-    keep_md: yes
-  pdf_document:
-    keep_tex: yes
----
-```{r global_options, include = FALSE}
-knitr::opts_chunk$set(fig.width = 12, 
-                      fig.height = 8, 
-                      fig.path = 'figure/',
-                      echo = TRUE, 
-                      warning = FALSE, 
-                      message = FALSE)
-```
+
 #Make Effective Data Visualization
 ###Project: ND_Project6
 
