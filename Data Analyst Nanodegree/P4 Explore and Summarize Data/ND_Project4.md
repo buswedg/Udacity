@@ -320,17 +320,21 @@ The negative correlation between alcohol and density once again presented itself
 
 
 ###6. Final Plots and Summary
-A summary of the key univariate, bivariate and multivariate plots.
+A summary of the key univariate, bivariate and multivariate plots is provided. For this section, some of the plot characteristics were refined, including axis and legend labels.
 
-Revisiting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 6.
+The wine quality characteristic was investigated as part of the univariate analysis.
 ![](figure/unnamed-chunk-23-1.png) 
+Revisiting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 6.
 
 As part of the bivariate analysis, a relationship between alcohol and wine quality was found.
 ![](figure/unnamed-chunk-24-1.png) 
-Higher alcohol content wines: 2:Mild (between 10% and 12%), 3:Strong (12% or greater) are more represented by higher wine quality ratings.
+The above plots show histrograms of wine quality ratings, colored by alcohol content. The plot on the left shows the full range of wine quality ratings while the plot on the right shows the categorized quality ratings as discussed earlier. Alcohol content colors are matched to the alcohol content categories: 1:Weak (10% or less), 2:Mild (between 10% and 12%), and 3:Strong (12% or greater). 
 
-Although a relationship exists between alcohol and density/residual sugar, these alternative chemical properties show no noticeable relationship to wine quality.
+The plots show that higher alcohol content wines (10% or greater) have a grater representation in observations with a higher wine quality rating (6 or greater). This is particularly obvious when looking at the right plot which has a much greater amount of higher alcohol content wines falling within the 'Great' wine quality category. 
+
+Finally, as part of the multivariate analysis, the search for factors which effect wine quality was extended to include other chemical properties including density and residual sugar.
 ![](figure/unnamed-chunk-25-1.png) 
+Although a relationship exists between alcohol and density/residual sugar, these alternative chemical properties show no noticeable relationship to wine quality.
 
 
 ###Reflection
@@ -339,3 +343,5 @@ Although a relationship exists between alcohol and density/residual sugar, these
 * I initially struggled to see what insights could be gained from this dataset. However, going through each variable systematically as part of the univariate/bivariate analysis helped to narrow in the key data drivers/relationships.
 
 * It does not look like wine quality is well supported by the majority of chemical properties. Although there is a relationship between alcohol content and quality, I struggled to find similar relationships between quality and other chemical variables.
+
+* There is potential to build on this analysis in a number of ways. For example, Udacity provides a reference to a similar dataset related to red wines. I would be interested in identifying the common relationships between the two types of wines. Additionally, there is scope to build a predictor/estimator for perceived wine quality based on the relationships identified as part of this analysis.
