@@ -121,6 +121,11 @@ df_airroutes <- unique(df_airroutes[, c("origin", "destination")])
 ###2. Pre-process the Data
 Ensure that airport codes match between each dataset. Drop any entries which do not appear in all three datasets.
 ```{r}
+#Drop LGA New York, NY: LaGuardia and EWR Newark, NJ: Newark Liberty International
+df_airdelays <- df_airdelays[df_airdelays[, "airport"]!= "LGA",]
+df_airdelays <- df_airdelays[df_airdelays[, "airport"]!= "EWR",]
+
+
 #Ensure common index between datasets (better way to do this?):
 for (i in 1:2) {
 
@@ -138,18 +143,6 @@ for (i in 1:2) {
   df_airroutes <- df_airroutes[(df_airroutes$destination %in% df_airdelays$airport), ]
 
 }
-```
-
-Create flight delay summary metrics
-```{r}
-df_sumairdelays <- ddply(df_airdelays, .(airport), summarize,
-  arr_flights = sum(arr_flights),
-  arr_del15 = sum(arr_del15),
-  carrier_ct = sum(carrier_ct),
-  weather_ct = sum(X.weather_ct),
-  nas_ct = sum(nas_ct),
-  security_ct = sum(security_ct),
-  late_aircraft_ct = sum(late_aircraft_ct))
 ```
 
 Create annual flight delay summary metrics

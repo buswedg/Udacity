@@ -41,13 +41,21 @@ The second design was achieved through employing a combination of html, css, d3.
 Feedback was collected from three users throughout development of the visualization. This feedback was collected face-to-face while the user accessed a version of the visualization through Git Pages. For each user, I asked them: "if could make only one change to the visualization, what change would it be?". The feedback from these users and the changes made to the visualization are noted below:
 
 User: Sarah
+version Reviewed: index_v001.html
 Feedback: "Improve descriptions of 'reasons for delays'." 
 Update: The first version of the visualization had on a few words explaining each reason for delay category. Upon receiving this feedback, I spent some time searching the original data source and expanded each description.
 
 User: Ben
+version Reviewed: index_v002.html
 Feedback: "Have the airport name popup when hovering over the location on the USA map."
 Update: For the visualization version which Ben reviewed, the airport name would show for the airport above the USA map only after it had been selected. Upon receiving this feedback, I added a feature which would show the airport name when hovering over its location.
 
 User: Allex
+version Reviewed: index_v003.html
 Feedback: "Include a link to the original data source."
 Update: Originally, no link was provided to the original data source. Upon receiving this feedback, I added a link below the visualization title.
+
+User: Udacity
+version Reviewed: index_v004.html
+Feedback: 1) Reduce size of airport location 'dots'/eliminate those airports in close proximity to reduce dot overlap on map. 2) Change y-axis of graph from decimal to percentage format, and 3) Add comments to code within index.html where appropriate.
+Update: 
