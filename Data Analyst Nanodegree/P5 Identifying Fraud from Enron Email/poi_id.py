@@ -27,11 +27,25 @@ from tester import test_classifier, dump_classifier_and_data
 ### features_list is a list of strings, each of which is a feature name.
 ### The first feature must be "poi".
 features_list = ['poi',
-    'exercised_stock_options',
-    'total_stock_value',
-    'bonus',
-    'salary',
-    'deferred_income']
+   'exercised_stock_options',
+   'total_stock_value',
+   'bonus',
+   'salary',
+   'deferred_income',
+   'long_term_incentive',
+   'restricted_stock',
+   'total_payments',
+   'shared_receipt_with_poi',
+   'loan_advances',
+   'expenses', #including this will generate 'UserWarning: Features are constant'
+   'from_poi_to_this_person', #including this will generate 'UserWarning: Features are constant'
+   'other',
+   'from_this_person_to_poi',
+   'director_fees', #including this will generate 'UserWarning: Features are constant'
+   'to_messages',
+   'deferral_payments', #including this will generate 'UserWarning: Features are constant'
+   'from_messages',
+   'restricted_stock_deferred']
 
 ### Load the dictionary containing the dataset
 data_dict = pickle.load(open("data/final_project_dataset.pkl", "r") )
@@ -56,12 +70,7 @@ labels, features = targetFeatureSplit(data)
 ### http://scikit-learn.org/stable/modules/pipeline.html
 
 # Provided to give you a starting point. Try a variety of classifiers.
-clf = Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))),
-                    ('skb', SelectKBest(k='all', score_func=f_classif)),
-                    ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
-                      fit_intercept=True, intercept_scaling=1, max_iter=100,
-                      multi_class='ovr', penalty='l2', random_state=None,
-                      solver='liblinear', tol=0.1, verbose=0))])
+clf = grid_search.best_estimator_
 
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
 ### using our testing script. Check the tester.py script in the final project
@@ -73,7 +82,7 @@ clf = Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))),
 # Example starting point. Try investigating other evaluation techniques!
 from sklearn.cross_validation import train_test_split
 features_train, features_test, labels_train, labels_test = \
-    train_test_split(features, labels, test_size=0.3, random_state=42)
+   train_test_split(features, labels, test_size=0.3, random_state=42)
 
 ### Task 6: Dump your classifier, dataset, and features_list so anyone can
 ### check your results. You do not need to change anything below, but make sure

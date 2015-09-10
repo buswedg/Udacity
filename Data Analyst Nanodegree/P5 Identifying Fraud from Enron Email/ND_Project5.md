@@ -288,7 +288,7 @@ plt.ylabel("Bonus")
 
 
 
-    <matplotlib.text.Text at 0x1acf6c18>
+    <matplotlib.text.Text at 0xe5b1128>
 
 
 
@@ -354,7 +354,7 @@ plt.ylabel("Bonus")
 
 
 
-    <matplotlib.text.Text at 0x37ff080>
+    <matplotlib.text.Text at 0xeae04a8>
 
 
 
@@ -612,44 +612,64 @@ As it can be seen from the above plots, the new features within the additional f
 
 
 ```python
+import numpy
+
 feat_final_list = numpy.array(['exercised_stock_options',
     'total_stock_value',
     'bonus',
     'salary',
-    'deferred_income'])
-    #'long_term_incentive',
-    #'restricted_stock',
-    #'total_payments',
-    #'shared_receipt_with_poi',
-    #'loan_advances'])
+    'deferred_income',
+    'long_term_incentive',
+    'restricted_stock',
+    'total_payments',
+    'shared_receipt_with_poi',
+    'loan_advances',
+    'expenses', #including this will generate 'UserWarning: Features are constant'
+    'from_poi_to_this_person', #including this will generate 'UserWarning: Features are constant'
+    'other',
+    'from_this_person_to_poi',
+    'director_fees', #including this will generate 'UserWarning: Features are constant'
+    'to_messages',
+    'deferral_payments', #including this will generate 'UserWarning: Features are constant'
+    'from_messages',
+    'restricted_stock_deferred'])
 
 df_final_list = numpy.array(['poi',
     'exercised_stock_options',
     'total_stock_value',
     'bonus',
     'salary',
-    'deferred_income'])
-    #'long_term_incentive',
-    #'restricted_stock',
-    #'total_payments',
-    #'shared_receipt_with_poi',
-    #'loan_advances'])
+    'deferred_income',
+    'long_term_incentive',
+    'restricted_stock',
+    'total_payments',
+    'shared_receipt_with_poi',
+    'loan_advances',
+    'expenses', #including this will generate 'UserWarning: Features are constant'
+    'from_poi_to_this_person', #including this will generate 'UserWarning: Features are constant'
+    'other',
+    'from_this_person_to_poi',
+    'director_fees', #including this will generate 'UserWarning: Features are constant'
+    'to_messages',
+    'deferral_payments', #including this will generate 'UserWarning: Features are constant'
+    'from_messages',
+    'restricted_stock_deferred'])
 
 feat_final = df_orig[feat_final_list]
 df_final = df_orig[df_final_list]
 ```
 
-The top-5 original dataset features identified by the SelectKBest F-value ranking are passed to a final feature list. This final feature list is to be used for subsequent analysis. 
-
 ###5.0 Estimation
 
-In order to select the optimal set of estimation algorithm for the final predictive model, a GridSearchCV<sup>2</sup> Pipeline was conducted. According to the sklearn documentation, GridSearchCV implements a “fit” and “predict” method like any classifier except that the parameters of the classifier used to predict are optimized by cross-validation.
+In order to select the optimal set of estimation algorithm for the final predictive model, a GridSearchCV<sup>2</sup> Pipeline was conducted. According to the sklearn documentation, GridSearchCV implements a 'fit' and 'predict' method like any classifier except that the parameters of the classifier used to predict are optimized by cross-validation.
 
 For this analysis, a collection of pre-processors and estimators were added to a list which are able to be passed to the GridSearchCV. Pre-processors and estimators included within the list and their parameter optimization ranges are noted below.
 
 Pre-processors:
 * MinMaxScaler<sup>3</sup>()
-* SelectKBest()
+* SelectKBest(
+            'k':[2, 4, 6, 8, 10, 12, 14, 16, 'all']
+  )
 * KNeighborsClassifier<sup>4</sup>()
 
 Estimators:
@@ -674,6 +694,8 @@ Estimators:
                     'tol':[10^-1, 10^-2, 10^-4, 10^-8],
                     'class_weight':['auto']
   )
+  
+Tuning parameters allows the user to optimize the models performance over desired performance criteria. For example, a certain set of parameters may allow more information to be extracted from a given set of features (varying validation scores as a result) while another set may allow for lower amount of computational processing. In this case GridSearchCV has been set to optimize parameter selection against the F1 score.
 
 
 ```python
@@ -691,6 +713,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.decomposition import PCA
 from sklearn.pipeline import Pipeline
 
+
 def build_clf_list(clf_select):
     ref_list = []
     clf_list = []
@@ -707,7 +730,7 @@ def build_clf_list(clf_select):
     if 2 in clf_select:
         ref = 'skb'
         clf = 'SelectKBest()'
-        param = { 'k':['all'] }
+        param = { 'k':[2, 4, 6, 8, 10, 12, 14, 16, 'all'] }
         ref_list.append( (ref) )
         clf_list.append( (clf) )
         param_list.append( (param) )
@@ -862,7 +885,7 @@ Tested pipelines are shown in the following section. Each combination involved t
 
 Validation involves separating a dataset into two subsets of data, one for training and the other for testing. This allows you to train a prediction model on a training dataset and test the same model specification on a seperate/independent dataset. This practice minimizes the potential for the model to overfit the data, which would translate into good in-sample performance, but poor out-of-sample performance.
 
-For this assessment, each of the various combinations of estimators were trained/tested against a cross-validation loop (StratifiedShuffleSplit) as part of the pipeline search.
+For this assessment, each of the various combinations of estimators were trained/tested against a cross-validation loop (StratifiedShuffleSplit) as part of the pipeline search. StratifiedShuffleSplit forms an validation method for potential estimators as the dataset used for this analysis is both small and unbalanced between the classes. As such, simply reserving 10% of the training data for testing would not provide enough data for robust training.
 
 
 ```python
@@ -870,11 +893,12 @@ from sklearn.pipeline import Pipeline
 from sklearn.cross_validation import StratifiedShuffleSplit
 from sklearn.grid_search import GridSearchCV
 
-#clf_select = [1, 2, 4] #Accuracy: 0.85464	Precision: 0.48876	Recall: 0.38050	F1: 0.42789	F2: 0.39814
-#clf_select = [1, 2, 5] #Accuracy: 0.76286	Precision: 0.27763	Recall: 0.41200	F1: 0.33172	F2: 0.37564
-#clf_select = [1, 2, 6] #Accuracy: 0.79229	Precision: 0.27323	Recall: 0.27350	F1: 0.27336	F2: 0.27345
-#clf_select = [1, 2, 7] #Accuracy: 0.84979	Precision: 0.45775	Recall: 0.27900	F1: 0.34669	F2: 0.30264
-clf_select = [1, 2, 8] #Accuracy: 0.84443	Precision: 0.45210	Recall: 0.42000	F1: 0.43546	F2: 0.42605
+
+#clf_select = [1, 2, 4] #Accuracy: 0.83687	Precision: 0.31665	Recall: 0.19300	F1: 0.23983	F2: 0.20935
+#clf_select = [1, 2, 5] #Accuracy: 0.78620	Precision: 0.23772	Recall: 0.27350	F1: 0.25436	F2: 0.26551
+#clf_select = [1, 2, 6] #Accuracy: 0.78087	Precision: 0.18096	Recall: 0.18250	F1: 0.18173	F2: 0.18219
+#clf_select = [1, 2, 7] #Accuracy: 0.82547	Precision: 0.27179	Recall: 0.18400	F1: 0.21944	F2: 0.19671
+clf_select = [1, 2, 8] #Accuracy: 0.67980	Precision: 0.19041	Recall: 0.43100	F1: 0.26413	F2: 0.34406
 
 ref_list, clf_list, param_list = build_clf_list(clf_select)
 
@@ -894,25 +918,72 @@ grid_search = GridSearchCV(pipe, param, n_jobs = 1, cv = cv)
 grid_search.fit(feat_final, df_label)
 
 clf = grid_search.best_estimator_
-#print clf
+print clf
+
 param_bestest = grid_search.best_params_
-#print param_bestest
+print param_bestest
+
+
+clf = Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))),
+    ('skb', SelectKBest(k=16, score_func=f_classif)),
+    ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
+    fit_intercept=True, intercept_scaling=1, max_iter=100,
+    multi_class='ovr', penalty='l2', random_state=None,
+    solver='liblinear', tol=0.1, verbose=0))])
+
+#clf_select = [1, 2, 8], k = 2, Accuracy: 0.67980	Precision: 0.19041	Recall: 0.43100	F1: 0.26413	F2: 0.34406
+#clf_select = [1, 2, 8], k = 4, Accuracy: 0.58513	Precision: 0.23085	Recall: 0.90550	F1: 0.36790	F2: 0.57147
+#clf_select = [1, 2, 8], k = 6, Accuracy: 0.72280	Precision: 0.25477	Recall: 0.56050	F1: 0.35031	F2: 0.45202
+#clf_select = [1, 2, 8], k = 8, Accuracy: 0.72553	Precision: 0.25006	Recall: 0.52950	F1: 0.33970	F2: 0.43277
+#clf_select = [1, 2, 8], k = 10, Accuracy: 0.73607	Precision: 0.25940	Recall: 0.52800	F1: 0.34788	F2: 0.43741
+#clf_select = [1, 2, 8], k = 12, Accuracy: 0.75507	Precision: 0.28906	Recall: 0.57350	F1: 0.38438	F2: 0.47919
+#clf_select = [1, 2, 8], k = 14, Accuracy: 0.76320	Precision: 0.31018	Recall: 0.63400	F1: 0.41656	F2: 0.52449
+#clf_select = [1, 2, 8], k = 16, Accuracy: 0.76333	Precision: 0.31530	Recall: 0.66150	F1: 0.42705	F2: 0.54239
+#clf_select = [1, 2, 8], k = 18, Accuracy: 0.76247	Precision: 0.31397	Recall: 0.65950	F1: 0.42542	F2: 0.54053
 ```
 
-* GaussianNB(): Accuracy: 0.85464	Precision: 0.48876	Recall: 0.38050	F1: 0.42789	F2: 0.39814
-* LinearSVC(): Accuracy: 0.76286	Precision: 0.27763	Recall: 0.41200	F1: 0.33172	F2: 0.37564
-* DecisionTreeClassifier(): Accuracy: 0.79229	Precision: 0.27323	Recall: 0.27350	F1: 0.27336	F2: 0.27345
-* RandomForestClassifier(): Accuracy: 0.84979	Precision: 0.45775	Recall: 0.27900	F1: 0.34669	F2: 0.30264
-* LogisticRegression(): Accuracy: 0.84443	Precision: 0.45210	Recall: 0.42000	F1: 0.43546	F2: 0.42605
+    Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))), ('skb', SelectKBest(k=2, score_func=<function f_classif at 0x0000000010E9CAC8>)), ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
+              fit_intercept=True, intercept_scaling=1, max_iter=100,
+              multi_class='ovr', penalty='l2', random_state=None,
+              solver='liblinear', tol=0.1, verbose=0))])
+    {'lr__tol': 0.1, 'lr__class_weight': 'auto', 'lr__C': 0.05, 'skb__k': 2}
+    
 
-It should be noted that accuracy (ratio of correct positive labels to total labels assigned) would form a sub-optimal evaluation metric due to the sparsity of POI’s being predicted. For example, if we labeled all persons as a non-POI, an 87.5% accuracy measure would be achieved. As such, priority will be given to optimizing precision and recall measures.
+It should be noted that accuracy (the ratio of correct positive labels to total labels assigned) would form a sub-optimal evaluation metric due to the sparsity of POI’s being predicted. For example, if we labeled all persons as a non-POI, an accuracy measure of 87.5% would be achieved. Therefore priority will be given to optimizing precision and recall measures.
 
-Precision can be thought of as the ratio of how often the model is correct in identifying a positive label to the total times it guesses a positive label. A higher precision score would mean less false positives. Recall can be thought of as the ratio of how often the model correctly identifies a label as positive to how many total positive labels there actually are. A higher recall score would mean less false negatives. It could be argued that in the context of this assessment recall is more important metric than precession, as we would like to identify and label as many 'potential' fraud cases as possible.
+Precision can be thought of as the ratio of how often the model is correct in identifying a positive label to the total times it guesses a positive label. In the context of this assessment, precision indicates the ratio of true positives to the records that are actually POI's, which suggests how often a false alarm is generated.
 
-The results suggest a trade-off between precision and recall which must be balanced according to which metric should be prioritized. The logisticRegression estimator was ultimately selected, due to its more favourable recall score (42%). A summary of the final specification clf is shown below.
+Recall can be thought of as the ratio of how often the model correctly identifies a label as positive to how many total positive labels there actually are. In the context of this assessment, recall is the ratio of true positives to the records flagged as POI's, which suggests how sensitive the classifier is.
+
+Do note, in the context of this assement, it could be argued that recall forms a more important metric than precision as we would like to identify and label as many 'potential' fraud cases as possible.
+
+Below shows the StratifiedShuffleSplit evaluation metrics for each of the evaluated estimators, post GridSearchCV parameter calibration:
+
+* GaussianNB(): Accuracy: 0.83687	Precision: 0.31665	Recall: 0.19300	F1: 0.23983	F2: 0.20935
+* LinearSVC(): Accuracy: 0.78620	Precision: 0.23772	Recall: 0.27350	F1: 0.25436	F2: 0.26551
+* DecisionTreeClassifier(): Accuracy: 0.78087	Precision: 0.18096	Recall: 0.18250	F1: 0.18173	F2: 0.18219
+* RandomForestClassifier(): Accuracy: 0.82547	Precision: 0.27179	Recall: 0.18400	F1: 0.21944	F2: 0.19671
+* LogisticRegression(): Accuracy: 0.67980	Precision: 0.19041	Recall: 0.43100	F1: 0.26413	F2: 0.34406
+
+The results suggest a trade-off between precision and recall which must be balanced according to the desired priority evaluation metric. Of the above, the logisticRegression estimator was ultimately selected due to its more favourable F1 score (0.264).
+
+As a further parameter optimization routine, the SelectKBest 'k' parameter for the selected estimator (which limits the feature selection for estimation) is varied from a range of 'k' = 2 through to 'k' = 18. The results are shown below.
+
+* 'k' = 2: Accuracy: 0.67980	Precision: 0.19041	Recall: 0.43100	F1: 0.26413	F2: 0.34406
+* 'k' = 4: Accuracy: 0.58513	Precision: 0.23085	Recall: 0.90550	F1: 0.36790	F2: 0.57147
+* 'k' = 6: Accuracy: 0.72280	Precision: 0.25477	Recall: 0.56050	F1: 0.35031	F2: 0.45202
+* 'k' = 8: Accuracy: 0.72553	Precision: 0.25006	Recall: 0.52950	F1: 0.33970	F2: 0.43277
+* 'k' = 10: Accuracy: 0.73607	Precision: 0.25940	Recall: 0.52800	F1: 0.34788	F2: 0.43741
+* 'k' = 12: Accuracy: 0.75507	Precision: 0.28906	Recall: 0.57350	F1: 0.38438	F2: 0.47919
+* 'k' = 14: Accuracy: 0.76320	Precision: 0.31018	Recall: 0.63400	F1: 0.41656	F2: 0.52449
+* 'k' = 16: Accuracy: 0.76333	Precision: 0.31530	Recall: 0.66150	F1: 0.42705	F2: 0.54239
+* 'k' = 18: Accuracy: 0.76247	Precision: 0.31397	Recall: 0.65950	F1: 0.42542	F2: 0.54053
+
+As noted above, there may be an argument to set a value of 4 for the SelectKBest 'k' parameter when considering the context of this assement. Doing so would maximize recall while accepting the greater precision trade-off. However, 'k' = 16 is ultimately selected since this estimator generated the most favourable F1 score whilst achieving both a precision and recall score greater than 0.30. The final Pipeline and evaluation metrics are shown below.
 
 
 ```python
+import sys
 sys.path.append("tools/")
 from tester import test_classifier
 
@@ -926,12 +997,12 @@ data_dict.pop('LOCKHART EUGENE E',0)
 test_classifier(clf, data_dict, df_final_list)
 ```
 
-    Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))), ('skb', SelectKBest(k='all', score_func=<function f_classif at 0x0000000016191898>)), ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
+    Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))), ('skb', SelectKBest(k=16, score_func=<function f_classif at 0x0000000010E9CAC8>)), ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
               fit_intercept=True, intercept_scaling=1, max_iter=100,
               multi_class='ovr', penalty='l2', random_state=None,
               solver='liblinear', tol=0.1, verbose=0))])
-    	Accuracy: 0.84443	Precision: 0.45210	Recall: 0.42000	F1: 0.43546	F2: 0.42605
-    	Total predictions: 14000	True positives:  840	False positives: 1018	False negatives: 1160	True negatives: 10982
+    	Accuracy: 0.76333	Precision: 0.31530	Recall: 0.66150	F1: 0.42705	F2: 0.54239
+    	Total predictions: 15000	True positives: 1323	False positives: 2873	False negatives:  677	True negatives: 10127
     
     
 
@@ -983,7 +1054,21 @@ features_list = ['poi',
     'total_stock_value',
     'bonus',
     'salary',
-    'deferred_income']
+    'deferred_income',
+    'long_term_incentive',
+    'restricted_stock',
+    'total_payments',
+    'shared_receipt_with_poi',
+    'loan_advances',
+    'expenses', #including this will generate 'UserWarning: Features are constant'
+    'from_poi_to_this_person', #including this will generate 'UserWarning: Features are constant'
+    'other',
+    'from_this_person_to_poi',
+    'director_fees', #including this will generate 'UserWarning: Features are constant'
+    'to_messages',
+    'deferral_payments', #including this will generate 'UserWarning: Features are constant'
+    'from_messages',
+    'restricted_stock_deferred']
 
 ### Load the dictionary containing the dataset
 data_dict = pickle.load(open("data/final_project_dataset.pkl", "r") )
@@ -1008,12 +1093,7 @@ labels, features = targetFeatureSplit(data)
 ### http://scikit-learn.org/stable/modules/pipeline.html
 
 # Provided to give you a starting point. Try a variety of classifiers.
-clf = Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))),
-                    ('skb', SelectKBest(k='all', score_func=f_classif)),
-                    ('lr', LogisticRegression(C=0.05, class_weight='auto', dual=False,
-                      fit_intercept=True, intercept_scaling=1, max_iter=100,
-                      multi_class='ovr', penalty='l2', random_state=None,
-                      solver='liblinear', tol=0.1, verbose=0))])
+clf = grid_search.best_estimator_
 
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
 ### using our testing script. Check the tester.py script in the final project
