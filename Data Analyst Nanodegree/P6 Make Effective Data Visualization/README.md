@@ -59,4 +59,15 @@ User: Udacity
 
 version Reviewed: index_v004.html
 
-Feedback: 1) Reduce size of airport location 'dots'/eliminate those airports in close proximity to reduce dot overlap on map. 2) Change y-axis of graph from decimal to percentage format, and 3) Add comments to code within index.html where appropriate.
+Feedback: 1) Reduce size of airport location 'dots' or eliminate those airports in close proximity to reduce dot overlap on map. 2) Change y-axis of graph from decimal to percentage format, and 3) Add comments to code within index.html where appropriate.
+
+Update: Reduced airport dot size and eliminated New York, NY: LaGuardia and Newark, NJ: Newark Liberty International from dataset. Changed y-axis to percentage format and added additional comments to index.html.
+
+
+User: Udacity
+
+version Reviewed: index_v005.html
+
+Feedback: 1) Add average delay for state, region or USA within same plot to allow for comparison of airport performance.
+
+Update: Added average delay for airport region to plot. Where 'region' is defined by the US Census Bureau and is limited to data from the airports within the dataset described above.

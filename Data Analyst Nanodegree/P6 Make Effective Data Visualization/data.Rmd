@@ -89,6 +89,8 @@ for (package in c('plyr')) {
   }
   
 }
+
+rm(package)
 ```
 
 Load the full Bureau of Transportation Statistics dataset.
@@ -119,13 +121,47 @@ df_airroutes <- unique(df_airroutes[, c("origin", "destination")])
 ```
 
 ###2. Pre-process the Data
-Ensure that airport codes match between each dataset. Drop any entries which do not appear in all three datasets.
+Drop LGA New York, NY: LaGuardia and EWR Newark, NJ: Newark Liberty International
 ```{r}
-#Drop LGA New York, NY: LaGuardia and EWR Newark, NJ: Newark Liberty International
 df_airdelays <- df_airdelays[df_airdelays[, "airport"]!= "LGA",]
 df_airdelays <- df_airdelays[df_airdelays[, "airport"]!= "EWR",]
+```
 
+Get state/region from airport names:
+```{r}
+state <- c("CO", "NV", "CA", "OR", "AZ", "WA", "UT",
+  "MI", "IL", "MN",
+  "MA", "NY", "PA",
+  "GA", "MD", "NC", "DC", "TX", "FL", "GA")
 
+region <- c("West", "West", "West", "West", "West", "West", "West",
+  "Mid West", "Mid West", "Mid West",
+  "North East", "North East", "North East",
+  "South", "South", "South", "South", "South", "South", "South")
+
+df_stateref <- data.frame(state = state, region = region, stringsAsFactors = FALSE)
+
+df_airdelays$state = NA
+df_airdelays$region = NA
+
+for (i in 1:nrow(df_airdelays)) {
+  
+  temp <- df_airdelays[i, "airport_name"]
+  temp <- unlist(strsplit(temp, '[,]'))[2]
+  temp <- unlist(strsplit(temp, '[:]'))[1]
+  temp <- gsub(" ", "", temp, fixed = TRUE)
+  df_airdelays[i, "state"] <- temp
+ 
+  temp = df_stateref[df_stateref[, "state"] == temp, 2][1]
+  df_airdelays[i, "region"] <- temp
+   
+}
+
+rm(state, region, temp)
+```
+
+Ensure that airport codes match between each dataset. Drop any entries which do not appear in all three datasets.
+```{r}
 #Ensure common index between datasets (better way to do this?):
 for (i in 1:2) {
 
@@ -145,9 +181,9 @@ for (i in 1:2) {
 }
 ```
 
-Create annual flight delay summary metrics
+Create annual airport flight delay summary metrics
 ```{r}
-df_annairdelays <- ddply(df_airdelays, .(year, airport, airport_name), summarize,
+df_annairdelays <- ddply(df_airdelays, .(year, airport, airport_name, state, region), summarize,
   arr_flights = sum(arr_flights),
   arr_del15 = sum(arr_del15),
   carrier_ct = sum(carrier_ct),
@@ -157,11 +193,20 @@ df_annairdelays <- ddply(df_airdelays, .(year, airport, airport_name), summarize
   late_aircraft_ct = sum(late_aircraft_ct))
 ```
 
+Create annual region flight delay summary metrics
+```{r}
+df_annregdelays <- ddply(df_airdelays, .(year, region), summarize,
+  arr_flights = sum(arr_flights),
+  arr_del15 = sum(arr_del15))
+```
+
 Create airports dataset
 ```{r}
 temp1 <- data.frame(year = numeric(),
    airport = character(),
    airport_name = character(),
+   state = character(),
+   region = character(),
    latitude = numeric(),
    longitude = numeric(),
    delay_type = numeric(),
@@ -185,17 +230,35 @@ for (i in 1:length(df_lbl)) {
     
   }
   
-  temp2 <- temp2[, c(1, 2, 3, 13, 14, 11, 12)]
+  temp2 <- temp2[, c(1, 2, 3, 4, 5, 15, 16, 13, 14)]
   
   temp1 <- rbind(as.matrix(temp1), as.matrix(temp2))
   
 }
 
 df_airports <- temp1
+
+rm(temp1, temp2, df_lbl, df_col)
+```
+
+Create region dataset
+```{r}
+temp <- data.frame(year = numeric(),
+   state = character(),
+   region = character(),
+   delay_prop = numeric())
+
+temp <- df_annregdelays
+temp$delay_prop <- df_annregdelays$arr_del15 / df_annregdelays$arr_flights
+
+df_airregion <- temp
+
+rm(temp)
 ```
 
 Write csv
 ```{r}
 write.csv(df_airroutes, file = "data/airroutes.csv")
+write.csv(df_airregion, file = "data/airregion.csv")
 write.csv(df_airports, file = "data/airports.csv")
 ```
