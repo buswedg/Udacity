@@ -202,15 +202,16 @@ df_annregdelays <- ddply(df_airdelays, .(year, region), summarize,
 
 Create airports dataset
 ```{r}
-temp1 <- data.frame(year = numeric(),
+temp1 <- data.frame(year = integer(),
    airport = character(),
    airport_name = character(),
    state = character(),
    region = character(),
    latitude = numeric(),
    longitude = numeric(),
-   delay_type = numeric(),
-   delay_prop = numeric())
+   delay_type = character(),
+   delay_prop = numeric(), 
+   stringsAsFactors = FALSE)
 
 df_lbl <- c("Air Carrier", "Weather", "NAS", "Security", "Previous Flight")
 df_col <- c("carrier_ct", "weather_ct", "nas_ct", "security_ct", "late_aircraft_ct")
@@ -232,18 +233,19 @@ for (i in 1:length(df_lbl)) {
   
   temp2 <- temp2[, c(1, 2, 3, 4, 5, 15, 16, 13, 14)]
   
-  temp1 <- rbind(as.matrix(temp1), as.matrix(temp2))
+  temp1 <- rbind.data.frame(temp1, temp2)
   
 }
 
+
 df_airports <- temp1
 
-rm(temp1, temp2, df_lbl, df_col)
+rm(temp1, temp2, df_lbl, df_col, airport)
 ```
 
 Create region dataset
 ```{r}
-temp <- data.frame(year = numeric(),
+temp <- data.frame(year = integer(),
    state = character(),
    region = character(),
    delay_prop = numeric())
@@ -256,9 +258,96 @@ df_airregion <- temp
 rm(temp)
 ```
 
+Create airport sentence data
+```{r}
+df_airsentence <- data.frame(airport = character(),
+   delay_curr = numeric(),
+   delay_trend = character(),
+   delay_likely = character(),
+   delay_comp = character(), 
+   stringsAsFactors = FALSE)
+  
+
+airports <- unique(df_airports$airport)
+
+for (i in 1:length(airports)) {
+  
+  airport <- airports[i]
+  
+  df_airsentence[i, 1] = airport
+  
+  temp1 <- ddply(df_airports, .(year, airport), summarize,
+    delay_prop = sum(delay_prop))
+  
+  temp1 <- temp1[temp1[, "airport"] == airport, ]
+
+  delay_curr <- temp1[temp1[, "year"] == 2015, 3]
+  
+  df_airsentence[i, 2] = delay_curr
+  
+  lm <- lm(temp1$delay_prop ~ temp1$year)
+  
+  delay_trend <- if (summary(lm)$coefficients[2, 1] < -0.001) {
+    "decreased"
+  } else if (summary(lm)$coefficients[2, 1] >= -0.001 & summary(lm)$coefficients[2, 1] <= 0.001) {
+    "generally remained steady"
+  } else {
+    "increased"
+  }
+  
+  df_airsentence[i, 2] = round(df_airsentence[i, 2], digits = 2) * 100
+  
+  df_airsentence[i, 3] = delay_trend
+  
+  temp2 <- ddply(df_airports, .(airport, region, delay_type), summarize,
+    delay_prop = mean(delay_prop))
+  
+  temp2 <- temp2[temp2[, "airport"] == airport, ]
+  
+  delay_likely <- temp2[which.max( temp2[, 4] ), 3]
+  
+  df_airsentence[i, 4] = delay_likely
+  
+  temp3 <- ddply(df_airregion, .(region), summarize,
+    delay_prop = mean(delay_prop))
+  
+  delay_comp <- if (sum(temp2[, 4]) < temp3[temp3[, "region"] == temp2[1, 2], 2]) {
+    "better"
+  } else {
+    "worse"
+  }
+  
+  df_airsentence[i, 5] = delay_comp
+  
+}
+
+rm(temp1, temp2, temp3, airport, airports, delay_curr, delay_trend, delay_likely, delay_comp, lm)
+
+```
+
+Add airport sentence data to airports dataset
+```{r}
+df_airports$delay_curr <- 0
+df_airports$delay_trend <- ""
+df_airports$delay_likely <- ""
+df_airports$delay_comp <- ""
+
+for (i in 1:nrow(df_airports)) {
+  
+  airport <- df_airports[i, 2]
+  df_airports[i, 10] <- df_airsentence[which(df_airsentence$airport == airport), 2]
+  df_airports[i, 11] <- df_airsentence[which(df_airsentence$airport == airport), 3]
+  df_airports[i, 12] <- df_airsentence[which(df_airsentence$airport == airport), 4]
+  df_airports[i, 13] <- df_airsentence[which(df_airsentence$airport == airport), 5]
+  
+}
+
+rm(airport)
+```
+
 Write csv
 ```{r}
 write.csv(df_airroutes, file = "data/airroutes.csv")
-write.csv(df_airregion, file = "data/airregion.csv")
 write.csv(df_airports, file = "data/airports.csv")
+write.csv(df_airregion, file = "data/airregion.csv")
 ```

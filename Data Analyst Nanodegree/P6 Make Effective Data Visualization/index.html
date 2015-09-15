@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <style>
-  
+ 
+p#temp {
+
+}
+ 
 svg.map {
 
 }
@@ -36,9 +40,11 @@ div.tooltip {
 
   </style>
   <body>
+  
 	<h1 style="text-indent: 50px">U.S. Commercial Airport Delay Statistics</h1>
+	<p style="text-indent: 50px">This visualization is intended to provide the user a means to assess on-time performance trends of individual airports within the U.S.</p>
 	<p style="text-indent: 50px">Dataset obtained from the Bureau of Transportation Statistics (<a href="http://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp">link</a>).</p>
-	<h4 style="text-indent: 50px">Please select an airport of interest on the map below.</h4>
+	<h4 style="text-indent: 50px"><p_airport>Please select an airport of interest on the map below.</p_airport></h4>
     <script type="text/javascript" src="js/d3.v3.min.js"></script>
     <script type="text/javascript" src="js/d3.geo.js"></script>
 	<script type="text/javascript" src="js/dimple.v2.1.2.min.js"></script>
@@ -123,90 +129,117 @@ d3.csv("data/airroutes.csv", function(flights) { // load airroutes data
 
   d3.csv("data/airports.csv", function(airports) { // load airports data
 	  d3.csv("data/airregion.csv", function(avg_airports) { // load average airport region data
-		airports = airports.filter(function(airport) {
-		  if (countByAirport[airport.airport]) {
-			var location = [+airport.longitude, +airport.latitude];
-			locationByAirport[airport.airport] = location;
-			positions.push(projection(location));
-			return true;
-		  }
-		});
-		
-		circles.selectAll("circle") // format airport 'dots' on map
-			.data(airports)
-			.enter()
-			.append("svg1:circle")
-			.attr("cx", function(d, i) { return positions[i][0]; })
-			.attr("cy", function(d, i) { return positions[i][1]; })
-			.attr("r", 5)
-			.style("opacity", 0.75)
+		d3.csv("data/airsentence.csv", function(txt_airports) { // load airport sentence data
+			airports = airports.filter(function(airport) {
+			  if (countByAirport[airport.airport]) {
+				var location = [+airport.longitude, +airport.latitude];
+				locationByAirport[airport.airport] = location;
+				positions.push(projection(location));
+				return true;
+			  }
+			});
 			
-			.on("mouseover", function(d, i) { // format airport mouseover effect
-				div.transition()        
-					.duration(500)      
-					.style("opacity", 1);  
-				div.html("<b>Airport: </b>" + d.airport_name + "<br>" + "<b>Region: </b>" + d.region)
-					.style("left", (d3.event.pageX) + "px")     
-					.style("top", (d3.event.pageY) + "px");
-				d3.select(this).style("fill", "black");
-			})
-			
-			.on("mouseout", function(d) { // format airport mouseout effect
-				div.transition()
-					.duration(1000)
-					.style("opacity", 0);
-				d3.select(this).style("fill", "steelblue");
-			})
-			
-			.on("click", function(current) { // create airport onclick event
-				if (selectedAirport != current) {
-					var airport_data = airports.filter(function(d) { return current.airport == d.airport; }) // filter data by current airport
-						.map(function(d) { // return required dataseries
-							var obj = {};
-							obj.year = d.year;
-							obj.airport = d.airport;
-							obj.delay_type = d.delay_type;
-							obj.delay_prop = d.delay_prop;
-							obj.avg_delay_prop = d.avg_delay_prop;
-							return obj;
-						});
-					var airregion_data = avg_airports.filter(function(d) { return current.region == d.region; }) // filter data by current airport region
-						.map(function(d) { // return required dataseries
-							var obj = {};
-							obj.year = d.year;
-							obj.region = d.region;
-							obj.delay_prop = d.delay_prop;
-							return obj;
-						});
-					
-					svg2.selectAll('*').remove();
-					
-					//var data = airport_data.concat(avg_data);
-					
-					var chart = new dimple.chart(svg2, airport_data); // create dimplechart
-					chart.setBounds(120, 80, w2 / 1.5, h / 1.5)
-					var y = chart.addMeasureAxis("y", "delay_prop"); // format y-axis
-					y.tickFormat = "%";
-					var x = chart.addCategoryAxis("x", "year"); // format x-axis
-					var s1 = chart.addSeries("delay_type", dimple.plot.bar);
-					var s2 = chart.addSeries("Avg. delay for " + current.region + " (any reason)", dimple.plot.line);
-					s2.data = airregion_data;
-					chart.addLegend(250, 20, 450, 40, "right"); // add chart legend
-					chart.draw();
-					y.titleShape.text("Percentage of total flights delayed (by reason)");
-					x.titleShape.text("Year");
-					
-					d3.select("h4").text(current.airport_name); // change h4 element text to current airport
-					selectedAirport = current;
-					
-				}
+			circles.selectAll("circle") // format airport 'dots' on map
+				.data(airports)
+				.enter()
+				.append("svg1:circle")
+				.attr("cx", function(d, i) { return positions[i][0]; })
+				.attr("cy", function(d, i) { return positions[i][1]; })
+				.attr("r", 5)
+				.style("opacity", 0.75)
 				
+				.on("mouseover", function(d, i) { // format airport mouseover effect
+					div.transition()        
+						.duration(500)      
+						.style("opacity", 1);  
+					div.html("<b>Airport: </b>" + d.airport_name + "<br>" + "<b>Region: </b>" + d.region)
+						.style("left", (d3.event.pageX) + "px")     
+						.style("top", (d3.event.pageY) + "px");
+					d3.select(this).style("fill", "black");
+				})
+				
+				.on("mouseout", function(d) { // format airport mouseout effect
+					div.transition()
+						.duration(1000)
+						.style("opacity", 0);
+					d3.select(this).style("fill", "steelblue");
+				})
+				
+				.on("click", function(current) { // create airport onclick event
+					if (selectedAirport != current) {
+						var airport_data = airports.filter(function(d) { return current.airport == d.airport; }) // filter data by current airport
+							.map(function(d) { // return required dataseries
+								var obj = {};
+								obj.year = d.year;
+								obj.airport = d.airport;
+								obj.delay_type = d.delay_type;
+								obj.delay_prop = d.delay_prop;
+								obj.avg_delay_prop = d.avg_delay_prop;
+								return obj;
+							});
+						var airregion_data = avg_airports.filter(function(d) { return current.region == d.region; }) // filter data by current airport region
+							.map(function(d) { // return required dataseries
+								var obj = {};
+								obj.year = d.year;
+								obj.region = d.region;
+								obj.delay_prop = d.delay_prop;
+								return obj;
+							});
+						var airsentence_data = txt_airports.filter(function(d) { return current.airport == d.airport; }) // filter data by current airport
+							.map(function(d) { // return required dataseries
+								var obj = {};
+								obj.delay_curr = d.delay_curr;
+								obj.delay_trend = d.delay_trend;
+								obj.delay_likely = d.delay_likely;
+								obj.delay_comp = d.delay_comp;
+								return obj;
+							});
+						
+						svg2.selectAll('*').remove();
+						
+						//var data = airport_data.concat(avg_data);
+						
+						var chart = new dimple.chart(svg2, airport_data); // create dimplechart
+						chart.setBounds(120, 80, w2 / 1.5, h / 1.5)
+						var y = chart.addMeasureAxis("y", "delay_prop"); // format y-axis
+						y.tickFormat = "%";
+						var x = chart.addCategoryAxis("x", "year"); // format x-axis
+						var s1 = chart.addSeries("delay_type", dimple.plot.bar);
+						var s2 = chart.addSeries("Avg. delay for " + current.region + " (any reason)", dimple.plot.line);
+						s2.data = airregion_data;
+						chart.addLegend(250, 20, 450, 40, "right"); // add chart legend
+						chart.draw();
+						y.titleShape.text("Percentage of total flights delayed (by reason)");
+						x.titleShape.text("Year");
+						
+						d3.select("p_airport").text(current.airport_name); // change h4 element text to current airport
+						d3.select("p_region").text(current.region);
+						d3.select("p_curr").text(current.delay_curr);
+						d3.select("p_trend").text(current.delay_trend);
+						d3.select("p_likely").text(current.delay_likely);
+						d3.select("p_comp").text(current.delay_comp);
+						selectedAirport = current;
+						
+					}
+					
+				});
 			});
 		});
 	});
 });
 
     </script>
+	
+	<p style="text-indent: 50px">
+		Trends for selected airport:
+		<ul style="padding-left: 80px">
+			<li>Passenger's currently have approximately a <b><p_curr>xx</p_curr>%</b> chance of their flight being delayed for any reason.</li>
+			<li>The chance of a flight being delayed for any reason has <b><p_trend>xx</p_trend></b> since 2003.</li>
+			<li><b><p_likely>xx</p_likely></b> has been on average the most likely reason for delay since 2003.</li>
+			<li>The on-time performance of this airport has been <b><p_comp>xx</p_comp></b> on average than the <b><p_region>xx</p_region> region.</b></li>
+		</ul>
+	</p>
+	<br>
 	<p style="text-indent: 50px">
 		Reasons for delay:
 		<ul style="padding-left: 80px">
