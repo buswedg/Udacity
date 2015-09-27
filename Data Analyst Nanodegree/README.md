@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P0%20Analyze%20Chopstick%20Length/">P0 Analyze Chopstick Length</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P0%20Analyze%20Chopstick%20Length/">P0 Analyze Chopstick Length</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -48,7 +48,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P1%20Test%20a%20Perceptual%20Phenomenon/">P1 Test a Perceptual Phenomenon</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P1%20Test%20a%20Perceptual%20Phenomenon/">P1 Test a Perceptual Phenomenon</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -92,7 +92,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P2%20Analyzing%20the%20NYC%20Subway%20Dataset/">P2 Analyzing the NYC Subway Dataset</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P2%20Analyzing%20the%20NYC%20Subway%20Dataset/">P2 Analyzing the NYC Subway Dataset</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -136,7 +136,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P3%20Data%20Wrangling%20with%20MongoDB/">P3 Data Wrangling with MongoDB</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P3%20Data%20Wrangling%20with%20MongoDB/">P3 Data Wrangling with MongoDB</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -180,7 +180,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P4%20Explore%20and%20Summarize%20Data/">P4 Explore and Summarize Data</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P4%20Explore%20and%20Summarize%20Data/">P4 Explore and Summarize Data</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -224,7 +224,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P5%20Identifying%20Fraud%20from%20Enron%20Email/"> P5 Identifying Fraud from Enron Email</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P5%20Identifying%20Fraud%20from%20Enron%20Email/"> P5 Identifying Fraud from Enron Email</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -268,7 +268,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P6%20Make%20Effective%20Data%20Visualization/">P6 Make Effective Data Visualization</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P6%20Make%20Effective%20Data%20Visualization/">P6 Make Effective Data Visualization</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -312,7 +312,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Udacity / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/">Data Analyst Nanodegree</a> / <a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P7%20Design%20an%20AB%20Test/">P7 Design an AB Test</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Udacity/tree/master/Data%20Analyst%20Nanodegree/P7%20Design%20an%20AB%20Test/">P7 Design an AB Test</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
