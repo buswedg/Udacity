@@ -22,7 +22,7 @@
   <tr>
     <td colspan = "3">
 
-      Python code which applies basic statistical analysis to determine the relationship between chopstick length and 'food pinching performance'.
+      Statistical techniques using Python to test the relationship between ‘food pinching performance’ (i.e. the ability to place peanuts in a cup) and chopstick length.
 
     </td>
   </tr>
@@ -66,7 +66,7 @@
   <tr>
     <td colspan = "3">
 
-      Python code which produces descriptive statistics and a statistical tests to analyse the Stroop effect, a classic result of experimental psychology.
+      Statistical techniques using Python to investigate a classic phenomenon from experimental psychology known as the Stroop Effect. Python code was used to produce descriptive statistics, data visualizations and run a paired samples t-test.
 
     </td>
   </tr>
@@ -110,7 +110,7 @@
   <tr>
     <td colspan = "3">
 
-      Python code which applies data wrangling, applied statistics, machine learning, and effective visualization to a New York City Subway dataset.
+      Applied data wrangling, statistical analysis, machine learning, and visualization techniques to a New York City Subway dataset. A Mann-Whitney U-test was used to test the hypothesis that there is a significant difference between the number of people who ride the NYC subway when it is raining versus when it is not raining. While an Ordinary Least Squares (OLS) model was fitted to predict the hourly number of Subway entries.
 
     </td>
   </tr>
@@ -154,7 +154,7 @@
   <tr>
     <td colspan = "3">
 
-      Python code to import OpenStreetMap dataset into a MonogoDB database and apply data munging techniques to clean the map data.
+      Data munging techniques using Python in order to cleaned OpenStreetMap data for Perth, Australia, create a .json map file, and load that file into the MongoDB instance.
 
     </td>
   </tr>
@@ -198,7 +198,7 @@
   <tr>
     <td colspan = "3">
 
-      R scripts which apply exploratory data analysis techniques to understand single/multiple variable relationships between white wine chemical variables.
+      Investigated the relationship between 11 chemical and physical properties of a sample of white wines using exploratory data analysis in R. Included univariate, bivariate and multivariate analysis using the ggplot function, with a focus on identifying properties which are correlated with the subjective quality ranking of each wine.
 
     </td>
   </tr>
@@ -242,7 +242,7 @@
   <tr>
     <td colspan = "3">
 
-      A predictive model using machine learning techniques which is able to predict Enron employees who were involved in fraud.
+      Built a predictive model which is able to identify and label Persons of Interest (POI) i.e. Enron employees who committed fraud. A GridSearchCV Pipeline with a StratifiedShuffleSplit cross-validation loop was applied using Python and scikit-learn tools to select the optimal estimation algorithm and parameters for the final predictive model. The optimal model included a LogisticRegression estimator with feature scaling using MinMaxScaling and 'k' best feature selection with SelectKBest.
 
     </td>
   </tr>
@@ -286,7 +286,7 @@
   <tr>
     <td colspan = "3">
 
-      An interactive data visualization from a dataset of flight delay statistics for airports based within the USA, created using HTML, CSS, D3.js and dimple charts.
+      An interactive data visualization from a dataset of flight delay statistics for airports based within the USA, created using HTML, CSS, D3.js and dimple charts. Visualization is indented to provide users the ability to easily access and interpret time-series flight delay statistics for various airports spread across the USA. 
 
     </td>
   </tr>
@@ -330,7 +330,7 @@
   <tr>
     <td colspan = "3">
 
-      Results of an A/B test that was run by Udacity in order to recommend whether or not to launch a change to the website.
+      Results of an A/B test that was run by Udacity in order to recommend whether or not to launch a change to the Udacity course enrolment webpage. Involved the selection of invariant and evaluation metrics, calculation of the duration and proportion of traffic diversion, and analysis of whether a statistically significant result was observed between the test and control groups.
 
     </td>
   </tr>
