@@ -52,7 +52,7 @@ Alternative Hypothesis: There 'is a significant difference' in the population av
 
 Expect to perform a paired-samples t-test as the same group of subjects have been assigned different word conditions from two different tests (matched pairs of similar units). Doing so would allow for increased statistical power compared to an ordinary unpaired test. (see: https://en.wikipedia.org/wiki/Paired_difference_test)
 
-After taking the online test, I expect there will be statistically significant difference between average response times of the two conditions, as the second condition took noteably longer to complete.
+After taking the online test, I expect there will be a statistically significant difference between average response times of the two conditions, as the second condition took notably longer to complete.
 
 ####3. Report some descriptive statistics regarding this dataset. Include at least one measure of central tendency and at least one measure of variability.
 
@@ -319,7 +319,7 @@ plt.scatter(x = dataFrame['Subject'], y = dataFrame['Incongruent'])
 ![png](output_13_1.png)
 
 
-The congruent words sample ranges between ~8 and ~22, while the incongruent words sample ranges between ~15 and ~35.
+The congruent words sample ranges between ~8 and ~22 seconds, while the incongruent words sample ranges between ~15 and ~35 seconds.
 
 It is worth pointing out the two longest completion time samples (~34 & ~35) of the incongruent sample could be labeled as outliers from the wider sample set. These outliers will somewhat bias both the mean and standard deviation measures reported earlier, however the wider sample set confirms the greater reported mean.
 
@@ -404,6 +404,6 @@ t
 
 
 
-We reject the Null Hypothesis that there 'is no significant difference' in population average response time viewing words which  are congruent compared to average response time viewing words which are incongruent. (8.021 > 1.714)
+We reject the Null Hypothesis that there 'is no significant difference' in population average response time viewing words which  are congruent compared to average response time viewing words which are incongruent (8.021 > 1.714).
 
 This result is in-line with my expectations after taking the online test, which showed that the second condition took longer to complete.

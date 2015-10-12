@@ -52,7 +52,7 @@ In 2000, Enron was one of the largest companies in the United States. By 2002, i
 
 ####Goal of the Project
 
-The goal of this assessment is to build a predictive model which is able to identify and label Enron employee's as a Person of Interst (POI). By assigning a label of POI, the employee is said to have committed fraud. In order to achieve this goal, machine learning practices are employed in order to generate predictions of POI’s based on an existing employee dataset. The dataset for this assessment was made public through Case No. 01-16034 of the Southern District of New York US District Court. The data includes financial features for each employee such as salaries and bonus payouts, as well as email features such as who the employee has sent/received emails to/from.
+The goal of this assessment is to build a predictive model which is able to identify and label Enron employee's as a Person of Interest (POI). By assigning a label of POI, the employee is said to have committed fraud. In order to achieve this goal, machine learning practices are employed to generate predictions of POI’s based on an existing employee dataset. The dataset for this assessment was made public through Case No. 01-16034 of the Southern District of New York US District Court. The data includes financial features for each employee such as salaries and bonus payouts, as well as email features such as who the employee has sent/received emails to/from.
 
 ###3.0 Data
 
@@ -317,7 +317,7 @@ pprint(sorted(outlier,key=lambda x:x[1],reverse=True)[:2])
     [('TOTAL', 26704229), ('SKILLING JEFFREY K', 1111258)]
     
 
-A plot of 'bonus' and 'salary' features showed an extreme outlier. Upon further investigation, the extreme outlier was found be related to a 'TOTAL' entry, which represents the sum for each each feature within the financial dataset. As such, this entry was removed from the dataset and the outlier assessment repeated.
+A plot of 'bonus' and 'salary' features showed an extreme outlier. Upon further investigation, the extreme outlier was found be related to a 'TOTAL' entry, which represents the sum for each feature within the financial dataset. As such, this entry was removed from the dataset and the outlier assessment repeated.
 
 
 ```python
@@ -386,7 +386,7 @@ pprint(sorted(outlier,key=lambda x:x[1],reverse=True)[:2])
     [('SKILLING JEFFREY K', 1111258), ('LAY KENNETH L', 1072321)]
     
 
-Two outliers remain, 'SKILLING JEFFREY K' and 'LAY KENNETH L'. However both are be retained as part of the pre-processed dataset since they are POI candidates.
+Two outliers remain, 'SKILLING JEFFREY K' and 'LAY KENNETH L'. However, both are retained as part of the pre-processed dataset since they are POI candidates.
 
 
 ```python
@@ -454,7 +454,7 @@ feat_financial = numpy.array(['salary',
     'long_term_incentive'])
 ```
 
-In addition to the 'TOTAL' feature mentioned above, 'THE TRAVEL AGENCY IN THE PARK' was also removed as it was found to refer to an entity rather than a person, and ‘LOCKHART EUGENE E’ was removed this entry had missing data for all data features. As a final step in the pre-processing routine, 'NaN', 'inf' and '-inf' strings were replaces with zero values, and any records with all missing data were dropped.
+In addition to the 'TOTAL' feature mentioned above, 'THE TRAVEL AGENCY IN THE PARK' was also removed as it was found to refer to an entity rather than a person, and ‘LOCKHART EUGENE E’ was removed as this entry had missing data for all data features. As a final step in the pre-processing routine, 'NaN', 'inf' and '-inf' strings were replaced with zero values, and any records with all missing data were dropped.
 
 ###4.0: Features
 
@@ -558,7 +558,7 @@ As with the original pre-processed dataset, any 'NaN', 'inf' and '-inf' values (
 
 ####Optimal Feature Selection
 
-In order to get some insight into the relevancy of the newly added features, the SelectKBest<sup>1</sup> univariate feature selection algorithm was used, with an ANOVA F-value classification for ranking. This alogrithm was applied to both the original and additional feature datasets.
+In order to get some insight into the relevancy of the newly added features, the SelectKBest<sup>1</sup> univariate feature selection algorithm was used, with an ANOVA F-value classification for ranking. This algorithm was applied to both the original and additional feature datasets.
 
 
 ```python
@@ -663,7 +663,7 @@ df_final = df_orig[df_final_list]
 
 In order to select the optimal set of estimation algorithm for the final predictive model, a GridSearchCV<sup>2</sup> Pipeline was conducted. According to the sklearn documentation, GridSearchCV implements a 'fit' and 'predict' method like any classifier except that the parameters of the classifier used to predict are optimized by cross-validation.
 
-For this analysis, a collection of pre-processors and estimators were added to a list which are able to be passed to the GridSearchCV. Pre-processors and estimators included within the list and their parameter optimization ranges are noted below.
+For this analysis, a collection of pre-processors and estimators were added to a list which was passed to the GridSearchCV. Pre-processors and estimators included within the list and their parameter optimization ranges are noted below.
 
 Pre-processors:
 * MinMaxScaler<sup>3</sup>()
@@ -883,7 +883,7 @@ Tested pipelines are shown in the following section. Each combination involved t
 
 ###6.0: Validation
 
-Validation involves separating a dataset into two subsets of data, one for training and the other for testing. This allows you to train a prediction model on a training dataset and test the same model specification on a seperate/independent dataset. This practice minimizes the potential for the model to overfit the data, which would translate into good in-sample performance, but poor out-of-sample performance.
+Validation involves separating a dataset into two subsets of data, one for training and the other for testing. This allows you to train a prediction model on a training dataset and test the same model specification on a separate/independent dataset. This practice minimizes the potential for the model to overfit the data, which would translate into good in-sample performance, but poor out-of-sample performance.
 
 For this assessment, each of the various combinations of estimators were trained/tested against a cross-validation loop (StratifiedShuffleSplit) as part of the pipeline search. StratifiedShuffleSplit forms an validation method for potential estimators as the dataset used for this analysis is both small and unbalanced between the classes. As such, simply reserving 10% of the training data for testing would not provide enough data for robust training.
 
@@ -949,13 +949,13 @@ clf = Pipeline(steps=[('minmax', MinMaxScaler(copy=True, feature_range=(0, 1))),
     {'lr__tol': 0.1, 'lr__class_weight': 'auto', 'lr__C': 0.05, 'skb__k': 2}
     
 
-It should be noted that accuracy (the ratio of correct positive labels to total labels assigned) would form a sub-optimal evaluation metric due to the sparsity of POI’s being predicted. For example, if we labeled all persons as a non-POI, an accuracy measure of 87.5% would be achieved. Therefore priority will be given to optimizing precision and recall measures.
+It should be noted that accuracy (the ratio of correct positive labels to total labels assigned) would form a sub-optimal evaluation metric due to the sparsity of POI’s being predicted. For example, if all persons were labelled as non-POI, an accuracy measure of 87.5% would be achieved. Therefore, priority will be given to optimizing precision and recall measures.
 
 Precision can be thought of as the ratio of how often the model is correct in identifying a positive label to the total times it guesses a positive label. In the context of this assessment, precision indicates the ratio of true positives to the records that are actually POI's, which suggests how often a false alarm is generated.
 
 Recall can be thought of as the ratio of how often the model correctly identifies a label as positive to how many total positive labels there actually are. In the context of this assessment, recall is the ratio of true positives to the records flagged as POI's, which suggests how sensitive the classifier is.
 
-Do note, in the context of this assement, it could be argued that recall forms a more important metric than precision as we would like to identify and label as many 'potential' fraud cases as possible.
+Do note, in the context of this assessment, it could be argued that recall forms a more important metric than precision as we would like to identify and label as many 'potential' fraud cases as possible.
 
 Below shows the StratifiedShuffleSplit evaluation metrics for each of the evaluated estimators, post GridSearchCV parameter calibration:
 

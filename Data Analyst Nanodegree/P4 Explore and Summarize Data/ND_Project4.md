@@ -14,14 +14,14 @@ The datafile was obtained from: [Dataset link](https://s3.amazonaws.com/udacity-
 
 Chemical Properties:
 
-* fixed acidity: most acids involved with wine or fixed or nonvolatile (do not evaporate readily) (tartaric acid - g / dm^3)
+* fixed acidity: most acids involved with wine are fixed or nonvolatile (do not evaporate readily) (tartaric acid - g / dm^3)
 * volatile acidity: the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
 * citric acid: found in small quantities, citric acid can add 'freshness' and flavor to wines (g / dm^3)
 * residual sugar: the amount of sugar remaining after fermentation stops (g / dm^3)
 * chlorides: the amount of salt in the wine (sodium chloride - g / dm^3
-* free sulfur dioxide: he free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion (mg / dm^3)
+* free sulfur dioxide: free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion (mg / dm^3)
 * total sulfur dioxide: amount of free and bound forms of S02 (mg / dm^3)
-* density: the density of water is close to that of water depending on the percent alcohol and sugar content (g / cm^3)
+* density: the density of wine is close to that of water depending on the percent alcohol and sugar content (g / cm^3)
 * pH: describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic)
 * sulphates: a wine additive which can contribute to sulfur dioxide gas (S02) levels (potassium sulphate - g / dm3)
 * alcohol: the percent alcohol content of the wine (% by volume)
@@ -77,7 +77,7 @@ As part of the pre-processing routine, an effort was made to identify any potent
 A new series of the ratio between free sulfur dioxide and total sulfur dioxide was created named 'sulf.ratio'.
 
 
-The below Shows a summary of the generated sulf.ratio variable.
+The below shows a summary of the generated sulf.ratio variable.
 
 ```r
 summary(data_wine$sulf.ratio)
@@ -95,7 +95,7 @@ Additionally, two new category series were created:
 
 
 
-The below Shows a summary of the created quality.rating variable:
+The below shows a summary of the created quality.rating variable:
 
 ```r
 summary(data_wine$quality.rating)
@@ -106,7 +106,7 @@ summary(data_wine$quality.rating)
 ##   1.000   1.000   2.000   1.882   2.000   3.000
 ```
 
-The below Shows a summary of the created alcohol.rating variable:
+The below shows a summary of the created alcohol.rating variable:
 
 ```r
 summary(data_wine$alcohol.rating)
@@ -213,7 +213,7 @@ Q: Did you create any new variables from existing variables in the dataset?
 Yes, a variable which shows the ratio of free sulfur dioxide to total sulfur dioxide and two variables which re-categorize wine quality ratings/alcohol content.
 
 Q: Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
-The majority of variables are approximately normally distributed, however many have a positive skew. There also seems to be a number of outliers within each of the dataset variables. No data transformations have been performed at this stage as the intention at this stage is to limit axis ranges for plots in order to account for outliers within each visual representation.
+The majority of variables are approximately normally distributed, however many have a positive skew. There also seems to be a number of outliers within each of the dataset variables. No data transformations have been performed as the intention at this stage is to limit axis ranges for plots in order to account for outliers within each visual representation.
 
 
 ###4. Bivariate Analysis
@@ -276,7 +276,7 @@ The strongest correlations between the dataset variables are between:
 * Correl3: I:density and L:alcohol (-0.78)
 * Correl4: H:total sulfur dioxide and G:free sulfur dioxide (0.62)
 
-Correlation 4 is intuitive as these dataset variables are derivations of the other. Correlations 1, 2 and 3 are of interest however, and warrant further investigation. In the following plots, we will focus on the relationships between residual sugar, total sulfur dioxide, alcohol, density and wine quality rating.
+Correlation 4 is intuitive as these dataset variables are derivations of the other. Correlations 1, 2 and 3 are of interest however, and warrant further investigation. The following plots focus on the relationship between residual sugar, total sulfur dioxide, alcohol, density and wine quality rating.
 
 Scatterplots of correlations between the variables of interest and residual sugar are shown below.
 ![](figure/unnamed-chunk-18-1.png) 
@@ -288,11 +288,11 @@ Both the negative correlation between total sulfur dioxide and alcohol (-0.45) a
 
 Scatterplots of correlations between the variables of interest and alcohol are shown below.
 ![](figure/unnamed-chunk-20-1.png) 
-Again, the strong negative correlation between alcohol and density (-0.78) is immediately obvious. Interestingly, there also seems to be a relationship between alcohol and perceived wine quality, which the correlation matrix above confirms (0.44). We investigate this further below.
+Again, the strong negative correlation between alcohol and density (-0.78) is immediately obvious. Interestingly, there also seems to be a relationship between alcohol and perceived wine quality, which the correlation matrix above confirms (0.44). This is investigated further below.
 
 Histograms of wine quality ratings by alcohol content are shown below.
 ![](figure/unnamed-chunk-21-1.png) 
-Higher alcohol content wines: 2:Mild (between 10% and 12%), 3:Strong (12% or greater) are more represented by higher wine quality ratings.
+Higher alcohol content wines: 2:Mild (between 10% and 12%) and, 3:Strong (12% or greater) are more represented by higher wine quality ratings.
 
 Q: Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
 The key relationship is between the main feature of interest (wine quality) and alcohol. In general, as the level of alcohol increases (decreases), the perceived quality of the wine improves.
@@ -308,12 +308,12 @@ The strongest correlation found was between density and residual sugar. Again, t
 ###5. Multivariate Analysis
 Multivariate analysis is intended to provide insights of the relationship between any three or more variables within the dataset.
 
-Wine quality has a relationship with alcohol and an implied relationship with density and residual sugar. In order to visually respresent these relationships, we create scatterplots of alcohol, density and residual sugar whereby the scatter is colored by the quality rating.
+Wine quality has a relationship with alcohol and an implied relationship with density and residual sugar. In order to visually represent these relationships,  scatterplots of alcohol, density and residual sugar where created the scatter is colored by the quality rating.
 ![](figure/unnamed-chunk-22-1.png) 
 Once again, the positive correlation between alcohol content and wine quality (0.44) can be observed by the scatterplot color transition moving along the x-axis. However, it is difficult to see any relationship between density or residual sugar and level of perceived wine quality.
 
 Q: Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
-We established a relationship between alcohol and wine quality as part of the bivariate analysis. As part of the multivariate analysis, effort was put towards establishing whether those factors which have an identified correlation with alcohol (density and residual sugar), would also demonstrate a relationship with wine quality. Unfortunately, there is no obvious relationship between wine quality and these factors.
+A relationship was established between alcohol and wine quality as part of the bivariate analysis. As part of the multivariate analysis, effort was put towards establishing whether those factors which have an identified correlation with alcohol (density and residual sugar), would also demonstrate a relationship with wine quality. Unfortunately, there is no obvious relationship between wine quality and these factors.
 
 Q: Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
 The negative correlation between alcohol and density once again presented itself as part of the multivariate analysis.
@@ -324,11 +324,11 @@ A summary of the key univariate, bivariate and multivariate plots is provided. F
 
 The wine quality characteristic was investigated as part of the univariate analysis.
 ![](figure/unnamed-chunk-23-1.png) 
-Revisiting the distribution of wine quality ratings, we see that for most wines, the quality score falls between 5 and 6.
+Revisiting the distribution of wine quality ratings, it is evident that for most wines, the quality score falls between 5 and 6.
 
 As part of the bivariate analysis, a relationship between alcohol and wine quality was found.
 ![](figure/unnamed-chunk-24-1.png) 
-The above plots show histrograms of wine quality ratings, colored by alcohol content. The plot on the left shows the full range of wine quality ratings while the plot on the right shows the categorized quality ratings as discussed earlier. Alcohol content colors are matched to the alcohol content categories: 1:Weak (10% or less), 2:Mild (between 10% and 12%), and 3:Strong (12% or greater). 
+The above plots show histograms of wine quality ratings, colored by alcohol content. The plot on the left shows the full range of wine quality ratings while the plot on the right shows the categorized quality ratings as discussed earlier. Alcohol content colors are matched to the alcohol content categories: 1:Weak (10% or less), 2:Mild (between 10% and 12%), and 3:Strong (12% or greater). 
 
 The plots show that higher alcohol content wines (10% or greater) have a grater representation in observations with a higher wine quality rating (6 or greater). This is particularly obvious when looking at the right plot which has a much greater amount of higher alcohol content wines falling within the 'Great' wine quality category. 
 
