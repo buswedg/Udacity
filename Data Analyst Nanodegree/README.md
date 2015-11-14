@@ -41,7 +41,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<p>Recorded 'food pinching efficiency' for 31 male junior college students and 21 primary school pupils who used chopsticks of various lengths. <a href = "https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P0%20Analyze%20Chopstick%20Length/data/chopstick-effectiveness.csv">[link]</a></p>
+<p>Recorded 'food pinching efficiency' for 31 male junior college students and 21 primary school pupils who used chopsticks of various lengths. <a href="https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P0%20Analyze%20Chopstick%20Length/data/chopstick-effectiveness.csv" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -91,7 +91,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<p>Recorded response times for participants to identify words which are congruent or incongruent. <a href = "https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P1%20Test%20a%20Perceptual%20Phenomenon/data/stroopdata.csv">[link]</a></p>
+<p>Recorded response times for participants to identify words which are congruent or incongruent. <a href="https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P1%20Test%20a%20Perceptual%20Phenomenon/data/stroopdata.csv" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -141,7 +141,7 @@ Transportation
 </tr>
 <tr>
 <td colspan="4">
-<p>13k records of data logged by the MTA on their turnstiles in the New York subway system during the month of May 2011. <a href = "https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P2%20Analyzing%20the%20NYC%20Subway%20Dataset/data/turnstile_weather_v2.csv">[link]</a></p>
+<p>13k records of data logged by the MTA on their turnstiles in the New York subway system during the month of May 2011. <a href="https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P2%20Analyzing%20the%20NYC%20Subway%20Dataset/data/turnstile_weather_v2.csv" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -191,7 +191,7 @@ MongoDB<br>Python
 </tr>
 <tr>
 <td colspan="4">
-<p>MapZen OSM XML metro extract for Perth, Australia. <a href = "https://mapzen.com/data/metro-extracts">[link]</a></p>
+<p>MapZen OSM XML metro extract for Perth, Australia. <a href="https://mapzen.com/data/metro-extracts" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -241,7 +241,7 @@ Food, Beverages and Tobacco
 </tr>
 <tr>
 <td colspan="4">
-<p>Dataset of white wine chemical properties and subjective taste quality rankings. <a href = "http://www3.dsi.uminho.pt/pcortez/wine/">[link]</a></p>
+<p>Dataset of white wine chemical properties and subjective taste quality rankings. <a href="http://www3.dsi.uminho.pt/pcortez/wine/" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -291,7 +291,7 @@ Python
 </tr>
 <tr>
 <td colspan="4">
-<p>Pre-processed dataset which contains a number of features for Enron employees, including salary and historic email activity. <a href = "https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P5%20Identifying%20Fraud%20from%20Enron%20Email/data/final_project_dataset.pkl">[link]</a></p>
+<p>Pre-processed dataset which contains a number of features for Enron employees, including salary and historic email activity. <a href="https://github.com/buswedg/Udacity/blob/master/Data%20Analyst%20Nanodegree/P5%20Identifying%20Fraud%20from%20Enron%20Email/data/final_project_dataset.pkl" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
@@ -341,7 +341,7 @@ Transportation
 </tr>
 <tr>
 <td colspan="4">
-<p>US Airport flight delay statistics sourced from the Bureau of Transportation Statistics. <a href = "http://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp">[link]</a></p>
+<p>US Airport flight delay statistics sourced from the Bureau of Transportation Statistics. <a href="http://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp" target="_blank">[link]</a></p>
 </td>
 </tr>
 </table>
