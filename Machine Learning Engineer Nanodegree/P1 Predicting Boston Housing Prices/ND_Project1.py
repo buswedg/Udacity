@@ -9,11 +9,9 @@ from __future__ import print_function
 # In[2]:
 
 import notebook
-#notebook.nbextensions.check_nbextension('usability/python-markdown/', user = True)
-#notebook.nbextensions.check_nbextension('usability/aspell/', user = True)
+#notebook.nbextensions.check_nbextension("usability/python-markdown/", user = True)
 E = notebook.nbextensions.EnableNBExtensionApp()
-E.enable_nbextension('usability/python-markdown/main')
-E.enable_nbextension('usability/aspell/main')
+E.enable_nbextension("usability/python-markdown/main")
 
 
 # In[3]:
@@ -69,12 +67,13 @@ feature_desc = ["Per Capita Crime Rate by Town",
 
 # ###Introduction
 
-# This documents presents the results for the first project within the Machine Learning Engineer Nanodegree program. This assessment required the student to leverage machine learning techniques in order to quantify a client's house price within the Boston Area.
+# This documents presents results for the first project within the Machine Learning Engineer Nanodegree program. This assessment required the student to leverage machine learning techniques in order to quantify a client's house price within the Boston Area.
 
 # ###Data
 
 # In[5]:
 
+import pandas as pd
 import numpy as np
 
 total_houses = len(housing_features)
@@ -86,6 +85,18 @@ maximum_price = round(np.amax(housing_prices) * 1000, 2)
 mean_price = round(np.mean(housing_prices) * 1000, 2)
 median_price = round(np.median(housing_prices) * 1000, 2)
 std_dev = round(np.std(housing_prices) * 1000, 2)
+
+list_stats = [["Total houses", total_houses],
+              ["Total features", total_features],
+              ["Minimum price", minimum_price],
+              ["Maximum price", maximum_price],
+              ["Mean price", mean_price],
+              ["Median price", median_price],
+              ["Price standard deviation", std_dev]]
+
+print("Table 1: Dataset Statistics Table")
+df_results = pd.DataFrame(list_stats, columns = ["Statistic", "Value"])
+df_results
 
 
 # This assessment uses house price data from the StatLib library which is maintained at Carnegie Mellon University, and hosted on the <a href = "https://archive.ics.uci.edu/ml/datasets/Housing">UCI Machine Learning Repository</a>. There are {{total_houses}} houses and {{total_features}} features within the dataset. The minmum house price is {{minimum_price}}, maximum price is {{maximum_price}} and mean price is {{mean_price}}, all in dollars.
@@ -104,7 +115,7 @@ import statsmodels.api as sm
 import numpy as np
 import matplotlib.gridspec as gridspec
 import matplotlib.pyplot as plot
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 fig = plot.figure(figsize = (14, 22))
 gs = gridspec.GridSpec(7, 2)
@@ -155,7 +166,7 @@ resultcols = ["feature",
               "p-value",
               "r^2"]
 
-results_df = pd.DataFrame([])
+df_results = pd.DataFrame([])
 
 for f in enumerate(feature_names):
     feat_desc = feature_desc[f[0]]
@@ -170,7 +181,7 @@ for f in enumerate(feature_names):
     p_value = ols_fitted.pvalues[0] #p-value
     r2 = ols_fitted.rsquared #R^2
     
-    temp_df = pd.DataFrame([[f[1],
+    df_temp = pd.DataFrame([[f[1],
                              feat_desc, 
                              coeff, 
                              t_stat, 
@@ -178,10 +189,10 @@ for f in enumerate(feature_names):
                              r2]], 
                            index = [f[0]], columns = resultcols)
 
-    results_df = results_df.append(temp_df)
+    df_results = df_results.append(df_temp)
 
-print("Table 1: Feature Regression Statistics Table")
-results_df.sort_values(by = "r^2", ascending = False)
+print("Table 2: Feature Regression Statistics Table")
+df_results.sort_values(by = "r^2", ascending = False)
 
 
 # Subjectively, the coefficient polarity for each of the regressed features shown above seems reasonable. The regression fit does vary significantly for each however, with Feature 12: % Lower Status of the Population having the highest $R^2$ value, and Feature 3: Charles River Dummy Variable having the lowest $R^2$ value.
@@ -212,7 +223,7 @@ resultcols = ["feature",
               "clientValue",
               "prelimSelection"]
 
-results_df = pd.DataFrame([])
+df_results = pd.DataFrame([])
 
 i = 0
 for f in feature_names:
@@ -221,7 +232,7 @@ for f in feature_names:
     else:
         pselec = 0
     
-    temp_df = pd.DataFrame([[f,
+    df_temp = pd.DataFrame([[f,
                              feature_desc[i],
                              min(housing_features[:,i]),
                              max(housing_features[:,i]),
@@ -229,11 +240,11 @@ for f in feature_names:
                              pselec]],
                              index = [i], columns = resultcols)
 
-    results_df = results_df.append(temp_df)
+    df_results = df_results.append(df_temp)
     i += 1
     
-print("Table 2: Client Feature Value Comparison Table")
-results_df
+print("Table 3: Client Feature Value Comparison Table")
+df_results
 
 
 # In[10]:
@@ -310,8 +321,6 @@ total_error = performance_metric(y_train, y_train)
 
 # ####Answer
 
-# 
-
 # In[13]:
 
 from sklearn.tree import DecisionTreeRegressor
@@ -353,6 +362,12 @@ best_param = reg.best_params_["max_depth"]
 
 # ####Answer
 
+# Cross-validation is provides a number of advantages over a simple 'split' method, namely:
+# 
+# - Reduces overfitting: If GridsearchCV were limited to a single training subset which is inconsistent with the wider dataset (e.g. contains some form of data anomoly), the resulting model may be overfit to the inconsistent subset of data. Through a process of random splitting, cross-validation optimizes parameters over the entire dataset, limiting the representation of inconsistent subsets of data.
+# - Maximizes data usage: For datasets which are limited in size, cross-validation allows for an extensive exploitation of available data allowing assessing the real potential of our algorithm in terms of performance metrics.
+# 
+# 
 # For this assessment, a <a href = "http://scikit-learn.org/stable/modules/cross_validation.html">k-fold cross-validation procedure</a> has been implemented via the scikit learn package. Under this technique, the training set is split into k smaller sets, with the model trained using k-1 of the folds and tested on the remaining part of the data. This folding process continues in order to capture insights from the entire dataset. Under each fold, the GridSearchCV proceedure also optimizes the parameters set.
 # 
 # Below, a set of evaluations for the DecisionTreeRegressor algorithm according to our chosen performance metric are show. Each evaluation carries an increasing 'max_depth' parameter on the full training set, and can be used to observe how model complexity affects learning and testing errors.
@@ -421,7 +436,7 @@ def model_complexity(X_train, y_train, X_test, y_test):
 from sklearn.tree import DecisionTreeRegressor
 import numpy as np
 import matplotlib.pyplot as plot
-get_ipython().magic(u'matplotlib inline')
+get_ipython().magic('matplotlib inline')
 
 learning_curves(X_train, y_train, X_test, y_test)
 
@@ -432,7 +447,7 @@ learning_curves(X_train, y_train, X_test, y_test)
 
 # ####Answer
 
-# The four plots shown above vary the `max_depth` parameter of the model between 1, 3, 6 and 10. For all plots the testing error is greater than the training error, which is intuitive. In all cases, a very small amount of available datapoints in the training set leads to a large test error. As the number of datapoints increase, this error tends to fall, however there are some notable spikes in both testing error over the range.
+# The four plots shown above vary the `max_depth` parameter of the model between 1, 3, 6 and 10. For all plots the testing error is greater than the training error, which is intuitive. In all cases, a very small amount of available datapoints in the training set leads to a large test error. As the number of datapoints increase, testing error tends to fall, however there are some notable spikes in both testing error over the range. At the same time, as the number of datapoints in the increases, training error tends to increase, showing that the model training routine is encountering a growing amount of generalized data.
 
 # ###Question 8
 
@@ -461,6 +476,11 @@ model_complexity(X_train, y_train, X_test, y_test)
 
 # ####Answer
 
+# In[18]:
+
+print("GridsearchCV optimial max_depth:", best_param)
+
+
 # According to the results of the GridSearchCV algorithm, the optimal max_depth parameter for the selected model is {{best_param}}. Not surprisingly, this value is not too dissimilar from the suggested max_depth from the previous question. Selecting a max_depth value significantly greater or less than this value would result in performance issues as described above.
 
 # ###Question 11
@@ -469,12 +489,38 @@ model_complexity(X_train, y_train, X_test, y_test)
 
 # ####Answer
 
-# In[18]:
+# In[19]:
 
-sale_price = round(reg.predict(CLIENT_FEATURES) * 1000, 2)
+sale_price = round(reg.predict(CLIENT_FEATURES)[0] * 1000, 2)
+print("Predicted sale price:", sale_price)
+print("Dataset mean sale price", mean_price)
 
 
 # According to the parameter-tuned model, the suggested selling price for the client's home is {{sale_price}} dollars, which is not too dissimilar from the mean price of {{mean_price}} dollars.
+
+# To further assess the predicted client sale price, we can use SKlearn to make a comparison of the predication against the Nearest Neighbours of the original house feature vector.
+
+# In[20]:
+
+from sklearn.neighbors import NearestNeighbors
+
+def find_nearest_neighbor_indexes(x, X):  # x is your vector and X is the data set.
+   neigh = NearestNeighbors( n_neighbors = 10 )
+   neigh.fit( X)
+   distance, indexes = neigh.kneighbors( x )
+   return indexes
+
+indexes = find_nearest_neighbor_indexes(CLIENT_FEATURES, housing_features)
+sum_prices = []
+for i in indexes:
+    sum_prices.append(city_data.target[i])
+neighbor_avg = round(np.mean(sum_prices) * 1000, 2)
+
+print("Predicted sale price:", sale_price)
+print("Nearest Neighbors average:", neighbor_avg)
+
+
+# Here, the predicted sales price for the client's home lies closer to the average Nearest Neighbours price.
 
 # ###Question 12
 

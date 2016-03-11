@@ -7,11 +7,9 @@ from __future__ import print_function
 
 ```python
 import notebook
-#notebook.nbextensions.check_nbextension('usability/python-markdown/', user = True)
-#notebook.nbextensions.check_nbextension('usability/aspell/', user = True)
+#notebook.nbextensions.check_nbextension("usability/python-markdown/", user = True)
 E = notebook.nbextensions.EnableNBExtensionApp()
-E.enable_nbextension('usability/python-markdown/main')
-E.enable_nbextension('usability/aspell/main')
+E.enable_nbextension("usability/python-markdown/main")
 ```
 
 
@@ -86,12 +84,13 @@ feature_desc = ["Per Capita Crime Rate by Town",
 
 ###Introduction
 
-This documents presents the results for the first project within the Machine Learning Engineer Nanodegree program. This assessment required the student to leverage machine learning techniques in order to quantify a client's house price within the Boston Area.
+This documents presents results for the first project within the Machine Learning Engineer Nanodegree program. This assessment required the student to leverage machine learning techniques in order to quantify a client's house price within the Boston Area.
 
 ###Data
 
 
 ```python
+import pandas as pd
 import numpy as np
 
 total_houses = len(housing_features)
@@ -103,7 +102,76 @@ maximum_price = round(np.amax(housing_prices) * 1000, 2)
 mean_price = round(np.mean(housing_prices) * 1000, 2)
 median_price = round(np.median(housing_prices) * 1000, 2)
 std_dev = round(np.std(housing_prices) * 1000, 2)
+
+list_stats = [["Total houses", total_houses],
+              ["Total features", total_features],
+              ["Minimum price", minimum_price],
+              ["Maximum price", maximum_price],
+              ["Mean price", mean_price],
+              ["Median price", median_price],
+              ["Price standard deviation", std_dev]]
+
+print("Table 1: Dataset Statistics Table")
+df_results = pd.DataFrame(list_stats, columns = ["Statistic", "Value"])
+df_results
 ```
+
+    Table 1: Dataset Statistics Table
+    
+
+
+
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Statistic</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Total houses</td>
+      <td>506.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Total features</td>
+      <td>13.00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Minimum price</td>
+      <td>5000.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Maximum price</td>
+      <td>50000.00</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Mean price</td>
+      <td>22532.81</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Median price</td>
+      <td>21200.00</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Price standard deviation</td>
+      <td>9188.01</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 This assessment uses house price data from the StatLib library which is maintained at Carnegie Mellon University, and hosted on the <a href = "https://archive.ics.uci.edu/ml/datasets/Housing">UCI Machine Learning Repository</a>. There are {{total_houses}} houses and {{total_features}} features within the dataset. The minmum house price is {{minimum_price}}, maximum price is {{maximum_price}} and mean price is {{mean_price}}, all in dollars.
 
@@ -176,7 +244,7 @@ resultcols = ["feature",
               "p-value",
               "r^2"]
 
-results_df = pd.DataFrame([])
+df_results = pd.DataFrame([])
 
 for f in enumerate(feature_names):
     feat_desc = feature_desc[f[0]]
@@ -191,7 +259,7 @@ for f in enumerate(feature_names):
     p_value = ols_fitted.pvalues[0] #p-value
     r2 = ols_fitted.rsquared #R^2
     
-    temp_df = pd.DataFrame([[f[1],
+    df_temp = pd.DataFrame([[f[1],
                              feat_desc, 
                              coeff, 
                              t_stat, 
@@ -199,13 +267,13 @@ for f in enumerate(feature_names):
                              r2]], 
                            index = [f[0]], columns = resultcols)
 
-    results_df = results_df.append(temp_df)
+    df_results = df_results.append(df_temp)
 
-print("Table 1: Feature Regression Statistics Table")
-results_df.sort_values(by = "r^2", ascending = False)
+print("Table 2: Feature Regression Statistics Table")
+df_results.sort_values(by = "r^2", ascending = False)
 ```
 
-    Table 1: Feature Regression Statistics Table
+    Table 2: Feature Regression Statistics Table
     
 
 
@@ -376,7 +444,7 @@ resultcols = ["feature",
               "clientValue",
               "prelimSelection"]
 
-results_df = pd.DataFrame([])
+df_results = pd.DataFrame([])
 
 i = 0
 for f in feature_names:
@@ -385,7 +453,7 @@ for f in feature_names:
     else:
         pselec = 0
     
-    temp_df = pd.DataFrame([[f,
+    df_temp = pd.DataFrame([[f,
                              feature_desc[i],
                              min(housing_features[:,i]),
                              max(housing_features[:,i]),
@@ -393,14 +461,14 @@ for f in feature_names:
                              pselec]],
                              index = [i], columns = resultcols)
 
-    results_df = results_df.append(temp_df)
+    df_results = df_results.append(df_temp)
     i += 1
     
-print("Table 2: Client Feature Value Comparison Table")
-results_df
+print("Table 3: Client Feature Value Comparison Table")
+df_results
 ```
 
-    Table 2: Client Feature Value Comparison Table
+    Table 3: Client Feature Value Comparison Table
     
 
 
@@ -618,8 +686,6 @@ What is the grid search algorithm and when is it applicable?
 ####Answer
 
 
-
-
 ```python
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import make_scorer
@@ -659,6 +725,12 @@ There are a range of search algorithms available to the analyst for parameter se
 What is cross-validation, and how is it performed on a model? Why would cross-validation be helpful when using grid search?
 
 ####Answer
+
+Cross-validation is provides a number of advantages over a simple 'split' method, namely:
+
+- Reduces overfitting: If GridsearchCV were limited to a single training subset which is inconsistent with the wider dataset (e.g. contains some form of data anomoly), the resulting model may be overfit to the inconsistent subset of data. Through a process of random splitting, cross-validation optimizes parameters over the entire dataset, limiting the representation of inconsistent subsets of data.
+- Maximizes data usage: For datasets which are limited in size, cross-validation allows for an extensive exploitation of available data allowing assessing the real potential of our algorithm in terms of performance metrics.
+
 
 For this assessment, a <a href = "http://scikit-learn.org/stable/modules/cross_validation.html">k-fold cross-validation procedure</a> has been implemented via the scikit learn package. Under this technique, the training set is split into k smaller sets, with the model trained using k-1 of the folds and tested on the remaining part of the data. This folding process continues in order to capture insights from the entire dataset. Under each fold, the GridSearchCV proceedure also optimizes the parameters set.
 
@@ -733,14 +805,14 @@ import matplotlib.pyplot as plot
 learning_curves(X_train, y_train, X_test, y_test)
 ```
 
-    C:\Anaconda3\envs\python2\lib\site-packages\ipykernel\__main__.py:14: DeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
-    C:\Anaconda3\envs\python2\lib\site-packages\ipykernel\__main__.py:15: DeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
-    C:\Anaconda3\envs\python2\lib\site-packages\matplotlib\figure.py:397: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
+    C:\Anaconda3\envs\python3\lib\site-packages\ipykernel\__main__.py:14: DeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+    C:\Anaconda3\envs\python3\lib\site-packages\ipykernel\__main__.py:15: DeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+    C:\Anaconda3\envs\python3\lib\site-packages\matplotlib\figure.py:397: UserWarning: matplotlib is currently using a non-GUI backend, so cannot show the figure
       "matplotlib is currently using a non-GUI backend, "
     
 
 
-![png](output_50_1.png)
+![png](output_49_1.png)
 
 
 ###Question 7
@@ -749,7 +821,7 @@ Choose one of the learning curve graphs that are created above. What is the max 
 
 ####Answer
 
-The four plots shown above vary the `max_depth` parameter of the model between 1, 3, 6 and 10. For all plots the testing error is greater than the training error, which is intuitive. In all cases, a very small amount of available datapoints in the training set leads to a large test error. As the number of datapoints increase, this error tends to fall, however there are some notable spikes in both testing error over the range.
+The four plots shown above vary the `max_depth` parameter of the model between 1, 3, 6 and 10. For all plots the testing error is greater than the training error, which is intuitive. In all cases, a very small amount of available datapoints in the training set leads to a large test error. As the number of datapoints increase, testing error tends to fall, however there are some notable spikes in both testing error over the range. At the same time, as the number of datapoints in the increases, training error tends to increase, showing that the model training routine is encountering a growing amount of generalized data.
 
 ###Question 8
 
@@ -771,7 +843,7 @@ model_complexity(X_train, y_train, X_test, y_test)
 ```
 
 
-![png](output_62_0.png)
+![png](output_61_0.png)
 
 
 As model complexity increases, both the training and test error improves. It is important to note that both error measures see diminishing returns from each incremental increase in model complexity, with testing error seeing a greater diminishing return effect. In fact, as model complexity increases over the range, the testing error tends to flatten out beyond a maximum depth of four. It is from this point that the model is beginning to overfit the data.
@@ -781,6 +853,14 @@ As model complexity increases, both the training and test error improves. It is 
 Using grid search on the entire dataset, what is the optimal max_depth parameter for your model? How does this result compare to your intial intuition?
 
 ####Answer
+
+
+```python
+print("GridsearchCV optimial max_depth:", best_param)
+```
+
+    GridsearchCV optimial max_depth: 5
+    
 
 According to the results of the GridSearchCV algorithm, the optimal max_depth parameter for the selected model is {{best_param}}. Not surprisingly, this value is not too dissimilar from the suggested max_depth from the previous question. Selecting a max_depth value significantly greater or less than this value would result in performance issues as described above.
 
@@ -792,10 +872,44 @@ With your parameter-tuned model, what is the best selling price for your client'
 
 
 ```python
-sale_price = round(reg.predict(CLIENT_FEATURES) * 1000, 2)
+sale_price = round(reg.predict(CLIENT_FEATURES)[0] * 1000, 2)
+print("Predicted sale price:", sale_price)
+print("Dataset mean sale price", mean_price)
 ```
 
+    Predicted sale price: 20967.76
+    Dataset mean sale price 22532.81
+    
+
 According to the parameter-tuned model, the suggested selling price for the client's home is {{sale_price}} dollars, which is not too dissimilar from the mean price of {{mean_price}} dollars.
+
+To further assess the predicted client sale price, we can use SKlearn to make a comparison of the predication against the Nearest Neighbours of the original house feature vector.
+
+
+```python
+from sklearn.neighbors import NearestNeighbors
+
+def find_nearest_neighbor_indexes(x, X):  # x is your vector and X is the data set.
+   neigh = NearestNeighbors( n_neighbors = 10 )
+   neigh.fit( X)
+   distance, indexes = neigh.kneighbors( x )
+   return indexes
+
+indexes = find_nearest_neighbor_indexes(CLIENT_FEATURES, housing_features)
+sum_prices = []
+for i in indexes:
+    sum_prices.append(city_data.target[i])
+neighbor_avg = round(np.mean(sum_prices) * 1000, 2)
+
+print("Predicted sale price:", sale_price)
+print("Nearest Neighbors average:", neighbor_avg)
+```
+
+    Predicted sale price: 20967.76
+    Nearest Neighbors average: 21520.0
+    
+
+Here, the predicted sales price for the client's home lies closer to the average Nearest Neighbours price.
 
 ###Question 12
 
