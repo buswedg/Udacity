@@ -185,6 +185,7 @@ df_pca_dimension
 import matplotlib.pyplot as plt
 get_ipython().magic('matplotlib inline')
 
+plt.figure(figsize=(10,8))
 plt.plot(list(pca.explained_variance_ratio_),"-o")
 plt.title("Variance Ratio as a Function of PCA Components")
 plt.ylabel("Explained Variance Ratio")
@@ -213,9 +214,37 @@ pca_vardrop_23 = format(pca.explained_variance_ratio_[2] / pca.explained_varianc
 
 # These dimensions are linear combinations of the datasets five features. We can read off these linear combinations from the pca component array shown above.
 # 
-# Observing the first row, we see that the first dimension is almost completely (anti-) aligned along the 'Fresh' direction ({{pca_component_11}}) and slightly in the 'Milk' direction ({{pca_component_12}}) and the 'Frozen' direction ({{pca_component_14}}). It is almost orthogonal to the other directions.
+# Observing the first row, we see that the first dimension is almost completely (anti-) aligned along the 'Fresh' direction ({{pca_component_11}}) and slightly in the 'Milk' direction ({{pca_component_12}}) and the 'Frozen' direction ({{pca_component_14}}). It is almost orthogonal to the other directions. Note however, although these features are (anti-) aligned over this dimension, the prevalence of that feature in the component is represented in terms of absolute magnitude and changing the signs of the components, does not change the variance. As such, we can make the statement that the first dimension contains data mostly on 'Fresh' foods, and to a lessor extent, 'Milk' and 'Frozen' foods.
 # 
-# Observing the second row, we see that the second dimension is most strongly aligned in the 'Grocery' direction ({{pca_component_23}}) as well as the 'Milk' direction ({{pca_component_22}}) and 'Detergents_paper' direction ({{pca_component_25}}), and slightly in the 'Fresh' direction ({{pca_component_21}}). It is almost orthogonal to the other directions.
+# Observing the second row, we see that the second dimension is most strongly aligned in the 'Grocery' direction ({{pca_component_23}}) followed by the 'Milk' direction ({{pca_component_22}}) and 'Detergents_paper' direction ({{pca_component_25}}), and slightly in the 'Fresh' direction ({{pca_component_21}}). It is almost orthogonal to the other directions. Therefore, the second dimension contains data mostly on 'Grocery', 'Milk', and to a lessor extent, 'Detergents_paper'.
+# 
+# Below shows a plot of the first two PCA dimensions discussed above.
+
+# In[15]:
+
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+
+pca2 = PCA(n_components=2, whiten=True).fit(data)
+
+df_pca2 = pd.DataFrame(pca2.transform(data), columns=['PC1', 'PC2'])
+
+df_pca2.plot(kind='scatter', x='PC1', y='PC2', figsize=(10, 8), s=0.8)
+
+for i, (pc1, pc2) in enumerate(
+    zip(pca2.components_[0], pca2.components_[1])):
+    plt.arrow(0, 0, pc1, pc2, width=0.001, fc='orange', ec='orange')
+    plt.annotate(data.columns[i], (pc1, pc2), size=12)
+
+plt.title("Two Dimensional PCA")
+plt.ylabel("PCA Dimension 2")
+plt.xlabel("PCA Dimension 1")
+plt.xlim([-1.1, .5])
+plt.ylim([-.25, 1])
+plt.show()
+
+
+# PCA allows us to reduce the dimensions of the data whilst maintaining most of the information. In this way, PCA allows us to make an assessment of which variables matter the most as we progress to building our classification model. From the plot above, we can see that over these dimensions, 'Fresh', 'Milk' and 'Grocery' are the highest uncorrelated components.
 
 # ###Question 4
 
@@ -225,7 +254,7 @@ pca_vardrop_23 = format(pca.explained_variance_ratio_[2] / pca.explained_varianc
 
 # Fit ICA.
 
-# In[15]:
+# In[16]:
 
 from sklearn.decomposition import FastICA
 ica = FastICA(n_components=6)
@@ -234,7 +263,7 @@ ica.fit(data)
 
 # Show ICA components.
 
-# In[16]:
+# In[17]:
 
 import pandas as pd
 import numpy as np
@@ -254,7 +283,7 @@ print("Table 5: ICA Components (10^5)")
 df_ica_components
 
 
-# In[17]:
+# In[18]:
 
 ica_component_1 = ica.components_[0]
 ica_component_11 = format(ica.components_[0][0]*10**5, ".4f")
@@ -297,7 +326,22 @@ ica_component_46 = format(ica.components_[3][5]*10**5, ".4f")
 # 
 # Finally, observing the forth row, we see that the forth vector has a high representation of the 'Milk' feature, with a positive coefficient of {{ica_component_42}}. Indicating high spending on this feature within the vector.
 # 
-# Like with the PCA analysis shown above, interpreting these results allows us to form an initial impression about the customer segments contained in the data.
+# Below shows a plot of each vector of the ICA.
+
+# In[19]:
+
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+
+df_ica_components.plot(kind='bar', figsize=(10, 8))
+
+plt.title("ICA Components")
+plt.ylabel("Coefficient")
+plt.xlabel("ICA Vector")
+plt.show()
+
+
+# Like with the PCA analysis shown above, interpreting these results allows us to form an initial impression about the customer segments contained in the data by showing which variables matter the most.
 
 # ###Question 5
 
@@ -321,7 +365,7 @@ ica_component_46 = format(ica.components_[3][5]*10**5, ".4f")
 
 # Fit PCA with two components.
 
-# In[18]:
+# In[20]:
 
 from sklearn.decomposition import PCA
 pca = PCA(n_components=2)
@@ -330,7 +374,7 @@ pca.fit(data)
 
 # Use PCA to transform the data under two components.
 
-# In[19]:
+# In[21]:
 
 import pandas as pd
 import numpy as np
@@ -348,7 +392,7 @@ df_reduced_data[:5]
 
 # Fit KMeans clustering algorithm with five clusters to the PCA reduced dataset.
 
-# In[20]:
+# In[22]:
 
 from sklearn.cluster import KMeans
 
@@ -358,7 +402,7 @@ clusters.fit(reduced_data)
 
 # Find the centroids for KMeans clusters.
 
-# In[21]:
+# In[23]:
 
 import pandas as pd
 import numpy as np
@@ -376,7 +420,16 @@ df_centroids[:5]
 
 # Plot the KMeans clusters with centoids over the PCA reduced dataset.
 
-# In[22]:
+# In[24]:
+
+from sklearn.cluster import KMeans
+import numpy as np
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+
+clusters = KMeans(n_clusters=5)
+clusters.fit(reduced_data)
+centroids = clusters.cluster_centers_
 
 # Plot the decision boundary by building a mesh grid to populate a graph.
 x_min, x_max = reduced_data[:, 0].min() - 1, reduced_data[:, 0].max() + 1
@@ -390,7 +443,7 @@ Z = clusters.predict(np.c_[xx.ravel(), yy.ravel()])
 
 # Put the result into a color plot
 Z = Z.reshape(xx.shape)
-plt.figure(1)
+plt.figure(figsize=(10,8))
 plt.clf()
 plt.imshow(Z, interpolation='nearest',
            extent=(xx.min(), xx.max(), yy.min(), yy.max()),
@@ -410,6 +463,62 @@ plt.yticks(())
 plt.show()
 
 
+# We can also plot the KMeans clusters with centoids with a variable cluster number. See the plot below for a cluster size ranging from one to six.
+
+# In[25]:
+
+import matplotlib.gridspec as gridspec
+import matplotlib.pyplot as plt
+get_ipython().magic('matplotlib inline')
+
+fig = plt.figure(figsize = (14, 12))
+gs = gridspec.GridSpec(3, 2)
+
+for i in range(0, 6):
+    if i <= 2:
+        ax = plt.subplot(gs[i, 0])
+    else:
+        ax = plt.subplot(gs[i-3, 1])
+
+    clusters = KMeans(n_clusters=i+1)
+    clusters.fit(reduced_data)
+    centroids = clusters.cluster_centers_
+
+    # Plot the decision boundary by building a mesh grid to populate a graph.
+    x_min, x_max = reduced_data[:, 0].min() - 1, reduced_data[:, 0].max() + 1
+    y_min, y_max = reduced_data[:, 1].min() - 1, reduced_data[:, 1].max() + 1
+    hx = (x_max-x_min)/1000.
+    hy = (y_max-y_min)/1000.
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, hx), np.arange(y_min, y_max, hy))
+
+    # Obtain labels for each point in mesh. Use last trained model.
+    Z = clusters.predict(np.c_[xx.ravel(), yy.ravel()])
+
+    # Put the result into a color plot
+    Z = Z.reshape(xx.shape)
+        
+    plt.imshow(Z, interpolation='nearest',
+               extent=(xx.min(), xx.max(), yy.min(), yy.max()),
+               cmap=plt.cm.Paired,
+               aspect='auto', origin='lower')
+    plt.plot(reduced_data[:, 0], reduced_data[:, 1], 'k.', markersize=2)
+    plt.scatter(centroids[:, 0], centroids[:, 1],
+                marker='x', s=169, linewidths=3,
+                color='w', zorder=10)
+    plt.title('Clustering on the wholesale grocery dataset (PCA-reduced data)\n'
+              'Centroids are marked with white cross, n_clusters=' + str(i+1))
+    plt.xlim(x_min, x_max)
+    plt.ylim(y_min, y_max)
+    plt.xticks(())
+    plt.yticks(())
+    
+    fig.add_subplot(ax)
+    
+plt.show()
+
+
+# The choice of three clusters seems to generally categorize the data, however choice of five clusters seems to a better job of classifying the tight cluster where the bulk of datapoints lie.
+
 # ###Question 7
 
 # What are the central objects in each cluster? Describe them as customers.
@@ -418,7 +527,7 @@ plt.show()
 
 # Convert centroids back to original space.
 
-# In[23]:
+# In[26]:
 
 import pandas as pd
 import numpy as np
@@ -440,7 +549,7 @@ print("Table 8: Converted Centroids")
 df_converted_centoids
 
 
-# In[24]:
+# In[27]:
 
 converted_centoids_1 = converted_centoids[0]
 converted_centoids_11 = format(converted_centoids[0][0], ".4f")
