@@ -1,0 +1,2934 @@
+	riderId	riderName	riderNumber	riderNationality	riderTeam	riderMotortype
+0	1	Noboru UEDA	5	JPN	Givi Honda LCR	HONDA
+0	2	Mirko GIANSANTI	32	ITA	Benetton Playlife	HONDA
+0	3	Arnaud VINCENT	21	FRA	CC Valencia Airtel Aspar	APRILIA
+0	4	Gianluigi SCALVINI	8	ITA	Bossini Fontana Racing	APRILIA
+0	5	Manuel POGGIALI	54	RSM	Derbi Racing	DERBI
+0	6	Roberto LOCATELLI	4	ITA	Diesel Vasco Rossi Racing	APRILIA
+0	7	Ivan GOI	26	ITA	Team Fomma	HONDA
+0	8	Emilio ALZAMORA	1	SPA	Telefonica Movistar Team	HONDA
+0	9	Youichi UI	41	JPN	Derbi Racing	DERBI
+0	10	Steve JENKNER	17	GER	Pev Massivhaus ADAC Sachsen	HONDA
+0	11	Max SABBATANI	11	ITA	Racing Service	HONDA
+0	12	Angel NIETO Jr.	29	SPA	Telefonica Movistar Team	HONDA
+0	13	Randy DE PUNIET	12	FRA	Scrab Competition	APRILIA
+0	14	Masao AZUMA	3	JPN	Benetton Playlife	HONDA
+0	15	Gino BORSOI	23	ITA	LAE - UGT 3000	APRILIA
+0	16	Lucio CECCHINELLO	9	ITA	Givi Honda LCR	HONDA
+0	17	Pablo NIETO	22	SPA	Derbi Racing	DERBI
+0	18	Alex DE ANGELIS	15	ITA	Chupa Chups Matteoni Racing	HONDA
+0	19	Simone SANNA	16	ITA	Diesel Vasco Rossi Racing	APRILIA
+0	20	Reinhard STOLZ	35	GER	R.S. Adac - Esch Racing	HONDA
+0	21	Marco PETRINI	51	ITA	Semprucci Biesse Aprilia	APRILIA
+0	22	Antonio ELIAS	18	SPA	Chupa Chups Matteoni Racing	HONDA
+0	23	Adrian ARAUJO	10	SPA	Antinucci Racing Team	HONDA
+0	24	William DE ANGELIS	53	ITA	Semprucci Biesse Aprilia	APRILIA
+0	25	Jaroslav HULES	39	CZE	Italjet Moto	ITALJET
+0	26	Leon HASLAM	24	GBR	Italjet Moto	ITALJET
+0	27	Steve JENKNER	17	GER	Pev Massivhaus ADAC Sac	HONDA
+0	28	Alex DE ANGELIS	15	ITA	Chupa Chups Matteoni Raci	HONDA
+0	29	Antonio ELIAS	18	SPA	Chupa Chups Matteoni Raci	HONDA
+0	30	Tohru UKAWA	4	JPN	Shell Advance Honda Team	HONDA
+0	31	Olivier JACQUE	19	FRA	Chesterfield Yamaha Tech 3	YAMAHA
+0	32	Daijiro KATOH	74	JPN	Axo Honda Gresini	HONDA
+0	33	Shinya NAKANO	56	JPN	Chesterfield Yamaha Tech 3	YAMAHA
+0	34	Ralf WALDMANN	6	GER	Aprilia Germany	APRILIA
+0	35	Marco MELANDRI	13	ITA	Aprilia Grand Prix Racing	APRILIA
+0	36	Klaus NHLES	26	GER	Aprilia Germany	APRILIA
+0	37	Franco BATTAINI	21	ITA	Motoracing Battaini	APRILIA
+0	38	Anthony WEST	14	AUS	Shell Advance Honda Team	HONDA
+0	39	Jamie ROBINSON	77	GBR	QUB Team Optimum	APRILIA
+0	40	Jason VINCENT	24	GBR	Padgetts M/C Sales	APRILIA
+0	41	David GARCIA	54	SPA	PR2 - Circuito de Almera	APRILIA
+0	42	Adrian COATES	15	GBR	QUB Team Optimum	APRILIA
+0	43	Alex HOFMANN	66	GER	Racing Factory	APRILIA
+0	44	Sebastian PORTO	9	ARG	Edo Racing	YAMAHA
+0	45	Luca BOSCOSCURO	37	ITA	Diesel Vasco Rossi Racing	APRILIA
+0	46	Johan STIGEFELT	16	SWE	Dee Cee Jeans Racing Team	TSR-HONDA
+0	47	Fonsi NIETO	10	SPA	Antena 3 Yamaha-D'Antin	YAMAHA
+0	48	Jarno JANSSEN	41	NED	Rizla Honda	TSR-HONDA
+0	49	Naoki MATSUDO	8	JPN	Petronas Sprinta Team TVK	YAMAHA
+0	50	David CHECA	42	SPA	Team Fomma	TSR-HONDA
+0	51	Alex DEBON	30	SPA	CC Valencia Airtel Aspar	APRILIA
+0	52	Ivan CLEMENTI	11	ITA	Campetella Racing	APRILIA
+0	53	Lucas OLIVER	31	SPA	Antena 3 Yamaha-D'Antin	YAMAHA
+0	54	Shahrol YUZY	18	MAL	Petronas Sprinta Team TVK	YAMAHA
+0	55	Roberto ROLFO	44	ITA	Tino Villa Racing	TSR-HONDA
+0	56	Vincent PHILIPPE	25	FRA	Axo Honda Gresini	TSR-HONDA
+0	57	Mike BALDINGER	12	GER	Yamaha Kurz Aral	YAMAHA
+0	58	Garry McCOY	24	AUS	Red Bull Yamaha WCM	YAMAHA
+0	59	Valentino ROSSI	46	ITA	Nastro Azzurro Honda	HONDA
+0	60	Sete GIBERNAU	5	SPA	Repsol Honda Team	HONDA
+0	61	Tadayuki OKADA	8	JPN	Repsol Honda Team	HONDA
+0	62	Alex BARROS	10	BRA	Honda Pons	HONDA
+0	63	Carlos CHECA	7	SPA	Marlboro Yamaha Team	YAMAHA
+0	64	Kenny ROBERTS	2	USA	Telefonica Movistar Suzuki	SUZUKI
+0	65	Tetsuya HARADA	31	JPN	Aprilia Grand Prix Racing	APRILIA
+0	66	Jeremy McWILLIAMS	99	GBR	Aprilia Grand Prix Racing	APRILIA
+0	67	Alex CRIVILLE	1	SPA	Repsol Honda Team	HONDA
+0	68	Nobuatsu AOKI	9	JPN	Telefonica Movistar Suzuki	SUZUKI
+0	69	Regis LACONI	55	FRA	Red Bull Yamaha WCM	YAMAHA
+0	70	Norick ABE	6	JPN	Antena 3 Yamaha-D'Antin	YAMAHA
+0	71	Sebastien GIMBERT	22	FRA	Tecmas Honda Elf	HONDA
+0	72	Jose Luis CARDOSO	25	SPA	Maxon Dee Cee Jeans	HONDA
+0	73	David DE GEA	11	SPA	Proton TEAM KR	MODENAS
+0	74	Loris CAPIROSSI	65	ITA	Honda Pons	HONDA
+0	75	Yoshiteru KONISHI	15	JPN	F.C.C. TSR	TSR-HONDA
+0	76	Max BIAGGI	4	ITA	Marlboro Yamaha Team	YAMAHA
+0	77	Jurgen vd GOORBERGH	17	NED	Rizla Honda	TSR-HONDA
+0	78	Shane NORVAL	12	RSA	Sabre Sport	HONDA
+0	79	Alex BARROS	10	BRA	Emerson Honda Pons	HONDA
+0	80	Loris CAPIROSSI	65	ITA	Emerson Honda Pons	HONDA
+0	81	Alex DE ANGELIS	15	RSM	Chupa Chups Matteoni Racing	HONDA
+0	82	William DE ANGELIS	53	RSM	Semprucci Biesse Aprilia	APRILIA
+0	83	Decha KRISART	48	THA	Siam Yamaha Thailand	YAMAHA
+0	84	Suhathai CHAMSUB	49	THA	Honda Castrol Thailand	HONDA
+0	85	Alex DE ANGELIS	15	RSM	Chupa Chups Matteoni Raci	HONDA
+0	86	Fonsi NIETO	10	SPA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	87	Lucas OLIVER	31	SPA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	88	Johan STIGEFELT	16	SWE	Dee Cee Jeans Racing Tea	TSR-HONDA
+0	89	Norick ABE	6	JPN	Antena 3 Yamaha-d'Antin	YAMAHA
+0	90	Alex CRIVILLE	1	SPA	Repsol YPF Honda Team	HONDA
+0	91	Sete GIBERNAU	5	SPA	Repsol YPF Honda Team	HONDA
+0	92	Tadayuki OKADA	8	JPN	Repsol YPF Honda Team	HONDA
+0	93	Yuzo FUJIOKA	56	JPN	Team Plus One	HONDA
+0	94	Hideyuki NAKAJOH	55	JPN	JHA RACING	HONDA
+0	95	Katsuji UEZU	58	JPN	JRACING Motul	YAMAHA
+0	96	Shinichi SUGAYA	59	JPN	Tec - 2 BP	YAMAHA
+0	97	Hiroyuki KIKUCHI	57	JPN	ACT CORP - Team Wheelie	HONDA
+0	98	Hiroyuki KIKUCHI	57	JPN	Wanpako - Team Wheelie	HONDA
+0	99	Hiroyuki KIKUCHI	57	JPN	Wanpaku - Team Wheelie	HONDA
+0	100	Noboyuki OHSAKI	50	JPN	SP Tadao Racing Team	YAMAHA
+0	101	Osamu MIYAZAKI	49	JPN	Motorex Daytona	YAMAHA
+0	102	Shinichi NAKATOMI	48	JPN	Team Kotake	HONDA
+0	103	Tekkyu KAYO	47	JPN	FCC Castrol TSR	TSR-HONDA
+0	104	Daisaku SAKAI	51	JPN	Endurance	HONDA
+0	105	Taro SEKIGUCHI	32	JPN	Antena 3 Yamaha-d'Antin	YAMAHA
+0	106	Nobuyuki OHSAKI	50	JPN	SP Tadao Racing Team	YAMAHA
+0	107	Franco BATTAINI	21	ITA	Eurobet team Battaini	APRILIA
+0	108	Akira RYO	19	JPN	Team Suzuki	SUZUKI
+0	109	Alessandro BRANNETTI	19	ITA	Antinucci Racing Team	HONDA
+0	110	Ivan MARTINEZ	45	SPA	Team Boydis-Beatriz Hoteles	APRILIA
+0	111	Hector FAUBEL	44	SPA	CC Valencia Airtel Aspar	APRILIA
+0	112	David MICO	43	SPA	Promoto Sport	APRILIA
+0	113	David MICO	43	SPA	nan	APRILIA
+0	114	Marcellino LUCCHI	34	ITA	Aprilia Grand Prix Racing	APRILIA
+0	115	Jeronimo VIDAL	20	SPA	CC Valencia Airtel Aspar	APRILIA
+0	116	Julien ALLEMAND	23	FRA	Yamaha Kurz Aral	YAMAHA
+0	117	David ORTEGA	40	SPA	Team Costa Azahar	HONDA
+0	118	Ismael BONILLA	39	SPA	BRT-Ismael Bonilla	HONDA
+0	119	Yoshiteru KONISHI	15	JPN	Technical Sports Racing	TSR-HONDA
+0	120	David DE GEA	11	SPA	nan	MODENAS
+0	121	Erwan NIGON	62	FRA	Riom Racing Team	YAMAHA
+0	122	Lionel LECOMTE	60	FRA	R.M.S.	HONDA
+0	123	Gregory LEFORT	61	FRA	Provence Moto Sport	APRILIA
+0	124	Hugo MARCHAND	64	FRA	H.R.C.	HONDA
+0	125	Jimmy PETIT	63	FRA	R.M.S.	HONDA
+0	126	Sebastien GIMBERT	22	FRA	Tino Villa Racing	TSR-HONDA
+0	127	Sylvain GUINTOLI	55	FRA	Equipe de France	HONDA
+0	128	Herve MORA	57	FRA	Bentin Racing	HONDA
+0	129	Bruno VECCHIONI	58	FRA	Y.V.R.F	YAMAHA
+0	130	Eric DUBRAY	53	FRA	Sport Moto Developpement	YAMAHA
+0	131	Julien DA COSTA	52	FRA	Equipe de France	HONDA
+0	132	Marco MELANDRI	13	ITA	Blu Aprilia Team	APRILIA
+0	133	Ron HASLAM	21	GBR	Sabre Sport	HONDA
+0	134	Sebastien LE GRELLE	18	BEL	Tecmas Honda Elf	HONDA
+0	135	Jeremy McWILLIAMS	99	GBR	Blu Aprilia Team	APRILIA
+0	136	Tetsuya HARADA	31	JPN	Blu Aprilia Team	APRILIA
+0	137	Sebastien LEGRELLE	18	BEL	Tecmas Honda Elf	HONDA
+0	138	Yoshiteru KONISHI	15	JPN	FCC TSR	TSR-HONDA
+0	139	Jaroslav HULES	39	CZE	PRD Italjet	ITALJET
+0	140	Reinhard STOLZ	35	GER	R.S. ADAC - Esch Racing	HONDA
+0	141	Alex BALDOLINI	66	ITA	Chupa-Cups Matteoni Racing	HONDA
+0	142	Marco TRESOLDI	67	SUI	BMT Swiss Team	HONDA
+0	143	Adrian ARAUJO	10	SPA	Antinucci Racing Team	APRILIA
+0	144	Leon HASLAM	24	GBR	PRD Italjet	ITALJET
+0	145	Marco TRESOLDI	67	SUI	BNT Swiss Team	HONDA
+0	146	Alex BALDOLINI	66	ITA	Chupa-Cups Matteoni Racin	HONDA
+0	147	Callum RAMSAY	23	GBR	Sabre Sport	HONDA
+0	148	Paolo TESSARI	43	ITA	Team Paton	PATON
+0	149	Angel RODRIGUEZ	47	SPA	Analco-3C Racing	APRILIA
+0	150	Eric BATAILLE	34	AND	Queroseno Racing Team	HONDA
+0	151	Joaquin PERERA	50	SPA	T.M.R. Competicion	HONDA
+0	152	Marcellino LUCCHI	34	ITA	Blu Aprilia Team	APRILIA
+0	153	Alvaro MOLINA	38	SPA	Echo Racing Team	APRILIA
+0	154	David TOMAS	33	SPA	Queroseno Racing Team	HONDA
+0	155	Fabrizio DE MARCO	27	ITA	Axo Honda Gresini	HONDA
+0	156	Roberto ROLFO	44	ITA	Racing Factory	APRILIA
+0	157	Alvaro MOLINA	38	SPA	Echo Racing Team	TSR-HONDA
+0	158	Wilhelm VAN LEEUWEN	68	NED	Luvro-Van Leeuwen Motortechnie	HONDA
+0	159	Harold DE HAAN	65	NED	EP BOS ELECTRO ELBING	HONDA
+0	160	Patrick LAKERVELD	70	NED	Roteg Racing	HONDA
+0	161	Ronnie TIMMER	69	NED	Doodeman Dakdekkers	HONDA
+0	162	Wilhelm VAN LEEUWEN	68	NED	Luvro-Van Leeuwen Motorte	HONDA
+0	163	Harold DE HAAN	65	NED	EP BOS ELECTRO ELBIN	HONDA
+0	164	Arnold LITJENS	63	NED	MRTT Hugen Racing	HONDA
+0	165	Jan BLOK	62	NED	MRTT Hugen Racing	HONDA
+0	166	Rob FILART	61	NED	Filart Racing	HONDA
+0	167	Gert PIEPER	64	NED	Megacon	HONDA
+0	168	Phil GILES	20	GBR	Sabre Sport	HONDA
+0	169	Paul ROBINSON	71	GBR	Connolly Transport Racing	HONDA
+0	170	Kenny TIBBLE	72	GBR	Rheos Honda UK	HONDA
+0	171	Stuart EASTON	73	GBR	Demon Vimto Honda	HONDA
+0	172	Gary HASLAM	71	GBR	D  B Bradgate	HONDA
+0	173	Lee JACKSON	72	GBR	Padgets Batley / Team Jackson	HONDA
+0	174	Jason DAVIS	73	GBR	TW2 e-comerce Systems	HONDA
+0	175	David TOMAS	33	SPA	PR2 - Circuito de Almera	HONDA
+0	176	Tom TUNSTALL	70	GBR	Earnshaws Motorcycles	HONDA
+0	177	John McGUINNESS	26	GBR	Demon Vimto Honda	HONDA
+0	178	Anthony GOBERT	30	AUS	Proton TEAM KR	MODENAS
+0	179	Loris CAPIROSSI	65	ITA	nan	HONDA
+0	180	Jarno MLLER	74	GER	ADAC Junior Team Germany	HONDA
+0	181	Jakub SMRZ	78	CZE	Budweiser Budvar Elit Team Han	HONDA
+0	182	Achim KARIGER	75	GER	Ivetra Seel Rracing	HONDA
+0	183	Andreas HAHN	77	GER	TSR Hegemann Germany	HONDA
+0	184	Eric BATAILLE	34	AND	Antinucci Racing Team	HONDA
+0	185	Jascha BCH	76	GER	Yamaha Kurz Aral	YAMAHA
+0	186	Jarno MLLER	74	GER	ADAC Junior Team German	HONDA
+0	187	Jakub SMRZ	78	CZE	Budweiser Budvar Elit Team	HONDA
+0	188	Marco MELANDRI	35	ITA	Blu Aprilia Team	APRILIA
+0	189	Dirk HEIDOLF	76	GER	Team Freudenberg	YAMAHA
+0	190	Dirk REISSMANN	78	GER	Yamaha Kurz Aral	YAMAHA
+0	191	Jeronimo VIDAL	20	SPA	PR2 - Circuito de Almera	APRILIA
+0	192	Christian GEMMEL	80	GER	Kiefer GmbH Racing	HONDA
+0	193	Mathias NEUKIRCHEN	75	GER	Docshop Racing	YAMAHA
+0	194	Andreas GBEL	79	GER	Palatina Racing	HONDA
+0	195	Luca CADALORA	27	ITA	Proton TEAM KR	MODENAS
+0	196	Tekkyu KAYOH	56	JPN	FCC TSR	TSR-HONDA
+0	197	Tekkyu KAYOH	56	JPN	nan	TSR-HONDA
+0	198	Leon HASLAM	24	GBR	Italjet Racing Team	ITALJET
+0	199	Jaroslav HULES	39	CZE	Italjet Racing Team	ITALJET
+0	200	Igor KALAB	79	CZE	AMK Revena Team 2000	HONDA
+0	201	Laszlo BANCSIKI	81	HUN	Kent Clips Team	HONDA
+0	202	Michal BREZINA	80	CZE	Orion Team Litomysl	HONDA
+0	203	Gabor TALMACSI	82	HUN	Pannonia Racing	HONDA
+0	204	Vladimir CASTKA	82	SLK	Slovnaft Sport Moto Team	YAMAHA
+0	205	Michael WITZENEDER	84	AUT	Remus Racing Austria	HONDA
+0	206	Radek ROUS	81	CZE	Klub Racing Team Znojmo	HONDA
+0	207	Uwe BOLTERAURER	83	AUT	Remus Racing Austria	HONDA
+0	208	Jos LEITE	84	POR	Honda Galp Racing Team	HONDA
+0	209	Emmanuel CARVALHO	83	POR	Team Modeka	HONDA
+0	210	Manuel VIEIRA	85	POR	Pgp Mavi	YAMAHA
+0	211	Paulo HENRIQUES	86	POR	VP Motos Ciclo Do Areeiro	APRILIA
+0	212	Paulo HENRIQUES	86	POR	nan	APRILIA
+0	213	Vicente ESPARRAGOSO	86	SPA	VP Motos Ciclo Do Areeiro	YAMAHA
+0	214	Pablo ANTELO	87	SPA	Pablo Antelo RMT	HONDA
+0	215	Felisberto TEIXEIRA	85	POR	Cose Da Mota/Moto Jornal	YAMAHA
+0	216	Vicente ESPARRAGOSO	86	SPA	nan	YAMAHA
+0	217	Mark WILLIS	68	AUS	Proton TEAM KR	MODENAS
+0	218	Renato RAMOS	89	BRA	Gota Dourada Team	HONDA
+0	219	Leandro PANADES	90	BRA	Panades Disnauto Team	HONDA
+0	220	Gian CALABREZZI	52	BRA	Calabrezzi Racing Team	HONDA
+0	221	Wesley GUTIERREZ	87	BRA	Alemao Rodas Team	HONDA
+0	222	Cesar BARROS	67	BRA	Vaz Racing	HONDA
+0	223	Cristiano IRIAS	68	BRA	BRT-Honda Brazil	HONDA
+0	224	David TOMAS	33	SPA	Sabre Sport	HONDA
+0	225	Masafumi ONO	98	JPN	Team Harc-Pro	HONDA
+0	226	Yuzo FUJIOKA	56	JPN	Team Plus One	NER
+0	227	Tomoyoshi KOYAMA	96	JPN	SP Tadao Racing Team	YAMAHA
+0	228	Naoki KATOH	97	JPN	JHA Racing	HONDA
+0	229	Nobuyuki YUNOKI	95	JPN	JHA Racing	HONDA
+0	230	Marco TRESOLDI	67	SUI	Italjet Racing Team	ITALJET
+0	231	Shinichi NAKATOMI	48	JPN	Team Kotake Rsc	HONDA
+0	232	Hiroshi AOYAMA	89	JPN	Team Harc-Pro	HONDA
+0	233	Yasu HATAKEYAMA	88	JPN	Team 2000 Penguin	HONDA
+0	234	Yoshinori KOROGI	90	JPN	Saofukai Suzuka Racing/Meiwa	HONDA
+0	235	Yoshinori KOROGI	90	JPN	Sofukai Suzuka Racing/Meiwa	HONDA
+0	236	Yoshinori KOROGI	90	JPN	Sofukai Suzuka Racing/Meiw	HONDA
+0	237	Tekkyu KAYOH	56	JPN	Tecmas Honda Elf	HONDA
+0	238	Stephen BRIGGS	36	NZE	BSL	BSL
+0	239	Jaroslav HULES	39	CZE	Semprucci Biesse Aprilia	APRILIA
+0	240	Jay TAYLOR	91	AUS	Team Taylor Racing	HONDA
+0	241	Joshua BROOKES	92	AUS	MCA Supermarkets/Brookes Rac	HONDA
+0	242	Michael TENISWOOD	94	AUS	Fairbairn Cranes/Tenniswood Ra	HONDA
+0	243	Stefano BIANCO	33	ITA	Benetton Playlife	HONDA
+0	244	Joshua BROOKES	92	AUS	MCA Supermarkets/Brookes	HONDA
+0	245	Shaun GERONIMI	91	AUS	RGV Spares	YAMAHA
+0	246	Jason BOYLE	92	AUS	Dave Moore Racing	HONDA
+0	247	Terry CARTER	93	AUS	Clive Carter Motorcycles	YAMAHA
+0	248	Steven TORRESI	94	AUS	Harding Print Racing	YAMAHA
+0	249	Youichi UI	41	JPN	Derbi LM	DERBI
+0	250	Hideyuki NAKAJOH	55	JPN	JHA Racing	HONDA
+0	251	Masao AZUMA	4	JPN	Liegeois Competition	HONDA
+0	252	Noboru UEDA	5	JPN	FCC-TSR	TSR-HONDA
+0	253	Mirko GIANSANTI	6	ITA	Axo Racing Team	HONDA
+0	254	Lucio CECCHINELLO	9	ITA	MS Aprilia LCR	APRILIA
+0	255	Antonio ELIAS	24	SPA	Telefonica Movistar jnrTeam	HONDA
+0	256	Simone SANNA	16	ITA	Safilo Oxydo Race	APRILIA
+0	257	Stefano PERUGINI	7	ITA	Italjet Racing Team	ITALJET
+0	258	Gianluigi SCALVINI	8	ITA	Italjet Racing Team	ITALJET
+0	259	Jaroslav HULES	39	CZE	Matteoni Racing	HONDA
+0	260	Angel NIETO Jr.	29	SPA	Viceroy Team	HONDA
+0	261	Steve JENKNER	17	GER	LAE - UGT 3000	APRILIA
+0	262	Max SABBATANI	11	ITA	Bossini Fontana Racing	APRILIA
+0	263	Jarno MLLER	10	GER	PEV-Spalt-ADAC Sachsen	HONDA
+0	264	Manuel POGGIALI	54	RSM	Gilera Racing Team	GILERA
+0	265	Alex DE ANGELIS	15	RSM	Matteoni Racing	HONDA
+0	266	Arnaud VINCENT	21	FRA	CE BA Corse	HONDA
+0	267	Pablo NIETO	22	SPA	Derbi LM	DERBI
+0	268	Alessandro BRANNETTI	19	ITA	Du Martel S.A.	APRILIA
+0	269	Jakub SMRZ	18	CZE	Budweiser Budvar Hanusch	HONDA
+0	270	Daniel PEDROSA	26	SPA	Telefonica Movistar jnrTeam	HONDA
+0	271	Marco PETRINI	27	ITA	Racing Service	HONDA
+0	272	Gaspare CAFFIERO	20	ITA	Bossini Fontana Racing	APRILIA
+0	273	Yuzo FUJIOKA	56	JPN	Team Plus One	ERP
+0	274	Angel RODRIGUEZ	31	SPA	Valencia Circuit Aspar Team	APRILIA
+0	275	Eric BATAILLE	34	AND	Axo Racing Team	HONDA
+0	276	Gabor TALMACSI	28	HUN	Racing Service	HONDA
+0	277	Raul JARA	12	SPA	MS Aprilia LCR	APRILIA
+0	278	Joan OLIVE	25	SPA	Telefonica Movistar jnrTeam	HONDA
+0	279	Phillipp HAFENEGER	14	GER	Liegeois Competition	HONDA
+0	280	Arnaud VINCENT	21	FRA	Team Fomma	HONDA
+0	281	Youichi UI	41	JPN	L  M Derbi Team	DERBI
+0	282	Pablo NIETO	22	SPA	L  M Derbi Team	DERBI
+0	283	Daijiro KATOH	74	JPN	Telefonica Movistar Honda	HONDA
+0	284	Marco MELANDRI	5	ITA	MS Aprilia Racing	APRILIA
+0	285	Naoki MATSUDO	8	JPN	Petronas Sprinta Yamaha TVK	YAMAHA
+0	286	Fonsi NIETO	10	SPA	Valencia Circuit Aspar Team	APRILIA
+0	287	Jeremy McWILLIAMS	99	GBR	Aprilia Grand Prix	APRILIA
+0	288	Alex DEBON	6	SPA	Valencia Circuit Aspar Team	APRILIA
+0	289	Tetsuya HARADA	31	JPN	MS Aprilia Racing	APRILIA
+0	290	Roberto ROLFO	44	ITA	Safilo Oxydo Race	APRILIA
+0	291	Emilio ALZAMORA	7	SPA	Telefonica Movistar Honda	HONDA
+0	292	Roberto LOCATELLI	15	ITA	MS Eros Ramazzotti Racing	APRILIA
+0	293	Franco BATTAINI	21	ITA	MS Eros Ramazzotti Racing	APRILIA
+0	294	Alex HOFMANN	66	GER	Dark Dog Racing Factory	APRILIA
+0	295	Klaus NHLES	12	GER	MS Aprilia Racing	APRILIA
+0	296	Sebastian PORTO	9	ARG	Yamaha Kurz	YAMAHA
+0	297	Shahrol YUZY	18	MAL	Petronas Sprinta Yamaha TVK	YAMAHA
+0	298	Choujun KAMEYA	49	JPN	Hitman RC Koshien Yamaha	YAMAHA
+0	299	Tekkyu KAYOH	47	JPN	FCC-TSR	TSR-HONDA
+0	300	Randy DE PUNIET	81	FRA	Equipe de France - Scrab GP	APRILIA
+0	301	David CHECA	42	SPA	CE BA Corse	HONDA
+0	302	Taro SEKIGUCHI	46	JPN	Club Ventis	YAMAHA
+0	303	David DE GEA	22	SPA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	304	Hiroshi AOYAMA	87	JPN	Team Harc-Pro	HONDA
+0	305	Sylvain GUINTOLI	50	FRA	Equipe de France - Scrab GP	APRILIA
+0	306	Jeronimo VIDAL	20	SPA	PR2 Metrored	APRILIA
+0	307	Lorenzo LANZI	57	ITA	Campetella Racing	APRILIA
+0	308	Luca BOSCOSCURO	37	ITA	Campetella Racing	APRILIA
+0	309	Julien ALLEMAND	19	FRA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	310	Diego GIUGOVAZ	55	ITA	Edo Racing	YAMAHA
+0	311	David TOMAS	16	SPA	Queroseno Racing Team	HONDA
+0	312	Cesar BARROS	23	BRA	Yamaha Kurz Aral	YAMAHA
+0	313	Stuart EDWARDS	45	GBR	FCC-TSR	TSR-HONDA
+0	314	Riccardo CHIARELLO	11	ITA	Aprilia Grand Prix	APRILIA
+0	315	Katja POENSGEN	98	GER	Dark Dog Racing Factory	APRILIA
+0	316	David CHECA	42	SPA	Team Fomma	HONDA
+0	317	Naoki MATSUDO	8	JPN	Petronas Sprinta Yamaha T	YAMAHA
+0	318	Sylvain GUINTOLI	50	FRA	Equipe de France - Scrab G	APRILIA
+0	319	Tohru UKAWA	11	JPN	Repsol YPF Honda Team	HONDA
+0	320	Noriyuki HAGA	41	JPN	Red Bull Yamaha WCM	YAMAHA
+0	321	Alex CRIVILLE	28	SPA	Repsol YPF Honda Team	HONDA
+0	322	Loris CAPIROSSI	65	ITA	West Honda Pons	HONDA
+0	323	Shinya NAKANO	56	JPN	Gauloises Yamaha Tech 3	YAMAHA
+0	324	Kenny ROBERTS	1	USA	Telefonica Movistar Suzuki	SUZUKI
+0	325	Max BIAGGI	3	ITA	Marlboro Yamaha Team	YAMAHA
+0	326	Alex BARROS	4	BRA	West Honda Pons	HONDA
+0	327	Garry McCOY	5	AUS	Red Bull Yamaha WCM	YAMAHA
+0	328	Akira RYO	33	JPN	Telefonica Movistar Suzuki	SUZUKI
+0	329	Sete GIBERNAU	15	SPA	Telefonica Movistar Suzuki	SUZUKI
+0	330	Jose Luis CARDOSO	10	SPA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	331	Jurgen vd GOORBERGH	17	NED	Proton TEAM KR	PROTON
+0	332	Olivier JACQUE	19	FRA	Galuloises Yamaha Tech 3	YAMAHA
+0	333	Haruchika AOKI	12	JPN	Arie Molenaar Racing	HONDA
+0	334	Chris WALKER	8	GBR	Shell Advance Honda	HONDA
+0	335	Leon HASLAM	9	GBR	Shell Advance Honda	HONDA
+0	336	Jason VINCENT	24	GBR	Pulse GP	PULSE
+0	337	Mark WILLIS	68	AUS	Pulse GP	PULSE
+0	338	Barry VENEMAN	21	NED	Dee Cee Jeans Racing Team	HONDA
+0	339	Johan STIGEFELT	16	SWE	Sabre Sport	SABRE
+0	340	Marcus PAYTEN	14	AUS	Dee Cee Jeans Racing Team	HONDA
+0	341	Jason WESSELS	58	RSA	Emtec Racing	APRILIA
+0	342	Alessandro BRANNETTI	19	ITA	Team Crae	APRILIA
+0	343	Toni ELIAS	24	SPA	Telefonica Movistar jnrTeam	HONDA
+0	344	Ivan SILVA	26	SPA	Queroseno Racing Team	HONDA
+0	345	Cesar BARROS	23	BRA	Yamaha Kurz	YAMAHA
+0	346	Jonathan VAN VUUREN	51	RSA	Privest Yamaha-d'Antin	YAMAHA
+0	347	Stuart EDWARDS	45	GBR	FCC-TSR	HONDA
+0	348	Shahrol YUZY	18	MAL	Petronas Sprinta Yamaha T	YAMAHA
+0	349	Anthony WEST	14	AUS	Dee Cee Jeans Racing Team	HONDA
+0	350	Anthony WEST	14	AUS	Dee Cee Jeans Racing Tea	HONDA
+0	351	Barry VENEMAN	21	NED	Dee Cee Jeans Racing Tea	HONDA
+0	352	Hector FAUBEL	44	SPA	Valencia Circuit - Aspar team	APRILIA
+0	353	Daniel PIERA	43	SPA	By Queroseno Racing Team	HONDA
+0	354	Hector FAUBEL	44	SPA	Valencia Circuit - Aspar tea	APRILIA
+0	355	Marcellino LUCCHI	34	ITA	MS Aprilia Racing	APRILIA
+0	356	Alvaro MOLINA	38	SPA	Kolmer Racing Team	YAMAHA
+0	357	David TOMAS	16	SPA	By Queroseno Racing Team	HONDA
+0	358	Damaso NACHER	41	SPA	PR2 Metrored	HONDA
+0	359	Ismael BONILLA	39	SPA	BRT Ismael Bonilla	HONDA
+0	360	Randy DE PUNIET	81	FRA	Equipe de France - Scrab G	APRILIA
+0	361	Vladimir CASTKA	26	SLK	Paton	PATON
+0	362	Jason VINCENT	24	GBR	nan	PULSE
+0	363	Olivier JACQUE	19	FRA	nan	YAMAHA
+0	364	Erwan NIGON	62	FRA	AJP Team	YAMAHA
+0	365	Xavier HEROUIN	60	FRA	MOB 77	HONDA
+0	366	Julien ENJOLRAS	59	FRA	Tati Team Beaujolais Racing	HONDA
+0	367	Jimmy PETIT	63	FRA	Racing Moto Sport	HONDA
+0	368	Herve MORA	54	FRA	Bentin Motorsport	HONDA
+0	369	Guillaume DIETRICH	52	FRA	Equipe de France	HONDA
+0	370	David FOULOI	56	FRA	Fouloi Racing Team	YAMAHA
+0	371	Tom OUVRARD	53	FRA	Ouvrard Racing Team	YAMAHA
+0	372	Hugo MARCHAND	64	FRA	Equipe de France	HONDA
+0	373	Jarno JANSSEN	32	NED	Arie Molenaar Racing	HONDA
+0	374	Andrea BALLERINI	50	ITA	Team Ciaron	APRILIA
+0	375	Andrea DOVIZIOSO	51	ITA	RCGM Rubicone Corse	APRILIA
+0	376	Michele CONTI	52	ITA	BNT Racing	HONDA
+0	377	Luis COSTA	36	SPA	Antena 3 Yamaha-d'Antin	YAMAHA
+0	378	Jeronimo VIDAL	20	SPA	nan	APRILIA
+0	379	Vladimir CASTKA	26	SLK	Slovnaft-Paton Grand Prix	PATON
+0	380	Adrian ARAUJO	77	SPA	Liegeois Competition	HONDA
+0	381	Jeremy McWILLIAMS	99	GBR	MS Aprilia Racing	APRILIA
+0	382	Taro SEKIGUCHI	46	JPN	Edo Racing	YAMAHA
+0	383	Patrick LAKERVELD	70	NED	D.S.A.	HONDA
+0	384	Wilhelm VAN LEEUWEN	68	NED	Luvro/Tennen V.Leeuwen Tech	HONDA
+0	385	Adri DEN BEKKER	67	NED	Adm.Kant.Harkens/Vts Sneltr.	HONDA
+0	386	Ronnie TIMMER	69	NED	Spijkse Metaalhandel Racing	YAMAHA
+0	387	Wilhelm VAN LEEUWEN	68	NED	Luvro/Tennen V.Leeuwen Te	HONDA
+0	388	Jason DI SALVO	62	USA	Cruise America Gr. Prix Racing	HONDA
+0	389	Jarno BOESVELD	61	NED	Performance Racing	YAMAHA
+0	390	Arnold LITJENS	63	NED	M.R.T.T. Hugen Racing	HONDA
+0	391	Gert PIEPER	60	NED	Car Centre Nijmegen	HONDA
+0	392	Olivier JACQUE	19	FRA	Gauloises Yamaha Tech 3	YAMAHA
+0	393	Casey STONER	73	AUS	Telefonica Movistar jnrTeam	HONDA
+0	394	Paul ROBINSON	71	GBR	Paul Robinson Racing	HONDA
+0	395	Christopher MARTIN	72	GBR	Wilson Racing TSR	HONDA
+0	396	Casey STONER	73	AUS	Movistar Team	HONDA
+0	397	Christopher MARTIN	72	GBR	Wilson Racing	HONDA
+0	398	Gary JACKSON	59	GBR	Team Jackson	HONDA
+0	399	Shane NORVAL	58	RSA	Right Track Racing	HONDA
+0	400	Stuart EASTON	68	GBR	Monster-Mob	HONDA
+0	401	Michale HERZBERG	67	GBR	EPS Racing	YAMAHA
+0	402	Jason DI SALVO	62	USA	Cruise America Gr. Prix Raci	HONDA
+0	403	Roberto LOCATELLI	15	ITA	nan	APRILIA
+0	404	Jason VINCENT	24	GBR	Red Bull Yamaha WCM	YAMAHA
+0	405	Sebastien GIMBERT	27	FRA	Paton Grand Prix	PATON
+0	406	Mika KALLIO	82	FIN	Team Red Devil Honda	HONDA
+0	407	Tobias KIRMEIER	80	GER	Ivetra-Seel Racing	HONDA
+0	408	Andreas HAHN	79	GER	Team Hahn	HONDA
+0	409	Claudius KLEIN	78	GER	ADAC Junior Team Germany	HONDA
+0	410	Rene KNOEFLER	81	GER	HKS Racing Team Moto Meinig	YAMAHA
+0	411	Claudius KLEIN	78	GER	ADAC Junior Team German	HONDA
+0	412	Rene KNOEFLER	81	GER	HKS Racing Team Moto Mei	YAMAHA
+0	413	Dirk HEIDOLF	75	GER	Freudenberg Racing Team	YAMAHA
+0	414	Vincent PHILIPPE	25	FRA	Tecmas Racing	HONDA
+0	415	Christian GEMMEL	76	GER	Kiefer Castrol Honda Racing	HONDA
+0	416	Marcel SCHNEIDER	77	GER	Kiefer Castrol Honda Racing	HONDA
+0	417	Max NEUKIRCHNER	78	GER	ADAC Sachsen	HONDA
+0	418	Jay VINCENT	24	GBR	Pulse GP	PULSE
+0	419	Brendan CLARKE	18	AUS	Shell Advance Honda	HONDA
+0	420	Jascha BUCH	30	GER	PEV-Spalt-ADAC Sachsen	HONDA
+0	421	Tomas MIKSOVSKY	85	CZE	Klub R.J.T.	HONDA
+0	422	Matej SMRZ	96	CZE	Sonax Racing Aprilia	APRILIA
+0	423	Igor KALAB	84	CZE	ELF Revena Team	HONDA
+0	424	Vaclav BITTMAN	83	CZE	BRC Racing Team	HONDA
+0	425	Tobias KIRMEIER	80	GER	Ivetra-Seel-Racing Team	HONDA
+0	426	Jay VINCENT	24	GBR	QUB Team Optimum	YAMAHA
+0	427	Cesar BARROS	23	BRA	Dark Dog Yamaha Kurz	YAMAHA
+0	428	Gabor RIZMAYER	83	HUN	Biro Racing Team	HONDA
+0	429	Vladimir CASTKA	80	SLK	Edo Racing	YAMAHA
+0	430	Jason DI SALVO	62	USA	Cruise America G.P. Racing	HONDA
+0	431	Sebastian PORTO	9	ARG	Dark Dog Yamaha Kurz	YAMAHA
+0	432	Henrik VOIT	82	GER	Road Racing Team Voit	HONDA
+0	433	Norman RANK	79	GER	MSC Schleizer Dreieck	HONDA
+0	434	Shaun GERONIMI	25	AUS	Paton Grand Prix	PATON
+0	435	Jos L. NION	90	SPA	By Queroseno Racing	HONDA
+0	436	Jos LEITE	86	POR	AFL Racing Team	HONDA
+0	437	Ricardo TOME	89	POR	Team VP Moto	APRILIA
+0	438	Jose MONTEIRO	87	POR	TZM Sport	HONDA
+0	439	Joao PINTO	88	POR	I.R.T.	HONDA
+0	440	Katja POENSGEN	14	GER	Shell Advance Honda	HONDA
+0	441	Javier DIAZ	71	SPA	Team Motorsport Racing	HONDA
+0	442	Stuart EDWARDS	45	GBR	FCC-TSR	YAMAHA
+0	443	Michael GARCIA	72	SPA	PS Racing	APRILIA
+0	444	Jose ESTRELA	70	POR	TZM Sport	HONDA
+0	445	Javier FORES	45	SPA	CC Valencia Aspar	APRILIA
+0	446	Hector FAUBEL	44	SPA	CC Valencia Aspar	APRILIA
+0	447	Fabrizio LAI	75	ITA	Engines Engineering	RIEJU
+0	448	William DE ANGELIS	37	RSM	Racing Service	HONDA
+0	449	Stuart EDWARDS	45	GBR	Fujitsu Siemens	YAMAHA
+0	450	Isaac MARTIN	43	SPA	Construcciones CM	HONDA
+0	451	Damaso NACHER	41	SPA	PR2 - Damas	HONDA
+0	452	Miguel TEY	37	SPA	By Queroseno Racing	HONDA
+0	453	Shuhei AOYAMA	66	JPN	Showa Denki Team Harc-Pro	HONDA
+0	454	Yuki TAKAHASHI	64	JPN	OSL SC  Okegawa School	E-NER
+0	455	Hideyuki NAKAJOH	55	JPN	JHA	HONDA
+0	456	Toshihisa KUZUHARA	65	JPN	Kumamoto Racing	HONDA
+0	457	Nobuyuki OHSAKI	88	JPN	SP Tadao Racing Team	YAMAHA
+0	458	Takayuki ONODERA	91	JPN	Morino Kumasan Miztec. RT	YAMAHA
+0	459	Jeronimo VIDAL	20	SPA	PR2 - Damas	APRILIA
+0	460	Osamu MIYAZAKI	89	JPN	Motorex Daytona	YAMAHA
+0	461	Daisaku SAKAI	90	JPN	Endurance	HONDA
+0	462	Hiroshi AOYAMA	92	JPN	Team Harc-Pro	HONDA
+0	463	Diego GIUGOVAZ	55	ITA	MS Aprilia Racing	APRILIA
+0	464	Yukio KAGAYAMA	64	JPN	Telefonica Movistar Suzuki	SUZUKI
+0	465	Jay TAYLOR	91	AUS	Taylor Racing	HONDA
+0	466	Andrew BROOKS	93	AUS	Tech. M/C Clothing - JBD Racin	HONDA
+0	467	Peter GALVIN	92	AUS	Tech. M/C Clothing - JBD Racin	HONDA
+0	468	Cath THOMPSON	94	AUS	Team eServ	HONDA
+0	469	Joshua BROOKES	97	AUS	RGV Spares	YAMAHA
+0	470	Terry CARTER	94	AUS	RGV Spares	YAMAHA
+0	471	Mark ROWLING	96	AUS	Turramurra Cyclery Racing	YAMAHA
+0	472	Earl LYNCH	93	AUS	Impact Racing	YAMAHA
+0	473	Shane SMITH	95	AUS	Allect Racing	HONDA
+0	474	Shaun GERONIMI	27	AUS	Edo Racing	YAMAHA
+0	475	Kurtis ROBERTS	80	USA	Proton TEAM KR	PROTON
+0	476	Andrea BALLERINI	50	ITA	Bossini Fontana Racing	APRILIA
+0	477	Leandro PANADES	48	BRA	Racing Team Panades	HONDA
+0	478	Cristiano VIEIRA	84	BRA	Vaz Yamaha-d'Antin	YAMAHA
+0	479	Rafael DA CUNHA	85	BRA	By Queroseno Racing Team	HONDA
+0	480	Daniel PEDROSA	26	SPA	Telefonica Movistar Junior Team	HONDA
+0	481	Arnaud VINCENT	21	FRA	Imola Circuit Exalt Cycle Race	APRILIA
+0	482	Lucio CECCHINELLO	4	ITA	Safilo Oxydo Race LCR	APRILIA
+0	483	Jaroslav HULES	39	CZE	CWF - Mateoni Racing	APRILIA
+0	484	Manuel POGGIALI	1	RSM	Gilera Racing	GILERA
+0	485	Masao AZUMA	5	JPN	Tribe by Breil	HONDA
+0	486	Steve JENKNER	17	GER	UGT 3000 - Abruzzo	APRILIA
+0	487	Alex DE ANGELIS	15	RSM	Safilo Oxydo Race LCR	APRILIA
+0	488	Max SABBATANI	11	ITA	Bossini Sterilgarda Racing	APRILIA
+0	489	Youichi UI	41	JPN	Caja Madrid Derbi Racing	DERBI
+0	490	Gino BORSOI	23	ITA	UGT 3000 - Abruzzo	APRILIA
+0	491	Shuhei AOYAMA	66	JPN	Showa Denki	HONDA
+0	492	Angel RODRIGUEZ	47	SPA	Master-Aspar Team	APRILIA
+0	493	Klaus NHLES	12	GER	PEV Moto ADAC Sachsen	HONDA
+0	494	Mirko GIANSANTI	6	ITA	Scot Racing Team	HONDA
+0	495	Jarno MLLER	10	GER	PEV Moto ADAC Sachsen	HONDA
+0	496	Pablo NIETO	22	SPA	Master-Aspar Team	APRILIA
+0	497	Noboru UEDA	9	JPN	Semprucci Angaia Racing	HONDA
+0	498	Simone SANNA	16	ITA	Tu Racing Team	APRILIA
+0	499	Stefano BIANCO	33	ITA	Bossini Sterilgarda Racing	APRILIA
+0	500	Gabor TALMACSI	8	HUN	Italjet Racing Service	ITALJET
+0	501	Suhathai CHAEMSAP	46	THA	Sutthisam Vaewsamana	HONDA
+0	502	Stefano PERUGINI	7	ITA	Italjet Racing Service	ITALJET
+0	503	Joan OLIVE	25	SPA	Telefonica Movistar Junior Team	HONDA
+0	504	Jakub SMRZ	18	CZE	Elit Grand Prix	HONDA
+0	505	Chaz DAVIES	57	GBR	CWF - Mateoni Racing	APRILIA
+0	506	Andrea DOVIZIOSO	34	ITA	Scot Racing Team	HONDA
+0	507	Alex BALDOLINI	19	ITA	UGT 3000 - Abruzzo	APRILIA
+0	508	Andrea BALLERINI	50	ITA	Technical Sports Racing	TSR-HONDA
+0	509	Mika KALLIO	36	FIN	Red Devil Honda	HONDA
+0	510	Hideyuki OGATA	67	JPN	Team Plus One	HONDA
+0	511	Hector BARBERA	80	SPA	Master Aspar Team	APRILIA
+0	512	Akira KOMURO	68	JPN	Dinky Racing	HONDA
+0	513	Michel FABRIZIO	84	ITA	Team Italia	GILERA
+0	514	Imre TOTH	20	HUN	Semprucci Angaia Racing	HONDA
+0	515	Mattia ANGELONI	31	ITA	Team Italia	GILERA
+0	516	Daniel PEDROSA	26	SPA	Telefonica Movistar jnr Team	HONDA
+0	517	Joan OLIVE	25	SPA	Telefonica Movistar jnr Team	HONDA
+0	518	Suhathai CHAEMSAP	46	THA	Thai Honda Castrol	HONDA
+0	519	Andrea BALLERINI	50	ITA	Technical Sports Racing	HONDA
+0	520	Arnaud VINCENT	21	FRA	Imola Circuit Exalt Cycle Rac	APRILIA
+0	521	Andrea BALLERINI	50	ITA	FCC - TSR	HONDA
+0	522	Franco BATTAINI	21	ITA	Imola Circuit Exalt Cycle Race	APRILIA
+0	523	Alex DEBON	6	SPA	Campatella Racing	APRILIA
+0	524	Fonsi NIETO	10	SPA	Telefonica Movistar-Repsol YPF	APRILIA
+0	525	Marco MELANDRI	3	ITA	MS Aprilia Racing	APRILIA
+0	526	Roberto LOCATELLI	15	ITA	Tu Racing Team	APRILIA
+0	527	Sebastian PORTO	9	ARG	Petronas Sprinta Yamaha TVK	YAMAHA
+0	528	Toni ELIAS	24	SPA	Telefonica Movistar-Repsol YPF	APRILIA
+0	529	Randy DE PUNIET	17	FRA	Campetella Racing	APRILIA
+0	530	Daisaku SAKAI	50	JPN	Endurance	HONDA
+0	531	Naoki MATSUDO	8	JPN	Yamaha Kurz	YAMAHA
+0	532	Roberto ROLFO	4	ITA	Fortuna Honda Gresini	HONDA
+0	533	Casey STONER	27	AUS	Safilo Oxydo Race LCR	APRILIA
+0	534	Emilio ALZAMORA	7	SPA	Fortuna Honda Gresini	HONDA
+0	535	Choujun KAMEYA	49	JPN	Burning Blood R.T.	HONDA
+0	536	Taro SEKIGUCHI	76	JPN	Yamaha Kurz	YAMAHA
+0	537	Vincent PHILIPPE	25	FRA	Equipe de France - Scrab GP	APRILIA
+0	538	Jay VINCENT	12	GBR	Cibertel Honda BQR	HONDA
+0	539	Haruchika AOKI	11	JPN	DeGraaf Grand Prix Team	HONDA
+0	540	Raul JARA	22	SPA	RFME Equipo Nacional	APRILIA
+0	541	Shinichi NAKATOMI	48	JPN	Team Kotake RSC	HONDA
+0	542	Jarno JANSSEN	41	NED	DeGraaf Grand Prix Team	HONDA
+0	543	Leon HASLAM	19	GBR	Cibertel Honda BQR	HONDA
+0	544	Hugo MARCHAND	51	FRA	Equipe de France - Scrab GP	APRILIA
+0	545	Dirk HEIDOLF	28	GER	Aprilia Germany	APRILIA
+0	546	Hector FAUBEL	32	SPA	RFME Equipo Nacional	APRILIA
+0	547	David CHECA	42	SPA	Safilo Oxydo Race LCR	APRILIA
+0	548	Naoki MATSUDO	8	JPN	Dark Dog Yamaha Kurz	YAMAHA
+0	549	Taro SEKIGUCHI	76	JPN	Dark Dog Yamaha Kurz	YAMAHA
+0	550	Dirk HEIDOLF	28	GER	nan	APRILIA
+0	551	Sebastian PORTO	9	ARG	Petronas Sprinta Yamaha T	YAMAHA
+0	552	Alex DEBON	6	SPA	Campetella Racing	APRILIA
+0	553	Franco BATTAINI	21	ITA	Imola Circuit Exalt Cycle Rac	APRILIA
+0	554	Toni ELIAS	24	SPA	Telefonica Movistar-Repsol	APRILIA
+0	555	Fonsi NIETO	10	SPA	Telefonica Movistar-Repsol	APRILIA
+0	556	Hugo MARCHAND	51	FRA	Equipe de France - Scrab G	APRILIA
+0	557	Valentino ROSSI	46	ITA	REPSOL Honda Team	HONDA
+0	558	Tohru UKAWA	11	JPN	REPSOL Honda Team	HONDA
+0	559	Daijiro KATOH	74	JPN	Fortuna Honda Gresini	HONDA
+0	560	Norick ABE	6	JPN	Antena 3 Yamaha d'Antn	YAMAHA
+0	561	Shinichi ITOH	72	JPN	Team HRC	HONDA
+0	562	Garry McCOY	8	AUS	Red Bull Yamaha WCM	YAMAHA
+0	563	Kenny ROBERTS	10	USA	Telefonica Movistar Suzuki	SUZUKI
+0	564	Jurgen vd GOORBERGH	17	NED	Kanemoto Racing	HONDA
+0	565	John HOPKINS	21	USA	Red Bull Yamaha WCM	YAMAHA
+0	566	Jeremy McWILLIAMS	99	GBR	Proton TEAM KR	PROTON
+0	567	Nobuatsu AOKI	9	JPN	Proton TEAM KR	PROTON
+0	568	Tetsuya HARADA	31	JPN	Pramac Honda Racing Team	HONDA
+0	569	Pere RIBA	20	SPA	Antena 3 Yamaha d'Antn	YAMAHA
+0	570	Regis LACONI	55	FRA	MS Aprilia Racing	APRILIA
+0	571	Valentino ROSSI	46	ITA	Repsol Honda Team	HONDA
+0	572	Tohru UKAWA	11	JPN	Repsol Honda Team	HONDA
+0	573	Nobuatsu AOKI	9	JPN	Proton Team KR	PROTON
+0	574	Jeremy McWILLIAMS	99	GBR	Proton Team KR	PROTON
+0	575	Pere RIBA	20	SPA	nan	YAMAHA
+0	576	Chaz DAVIES	57	GBR	CWF - Matteoni Racing	APRILIA
+0	577	Jaroslav HULES	39	CZE	CWF - Matteoni Racing	APRILIA
+0	578	Hector BARBERA	80	SPA	Master-Aspar Team	APRILIA
+0	579	Julio SIMON	52	SPA	Telefonica Movistar jnr Team	HONDA
+0	580	Alvaro BAUTISTA	51	SPA	Atletico de Madrid	APRILIA
+0	581	Ruben CATALAN	71	SPA	Mir Racing	APRILIA
+0	582	Jorge LORENZO	48	SPA	Caja Madrid Derbi Racing	DERBI
+0	583	Eric BATAILLE	34	AND	Cibertel Honda BQR	HONDA
+0	584	Luis CASTRO	39	SPA	Cordoba Patrimonio Hum.	YAMAHA
+0	585	Vincent PHILIPPE	25	FRA	Equipe de France - Scrab G	APRILIA
+0	586	Daijiro KATO	74	JPN	Fortuna Honda Gresini	HONDA
+0	587	Gregory LEFORT	86	FRA	Provence Motor Sport	APRILIA
+0	588	Vincent BRAILLARD	59	SWI	Team Philippe Coulon	HONDA
+0	589	Yohann TIBERIO	58	FRA	Team Technimoto Cavaillon	HONDA
+0	590	Gregory LEBLANC	85	FRA	RMS	HONDA
+0	591	Daniel PEDROSA	26	SPA	Telefonica Movistar jnr Tea	HONDA
+0	592	Arnaud VINCENT	21	FRA	Imola Circuit Exalt Cycle Ra	APRILIA
+0	593	Herve MORA	93	FRA	Ferro Moto Sport	APRILIA
+0	594	Thierry VAN DEN BOSCH	35	FRA	Tecmas Racing	APRILIA
+0	595	Erwan NIGON	36	FRA	Edf Espoir	HONDA
+0	596	Samuel AUBRY	45	FRA	Team Racer Bike	HONDA
+0	597	Yann LUSSIANA	37	NED	Aspi	HONDA
+0	598	Yann LUSSIANA	37	FRA	Aspi	HONDA
+0	599	Vincent PHILIPPE	25	FRA	Equipe de France - Scrab	APRILIA
+0	600	Jose Luis CARDOSO	30	SPA	Antena 3 Yamaha d'Antn	YAMAHA
+0	601	Jean Michel BAYLE	18	FRA	Red Bull Yamaha WCM	YAMAHA
+0	602	Gioele PELLINO	53	ITA	Team Gabrielli	APRILIA
+0	603	Klaus NHLES	12	GER	PEV SPALT Moto ADAC Sachs	HONDA
+0	604	Simone CORSI	87	ITA	Polini	HONDA
+0	605	Gaspare CAFFIERO	30	ITA	PEV SPALT Moto ADAC Sachs	HONDA
+0	606	Marco PETRINI	54	ITA	RCGM - Rubincone Corse	APRILIA
+0	607	Gaspare CAFFIERO	30	ITA	PEV SPALT Moto ADAC Sa	HONDA
+0	608	Franco BATTAINI	21	ITA	Imola Circuit Exalt Cycle Ra	APRILIA
+0	609	Tetsuya HARADA	31	JPN	Pramac Honda Racing Tea	HONDA
+0	610	Gianluigi SCALVINI	32	ITA	Bossini Sterilgarda Racing	APRILIA
+0	611	Julian SIMON	52	SPA	Telefonica Movistar jnr Team	HONDA
+0	612	Alessandro BRANNETTI	44	ITA	Semprucci Angaia Racing	HONDA
+0	613	Leon CAMIER	24	GBR	Italjet Racing Service	ITALJET
+0	614	Javier MACHADO	55	SPA	Team Machado	HONDA
+0	615	Julian SIMON	52	SPA	Movistar Team	HONDA
+0	616	Joan OLIVE	25	SPA	Telefonica Movistar jnr Tea	HONDA
+0	617	Eric BATAILLE	34	FRA	Cibertel Honda BQR	HONDA
+0	618	Hugo MARCHAND	51	FRA	Equipe de France - Scrab	APRILIA
+0	619	Akira RYO	33	JPN	Team Suzuki	SUZUKI
+0	620	Alex HOFMANN	66	GER	Red Bull Yamaha WCM	YAMAHA
+0	621	Gabor TALMACSI	8	HUN	PEV SPALT Moto ADAC Sachs	HONDA
+0	622	Fabrizio LAI	75	ITA	Semprucci Angaia Racing	HONDA
+0	623	Shuhei AOYAMA	66	JPN	PEV SPALT Moto ADAC Sachs	HONDA
+0	624	Adri DEN BEKKER	89	NED	DB Racing Team	HONDA
+0	625	Raymond SCHOUTEN	61	NED	De Graff Junior Team	HONDA
+0	626	Randy GEVERS	60	NED	MG Parts - RG Racing Team	HONDA
+0	627	Gerald PERDON	62	NED	Roteg Racing	HONDA
+0	628	Gabor TALMACSI	8	HUN	PEV Moto ADAC Sachsen	HONDA
+0	629	Shuhei AOYAMA	66	JPN	PEV Moto ADAC Sachsen	HONDA
+0	630	Raymond SCHOUTEN	61	NED	DeGraaf Junior Team	HONDA
+0	631	Ralf WALDMANN	26	GER	UGT 3000 - Abruzzo	APRILIA
+0	632	Thierry vd BOSCH	77	FRA	Ipone Tecmas Racing	APRILIA
+0	633	Peter POLITIEK	59	NED	MRTT - Hugen Racing	HONDA
+0	634	Gert PIEPER	60	NED	Sierhekwerk W v/d Pol	APRILIA
+0	635	Jarno BOESVELD	61	NED	Jovink Raps	APRILIA
+0	636	Jan BLOK	58	NED	MRTT - Hugen Racing	HONDA
+0	637	Ralf WALDMANN	26	GER	nan	APRILIA
+0	638	Guy FARBROTHER	90	GBR	Red Bull Rookies	HONDA
+0	639	Ivan GOI	28	ITA	CWF - Matteoni Racing	APRILIA
+0	640	Christopher MARTIN	70	GBR	Wilson Racing	HONDA
+0	641	Christian ELKIN	69	GBR	UK Racing	HONDA
+0	642	Midge SMART	91	GBR	Red Bull Rookies	HONDA
+0	643	Christian ELKIN	69	GBR	UK Racing/myfinancematters.c	HONDA
+0	644	Andrew WHITTLEY	44	GBR	Faster by Fuller Racing	APRILIA
+0	645	Chistopher SANSOME	43	GBR	Faster by Fuller Racing	HONDA
+0	646	Jason BOYCE	47	GBR	RM Racing	HONDA
+0	647	Alex HOFMANN	66	GER	West Honda Pons	HONDA
+0	648	Patrick UNGER	92	GER	ADAC Sachsen Motorrad Unge	HONDA
+0	649	Dario GIUSEPPETTI	72	GER	Giuseppetti Viba Team	HONDA
+0	650	Thomas LUTHI	77	SWI	Elit Grand Prix	HONDA
+0	651	Claudius KLEIN	73	GER	Kiefer Castrol Honda	HONDA
+0	652	Christian PISTONI	42	ITA	Italjet Racing Service	ITALJET
+0	653	Manuel MICKAN	93	GER	ADAC Sachsen	HONDA
+0	654	Jascha BUECH	74	GER	RPS Racing Saalfeld	HONDA
+0	655	Matej SMRZ	76	CZE	nan	HONDA
+0	656	Matej SMRZ	76	CZE	Semprucci Angaia Racing	HONDA
+0	657	Christian GEMMEL	52	GER	Kiefer Castrol Honda	HONDA
+0	658	Max NEUKIRCHNER	53	GER	Neukirchner Racing Team	HONDA
+0	659	Nico KEHRER	54	GER	Kehrer Racing Team	HONDA
+0	660	Yukio KAGAYAMA	51	JPN	Telefonica Movistar Suzuki	SUZUKI
+0	661	Lukas PESEK	56	CZE	Kart Centrum	HONDA
+0	662	Robbin HARMS	88	DAN	Red Devil Honda	HONDA
+0	663	Igor KALAB	49	CZE	OMV Team Hanusch	HONDA
+0	664	Dario GIUSEPPETTI	72	GER	Semprucci Angaia Racing	HONDA
+0	665	Marco SIMONCELLI	37	ITA	CWF - Matteoni Racing	APRILIA
+0	666	Matej SMRZ	76	CZE	Semprucci Angaia Racing	APRILIA
+0	667	Marco SIMONCELLI	37	ITA	nan	APRILIA
+0	668	David GARCIA	84	SPA	Fortuna Honda Gresini	HONDA
+0	669	Erwan NIGON	36	FRA	Equipe de France - Scrab GP	APRILIA
+0	670	Jaroslav HULES	13	CZE	Dark Dog Yamaha Kurz	YAMAHA
+0	671	Gabor RIZMAYER	63	HUN	Bird Racing Team	HONDA
+0	672	Henk vd LAGEMAAT	29	NED	DeGraaf Grand Prix Team	HONDA
+0	673	Vladimir CASTKA	64	SVK	Slovnaft Yamaha Racing Team	YAMAHA
+0	674	Roger HEIERLI	65	SWI	Heierli Racing Pvm Team	HONDA
+0	675	Radomil ROUS	62	CZE	Klub Racing Team Znojmo	HONDA
+0	676	Sylvain GUINTOLI	50	FRA	Yamaha Tech 3	YAMAHA
+0	677	Julian SIMON	52	SPA	Telefonica Movistar Team	HONDA
+0	678	Pedro MONTEIRO	78	POR	TZM Racing Team	HONDA
+0	679	Joao PINTO	79	POR	Internation Racing Team	HONDA
+0	680	Filipe COSTA	94	POR	Sergi Motos	YAMAHA
+0	681	Gregory LEFORT	57	FRA	Equipe de France - Scrab GP	APRILIA
+0	682	Rob FILART	30	NED	DeGraaf Grand Prix Team	HONDA
+0	683	Simone SANNA	16	ITA	Motoracing	APRILIA
+0	684	Andrea BALLERINI	50	ITA	Bossini Sterilgarda Racing	APRILIA
+0	685	Dario GIUSEPPETTI	72	GER	FCC - TSR	HONDA
+0	686	Roberto LOCATELLI	15	ITA	Motoracing	APRILIA
+0	687	Jakub SMRZ	96	CZE	DeGraaf Grand Prix Team	HONDA
+0	688	Hideyuki NAKAJOH	97	JPN	Elit Grand Prix	HONDA
+0	689	Toshihisa KUZUHARA	65	JPN	Honda Kumamoto Racing	HONDA
+0	690	Max SABBATANI	11	ITA	Motoracing-Matteoni	APRILIA
+0	691	Takashi YASUDA	95	JPN	Team Harc-Pro	HONDA
+0	692	Yuki TAKAHASHI	72	JPN	Team HRC	HONDA
+0	693	Noboyuki OHSAKI	69	JPN	SP Tadao Racing Team	YAMAHA
+0	694	Tekkyu KAYOH	68	JPN	Hitman RC Koshien	YAMAHA
+0	695	Katsuyuki NAKASUGA	71	JPN	Technospeed Nakasuga	YAMAHA
+0	696	Ryuji YOKOE	70	JPN	Morinokumasan Miztec RT	YAMAHA
+0	697	Akira YANAGAWA	48	JPN	Kawasaki Racing Team	KAWASAKI
+0	698	Wataru YOSHIKAWA	45	JPN	Yamaha Racing Team	YAMAHA
+0	699	Max SABBATANI	11	ITA	Motoracing	APRILIA
+0	700	Joshua WATERS	83	AUS	FCC - TSR	HONDA
+0	701	Andrew PITT	84	AUS	Kawasaki Racing Team	KAWASAKI
+0	702	Jeremy CROWE	82	AUS	Ruffnuts/Gulf Western	HONDA
+0	703	Peter HOLMES	64	AUS	Holmes Earth Moving	HONDA
+0	704	Tim INKSTER	81	AUS	CMSA Protectaprint	HONDA
+0	705	Russell HOLLAND	79	AUS	RGV Spares	YAMAHA
+0	706	Peter TAPLIN	78	AUS	EMS Racing	HONDA
+0	707	Earl LYNCH	80	AUS	Impact Racing	YAMAHA
+0	708	Mark STANLEY	81	AUS	STU Avant - Msr - Elf	HONDA
+0	709	Shinichi ITOH	72	JPN	KANEMOTO RACING	HONDA
+0	710	Shinichi ITOH	72	JPN	Kanemoto Racing	HONDA
+0	711	Andrea BALLERINI	50	ITA	Bossini Sterilgarda Racing	HONDA
+0	712	Chris PERIS	98	CAN	Bikecards.com	HONDA
+0	713	Vincent BRAILLARD	59	SWI	Team-TMR-Competicion	HONDA
+0	714	Chris PERIS	98	CAN	Bikecards.com	APRILIA
+0	715	Angel RODRIGUEZ	74	SPA	Racing Damas	APRILIA
+0	716	Chuck SORENSEN	90	USA	Team Stargel Aprilia	APRILIA
+0	717	David GARCIA	29	SPA	Proton Team KR	PROTON
+0	718	Daniel PEDROSA	3	SPA	Telefonica Movistar jnr Team	HONDA
+0	719	Casey STONER	27	AUS	Safilo Oxydo-LCR	APRILIA
+0	720	Alex DE ANGELIS	15	RSM	Racing World	APRILIA
+0	721	Mirko GIANSANTI	6	ITA	Matteoni Racing	APRILIA
+0	722	Lucio CECCHINELLO	4	ITA	Safilo Oxydo-LCR	APRILIA
+0	723	Andrea DOVIZIOSO	34	ITA	Team Scot	HONDA
+0	724	Youichi UI	41	JPN	Sterilgarda Racing	APRILIA
+0	725	Stefano PERUGINI	7	ITA	Abruzzo Racing Team	APRILIA
+0	726	Max SABBATANI	11	ITA	Abruzzo Racing Team	APRILIA
+0	727	Gioele PELLINO	42	ITA	Sterilgarda Racing	APRILIA
+0	728	Hector BARBERA	80	SPA	Master-MXOnda-Aspar Team	APRILIA
+0	729	Marco SIMONCELLI	58	ITA	Matteoni Racing	APRILIA
+0	730	Gabor TALMACSI	79	HUN	Exalt Cycle Red Devil	APRILIA
+0	731	Shuhei AOYAMA	66	JPN	Team Harc-Pro	HONDA
+0	732	Pablo NIETO	22	SPA	Master-MXOnda-Aspar Team	APRILIA
+0	733	Stefano BIANCO	33	ITA	Gilera Racing	GILERA
+0	734	Masao AZUMA	8	JPN	Ajo Motorsports	HONDA
+0	735	Fabrizio LAI	32	ITA	Semprucci Angaia Malaguti	MALAGUTI
+0	736	Simone CORSI	24	ITA	Team Scot	HONDA
+0	737	Thomas LUTHI	12	SWI	Elit Grand Prix	HONDA
+0	738	Steve JENKNER	17	GER	Exalt Cycle Red Devil	APRILIA
+0	739	Arnaud VINCENT	1	FRA	KTM-Red Bull	KTM
+0	740	Toshihisa KUZUHARA	65	JPN	S-Way  Revive	HONDA
+0	741	Alvaro BAUTISTA	19	SPA	Seedorf Racing	APRILIA
+0	742	Roberto LOCATELLI	10	ITA	KTM-Red Bull	KTM
+0	743	Sadahito SUMA	68	JPN	Team Life	HONDA
+0	744	Gino BORSOI	23	ITA	Racing World	APRILIA
+0	745	Christopher MARTIN	14	GBR	Seedorf Racing	APRILIA
+0	746	Mika KALLIO	36	FIN	Ajo Motorsports	HONDA
+0	747	Julian SIMON	31	SPA	Semprucci Angaia Malaguti	MALAGUTI
+0	748	Emilio ALZAMORA	26	SPA	Caja Madrid Derbi Racing	DERBI
+0	749	Imre TOTH	25	HUN	Team Hungary	HONDA
+0	750	Akio TANAKA	67	JPN	Team Life Hatada	HONDA
+0	751	Mike DI MEGLIO	63	FRA	Freesoul Racing Team	APRILIA
+0	752	Leon CAMIER	21	GBR	Metasystem Racing Service	HONDA
+0	753	Peter LENART	78	HUN	Metasystem Racing Service	HONDA
+0	754	Cheung WAY ON	64	CHN	Cheung Wing Team	HONDA
+0	755	Stefano BIANCO	33	ITA	Metis Gilera Racing	GILERA
+0	756	Cheung WAY ON	64	CHN	S-Way  Revive	HONDA
+0	757	Peter LENART	78	HUN	nan	HONDA
+0	758	Toni ELIAS	24	SPA	Team Repsol Telefonica Movist	APRILIA
+0	759	Manuel POGGIALI	54	RSM	MS Aprilia Team	APRILIA
+0	760	Randy DE PUNIET	7	FRA	Safilo Oxydo-LCR	APRILIA
+0	761	Sebastian PORTO	5	ARG	Telefonica Movistar jnr Team	HONDA
+0	762	Tekkyu KAYO	68	JPN	Hitman RC Koshien Yamaha	YAMAHA
+0	763	Franco BATTAINI	21	ITA	Campetella Racing	APRILIA
+0	764	Katsuyuki NAKASUGA	71	JPN	Sp Tadao Racing Team	YAMAHA
+0	765	Yuki TAKAHASHI	72	JPN	Dy Do Miu Racing Team	HONDA
+0	766	Fonsi NIETO	10	SPA	Team Repsol Telefonica Movist	APRILIA
+0	767	Johan STIGEFELT	16	SWE	Team Zoppini Abruzzo	APRILIA
+0	768	Tomoyoshi KOYAMA	67	JPN	Sp Tadao Racing Team	YAMAHA
+0	769	Roberto ROLFO	3	ITA	Fortuna Honda	HONDA
+0	770	Hugo MARCHAND	9	FRA	Equipe de France - Scrab GP	APRILIA
+0	771	Hector FAUBEL	33	SPA	Aspar Junior Team	APRILIA
+0	772	Alex DEBON	6	SPA	Troll Honda BQR	HONDA
+0	773	Alex BALDOLINI	26	ITA	Matteoni Racing	APRILIA
+0	774	Sylvain GUINTOLI	50	FRA	Campetella Racing	APRILIA
+0	775	Joan OLIVE	11	SPA	Aspar Junior Team	APRILIA
+0	776	Eric BATAILLE	34	FRA	Troll Honda BQR	HONDA
+0	777	Christian GEMMEL	15	GER	Kiefer Castrol-Honda Racing	HONDA
+0	778	Jakub SMRZ	96	CZE	Elit Grand Prix	HONDA
+0	779	Anthony WEST	14	AUS	Team Zoppini Abruzzo	APRILIA
+0	780	Jaroslav HULES	13	CZE	Yamaha Kurz	YAMAHA
+0	781	Henk vd LAGEMAAT	18	NED	Dark Dog Molenaar	HONDA
+0	782	Katja POENSGEN	98	GER	Dark Dog Molenaar	HONDA
+0	783	Chaz DAVIES	57	GBR	Aprilia Germany	APRILIA
+0	784	Loris CAPIROSSI	65	ITA	Ducati Marlboro Team	DUCATI
+0	785	Valentino ROSSI	46	ITA	Repsol Honda	HONDA
+0	786	Daijiro KATO	74	JPN	Telefnica Movistar Honda	HONDA
+0	787	Tohru UKAWA	11	JPN	Camel Pramac Pons	HONDA
+0	788	Sete GIBERNAU	15	SPA	Telefnica Movistar Honda	HONDA
+0	789	Alex BARROS	4	BRA	Gauloises Yamaha Team	YAMAHA
+0	790	Noriyuki HAGA	41	JPN	Alice Aprilia Racing	APRILIA
+0	791	Colin EDWARDS	45	USA	Alice Aprilia Racing	APRILIA
+0	792	John HOPKINS	21	USA	Suzuki Grand Prix Team	SUZUKI
+0	793	Max BIAGGI	3	ITA	Camel Pramac Pons	HONDA
+0	794	Troy BAYLISS	12	AUS	Ducati Marlboro Team	DUCATI
+0	795	Shinya NAKANO	56	JPN	d'Antn Yamaha Team	YAMAHA
+0	796	Olivier JACQUE	19	FRA	Gauloises Yamaha Team	YAMAHA
+0	797	Makoto TAMADA	6	JPN	Pramac Honda	HONDA
+0	798	Carlos CHECA	7	SPA	Fortuna Yamaha Team	YAMAHA
+0	799	Nicky HAYDEN	69	USA	Repsol Honda	HONDA
+0	800	Kenny ROBERTS	10	USA	Suzuki Grand Prix Team	SUZUKI
+0	801	Norick ABE	17	JPN	Yamaha Racing Team	YAMAHA
+0	802	Andrew PITT	88	AUS	Kawasaki Racing Team	KAWASAKI
+0	803	Marco MELANDRI	33	ITA	Fortuna Yamaha Team	YAMAHA
+0	804	Tamaki SERIZAWA	25	JPN	Moriwaki Racing WCM	MD211VF
+0	805	Garry McCOY	8	AUS	Kawasaki Racing Team	KAWASAKI
+0	806	Chris BURNS	35	GBR	WCM	HARRIS
+0	807	Norick ABE	17	JPN	Fortuna Yamaha Team	YAMAHA
+0	808	Sergio GADEA	70	SPA	Racing Team Gadea	APRILIA
+0	809	Ismael ORTEGA	81	SPA	Seedorf Racing	APRILIA
+0	810	David BONACHE	69	SPA	Racing	TSR
+0	811	Alvaro MOLINA	40	SPA	Equipo Andaluca AMF	APRILIA
+0	812	Gregory LEBLANC	42	FRA	Equipe de France	HONDA
+0	813	Luis CASTRO	39	SPA	Crdoba Patrimonio de la Huma	YAMAHA
+0	814	Alvaro MOLINA	40	SPA	Equipo MAS	APRILIA
+0	815	Alex HOFMANN	66	GER	Kawasaki Racing Team	KAWASAKI
+0	816	Jimmy PETIT	74	FRA	Racing Moto Sport	HONDA
+0	817	Alexis MASBOU	72	FRA	Equipe de France Espoir	HONDA
+0	818	William GAUTIER	73	FRA	Equipe de France Espoir	HONDA
+0	819	Xavier HEROUIN	85	FRA	Mob 77	HONDA
+0	820	Gregory LEFORT	86	FRA	Provence Moto Sport	APRILIA
+0	821	Vincent EISEN	44	FRA	Eisen Moto Team	HONDA
+0	822	Ryuichi KIYONARI	23	JPN	Telefnica Movistar Honda	HONDA
+0	823	Mattia ANGELONI	60	ITA	Team Leardni	HONDA
+0	824	Alessio ALDROVANDI	62	ITA	Engines Engineering	MALAGUTI
+0	825	Andrea BALLERINI	50	ITA	Metis Gilera Racing	GILERA
+0	826	Michele CONTI	87	ITA	BNT Racing	HONDA
+0	827	Michaele PIRRO	61	ITA	RCGM	APRILIA
+0	828	Robbin HARMS	88	DAN	Seedorf Racing	APRILIA
+0	829	Alex DE ANGELIS	15	RSM	Globet.com Racing	APRILIA
+0	830	Gino BORSOI	23	ITA	Globet.com Racing	APRILIA
+0	831	Christian PISTONI	29	ITA	Aprilia Germany	APRILIA
+0	832	David BONACHE	69	SPA	Racing	HONDA
+0	833	Jordi CARCHANO	82	SPA	TMR Competicio	HONDA
+0	834	Klaus NHLES	30	GER	Aprilia Germany	APRILIA
+0	835	Lukas PESEK	52	CZE	Yamaha Kurz	YAMAHA
+0	836	Alvaro MOLINA	40	SPA	MAS Racing Team	APRILIA
+0	837	Chirstophe RASTEL	31	FRA	Oscar Competition	HONDA
+0	838	Raymond SCHOUTEN	77	NED	Schouten Racing	HONDA
+0	839	Jarno vd MAREL	76	NED	Tennen Racing Team	HONDA
+0	840	Adri DEN BEKKER	75	NED	DB Racing Team	HONDA
+0	841	Mark VAN KREIJ	89	NED	Racing Team MVK	HONDA
+0	842	Arie VOS	47	NED	JE Sports Kunstgras	YAMAHA
+0	843	Hans SMEES	48	NED	Performance Racing	HONDA
+0	844	Randy GEVERS	49	NED	De Arend Horeca Meubilair	HONDA
+0	845	Jan BLOK	46	NED	MRTT	HONDA
+0	846	Christian PISTONI	29	ITA	Yamaha Kurz	YAMAHA
+0	847	Yukio KAGAYAMA	71	JPN	Suzuki Grand Prix Team	SUZUKI
+0	848	Lee LONGDEN	49	GBR	Macadam Racing	HONDA
+0	849	Kris WESTON	51	GBR	Brooklands Autobody Racing	HONDA
+0	850	Paul VEAZEY	84	GBR	Banks Racing/GR Motorsport	HONDA
+0	851	Midge SMART	50	GBR	Red Bull Rookies	HONDA
+0	852	Chester LUSK	83	GBR	SP125Racing.com	HONDA
+0	853	Jay VINCENT	23	GBR	Padgetts	APRILIA
+0	854	Phillip DESBOROUGH	60	GBR	AVS/Race To Win	YAMAHA
+0	855	Lee DICKINSON	58	GBR	Galemain Racing Ltd.	YAMAHA
+0	856	Andrew SAWFORD	59	GBR	ST.Neots Motorcycle Co. Ltd.	HONDA
+0	857	Teresio ISOLA	53	ITA	Yamaha Kurz	YAMAHA
+0	858	Chris BURNS	35	GBR	WCM	ROC
+0	859	David DE GEA	52	SPA	WCM	SABRE
+0	860	Jarno MLLER	52	GER	RZT Repsol Racing Team	HONDA
+0	861	Manuel MICKAN	53	GER	Adac Sachsen e.V.	HONDA
+0	862	Jascha BUECH	91	GER	OMV-Team Hanusch	HONDA
+0	863	Patrick UNGER	54	GER	Adac Sachsenring jnr Racing S	HONDA
+0	864	Dario GIUSEPPETTI	90	GER	Adac Berlin	HONDA
+0	865	Max NEUKIRCHNER	62	GER	Neukirchner R.T. Adac Sachse	HONDA
+0	866	Tomas PALANDER	63	SWE	Bernd Hermann Racing Team	HONDA
+0	867	Vesa KALLIO	66	FIN	Raistila Racing	YAMAHA
+0	868	Nico KEHRER	64	GER	KR-EATIV de Kehrer Racing	HONDA
+0	869	Norman RANK	65	GER	MSC Schleizer Drejeck	HONDA
+0	870	Hiroyuki KIKUCHI	39	JPN	Ajo Motorsports	HONDA
+0	871	Mika KALLIO	36	FIN	KTM-Red Bull	KTM
+0	872	Vaclav BITTMAN	92	CZE	BRC Racing Team	HONDA
+0	873	Igor KALAB	55	CZE	OMV Team Hanusch	HONDA
+0	874	Marketa JANAKOVA	56	CZE	Elcom-IPC, Heron Racing Team	HONDA
+0	875	Luka NEDOG	57	SLO	Lines Racing	HONDA
+0	876	Andrea BALLERINI	50	ITA	Metasystem Racing Service	HONDA
+0	877	Radomil ROUS	73	CZE	KLUB Team Racing Znojmo	APRILIA
+0	878	Arie VOS	47	NED	JE Sports Racing	YAMAHA
+0	879	Gabor RIZMAYER	75	HUN	Biro Racing Team	HONDA
+0	880	Michal FILLA	74	CZE	TKB AMK Brno Racing Team	YAMAHA
+0	881	Arnaud VINCENT	1	FRA	Sterilgarda Racing	APRILIA
+0	882	Youichi UI	41	JPN	Freesoul Racing Team	GILERA
+0	883	Andrea BALLERINI	50	ITA	Ajo Motorsports	HONDA
+0	884	Manuel MANNA	93	ITA	Matteoni Racing	APRILIA
+0	885	David BONACHE	69	SPA	Team Bonache	HONDA
+0	886	Mattia ANGELONI	60	ITA	Metasystem Racing Service	HONDA
+0	887	Frederik WATZ	51	SWE	Watz Racing	YAMAHA
+0	888	Miguel PRAIA	41	POR	Marina Park Mavi Sport Kurz	YAMAHA
+0	889	Alvaro MOLINA	40	SPA	Mas Racing Team	YAMAHA
+0	890	Alvaro MOLINA	40	SPA	Mas Racing Team	APRILIA
+0	891	David DE GEA	52	SPA	WCM	HARRIS
+0	892	Mike DI MEGLIO	63	FRA	Metasystem Racing Service	HONDA
+0	893	Michele DANESE	28	ITA	Metasystem Racing Service	HONDA
+0	894	Jaroslav HULES	13	CZE	Elit Grand Prix	HONDA
+0	895	Yuki HATANO	95	JPN	JHA Racing	HONDA
+0	896	Hiroaki KUZUHARA	59	JPN	Honda Hanamatsu Escargot	HONDA
+0	897	Sadahito SUMA	94	JPN	Tema Life	HONDA
+0	898	Hiroaki KUZUHARA	59	JPN	Honda Hamamatsu Escargot	HONDA
+0	899	Sadahito SUMA	94	JPN	Team Life	HONDA
+0	900	Yuki TAKAHASHI	55	JPN	Dy Do Miu Racing Team	HONDA
+0	901	Choujun KAMEYA	70	JPN	Burning Blood RT	HONDA
+0	902	Masaki TOKUDOME	69	JPN	J Racing	YAMAHA
+0	903	Jakub SMRZ	96	CZE	Dark Dog Molenaar	HONDA
+0	904	Akira RYO	43	JPN	Team Suzuki	SUZUKI
+0	905	Tamaki SERIZAWA	25	JPN	Moriwaki Racing	MORIWAKI
+0	906	Zhao HUANG SHI	81	CHN	Madifchina d'Antin Yamaha	YAMAHA
+0	907	Xian HE ZI	82	CHN	Madifchina d'Antin Yamaha	YAMAHA
+0	908	Shi Zhao HUANG	81	CHN	Madifchina d'Antin Yamaha	YAMAHA
+0	909	Akira RYO	43	JPN	Suzuki Grand Prix Team	SUZUKI
+0	910	Joshua WATERS	44	AUS	Grand Prix Training Centre	HONDA
+0	911	Brett SIMMONDS	45	AUS	Tassie Windscreens Simmonds	HONDA
+0	912	Matthew KUHNE	46	AUS	Matt Attack Racing	HONDA
+0	913	Brett SIMMONDS	45	AUS	Tassie Simmonds Racing	HONDA
+0	914	Mark ROWLING	77	AUS	Turramurra Cyclery	YAMAHA
+0	915	Geoff HARDCASTLE	79	AUS	Hardcastle Communication Rac	YAMAHA
+0	916	Brett UNDERWOOD	76	AUS	Team Underwood Diesel Expre	YAMAHA
+0	917	Rodney CAMM	80	AUS	Awesome Discs Racing	HONDA
+0	918	Manuel HERNANDEZ	43	SPA	Team Costa Calida	APRILIA
+0	919	David BONACHE	69	SPA	Racing Team Bonache	HONDA
+0	920	Imre TOTH	25	HUN	Team Hungary	APRILIA
+0	921	Dario GIUSEPPETTI	90	GER	Adac Berlin-Brandenburg	HONDA
+0	922	Patrick LAKERVELD	83	NED	Team Holland	APRILIA
+0	923	Gregory LEBLANC	42	FRA	Equipe de France Support	HONDA
+0	924	Radomil ROUS	73	CZE	Campetella Racing	APRILIA
+0	925	Yves POLZER	84	AUT	Kiefer Castrol Honda	HONDA
+0	926	Roberto LOCATELLI	15	ITA	Safilo Carrera - LCR	APRILIA
+0	927	Andrea DOVIZIOSO	34	ITA	Kopron Team Scot	HONDA
+0	928	Hector BARBERA	3	SPA	Seedorf Racing	APRILIA
+0	929	Mika KALLIO	36	FIN	Red Bull KTM	KTM
+0	930	Steve JENKNER	21	GER	Rauch Bravo	APRILIA
+0	931	Casey STONER	27	AUS	Red Bull KTM	KTM
+0	932	Gabor TALMACSI	14	HUN	Semprucci Malaguti	MALAGUTI
+0	933	Pablo NIETO	22	SPA	Master - Repsol Team 125cc	APRILIA
+0	934	Julian SIMON	10	SPA	Angaia Racing	HONDA
+0	935	Mike DI MEGLIO	63	FRA	Globet.com Racing	APRILIA
+0	936	Mattia PASINI	54	ITA	Safilo Carrera - LCR	APRILIA
+0	937	Youichi UI	41	JPN	Abruzzo Racing Team	APRILIA
+0	938	Marco SIMONCELLI	58	ITA	Rauch Bravo	APRILIA
+0	939	Simone CORSI	24	ITA	Kopron Team Scot	HONDA
+0	940	Fabrizio LAI	32	ITA	Metis Gilera Racing Team	GILERA
+0	941	Robbin HARMS	69	DAN	Ajo Motorsport	HONDA
+0	942	Andrea BALLERINI	50	ITA	Sterilgarda Racing	APRILIA
+0	943	Dario GIUSEPPETTI	26	GER	Elit Grand Prix	HONDA
+0	944	Sergio GADEA	33	SPA	Master - Repsol Team 125cc	APRILIA
+0	945	Gioele PELLINO	42	ITA	Abruzzo Racing Team	APRILIA
+0	946	Angel RODRIGUEZ	47	SPA	Caja Madrid Derbi Racing	DERBI
+0	947	Stefano PERUGINI	7	ITA	Metis Gilera Racing Team	GILERA
+0	948	Vesa KALLIO	66	FIN	Team Hungary	APRILIA
+0	949	Lukas PESEK	52	CZE	Ajo Motorsport	HONDA
+0	950	Mattia ANGELONI	11	ITA	Angaia Racing	HONDA
+0	951	Jordi CARCHANO	28	SPA	Matteoni Racing	APRILIA
+0	952	Raymond SCHOUTEN	16	NED	Molenaar Racing	HONDA
+0	953	Manuel MANNA	8	ITA	Semprucci Malaguti	MALAGUTI
+0	954	Randy DE PUNIET	7	FRA	Safilo Carrera - LCR	APRILIA
+0	955	Sebastian PORTO	19	ARG	Repsol - Aspar Team 250cc	APRILIA
+0	956	Fonsi NIETO	10	SPA	Repsol - Aspar Team 250cc	APRILIA
+0	957	Alex DE ANGELIS	51	RSM	Aprilia Racing	APRILIA
+0	958	Daniel PEDROSA	26	SPA	Telefonica Movistar Honda 250	HONDA
+0	959	Manuel POGGIALI	54	RSM	MS ApriliaTeam	APRILIA
+0	960	Roberto ROLFO	2	ITA	Fortuna Honda	HONDA
+0	961	Toni ELIAS	24	SPA	Fortuna Honda	HONDA
+0	962	Hiroshi AOYAMA	73	JPN	Telefonica Movistar Honda 250	HONDA
+0	963	Alex DEBON	6	SPA	Wurth Honda BQR	HONDA
+0	964	Eric BATAILLE	34	FRA	Wurth Honda BQR	HONDA
+0	965	Jakub SMRZ	96	CZE	Molenaar Racing	HONDA
+0	966	Max SABBATANI	40	ITA	NC World Trade	YAMAHA
+0	967	Joan OLIVE	11	SPA	Campetella Racing	APRILIA
+0	968	Dirk HEIDOLF	28	GER	Grefusa - Aspar Team 250cc	APRILIA
+0	969	Erwan NIGON	36	FRA	Team UGT Kurz	YAMAHA
+0	970	Alex BALDOLINI	25	ITA	Matteoni Racing	APRILIA
+0	971	Naoki MATSUDO	8	JPN	Team UGT Kurz	YAMAHA
+0	972	Anthony WEST	14	AUS	Freesoul Abruzzo Racing Team	APRILIA
+0	973	Arnaud VINCENT	12	FRA	Equipe GP de France - Scrab	APRILIA
+0	974	Johan STIGEFELT	16	SWE	Aprilia Germany	APRILIA
+0	975	Christian GEMMEL	15	GER	Castrol-Honda Kiefer Racing	HONDA
+0	976	Gregory LEFORT	77	FRA	Equipe GP de France - Scrab	APRILIA
+0	977	Hugo MARCHAND	9	FRA	Freesoul Abruzzo Racing Team	APRILIA
+0	978	Hector FAUBEL	33	SPA	Grefusa - Aspar Team 250cc	APRILIA
+0	979	Taro SEKIGUCHI	44	JPN	NC World Trade	YAMAHA
+0	980	Valentino ROSSI	46	ITA	Gauloises Fortuna Yamaha	YAMAHA
+0	981	Max BIAGGI	3	ITA	Camel Honda	HONDA
+0	982	Colin EDWARDS	45	USA	Telefonica Movistar Honda Mot	HONDA
+0	983	Kenny ROBERTS	10	USA	Team Suzuki MotoGP	SUZUKI
+0	984	Sete GIBERNAU	15	SPA	Telefonica Movistar Honda Mot	HONDA
+0	985	Alex BARROS	4	BRA	Repsol Honda Team	HONDA
+0	986	Marco MELANDRI	33	ITA	Fortuna Gauloises Tech 3	YAMAHA
+0	987	Carlos CHECA	7	SPA	Gauloises Fortuna Yamaha	YAMAHA
+0	988	Nicky HAYDEN	69	USA	Repsol Honda Team	HONDA
+0	989	Makoto TAMADA	6	JPN	Camel Honda	HONDA
+0	990	Ruben XAUS	11	SPA	D'Antin MotoGP	DUCATI
+0	991	Shinya NAKANO	56	JPN	Kawasaki Racing Team	KAWASAKI
+0	992	Norick ABE	17	JPN	Fortuna Gauloises Tech 3	YAMAHA
+0	993	John HOPKINS	21	USA	Team Suzuki MotoGP	SUZUKI
+0	994	Neil HODGSON	50	GBR	D'Antin MotoGP	DUCATI
+0	995	Shane BYRNE	67	GBR	MS Aprilia Racing	APRILIA
+0	996	Kurtis ROBERTS	80	USA	Proton Team KR	PROTON
+0	997	Michel FABRIZIO	84	ITA	WCM	HARRIS
+0	998	Manuel HERNANDEZ	43	SPA	Team Hernandez	APRILIA
+0	999	Julian MIRALLES	70	SPA	MIR Racing	APRILIA
+0	1000	Georg FRHLICH	20	GER	ADAC Honda Team	HONDA
+0	1001	Enrique JEREZ	71	SPA	TMR Competicion	HONDA
+0	1002	Alvaro MOLINA	41	SPA	Mas Racing Team-A.Molina	APRILIA
+0	1003	Gregory LEBLANC	42	FRA	Leblanc Racing Team	APRILIA
+0	1004	Radomil ROUS	43	CZE	Campetella Racing	APRILIA
+0	1005	Jarno RONZONI	63	ITA	Team UGT Kurz	YAMAHA
+0	1006	Yannick DESCHAMPS	73	FRA	TVX Racing	HONDA
+0	1007	Mathieu GINES	74	FRA	Big Store RMS	HONDA
+0	1008	Vincent EISEN	46	FRA	Eisen Moto Team	HONDA
+0	1009	Marc Antoine SCACCIA	47	FRA	ASMV Scaccia	YAMAHA
+0	1010	Max SABBATANI	40	ITA	nan	YAMAHA
+0	1011	Chris BURNS	35	GBR	nan	HARRIS
+0	1012	Michele DANESE	76	ITA	Abruzzo Racing Team	APRILIA
+0	1013	Stefano BIANCO	53	ITA	Gold Racing	APRILIA
+0	1014	Alessio ALDROVANDI	75	ITA	Team Minimoto Portomaggiore	HONDA
+0	1015	Michaele PIRRO	61	ITA	RCGM Team F.M.I.	APRILIA
+0	1016	Lorenzo ZANETTI	77	ITA	Swiss MTR	HONDA
+0	1017	Jarno RONZONI	63	ITA	Roma Racing	YAMAHA
+0	1018	Andrew PITT	88	AUS	Moriwaki Racing	MORIWAKI
+0	1019	Sete GIBERNAU	15	SPA	Telefonica Movistar Honda	HONDA
+0	1020	Colin EDWARDS	45	USA	Telefonica Movistar Honda	HONDA
+0	1021	Fabrizio PERREN	68	ARG	RC Recouso Sport	HONDA
+0	1022	Mikko KYYHKYNEN	38	FIN	Ajo Motorsport	HONDA
+0	1023	Jordi PLANAS	78	SPA	TMR Competicio	HONDA
+0	1024	David FOULOI	72	FRA	Equipe GP de France - Scrab	APRILIA
+0	1025	Jose Luis CARDOSO	30	SPA	NC World Trade	YAMAHA
+0	1026	Jarno RONZONI	63	ITA	Castrol-Honda Kiefer Racing	YAMAHA
+0	1027	Jarno RONZONI	63	ITA	Castrol-Honda Kiefer Racing	HONDA
+0	1028	Gregorio LAVILLA	32	SPA	Team Suzuki MotoGP	SUZUKI
+0	1029	Jarno VAN DER MAREL	82	NED	Amici Racing Team	HONDA
+0	1030	Frank VAN DEN DRAGT	44	NED	Tennen Racing	HONDA
+0	1031	Gert-Jan KOK	83	NED	Bos Tivoli Racing Pevada	HONDA
+0	1032	Marketa JANAKOVA	9	CZE	Angaia Racing	HONDA
+0	1033	Mark VAN KREIJ	80	NED	Racing Team Mark Van Kreij	HONDA
+0	1034	Adri DEN BEKKER	79	NED	nan	HONDA
+0	1035	Adri DEN BEKKER	79	NED	DB Racing	HONDA
+0	1036	Patrick LAKERVELD	58	NED	Benjan Motoren	YAMAHA
+0	1037	Ivan SILVA	22	SPA	Grefusa - Aspar Team 250cc	APRILIA
+0	1038	Hans SMEES	59	NED	Performance Racing	HONDA
+0	1039	Klaus NHLES	17	GER	Castrol-Honda Kiefer Racing	HONDA
+0	1040	Jan ROELOFS	62	NED	MRTT Hugen Racing	YAMAHA
+0	1041	Emile LITJENS	60	NED	Jaap Kingma Racing	APRILIA
+0	1042	Randy GEVERS	61	NED	de Arend Filart Racing	APRILIA
+0	1043	Jakub SMRZ	96	CZE	nan	HONDA
+0	1044	Joan OLIVE	11	SPA	nan	APRILIA
+0	1045	Vaclav BITTMAN	35	CZE	Elit Grand Prix	HONDA
+0	1046	Patrick UNGER	39	GER	Motorrad Unger Racing	APRILIA
+0	1047	Manuel MICKAN	40	GER	Team Freudenberg	HONDA
+0	1048	Simone SANNA	18	ITA	Sterilgarda Racing	APRILIA
+0	1049	Raffaele DE ROSA	30	ITA	Angaia Racing	HONDA
+0	1050	Christian ELKIN	49	GBR	UK1 Racing	HONDA
+0	1051	Eugene LAVERTY	85	GBR	Red Bull Rookies Honda	HONDA
+0	1052	Kris WESTON	51	GBR	Brooklands Autobody Centre	HONDA
+0	1053	Thomas BRIDEWELL	84	GER	Bridewell Racing Team	HONDA
+0	1054	Thomas BRIDEWELL	84	GBR	Bridewell Racing Team	HONDA
+0	1055	Erwan NIGON	36	FRA	Equipe GP de France - Scrab	APRILIA
+0	1056	Frederik WATZ	64	SWE	Agesta Transport	YAMAHA
+0	1057	Lee DICKINSON	65	GBR	Galemain Racing	HONDA
+0	1058	David DE GEA	52	SPA	Wurth Honda BQR	HONDA
+0	1059	Radomil ROUS	43	CZE	Team UGT Kurz	YAMAHA
+0	1060	Bruce DUNN	67	GBR	BDR Racing	HONDA
+0	1061	Tony CAMPBELL	66	GBR	Manhattan Racing	YAMAHA
+0	1062	Andrea BALLERINI	50	ITA	Abruzzo Racing Team	APRILIA
+0	1063	Tomoyoshi KOYAMA	89	JPN	SP Tadao Racing Team	YAMAHA
+0	1064	Michael RANSEDER	88	AUS	Red Bull KTM Junior Team	KTM
+0	1065	Lorenzo ZANETTI	45	ITA	Sterilgarda Racing	APRILIA
+0	1066	Patrik VOSTAREK	87	CZE	OMV Team Hanusch	HONDA
+0	1067	Michael RANSEDER	88	AUT	Red Bull KTM Junior Team	KTM
+0	1068	Tomoyoshi KOYAMA	89	JPN	nan	YAMAHA
+0	1069	Henk vd LAGEMAAT	71	NED	De Arend - Filard Racing	APRILIA
+0	1070	Gergo TALMACSI	88	HUN	NC World Trade	YAMAHA
+0	1071	Valerio ANGHETTI	27	ITA	Freesoul Abruzzo Racing Team	APRILIA
+0	1072	Johan STIGEFELT	16	SWE	nan	APRILIA
+0	1073	James ELLISON	77	GBR	WCM	HARRIS
+0	1074	Vincent BRAILLARD	91	SWI	TMR Competicio	HONDA
+0	1075	Carlos FERREIRA	90	POR	Team Moto Speed	HONDA
+0	1076	Michel FABRIZIO	84	ITA	MS Aprilia Racing	APRILIA
+0	1077	Toshihisa KUZUHARA	62	JPN	Honda Kumamoto Racing	HONDA
+0	1078	Suhathai CHAEMSAP	67	THA	Thai Honda Castrol/ERP	HONDA
+0	1079	Shigeki NORIKANE	64	JPN	Team Tec. 2  Feel	YAMAHA
+0	1080	Yuki HATANO	95	JPN	Garage Racing Team	HONDA
+0	1081	Manuel HERNANDEZ	43	SPA	Angaia Racing	APRILIA
+0	1082	Toshihisa KUZUHARA	62	JPN	Angaia Racing	HONDA
+0	1083	Sergio GADEA	33	SPA	Master - Repsol Team 125c	APRILIA
+0	1084	Yuki TAKAHASHI	55	JPN	Dydo Miu Racing	HONDA
+0	1085	Shuhei AOYAMA	76	JPN	Team Harc-Pro	HONDA
+0	1086	Yuzo FUJIOKA	78	JPN	Endurance	HONDA
+0	1087	Katsuyuki NAKASUGA	79	JPN	SP Tadao Racing Team	YAMAHA
+0	1088	Tohru UKAWA	72	JPN	HRC	HONDA
+0	1089	Olivier JACQUE	19	FRA	Moriwaki WCM	MORIWAKI
+0	1090	Youichi UI	41	JPN	WCM	HARRIS
+0	1091	Max SABBATANI	31	ITA	Ajo Motorsport	HONDA
+0	1092	Gregory LEBLANC	42	FRA	Equipe GP de France - Scrab	APRILIA
+0	1093	Yukio KAGAYAMA	71	JPN	Team Suzuki MotoGP	SUZUKI
+0	1094	James HAYDON	36	GBR	Proton Team KR	PROTON
+0	1095	Marcellino LUCCHI	37	ITA	MS ApriliaTeam	APRILIA
+0	1096	Garry McCOY	24	AUS	MS Aprilia Racing	APRILIA
+0	1097	Bryan STARING	92	AUS	Allect Barter Card Racing	HONDA
+0	1098	Matthew KUHNE	46	AUS	Angaia Racing	HONDA
+0	1099	Brett SIMMONDS	56	AUS	Tassie Windscreens	HONDA
+0	1100	Brent RIGOLI	94	AUS	Snapon Tools	HONDA
+0	1101	Malcolm ESLER	93	AUS	Tel'm Racing	HONDA
+0	1102	Joshua WATERS	82	AUS	Castrol-Honda Kiefer Racing	HONDA
+0	1103	Mark ROWLING	81	AUS	Turramurra Cyclery	YAMAHA
+0	1104	Peter TAPLIN	80	AUS	EMS Racing	HONDA
+0	1105	Ben RIED	84	AUS	whitetiger.com.au	YAMAHA
+0	1106	Michaele PIRRO	37	ITA	Rauch Bravo	APRILIA
+0	1107	Nicolas TEROL	59	SPA	Globet.com Racing	APRILIA
+0	1108	Aleix ESPARGARO	57	SPA	Racc Caja Madrid	HONDA
+0	1109	Alvaro MOLINA	41	SPA	Andulucia Mas Racing Team	APRILIA
+0	1110	Frederik WATZ	64	SWE	Castrol-Honda Kiefer Racing	HONDA
+0	1111	Hans SMEES	75	NED	Performance Racing	APRILIA
+0	1112	Jarno RONZONI	63	ITA	Freesoul Abruzzo Racing Team	APRILIA
+0	1113	Olivier JACQUE	19	FRA	Moriwaki Racing	MORIWAKI
+0	1114	Marco SIMONCELLI	58	ITA	Nocable.it Race	APRILIA
+0	1115	Mattia PASINI	75	ITA	Totti Top Sport - NGS	APRILIA
+0	1116	Fabrizio LAI	32	ITA	Kopron Racing World	HONDA
+0	1117	Mika KALLIO	36	FIN	Red Bull KTM GP125	KTM
+0	1118	Hector FAUBEL	55	SPA	Master Aspar	APRILIA
+0	1119	Gabor TALMACSI	14	HUN	Red Bull KTM GP125	KTM
+0	1120	Lorenzo ZANETTI	8	ITA	Skilled I.S.P.A. Racing Team	APRILIA
+0	1121	Manuel POGGIALI	54	RSM	Metis Racing Team	GILERA
+0	1122	Alvaro BAUTISTA	19	SPA	Seedorf RC3 - Tiempo Holidays	HONDA
+0	1123	Mike DI MEGLIO	63	FRA	Kopron Racing World	HONDA
+0	1124	Jordi CARCHANO	28	SPA	MVA Aspar	APRILIA
+0	1125	Tomoyoshi KOYAMA	71	JPN	Ajo Motorsport	HONDA
+0	1126	Sergio GADEA	33	SPA	Master Aspar	APRILIA
+0	1127	Raffael DE ROSA	35	ITA	Matteoni Racing	APRILIA
+0	1128	Alexis MASBOU	7	FRA	Ajo Motorsport	HONDA
+0	1129	Imre TOTH	45	HUN	Road Racing Team Hungary	APRILIA
+0	1130	Pablo NIETO	22	SPA	Caja Madrid - Derbi Racing	DERBI
+0	1131	Michele PIRRO	15	ITA	Malaguti Reparto Corse	MALAGUTI
+0	1132	Joan OLIVE	6	SPA	Nocable.it Race	APRILIA
+0	1133	Manuel HERNANDEZ	43	SPA	Totti Top Sport - NGS	APRILIA
+0	1134	Sandro CORTESE	11	GER	Kiefer-Bos-Castrol Honda	HONDA
+0	1135	Andrea IANNONE	29	ITA	Abruzzo Racing Team	APRILIA
+0	1136	Julian SIMON	60	SPA	Red Bull KTM GP125	KTM
+0	1137	Lukas PESEK	52	CZE	Metis Racing Team	DERBI
+0	1138	Nicolas TEROL	18	SPA	Caja Madrid - Derbi Racing	DERBI
+0	1139	Raymond SCHOUTEN	16	NED	Arie Molenaar Racing	HONDA
+0	1140	Toshihisa KUZUHARA	9	JPN	Angaia Racing	HONDA
+0	1141	Dario GIUSEPPETTI	25	GER	Semprucci Cardion Blauer	APRILIA
+0	1142	Vincent BRAILLARD	26	SWI	Road Racing Team Hungary	APRILIA
+0	1143	Aleix ESPARGARO	41	SPA	Seedorf RC3 - Tiempo Holidays	HONDA
+0	1144	Julian MIRALLES	84	SPA	MVA Aspar	APRILIA
+0	1145	Mateo TUNEZ	86	SPA	Aspar Team	APRILIA
+0	1146	Federico SANDI	10	ITA	Angaia Racing	HONDA
+0	1147	David BONACHE	48	SPA	LG Mobile Galicia Team	HONDA
+0	1148	Angel RODRIGUEZ	47	SPA	LG Mobile Galicia Team	HONDA
+0	1149	Daniel SAEZ	49	SPA	Totti Top Sprort - NGS	APRILIA
+0	1150	Sascha HOMMEL	31	GER	Malaguti Reparto Corse	MALAGUTI
+0	1151	Patrik VOSTAREK	87	CZE	Omv Team Hanusch	HONDA
+0	1152	Karel ABRAHAM	44	CZE	Semprucci Cardion Blauer	APRILIA
+0	1153	Sebastian PORTO	19	ARG	Aprilia Aspar 250cc	APRILIA
+0	1154	Casey STONER	27	AUS	Carrera Sunglasses - LCR	APRILIA
+0	1155	Daniel PEDROSA	1	SPA	Telefonica Movistar Honda 250	HONDA
+0	1156	Hector BARBERA	80	SPA	Fortuna Honda	HONDA
+0	1157	Alex DE ANGELIS	5	RSM	MS Aprilia Italia Corse	APRILIA
+0	1158	Jorge LORENZO	48	SPA	Fortuna Honda	HONDA
+0	1159	Randy DE PUNIET	7	FRA	Aprilia Aspar 250cc	APRILIA
+0	1160	Yuki TAKAHASHI	55	JPN	Team Scot	HONDA
+0	1161	Simone CORSI	24	ITA	MS Aprilia Italia Corse	APRILIA
+0	1162	Sylvain GUINTOLI	50	FRA	Equipe GP de France - Scrab	APRILIA
+0	1163	Roberto LOCATELLI	15	ITA	Carrera Sunglasses - LCR	APRILIA
+0	1164	Steve JENKNER	17	GER	Nocable.it Race	APRILIA
+0	1165	Mirko GIANSANTI	32	ITA	Matteoni Racing	APRILIA
+0	1166	Gregory LEBLANC	38	FRA	Equipe GP de France - Scrab	APRILIA
+0	1167	Alvaro MOLINA	41	SPA	Andalucia Mas Racing	APRILIA
+0	1168	Jakub SMRZ	96	CZE	Arie Molenaar Racing	HONDA
+0	1169	Dirk HEIDOLF	28	GER	Kiefer-Bos-Castrol Honda	HONDA
+0	1170	Andrea BALLERINI	8	ITA	Abruzzo Racing Team	APRILIA
+0	1171	Alex BALDOLINI	25	ITA	Campetella Racing	APRILIA
+0	1172	Martin CARDENAS	36	COL	Aprilia Germany	APRILIA
+0	1173	Radomil ROUS	64	CZE	Wurth Honda BQR	HONDA
+0	1174	Gabor RIZMAYER	12	HUN	Team UGT Kurz	YAMAHA
+0	1175	Arnaud VINCENT	21	FRA	Scuderia Fantic Motor GP	FANTIC
+0	1176	Hugo MARCHAND	9	FRA	Campetella Racing	APRILIA
+0	1177	Yves POLZER	42	AUT	Mas Racing Team	APRILIA
+0	1178	Franz ASCHENBRENNER	16	GER	Team UGT Kurz	YAMAHA
+0	1179	Gabriele FERRO	20	ITA	Scuderia Fantic Motor GP	FANTIC
+0	1180	Sete GIBERNAU	15	SPA	Movistar Honda MotoGP	HONDA
+0	1181	Valentino ROSSI	46	ITA	Gauloises Yamaha Team	YAMAHA
+0	1182	Colin EDWARDS	5	USA	Gauloises Yamaha Team	YAMAHA
+0	1183	Alex BARROS	4	BRA	Camel Honda	HONDA
+0	1184	Makoto TAMADA	6	JPN	JIR Konica Minolta Honda	HONDA
+0	1185	Marco MELANDRI	33	ITA	Movistar Honda MotoGP	HONDA
+0	1186	Carlos CHECA	7	SPA	Ducati Marlboro Team	DUCATI
+0	1187	Troy BAYLISS	12	AUS	Camel Honda	HONDA
+0	1188	Max BIAGGI	3	ITA	Repsol Honda Team	HONDA
+0	1189	Toni ELIAS	24	SPA	Fortuna Yamaha Team	YAMAHA
+0	1190	Ruben XAUS	11	SPA	Fortuna Yamaha Team	YAMAHA
+0	1191	Roberto ROLFO	44	ITA	D'Antin MotoGP	DUCATI
+0	1192	Shane BYRNE	67	GBR	Team Roberts	PROTON
+0	1193	Franco BATTAINI	27	ITA	Blata WCM	BLATA
+0	1194	James ELLISON	77	GBR	Blata WCM	BLATA
+0	1195	Roberto ROLFO	44	ITA	D'Antin MotoGP - Pramac	DUCATI
+0	1196	Carlos FERREIRA	50	POR	Motospeed	HONDA
+0	1197	Raffaele DE ROSA	35	ITA	Matteoni Racing	APRILIA
+0	1198	Arnaud VINCENT	21	FRA	nan	FANTIC
+0	1199	Gabriele FERRO	20	ITA	nan	FANTIC
+0	1200	Makoto TAMADA	6	JPN	Konica Minolta Honda	HONDA
+0	1201	Wai On CHEUNG	38	CHN	Ajo Motorsport	HONDA
+0	1202	Ho Wan CHOW	39	CHN	Zongshen Racing Team	HONDA
+0	1203	You Rao ZHOU	85	CHN	Chong Quing Yuan Xgjao Racin	HONDA
+0	1204	Gabor RIZMAYER	12	HUN	Yamaha Kurtz	YAMAHA
+0	1205	Shi Zhao HUANG	58	CHN	Team Yamaha China Tianjian	YAMAHA
+0	1206	Frederik WATZ	18	SWE	Yamaha Kurtz	YAMAHA
+0	1207	Zi Xian HE	62	CHN	Team Yamaha China Tianjian	YAMAHA
+0	1208	Zhu WANG	60	CHN	Zongshen Team of China	APRILIA
+0	1209	Zhi Yu HUANG	59	CHN	Chong Quing Yuan Xgjao Racin	HONDA
+0	1210	Zheng Peng LI	61	CHN	Zongshen Team of China	APRILIA
+0	1211	Gregory LEBLANC	38	FRA	nan	APRILIA
+0	1212	Olivier JACQUE	19	FRA	Kawasaki Racing Team	KAWASAKI
+0	1213	Tohru UKAWA	72	JPN	Moriwaki Racing	MORIWAKI
+0	1214	Jurgen vd GOORBERGH	16	NED	Konica Minolta Honda	HONDA
+0	1215	Mathieu LUSSIANA	88	FRA	Equipe de France Espoire	HONDA
+0	1216	Mathieu GINES	74	FRA	Tecmas Balladins Racing	HONDA
+0	1217	Michel ALEXIS	90	FRA	Teams RMS Bigstore	HONDA
+0	1218	Jules CLUZEL	89	FRA	Teams RMS Bigstore	HONDA
+0	1219	Gioele PELLINO	42	ITA	Malaguti Reparto Corse	MALAGUTI
+0	1220	Alexis MICHEL	90	FRA	Teams RMS Bigstore	HONDA
+0	1221	Erwan NIGON	63	FRA	Zongshen Team of China	APRILIA
+0	1222	Anthony WEST	14	AUS	Aprilia Germany	APRILIA
+0	1223	Samuel AUBRY	65	FRA	Team Racer Bike	HONDA
+0	1224	Gabor RIZMAYER	12	HUN	Yamaha Kurz	YAMAHA
+0	1225	Frederik WATZ	18	SWE	Yamaha Kurz	YAMAHA
+0	1226	Roberto ROLFO	44	ITA	Team D'Antin Pramac	DUCATI
+0	1227	Shane BYRNE	67	GBR	nan	PROTON
+0	1228	Lorenzo BARONI	91	ITA	RCGM Team FMI	APRILIA
+0	1229	Michele CONTI	61	ITA	Kuja Racing	HONDA
+0	1230	Nico VIVARELLI	93	ITA	Racing Service	HONDA
+0	1231	Simone GROTZKI GIORGI	62	ITA	Abruzzo Junior Team	APRILIA
+0	1232	Luca VERDINI	92	ITA	RCGM Team FMI	APRILIA
+0	1233	Jarno RONZONI	71	ITA	Nocable.it Race	APRILIA
+0	1234	Yves POLZER	42	AUT	Sebring Mas Racing	APRILIA
+0	1235	David CHECA	94	SPA	Fortuna Yamaha Team	YAMAHA
+0	1236	Michael RANSEDER	76	AUT	Red Bull ADAC KTM Juniors	KTM
+0	1237	Mateo TUNEZ	86	SPA	MVA Aspar	APRILIA
+0	1238	Stefan BRADL	77	GER	Red Bull ADAC KTM Juniors	KTM
+0	1239	Daniel SAEZ	49	SPA	3C Racing Junior	APRILIA
+0	1240	Hugo VAN DEN BERG	78	NED	Varenhof Racing Team	APRILIA
+0	1241	Enrique JEREZ	51	SPA	Team Stop  Go	DERBI
+0	1242	Dario GIUSEPPETTI	25	GER	AB Cardion Blauer USA	APRILIA
+0	1243	Karel ABRAHAM	44	CZE	AB Cardion Blauer USA	APRILIA
+0	1244	Erwan NIGON	63	FRA	Kiefer-Bos-Castrol Honda	HONDA
+0	1245	Imre TOTH	45	HUN	Team Toth	APRILIA
+0	1246	Vincent BRAILLARD	26	SWI	Team Toth	APRILIA
+0	1247	Mateo TUNEZ	46	SPA	MVA Master Aspar Team	APRILIA
+0	1248	Gert-Jan KOK	79	NED	Jan Bakker Auto's Elburg	HONDA
+0	1249	Joey LITJENS	37	NED	Litjens Racing	HONDA
+0	1250	Anthony WEST	14	AUS	Wurth Honda BQR	HONDA
+0	1251	Michele DANESE	45	ITA	Campetella Racing	APRILIA
+0	1252	Hans SMEES	66	NED	Jaap Kingma Racing	APRILIA
+0	1253	Gabor RIZMAYER	12	HUN	Team Kurz Prista Oil	YAMAHA
+0	1254	Randy GEVERS	67	NED	De Arand Filart Racing	APRILIA
+0	1255	Jan ROELOFS	68	NED	MRTT Hugen Racing	YAMAHA
+0	1256	Mike VELTHJZEN	69	NED	MVS Racing Team Mikcin	HONDA
+0	1257	Alexander TODOROV	22	BUL	Team Kurz Prista Oil	YAMAHA
+0	1258	Troy BAYLISS	12	AUS	Honda Pons	HONDA
+0	1259	John HOPKINS	21	USA	Red Bull Suzuki	SUZUKI
+0	1260	Colin EDWARDS	5	USA	Yamaha Factory Racing	YAMAHA
+0	1261	Valentino ROSSI	46	ITA	Yamaha Factory Racing	YAMAHA
+0	1262	Alex BARROS	4	BRA	Honda Pons	HONDA
+0	1263	Kenny ROBERTS	10	USA	Red Bull Suzuki	SUZUKI
+0	1264	Carlos CHECA	7	SPA	Ducati Team	DUCATI
+0	1265	Loris CAPIROSSI	65	ITA	Ducati Team	DUCATI
+0	1266	Patrick UNGER	13	GER	Motorrad Unger Racing	APRILIA
+0	1267	Manuel MICKAN	98	GER	ADAC Sachsen Juniors	HONDA
+0	1268	Anthony WEST	14	AUS	Red Bull KTM GP250	KTM
+0	1269	Taro SEKIGUCHI	44	JPN	Campetella Racing	APRILIA
+0	1270	Patrick LAKERVELD	53	NED	Racing Team Benjan Motoren	HONDA
+0	1271	Andreas MARTENSSON	26	SWE	Team Kurz Prista Oil	YAMAHA
+0	1272	Thomas WALTER	52	GER	NRG Racing	HONDA
+0	1273	Franz ASCHENBRENNER	16	GER	Mototechnic Castrol Racing	HONDA
+0	1274	Nicklas CAJBACK	23	SWE	Team Kurz Prista Oil	YAMAHA
+0	1275	Karel ABRAHAM	44	CZE	AB Cardion Team	APRILIA
+0	1276	Patrik VOSTAREK	87	CZE	Hanusch Motopromotion	HONDA
+0	1277	Dario GIUSEPPETTI	25	GER	Semprucci Blauer USA	APRILIA
+0	1278	Lukas RAZEK	97	CZE	Heron Racing Team	HONDA
+0	1279	Thomas MAYER	99	CZE	Mayer Racing Passau	APRILIA
+0	1280	Thomas MAYER	99	GER	Mayer Racing Passau	APRILIA
+0	1281	Michal FILLA	70	CZE	Sramek Racing Promotion	APRILIA
+0	1282	Nobuatsu AOKI	9	JPN	Team Suzuki MotoGP	SUZUKI
+0	1283	Jeremy McWILLIAMS	99	GBR	Team Roberts	PROTON
+0	1284	Mateo TUNEZ	46	SPA	MVA Aspar	APRILIA
+0	1285	Enrique JEREZ	51	SPA	Caja Madrid - Derbi Racing	DERBI
+0	1286	Hiroaki KUZUHARA	68	JPN	Jha Racing	HONDA
+0	1287	Yuki HAMAMOTO	64	JPN	Hamamoto Racing Team	HONDA
+0	1288	Arata MORI	66	JPN	Team Harc-Pro	HONDA
+0	1289	Kazuki HANAFUSA	67	JPN	Team Harc-Pro	HONDA
+0	1290	Takumi TAKAHASHI	20	JPN	Arie Molenaar Racing	HONDA
+0	1291	Hiroomi IWATA	65	JPN	Club Plus One	HONDA
+0	1292	David BONACHE	48	SPA	LG Mobile Ssmracing	HONDA
+0	1293	Shuhei AOYAMA	75	JPN	Team Harc-Pro	HONDA
+0	1294	Ryuji YOKOE	78	JPN	RT Morinokumasan Sato Jyuku	YAMAHA
+0	1295	Kouki TAKAHASHI	93	JPN	Dydo Miu Racing Team	YAMAHA
+0	1296	Masaki TOKUDOME	79	JPN	Henkel Danke J Racing	YAMAHA
+0	1297	Mamoru AKIYA	77	JPN	Team Moto Space	YAMAHA
+0	1298	Mathieu GINES	56	FRA	Equipe GP de France - Scrab	APRILIA
+0	1299	Kouki TAKAHASHI	93	JPN	Dydo Miu Racing Team	HONDA
+0	1300	Tohru UKAWA	72	JPN	Camel Honda	HONDA
+0	1301	Naoki MATSUDO	45	JPN	Moriwaki Racing	MORIWAKI
+0	1302	Roberto ROLFO	44	ITA	Team d'Antin Pramac	DUCATI
+0	1303	Wai On CHEUNG	38	CHN	Arie Molenaar Racing	HONDA
+0	1304	Doni Tata PRADITA	72	INA	Yamaha Indonesia	YAMAHA
+0	1305	Erwan NIGON	63	FRA	Team Kurz Prista Oil	YAMAHA
+0	1306	Erwan NIGON	63	FRA	Team Yamaha Kurz	YAMAHA
+0	1307	Nicklas CAJBACK	23	SWE	Team Yamaha Kurz	YAMAHA
+0	1308	Shane BYRNE	67	GBR	Camel Honda	HONDA
+0	1309	Angel RODRIGUEZ	47	SPA	Team Toth	APRILIA
+0	1310	Sascha HOMMEL	31	GER	Arie Molenaar Racing	HONDA
+0	1311	Blake LEIGH-SMITH	69	AUS	Leigh-Smith Racing	HONDA
+0	1312	Tom HATTON	81	GBR	Allect Racing	HONDA
+0	1313	Rhys MOLLER	83	AUS	JBD Racing	HONDA
+0	1314	Brent RIGOLI	70	AUS	Angelo's Aluminium Racing	HONDA
+0	1315	Candice SCOTT	82	AUS	Scott Racing	HONDA
+0	1316	Tom HATTON	81	AUS	Allect Racing	HONDA
+0	1317	Arturo TIZON	33	SPA	Wurth Honda BQR	HONDA
+0	1318	Mick KELLY	82	AUS	BP Ultimate/ASF Printing	HONDA
+0	1319	Mark ROWLING	81	AUS	Turramurra Cyclery Racing	YAMAHA
+0	1320	Chris VERMEULEN	17	AUS	Camel Honda	HONDA
+0	1321	Manuel HERNANDEZ	43	SPA	Angaia Racing	HONDA
+0	1322	Daniel SAEZ	49	SPA	Totti Top Sport - NGS	APRILIA
+0	1323	Jules CLUZEL	89	FRA	Malaguti Reparto Corse	MALAGUTI
+0	1324	Shinichi ITO	23	JPN	Ducati Marlboro Team	DUCATI
+0	1325	Esteve RABAT	59	SPA	Wurth Honda BQR	HONDA
+0	1326	Mateo TUNEZ	27	SPA	MVA Master Aspar Team	APRILIA
+0	1327	Ryuichi KIYONARI	54	JPN	Camel Honda	HONDA
+0	1328	Kurtis ROBERTS	80	USA	Team Roberts	PROTON
+0	1329	Julian SIMON	60	SPA	Red Bull KTM GP 125	KTM
+0	1330	Fabrizio LAI	32	ITA	Valsir Seedorf Racing	HONDA
+0	1331	Aleix ESPARGARO	41	SPA	Wurth Honda BQR	HONDA
+0	1332	Alvaro BAUTISTA	19	SPA	Master - MVA Aspar Team	APRILIA
+0	1333	Mika KALLIO	36	FIN	Red Bull KTM GP 125	KTM
+0	1334	Tomoyoshi KOYAMA	71	JPN	Malaguti Ajo Corse	MALAGUTI
+0	1335	Sergio GADEA	33	SPA	Master - MVA Aspar Team	APRILIA
+0	1336	Lukas PESEK	52	CZE	Derbi Racing	DERBI
+0	1337	Mattia PASINI	75	ITA	Master - MVA Aspar Team	APRILIA
+0	1338	Mike DI MEGLIO	63	FRA	FFM Honda Grand Prix 125	HONDA
+0	1339	Gabor TALMACSI	14	HUN	Humangest Racing Team	HONDA
+0	1340	Raffaele DE ROSA	35	ITA	Multimedia Racing	APRILIA
+0	1341	Enrique JEREZ	79	SPA	WTR Blauer USA	APRILIA
+0	1342	Michael RANSEDER	9	AUT	Red Bull KTM Junior Team	KTM
+0	1343	Pablo NIETO	22	SPA	Multimedia Racing	APRILIA
+0	1344	Sandro CORTESE	11	GER	Elit - Caffe Latte	HONDA
+0	1345	Esteve RABAT	80	SPA	Honda BQR	HONDA
+0	1346	Vincent BRAILLARD	26	SWI	Multimedia Racing	APRILIA
+0	1347	Lorenzo BARONI	23	ITA	Humangest Racing Team	HONDA
+0	1348	Andrea IANNONE	29	ITA	TicinoHosting Campetella JNR T	APRILIA
+0	1349	Thomas LUTHI	1	SWI	Elit - Caffe Latte	HONDA
+0	1350	Angel RODRIGUEZ	10	SPA	3C Racing	APRILIA
+0	1351	Nicolas TEROL	18	SPA	Derbi Racing	DERBI
+0	1352	Bradley SMITH	38	GBR	Repsol Honda	HONDA
+0	1353	Manuel HERNANDEZ	43	SPA	Nocable Angaia Racing	HONDA
+0	1354	Hector FAUBEL	55	SPA	Master - MVA Aspar Team	APRILIA
+0	1355	Federico SANDI	12	ITA	SSM Racing	APRILIA
+0	1356	Simone CORSI	24	ITA	Squadra Corse Metis Gilera	GILERA
+0	1357	Michele CONTI	16	ITA	Valsir Seedorf Racing	HONDA
+0	1358	Joey LITJENS	37	NED	Arie Molenaar Racing	HONDA
+0	1359	Karel ABRAHAM	44	CZE	Cardion AB Motoracing	APRILIA
+0	1360	Ivan MAESTRO	76	SPA	Lambea TMM Racing	HONDA
+0	1361	Daniel SAEZ	77	SPA	Quinto Almoradi	APRILIA
+0	1362	Stefan BRADL	17	GER	Red Bull KTM Junior Team	KTM
+0	1363	Simone GROTZKYJ	53	ITA	TicinoHosting Campetella JNR T	APRILIA
+0	1364	Mateo TUNEZ	21	SPA	Master - MVA Aspar Team	APRILIA
+0	1365	Alexis MASBOU	7	FRA	Malaguti Ajo Corse	MALAGUTI
+0	1366	Roberto TAMBURINI	20	ITA	Matteoni Racing	APRILIA
+0	1367	Joan OLIVE	6	SPA	SSM Racing	APRILIA
+0	1368	Alex DE ANGELIS	7	RSM	Master - MVA Aspar Team	APRILIA
+0	1369	Hiroshi AOYAMA	4	JPN	Red Bull KTM GP 250	KTM
+0	1370	Jorge LORENZO	48	SPA	Fortuna Aprilia	APRILIA
+0	1371	Hector BARBERA	80	SPA	Fortuna Aprilia	APRILIA
+0	1372	Andrea DOVIZIOSO	34	ITA	Humangest Racing Team	HONDA
+0	1373	Sylvain GUINTOLI	50	FRA	Equipe GP De France - Scrab	APRILIA
+0	1374	Anthony WEST	14	AUS	Kiefer - Bos - Racing	APRILIA
+0	1375	Roberto LOCATELLI	15	ITA	Team Toth	APRILIA
+0	1376	Yuki TAKAHASHI	55	JPN	Humangest Racing Team	HONDA
+0	1377	Shuhei AOYAMA	73	JPN	Repsol Honda	HONDA
+0	1378	Alvaro MOLINA	31	SPA	Andalucia Team Mas	APRILIA
+0	1379	Arnaud VINCENT	21	FRA	Arie Molenaar Racing	HONDA
+0	1380	Sebastian PORTO	19	ARG	Repsol Honda	HONDA
+0	1381	Taro SEKIGUCHI	44	JPN	TicinoHosting Campetella Racin	APRILIA
+0	1382	Jakub SMRZ	96	CZE	Cardion AB Motoracing	APRILIA
+0	1383	Marco SIMONCELLI	58	ITA	Squadra Corse Metis Gilera	GILERA
+0	1384	Dirk HEIDOLF	28	GER	Kiefer - Bos - Racing	APRILIA
+0	1385	Arturo TIZON	23	SPA	Wurth Honda BQR	HONDA
+0	1386	Jordi CARCHANO	24	SPA	Stop And Go Racing Team	HONDA
+0	1387	Martin CARDENAS	36	COL	Wurth Honda BQR	HONDA
+0	1388	Alex DEBON	6	SPA	Aprilia Racing	APRILIA
+0	1389	Manuel POGGIALI	54	RSM	Red Bull KTM GP 250	KTM
+0	1390	Chaz DAVIES	57	GBR	TicinoHosting Campetella Racin	APRILIA
+0	1391	Luca MORELLI	22	ITA	Nocable Angaia Racing	APRILIA
+0	1392	Jules CLUZEL	16	FRA	Equipe GP De France - Scrab	APRILIA
+0	1393	Michele DANESE	41	ITA	WTR Blauer USA	APRILIA
+0	1394	Sinan SOFUOGLU	40	TUR	Wurth Honda BQR	HONDA
+0	1395	Alessio PALUMBO	85	ITA	Matteoni Racing	APRILIA
+0	1396	Marco MELANDRI	33	ITA	Fortuna Honda	HONDA
+0	1397	Casey STONER	27	AUS	Honda LCR	HONDA
+0	1398	Jose Luis CARDOSO	30	SPA	Pramac d'Antn MotoGP	DUCATI
+0	1399	Alex HOFMANN	66	GER	Pramac d'Antn MotoGP	DUCATI
+0	1400	Kenny ROBERTS	10	USA	Team Roberts	KR211V
+0	1401	Chris VERMEULEN	71	AUS	Rizla Suzuki MotoGP	SUZUKI
+0	1402	Sete GIBERNAU	15	SPA	Ducati Marlboro Team	DUCATI
+0	1403	Daniel PEDROSA	26	SPA	Repsol Honda Team	HONDA
+0	1404	Carlos CHECA	7	SPA	Tech 3 Yamaha	YAMAHA
+0	1405	Randy DE PUNIET	17	FRA	Kawasaki Racing Team	KAWASAKI
+0	1406	James ELLISON	77	GBR	Tech 3 Yamaha	YAMAHA
+0	1407	John HOPKINS	21	USA	Rizla Suzuki MotoGP	SUZUKI
+0	1408	Colin EDWARDS	5	USA	Camel Yamaha Team	YAMAHA
+0	1409	Valentino ROSSI	46	ITA	Camel Yamaha Team	YAMAHA
+0	1410	Dani PEDROSA	26	SPA	Repsol Honda Team	HONDA
+0	1411	Kenny ROBERTS JR	10	USA	Team Roberts	KR211V
+0	1412	Michele PIRRO	15	ITA	WTR Blauer USA	APRILIA
+0	1413	Manuel HERNANDEZ	43	SPA	Nocable Angaia Racing	APRILIA
+0	1414	Andrea BALLERINI	8	ITA	TicinoHosting Campetella Racin	APRILIA
+0	1415	Dino LOMBARDI	13	ITA	3C Racing	APRILIA
+0	1416	Robert MURESAN	81	ROM	Las Vegas Team Romania	APRILIA
+0	1417	Andrea IANNONE	29	ITA	Campetella Racing Junior	APRILIA
+0	1418	Simone GROTZKYJ	53	ITA	Campetella Racing Junior	APRILIA
+0	1419	Ho Wan CHOW	86	CHN	China Zongshein Team	HONDA
+0	1420	Joey LITJENS	37	NED	nan	HONDA
+0	1421	Ho Wan CHOW	86	CHN	China Zongshen Team	HONDA
+0	1422	Andrea BALLERINI	8	ITA	Campetella Racing	APRILIA
+0	1423	Shi Zhao HUANG	62	CHN	Yamaha Tianjian Racing Team	YAMAHA
+0	1424	Zhu WANG	60	CHN	Benelli QJ Team of China	APRILIA
+0	1425	Jin XIAO	63	CHN	Yamaha Tianjian Racing Team	YAMAHA
+0	1426	Chaz DAVIES	57	GBR	Campetella Racing	APRILIA
+0	1427	Chin Feng HO	59	CHN	China Zongshen Team	APRILIA
+0	1428	Zheng Peng LI	61	CHN	Benelli QJ Team of China	APRILIA
+0	1429	Clement DUNIKOWSKI	83	FRA	Equipe de France FFM	HONDA
+0	1430	Mathieu LUSSIANA	82	FRA	Villiers Team Competition	HONDA
+0	1431	Yannick DESCHAMPS	85	FRA	TVX Racing-CTR Distribution	HONDA
+0	1432	Mathieu OLAGNON	84	FRA	FP Motorsport	HONDA
+0	1433	Dan LINFOOT	45	GBR	Teng Tools Winona Racing	HONDA
+0	1434	Jordi CARCHANO	24	SPA	WTR Blauer USA	APRILIA
+0	1435	Marc Antoine SCACCIA	47	FRA	Asmv Scaccia	APRILIA
+0	1436	Hiroaki KUZUHARA	90	JPN	Grillini Racing	HONDA
+0	1437	Luca VERDINI	91	ITA	RCGM Team	APRILIA
+0	1438	Daniele ROSSI	88	ITA	Ticinohosting-MTR	HONDA
+0	1439	Roberto LACALENDOLA	87	ITA	Ticinohosting-MTR	HONDA
+0	1440	Nico VIVARELLI	89	ITA	Racing Service	HONDA
+0	1441	Franco BATTAINI	9	ITA	Campetella Racing	APRILIA
+0	1442	Omar MENGHI	64	ITA	VFT Racing	APRILIA
+0	1443	Jordi CARCHANO	24	SPA	WTR Blauer USA	HONDA
+0	1444	Alessandro BRANNETTI	65	ITA	Grillini Racing	HONDA
+0	1445	Franz ASCHENBRENNER	17	GER	Kiefer - Bos - Racing	APRILIA
+0	1446	Fabrizio PERREN	37	ARG	Stop And Go Racing Team	HONDA
+0	1447	Nicklas CAJBACK	67	SWE	Agesta Racing	APRILIA
+0	1448	Dan LINFOOT	45	GBR	Winona Racing	HONDA
+0	1449	Fabricio PERREN	37	ARG	Stop And Go Racing Team	HONDA
+0	1450	Pol ESPARGARO	92	SPA	Team RACC Derbi	DERBI
+0	1451	Daniel WEBB	39	GBR	Repsol Honda	HONDA
+0	1452	Pol ESPARGARO	42	SPA	Team RACC Derbi	DERBI
+0	1453	Alex DEBON	6	SPA	Fortuna Aprilia	APRILIA
+0	1454	Esteve RABAT	34	SPA	Wurth Honda BQR	HONDA
+0	1455	Georg FROEHLICH	95	GER	Abbink Bos Racing	HONDA
+0	1456	Hiroaki KUZUHARA	90	JPN	Malaguti Ajo Corse	MALAGUTI
+0	1457	Gert-Jan KOK	93	NED	Jan Bakker Auto's Racing	HONDA
+0	1458	Robert MURESAN	81	ROU	Las Vegas Team Romania	APRILIA
+0	1459	Patrick vd WAARSENBUR	94	NED	Lemstra Racing	HONDA
+0	1460	Aleix ESPARGARO	42	SPA	Wurth Honda BQR	HONDA
+0	1461	Martin CARDENAS	36	COL	Repsol Honda	HONDA
+0	1462	Raymond SCHOUTEN	70	NED	Amici Racing	HONDA
+0	1463	Jan ROELOFS	71	NED	Roelofs Racing Team	YAMAHA
+0	1464	Bram APPELO	69	NED	Racing Team Twello Jaap King	HONDA
+0	1465	Randy GEVERS	68	NED	DE Arend - Filart Racing	APRILIA
+0	1466	David DRIEGHE	72	BEL	DRT Mototech Road Racing	HONDA
+0	1467	Alex HOFMANN	66	GER	Ducati Marlboro Team	DUCATI
+0	1468	Ivan SILVA	22	SPA	Pramac d'Antn MotoGP	DUCATI
+0	1469	Randy KRUMMENACHER	54	SWI	Red Bull KTM GP 125	KTM
+0	1470	Georg FROEHLICH	95	GER	Malaguti Ajo Corse	MALAGUTI
+0	1471	Alex LOWES	64	GBR	Double Vision Racing	HONDA
+0	1472	Daniel COOPER	96	GBR	KRP/dancoopers96.com	HONDA
+0	1473	Anthony ROGERS	66	GBR	KRP	HONDA
+0	1474	Kyle KENTISH	65	GBR	www.sp125racing.com	HONDA
+0	1475	Blake LEIGH-SMITH	67	AUS	KRP	HONDA
+0	1476	Chaz DAVIES	57	GBR	Arie Molenaar Racing	HONDA
+0	1477	Alex KENCHINGTON	76	GBR	Dennis Trollope Racing	YAMAHA
+0	1478	Luke LAWRENCE	75	GBR	BM Groundworks	YAMAHA
+0	1479	Ian GARDNER	77	GBR	Danx MotorSport	YAMAHA
+0	1480	Michel FABRIZIO	84	ITA	Fortuna Honda	HONDA
+0	1481	Joshua SOMMER	97	GER	RZT Racing	APRILIA
+0	1482	Robin LAESSER	61	GER	Red Bull Adac KTM Junior	KTM
+0	1483	Clement DUNIKOWSKI	83	FRA	FFM Honda Grand Prix 125	HONDA
+0	1484	Eric HUBSCH	72	GER	Sachsenring-Motorrad Unger	APRILIA
+0	1485	Toni WIRSING	98	GER	Honda Schumann Reisen	HONDA
+0	1486	Meik Kevin MINNEROP	78	GER	IMT Racing	HONDA
+0	1487	Andreas MARTENSSON	79	SWE	Ewes Racing Team	APRILIA
+0	1488	Franz ASCHENBRENNER	17	GER	Castrol GP 250 Racing	HONDA
+0	1489	Pol ESPARGARO	42	SPA	Campetella Racing Junior	DERBI
+0	1490	Robert MURESAN	81	ROU	Team Toth	APRILIA
+0	1491	Thomas MAYER	68	GER	Mayer-Racing Passau	APRILIA
+0	1492	Michal SEMBERA	69	CZE	Kuja Racing	HONDA
+0	1493	Michal PRASEK	70	CZE	Roha'c  Fejta	HONDA
+0	1494	Stefano MUSCO	56	ITA	Humangest Racing Team	HONDA
+0	1495	Michal FILLA	82	CZE	Sramek Racing Promotion	YAMAHA
+0	1496	Kenni AGGERHOLM	84	DEN	Danish Road Racing Team	YAMAHA
+0	1497	Jiri MAYER	83	CZE	Klub Racing Team Mayer	HONDA
+0	1498	Luke LAWRENCE	75	GBR	BM GroundWorks	YAMAHA
+0	1499	Andrea IANNONE	29	ITA	WTR Blauer USA	APRILIA
+0	1500	Michele PIRRO	15	ITA	Humangest Racing Team	HONDA
+0	1501	Doni Tata PRADITA	80	INA	Yamaha Indonesia	YAMAHA
+0	1502	Roberto LACALENDOLA	87	ITA	3C Racing	APRILIA
+0	1503	Rong Zai SU	56	CHN	China Zongshen Team	APRILIA
+0	1504	Hiroaki KUZUHARA	90	JPN	WTR Blauer USA	APRILIA
+0	1505	Blake LEIGH-SMITH	67	AUS	Red Bull KTM Junior Team	KTM
+0	1506	Rhys MOLLER	59	AUS	Rhys Moller Racing	HONDA
+0	1507	Tom HATTON	57	AUS	Tom Hatton Racing	HONDA
+0	1508	Brett SYMONDS	58	AUS	Tassie WindsScreens	HONDA
+0	1509	Brent RIGOLI	62	AUS	Angelo's Aluminium Racing	HONDA
+0	1510	Kazuya OTANI	73	JPN	Malaguti Ajo Corse	MALAGUTI
+0	1511	Shouya TOMIZAWA	47	JPN	FRS	HONDA
+0	1512	Kazuma WATANABE	49	JPN	Humangest Racing Team	HONDA
+0	1513	Hiroomi IWATA	50	JPN	Plus One	HONDA
+0	1514	Iori NAMIHIRA	51	JPN	Honda Suzuka Racing	HONDA
+0	1515	Toshihisa KUZUHARA	48	JPN	S-way	HONDA
+0	1516	Ryuji YOKOE	86	JPN	RT Morinokumasan Sendai	YAMAHA
+0	1517	Seijin OIKAWA	89	JPN	Will Access With Plus Myu	YAMAHA
+0	1518	Ratthapark WILAIROT	87	THA	Thai Honda Castrol Endurance	HONDA
+0	1519	Takumi TAKAHASHI	20	JPN	Burning Blood	HONDA
+0	1520	David DE GEA	52	SPA	Repsol Honda	HONDA
+0	1521	Youichi UI	88	JPN	Pro-Tec  Weave	YAMAHA
+0	1522	Kouki TAKAHASHI	93	JPN	DyDo MIU Racing	HONDA
+0	1523	Kousuke AKIYOSHI	64	JPN	Team Suzuki MotoGP	SUZUKI
+0	1524	Naoki MATSUDO	8	JPN	Kawasaki	KAWASAKI
+0	1525	Georg FROEHLICH	95	GER	Abink Bos Racing	HONDA
+0	1526	Dominique AEGERTER	25	SWI	Multimedia Racing	APRILIA
+0	1527	Randy KRUMMENACHER	54	SWI	Red Bull ADAC KTM Junior	KTM
+0	1528	Alessandro BRANNETTI	65	ITA	Arie Molenaar Racing	HONDA
+0	1529	Joao FERNANDES	32	POR	China Zongshen Team	APRILIA
+0	1530	Chi Fung HO	59	CHN	China Zongshen Team	APRILIA
+0	1531	Garry McCOY	8	AUS	Ilmor SRT	ILMOR
+0	1532	Pere TUTUSAUS	30	SPA	RACC Derbi	DERBI
+0	1533	Nico VIVARELLI	40	ITA	Malaguti Ajo Corse	MALAGUTI
+0	1534	Alvaro MOLINA	31	SPA	Andalucia-GFC-Mas	APRILIA
+0	1535	Chaz DAVIES	57	GBR	Grillini Racing	HONDA
+0	1536	Santiago BARRAGAN	53	SPA	Extremadura Junior	HONDA
+0	1537	Gabor TALMACSI	14	HUN	Bancaja Aspar	APRILIA
+0	1538	Mattia PASINI	75	ITA	Polaris World	APRILIA
+0	1539	Hector FAUBEL	55	SPA	Bancaja Aspar	APRILIA
+0	1540	Michael RANSEDER	60	AUT	Ajo Motorsport	DERBI
+0	1541	Sergio GADEA	33	SPA	Bancaja Aspar	APRILIA
+0	1542	Pablo NIETO	22	SPA	Blusens Aprilia	APRILIA
+0	1543	Nicolas TEROL	18	SPA	Valsir Seedorf Derbi	DERBI
+0	1544	Lukas PESEK	52	CZE	Valsir Seedorf Derbi	DERBI
+0	1545	Bradley SMITH	38	GBR	Repsol Honda 125cc	HONDA
+0	1546	Esteve RABAT	12	SPA	Repsol Honda 125cc	HONDA
+0	1547	Sandro CORTESE	11	GER	Emmi - Caffe Latte Aprilia	APRILIA
+0	1548	Mike DI MEGLIO	63	FRA	Humangest Racing Team 125cc	HONDA
+0	1549	Simone GROTZKYJ	53	ITA	Multimedia Racing	APRILIA
+0	1550	Joan OLIVE	6	SPA	Polaris World	APRILIA
+0	1551	Andrea IANNONE	29	ITA	WTR Team	APRILIA
+0	1552	Tomoyoshi KOYAMA	71	JPN	Red Bull KTM 125	KTM
+0	1553	Pol ESPARGARO	44	SPA	Belson Campetella Aprilia	APRILIA
+0	1554	Stefano BIANCO	27	ITA	WTR Team	APRILIA
+0	1555	Simone CORSI	24	ITA	Skilled Racing Team	APRILIA
+0	1556	Alexis MASBOU	7	FRA	FFM Honda GP 125	HONDA
+0	1557	Federico SANDI	15	ITA	Skilled Racing Team	APRILIA
+0	1558	Daniel WEBB	99	GBR	Arie Molenaar Racing	HONDA
+0	1559	Robert MURESAN	95	ROU	Ajo Motorsport	DERBI
+0	1560	Randy KRUMMENACHER	34	SWI	Red Bull KTM 125	KTM
+0	1561	Lorenzo ZANETTI	8	ITA	Team Sicilia	APRILIA
+0	1562	Dominique AEGERTER	77	SWI	Multimedia Racing	APRILIA
+0	1563	Hugo VAN DEN BERG	56	NED	Blusens Aprilia	APRILIA
+0	1564	Roberto TAMBURINI	20	ITA	Team Sicilia	APRILIA
+0	1565	Steve BONSEY	51	USA	Red Bull KTM 125	KTM
+0	1566	Alex DE ANGELIS	3	RSM	Master - MVA Aspar	APRILIA
+0	1567	Hector BARBERA	80	SPA	Team Toth Aprilia	APRILIA
+0	1568	Jorge LORENZO	1	SPA	Fortuna Aprilia	APRILIA
+0	1569	Alvaro BAUTISTA	19	SPA	Master - MVA Aspar	APRILIA
+0	1570	Mika KALLIO	36	FIN	Red Bull KTM 250	KTM
+0	1571	Andrea DOVIZIOSO	34	ITA	Humangest Racing Team 250cc	HONDA
+0	1572	Marco SIMONCELLI	58	ITA	Metis Gilera	GILERA
+0	1573	Hiroshi AOYAMA	4	JPN	Red Bull KTM 250	KTM
+0	1574	Thomas LUTHI	12	SWI	Emmi - Caffe Latte Aprilia	APRILIA
+0	1575	Roberto LOCATELLI	15	ITA	Metis Gilera	GILERA
+0	1576	Shuhei AOYAMA	73	JPN	Repsol Honda 250cc	HONDA
+0	1577	Julian SIMON	60	SPA	Repsol Honda 250cc	HONDA
+0	1578	Fabrizio LAI	32	ITA	Campetella Racing	APRILIA
+0	1579	Yuki TAKAHASHI	55	JPN	Humangest Racing Team 250cc	HONDA
+0	1580	Anthony WEST	14	AUS	Team Sicilia	APRILIA
+0	1581	Imre TOTH	10	HUN	Team Toth Aprilia	APRILIA
+0	1582	Arturo TIZON	9	SPA	Blusens Aprilia Germany	APRILIA
+0	1583	Aleix ESPARGARO	41	SPA	Blusens Aprilia	APRILIA
+0	1584	Alex BALDOLINI	25	ITA	Kiefer - Bos - Sotin Racing	APRILIA
+0	1585	Jules CLUZEL	16	FRA	Angaia Racing	APRILIA
+0	1586	Dirk HEIDOLF	28	GER	Kiefer - Bos - Sotin Racing	APRILIA
+0	1587	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	APRILIA
+0	1588	Ratthapark WILAIROT	8	THA	Thai Honda PTT-SAG	HONDA
+0	1589	Eugene LAVERTY	50	IRL	Honda LCR	HONDA
+0	1590	Colin EDWARDS	5	USA	FIAT Yamaha Team	YAMAHA
+0	1591	Casey STONER	27	AUS	Ducati Marlboro Team	DUCATI
+0	1592	Valentino ROSSI	46	ITA	FIAT Yamaha Team	YAMAHA
+0	1593	Carlos CHECA	7	SPA	Honda LCR	HONDA
+0	1594	Marco MELANDRI	33	ITA	Honda Gresini	HONDA
+0	1595	Shinya NAKANO	56	JPN	Konica Minolta Honda	HONDA
+0	1596	Alex HOFMANN	66	GER	Pramac d'Antin	DUCATI
+0	1597	Randy DE PUNIET	14	FRA	Kawasaki Racing Team	KAWASAKI
+0	1598	Toni ELIAS	24	SPA	Honda Gresini	HONDA
+0	1599	Alex BARROS	4	BRA	Pramac d'Antin	DUCATI
+0	1600	Kenny ROBERTS JR	10	USA	Team Roberts	KR212V
+0	1601	Nicky HAYDEN	1	USA	Repsol Honda Team	HONDA
+0	1602	Sylvain GUINTOLI	50	FRA	Dunlop Yamaha Tech 3	YAMAHA
+0	1603	Andrew PITT	88	AUS	Ilmor GP	ILMOR
+0	1604	Makoto TAMADA	6	JPN	Dunlop Yamaha Tech 3	YAMAHA
+0	1605	Jeremy McWILLIAMS	99	GBR	Ilmor GP	ILMOR
+0	1606	Colin EDWARDS	5	USA	Fiat Yamaha Team	YAMAHA
+0	1607	Valentino ROSSI	46	ITA	Fiat Yamaha Team	YAMAHA
+0	1608	Mike DI MEGLIO	63	FRA	Scot Racing Team	HONDA
+0	1609	Pere TUTUSAUS	30	SPA	FMCV - Team Machado	APRILIA
+0	1610	Daniel WEBB	99	GBR	De Graaf Grand Prix	HONDA
+0	1611	Ivan MAESTRO	76	SPA	Matteoni Racing - TMM	HONDA
+0	1612	Dino LOMBARDI	13	ITA	Scot Racing Team	HONDA
+0	1613	Joey LITJENS	37	NED	De Graaf Grand Prix	HONDA
+0	1614	Daniel SAEZ	78	SPA	Quinto Almoradi	APRILIA
+0	1615	Ivan MAESTRO	76	SPA	Matteoni Racing - TMM	APRILIA
+0	1616	Yuki TAKAHASHI	55	JPN	Scot Racing Team	HONDA
+0	1617	Alvaro MOLINA	31	SPA	Andalucia - GFC - MAS	APRILIA
+0	1618	Santiago BARRAGAN	53	SPA	Team Extremadura	HONDA
+0	1619	Kousuke AKIYOSHI	64	JPN	Rizla Suzuki MotoGP	SUZUKI
+0	1620	Kevin COGHLAN	54	GBR	Scot Racing Team	HONDA
+0	1621	Alen GYORFI	40	HUN	Superbike Guorsasagi M.S.E.	APRILIA
+0	1622	Tobias SIEGERT	41	GER	ADAC Nordbayern E.V.	APRILIA
+0	1623	Nikolett KOVACS	39	HUN	Cemelog-Hanusch	HONDA
+0	1624	Randy KRUMMENACHE	34	SWI	Red Bull KTM 125	KTM
+0	1625	Alvaro BAUTISTA	19	SPA	Master - Mapfre Aspar	APRILIA
+0	1626	Alex DE ANGELIS	3	RSM	Master - Mapfre Aspar	APRILIA
+0	1627	Mike DI MEGLIO	63	FRA	Kopron Team Scot	HONDA
+0	1628	Dino LOMBARDI	13	ITA	Kopron Team Scot	HONDA
+0	1629	Yuki TAKAHASHI	55	JPN	Kopron Team Scot	HONDA
+0	1630	Shi Zhao HUANG	62	CHN	Yes Yamaha Tianjian	YAMAHA
+0	1631	Jin XIAO	63	CHN	Yes Yamaha Tianjian	YAMAHA
+0	1632	Valentin DEBISE	45	FRA	Equipe de France Espoir	HONDA
+0	1633	Gwen LE BADEZET	49	FRA	Bretagne Organisation Sport	HONDA
+0	1634	Julien CARTRON	48	FRA	Villiers Team Competition	HONDA
+0	1635	Steven LE COQUEN	47	FRA	Villiers Team Competition	HONDA
+0	1636	Romain MAITRE	46	FRA	TVX Racing - TJP	HONDA
+0	1637	Fonsi NIETO	11	SPA	Kawasaki Racing Team	KAWASAKI
+0	1638	Andrea IANNONE	29	ITA	WTR No Alcol Team	APRILIA
+0	1639	Stefano BIANCO	27	ITA	WTR No Alcol Team	APRILIA
+0	1640	Simone SANCIONI	42	ITA	RCGM Team	APRILIA
+0	1641	Tobias SIEGERT	41	GER	Adac Nordbayern E.V.	APRILIA
+0	1642	Roberto LACALENDOLA	87	ITA	M.C. Terzo Bandini	APRILIA
+0	1643	Omar MENGHI	64	ITA	VET Racing	APRILIA
+0	1644	Thomas TALLEVI	65	ITA	History Racing - TZ Club Italia	YAMAHA
+0	1645	Kurtis ROBERTS	80	USA	Team Roberts	KR212V
+0	1646	Stefan BRADL	17	GER	Blusens Aprilia	APRILIA
+0	1647	Philipp EITZINGER	85	AUT	Wintex Racing Austria	HONDA
+0	1648	Ivan MAESTRO	76	SPA	AV - Matteoni Racing	HONDA
+0	1649	Ivan MAESTRO	76	SPA	AV - Matteoni Racing	APRILIA
+0	1650	Enrique JEREZ	31	SPA	Kopron Team Scot	HONDA
+0	1651	Nikki COATES	83	GBR	KRP	HONDA
+0	1652	Robbie STEWART	84	GBR	KRP	HONDA
+0	1653	Kev COGHLAN	54	GBR	UKI Racing	HONDA
+0	1654	Tom HAYWARD	81	GBR	KRP	HONDA
+0	1655	Luke JONES	82	GBR	SP125/KGD Racing	HONDA
+0	1656	Dan LINFOOT	45	GBR	Team Sicilia	APRILIA
+0	1657	Toby MARKHAM	81	GBR	BM Groundworks	YAMAHA
+0	1658	Andrew SAWFORD	82	GBR	St. Neots Motorcycle CO.	YAMAHA
+0	1659	Alex KENCHINGTON	83	GBR	Dennis Trollope Racing	YAMAHA
+0	1660	Efren VAZQUEZ	7	SPA	Blusens Aprilia Germany	APRILIA
+0	1661	Luke LAWRENCE	84	GBR	TNT Express Team Fila	HONDA
+0	1662	Anthony WEST	13	AUS	Kawasaki Racing Team	KAWASAKI
+0	1663	Patrick vd WAARSENBUR	72	NED	Lemstra Racing	HONDA
+0	1664	Jasper IWEMA	89	NED	Abbink Bos Racing	HONDA
+0	1665	Roy POUW	90	NED	Cool Rental Racing TH	APRILIA
+0	1666	Ferry STOFFER	88	NED	Motorsportklazienaveen	HONDA
+0	1667	Patrick vd WAARSENBU	72	NED	Lemstra Racing	HONDA
+0	1668	Hans SMEES	72	NED	Jaap Kingma	APRILIA
+0	1669	Randy GEVERS	68	NED	De Arend Racing	APRILIA
+0	1670	Ronald BEITLER	69	NED	Maro Racing	HONDA
+0	1671	Mike VELTHUIJZEN	70	NED	MRTT Hugen Racing	HONDA
+0	1672	Georg FROEHLICH	64	GER	Abbink Bos Racing	HONDA
+0	1673	Patrick UNGER	66	GER	Sachsenring Motorrad Unger	APRILIA
+0	1674	Eric HUEBSCH	65	GER	Sachsenring Motorrad Unger	APRILIA
+0	1675	Sebastien ECKNER	67	GER	Adac Sachsen Junior Team	HONDA
+0	1676	Alvaro MOLINA	31	SPA	Andalucia - GFC - Mas	APRILIA
+0	1677	Joshua SOMMER	18	GER	Motorcyle Comp. Service	HONDA
+0	1678	Thomas WALTHER	38	GER	AMC Schleizer Dreieck ADAC	HONDA
+0	1679	Michel FABRIZIO	84	ITA	Honda Gresini	HONDA
+0	1680	Casey STONER	27	AUS	Ducati Team	DUCATI
+0	1681	Roger Lee HAYDEN	95	USA	Kawasaki Racing Team	KAWASAKI
+0	1682	Miguel DUHAMEL	17	CAN	Honda Gresini	HONDA
+0	1683	Chaz DAVIES	57	GBR	Pramac d'Antin	DUCATI
+0	1684	Ricard CARDUS	86	SPA	Racc Aprilia	APRILIA
+0	1685	Toni WIRSING	94	GER	Honda Schumann Reisen	HONDA
+0	1686	Michal PRASEK	93	CZE	Rohac  Fetja	HONDA
+0	1687	Karel MAJEK	91	CZE	FGR 07 TEAM	FGR
+0	1688	Karel PESEK	92	CZE	Intermoto Czech	APRILIA
+0	1689	Jiri MAYER	87	CZE	Klub Racing Team Mayer	HONDA
+0	1690	Zhu WANG	88	CHN	Zongshen Team Of China	APRILIA
+0	1691	Ho Wan CHOW	89	CHN	Zongshen Team Of China	APRILIA
+0	1692	Ivan SILVA	22	SPA	Pramac d'Antin	DUCATI
+0	1693	Roberto LACALENDOLA	87	ITA	Ellegi Racing	APRILIA
+0	1694	Ferruccio LAMBORGHINI	79	ITA	Junior GP Racing Team	APRILIA
+0	1695	Federico BIAGGI	80	ITA	Friba	FRIBA
+0	1696	Aleix ESPARGARO	41	SPA	Blusens Aprilia Germany	APRILIA
+0	1697	Efren VAZQUEZ	7	SPA	Blusens Aprilia	APRILIA
+0	1698	Danny WEBB	99	GBR	De Graaf Grand Prix	HONDA
+0	1699	Stevie BONSEY	51	USA	Red Bull KTM 125	KTM
+0	1700	Louis ROSSI	62	FRA	FFM Honda GP 125	HONDA
+0	1701	Ricard CARDUS	86	SPA	RACC Aprilia	APRILIA
+0	1702	Ivo RELVAS	61	POR	SGM Racing	APRILIA
+0	1703	Ho Wan CHOW	89	CHN	Zongshen Team of China	APRILIA
+0	1704	Santiago BARRAGAN	53	SPA	Stop And Go Racing	HONDA
+0	1705	Luke LAWRENCE	84	GBR	Team McDonald's	APRILIA
+0	1706	Shouya TOMIZAWA	58	JPN	Project Muy FRS	HONDA
+0	1707	Iori NAMIHIRA	59	JPN	Honda Suzuka Racing	HONDA
+0	1708	Kazuma WATANABE	74	JPN	Dydo Miu Racing	HONDA
+0	1709	Yuuchi YANAGISAWA	57	JPN	Metallico 18 Garage	HONDA
+0	1710	Nayuta MIZUNO	69	JPN	TEC-2  Ogiya	YAMAHA
+0	1711	Takumi TAKAHASHI	20	JPN	Burning Blood Racing	HONDA
+0	1712	Youichi UI	75	JPN	Malossi  Spruce  Pro-Tec	YAMAHA
+0	1713	Seijin OIKAWA	76	JPN	Will Access With Plus Myu	YAMAHA
+0	1714	Yuki HAMAMOTO	77	JPN	TEC-2  Kyushukyoritsu Univ.	YAMAHA
+0	1715	Akira YANAGAWA	87	JPN	Kawasaki Racing Team	KAWASAKI
+0	1716	Shinichi ITO	72	JPN	Pramac d'Antin	DUCATI
+0	1717	Blake LEIGH-SMITH	70	AUS	Leigh-Smith Racing	HONDA
+0	1718	Glenn SCOTT	68	AUS	WTR No Alcol Team	APRILIA
+0	1719	Jackson LEIGH-SMITH	73	AUS	Leight-Smith Racing	HONDA
+0	1720	Rhys MOLLER	96	AUS	Rhys Moller Racing	HONDA
+0	1721	Ferruccio LAMBORGHINI	79	ITA	Skilled Racing Team	APRILIA
+0	1722	Taro SEKIGUCHI	11	JPN	Campetella Racing	APRILIA
+0	1723	Federico SANDI	21	ITA	Team Sicilia	APRILIA
+0	1724	Ho Wan CHOW	89	CHN	Zonsgshen Team Of China	APRILIA
+0	1725	Cyril CARRILLO	36	FRA	FFM Honda GP 125	HONDA
+0	1726	Doni Tata PRADITA	35	INA	Yamaha Indonesia Pertamina R	YAMAHA
+0	1727	Nobuatsu AOKI	9	JPN	Rizla Suzuki MotoGP	SUZUKI
+0	1728	Takaaki NAKAGAMI	98	JPN	Red Bull MotoGP Academy	HONDA
+0	1729	Ivan MAESTRO	76	SPA	Ascat. Madrid Team	APRILIA
+0	1730	Alen GYORFI	40	HUN	SuperBike Gyorsasagi M.S.E.	APRILIA
+0	1731	Joshua SOMMER	18	GER	Motorcycle Competition Service	HONDA
+0	1732	Bradley SMITH	38	GBR	Polaris World	APRILIA
+0	1733	Mike DI MEGLIO	63	FRA	Ajo Motorsport	DERBI
+0	1734	Scott REDDING	45	GBR	Blusens Aprilia Junior	APRILIA
+0	1735	Gabor TALMACSI	1	HUN	Bancaja Aspar Team	APRILIA
+0	1736	Nicolas TEROL	18	SPA	Jack  Jones WRB	APRILIA
+0	1737	Stevie BONSEY	51	USA	Degraaf Grand Prix	APRILIA
+0	1738	Danny WEBB	99	GBR	Degraaf Grand Prix	APRILIA
+0	1739	Efren VAZQUEZ	7	SPA	Blusens Aprilia Junior	APRILIA
+0	1740	Raffaele DE ROSA	35	ITA	Onde 2000 KTM	KTM
+0	1741	Stefano BIANCO	27	ITA	S3 WTR San Marino Team	APRILIA
+0	1742	Andrea IANNONE	29	ITA	I.C. Team	APRILIA
+0	1743	Pol ESPARGARO	44	SPA	Belson Derbi	DERBI
+0	1744	Stefan BRADL	17	GER	Grizzly Gas Kiefer Racing	APRILIA
+0	1745	Sergio GADEA	33	SPA	Bancaja Aspar Team	APRILIA
+0	1746	Joan OLIVE	6	SPA	Belson Derbi	DERBI
+0	1747	Simone CORSI	24	ITA	Jack  Jones WRB	APRILIA
+0	1748	Sandro CORTESE	11	GER	Emmi - Caffe Latte	APRILIA
+0	1749	Tomoyoshi KOYAMA	71	JPN	ISPA KTM Aran	KTM
+0	1750	Takaaki NAKAGAMI	73	JPN	I.C. Team	APRILIA
+0	1751	Esteve RABAT	12	SPA	Repsol KTM 125cc	KTM
+0	1752	Michael RANSEDER	60	AUT	I.C. Team	APRILIA
+0	1753	Pablo NIETO	22	SPA	Onde 2000 KTM	KTM
+0	1754	Robin LASSER	21	GER	Grizzly Gas Kiefer Racing	APRILIA
+0	1755	Lorenzo ZANETTI	8	ITA	ISPA KTM Aran	KTM
+0	1756	Pere TUTUSAUS	30	SPA	Bancaja Aspar Team	APRILIA
+0	1757	Alexis MASBOU	5	FRA	Loncin Racing	LONCIN
+0	1758	Dominique AEGERTER	77	SWI	Ajo Motorsport	DERBI
+0	1759	Hugo VAN DEN BERG	56	NED	Degraaf Grand Prix	APRILIA
+0	1760	Louis ROSSI	69	FRA	FFM Honda GP 125	HONDA
+0	1761	Jules CLUZEL	16	FRA	Loncin Racing	LONCIN
+0	1762	Robert MURESAN	95	ROU	Grizzly Gas Kiefer Racing	APRILIA
+0	1763	Dino LOMBARDI	13	ITA	BQR Blusens	APRILIA
+0	1764	Roberto LACALENDOLA	19	ITA	Matteoni Racing	APRILIA
+0	1765	Alvaro BAUTISTA	19	SPA	Mapfre Aspar Team	APRILIA
+0	1766	Hector BARBERA	21	SPA	Team Toth Aprilia	APRILIA
+0	1767	Thomas LUTHI	12	SWI	Emmi - Caffe Latte	APRILIA
+0	1768	Alex DEBON	6	SPA	Lotus Aprilia	APRILIA
+0	1769	Julian SIMON	60	SPA	Repsol KTM 250cc	KTM
+0	1770	Aleix ESPARGARO	41	SPA	Lotus Aprilia	APRILIA
+0	1771	Yuki TAKAHASHI	72	JPN	JiR Team Scot 250	HONDA
+0	1772	Manuel POGGIALI	54	RSM	Campetella Racing	GILERA
+0	1773	Hector FAUBEL	55	SPA	Mapfre Aspar Team	APRILIA
+0	1774	Lukas PESEK	52	CZE	Auto Kelly - CP	APRILIA
+0	1775	Eugene LAVERTY	50	IRL	Blusens Aprilia	APRILIA
+0	1776	Fabrizio LAI	32	ITA	Campetella Racing	GILERA
+0	1777	Ratthapark WILAIROT	14	THA	Thai Honda PTT SAG	HONDA
+0	1778	Doni Tata PRADITA	45	INA	Yamaha Pertamina Indonesia	YAMAHA
+0	1779	Manuel HERNANDEZ	43	SPA	Blusens Aprilia	APRILIA
+0	1780	Casey STONER	1	AUS	Ducati Marlboro Team	DUCATI
+0	1781	Jorge LORENZO	48	SPA	Fiat Yamaha Team	YAMAHA
+0	1782	Andrea DOVIZIOSO	4	ITA	JiR Team Scot MotoGP	HONDA
+0	1783	Dani PEDROSA	2	SPA	Repsol Honda Team	HONDA
+0	1784	Randy DE PUNIET	14	FRA	LCR Honda MotoGP	HONDA
+0	1785	Colin EDWARDS	5	USA	Tech 3 Yamaha	YAMAHA
+0	1786	James TOSELAND	52	GBR	Tech 3 Yamaha	YAMAHA
+0	1787	John HOPKINS	21	USA	Kawasaki Racing Team	KAWASAKI
+0	1788	Marco MELANDRI	33	ITA	Ducati Marlboro Team	DUCATI
+0	1789	Loris CAPIROSSI	65	ITA	Rizla Suzuki MotoGP	SUZUKI
+0	1790	Alex DE ANGELIS	15	RSM	San Carlo Honda Gresini	HONDA
+0	1791	Shinya NAKANO	56	JPN	San Carlo Honda Gresini	HONDA
+0	1792	Chris VERMEULEN	7	AUS	Rizla Suzuki MotoGP	SUZUKI
+0	1793	Toni ELIAS	24	SPA	Alice Team	DUCATI
+0	1794	Sylvain GUINTOLI	50	FRA	Alice Team	DUCATI
+0	1795	Niccolo CANEPA	59	ITA	Ducati Marlboro Team	DUCATI
+0	1796	Vittoriano GUARESCHI	22	ITA	Ducati Marlboro Team	DUCATI
+0	1797	Marc MARQUEZ	93	SPA	Repsol KTM 125cc	KTM
+0	1798	Karel PESEK	37	CZE	Czech Road Racing JNR.	APRILIA
+0	1799	Ivan MAESTRO	76	SPA	Hune Matteoni	APRILIA
+0	1800	Axel PONS	14	SPA	Jack  Jones WRB	APRILIA
+0	1801	Federico SANDI	90	ITA	Zongshen Team of China	APRILIA
+0	1802	Russel GOMEZ	7	SPA	Blusens Aprilia	APRILIA
+0	1803	Sergio BATISTA	91	POR	Paddock Competicoes	HONDA
+0	1804	Steven LE COQUEN	52	FRA	Villiers Team Competition	HONDA
+0	1805	Gioele PELLINO	61	ITA	Loncin Racing	LONCIN
+0	1806	Valentin DEBISE	53	FRA	Racing Motoclub Circuit D'Albi	KTM
+0	1807	Tobias SIEGERT	41	GER	Adac Nordbayern e.v.	APRILIA
+0	1808	Stefano BIANCO	27	ITA	S3 WTR San Marino Tea	APRILIA
+0	1809	Federico SANDI	90	ITA	Zongshen Team Of China	APRILIA
+0	1810	Lorenzo SAVADORI	40	ITA	RCGM	APRILIA
+0	1811	Gabriele FERRO	43	ITA	Metasystem RS	HONDA
+0	1812	Riccardo MORETTI	47	ITA	CRP Racing	HONDA
+0	1813	Ferruccio LAMBORGHINI	39	ITA	Junior GP Racing Dream	APRILIA
+0	1814	Luca VITALI	42	ITA	RCGM	APRILIA
+0	1815	Jordi DALMAU	31	SPA	SAG Castrol	HONDA
+0	1816	Ricard CARDUS	75	SPA	Andalucia Derbi	DERBI
+0	1817	Daniel SAEZ	78	SPA	Gaviota Prosolia Racing	APRILIA
+0	1818	Daniel ARCAS	92	SPA	Team Honda Merson	HONDA
+0	1819	Matthew HOYLE	64	GBR	SP 125 Racing/Mackrory Demol	HONDA
+0	1820	Lee COSTELLO	67	GBR	Vent-Axia	HONDA
+0	1821	Luke HINTON	65	GBR	Buildbase/Knotts	HONDA
+0	1822	Connor BEHAN	66	GBR	Connor Behan Racing	HONDA
+0	1823	Paul JORDAN	68	IRL	KRP	HONDA
+0	1824	Toby MARKHAM	63	GBR	BM GroundWorks	YAMAHA
+0	1825	Ben SPIES	11	USA	Rizla Suzuki MotoGP	SUZUKI
+0	1826	Joey LITJENS	80	NED	Abbink Bos Racing	SEEL
+0	1827	Michael VAN DER MARK	82	NED	Dutch Racing Team	HONDA
+0	1828	Robert GULL	84	SWE	Ajo Motorsports Jnr. Project	DERBI
+0	1829	Ernst DUBBINK	89	NED	RV Racing Team	HONDA
+0	1830	Jasper IWEMA	81	NED	Abbink Bos Racing	SEEL
+0	1831	Jerry VAN DE BUNT	83	NED	Degraaf Grand Prix	APRILIA
+0	1832	Robert GULL	84	SWE	Ajo Motorsports Jnr. Projec	DERBI
+0	1833	Frederik WATZ	64	SWE	Jaap Kingma Racing	APRILIA
+0	1834	Marcel SCHROTTER	87	GER	Toni Mang Team	HONDA
+0	1835	Marvin FRITZ	85	GER	Kiefer Bos Sotin Jnr. Team	SEEL
+0	1836	Eric HUBSCH	86	GER	Team Sachsenring	APRILIA
+0	1837	Sebastian KREUZIGER	88	GER	RZT-Racing	HONDA
+0	1838	Bastien CHESAUX	48	SWI	S3 WTR San Marino Team	APRILIA
+0	1839	Marco RAVAIOLI	72	ITA	Matteoni Racing	APRILIA
+0	1840	Toni WIRSING	94	GER	Racing Team Germany	HONDA
+0	1841	Alen GYORFI	93	HUN	Motorcycle Competition Service	HONDA
+0	1842	Casey STONER	1	AUS	Ducati Team	DUCATI
+0	1843	Marco MELANDRI	33	ITA	Ducati Team	DUCATI
+0	1844	Jamie HACKING	12	USA	Kawasaki Racing Team	KAWASAKI
+0	1845	Jonas FOLGER	94	GER	Red Bull MotoGP Academy	KTM
+0	1846	Karel PESEK	37	CZE	Czech Road Racinf jnr. Team	APRILIA
+0	1847	Lukas SEMBERA	96	CZE	Matteoni Racing	APRILIA
+0	1848	Michal PRASEK	97	CZE	Roha'c  Fetja Motoracing	APRILIA
+0	1849	Andrea TOUSKOVA	98	CZE	Eurowag Junior Racing	HONDA
+0	1850	Karel PESEK	37	CZE	Czech Road Racing jnr. Team	APRILIA
+0	1851	Federico SANDI	90	ITA	MAtteoni Racing	APRILIA
+0	1852	Gennaro SABATINO	49	ITA	Junior GP Racing Dream	APRILIA
+0	1853	Luca VITALI	42	ITA	Grizzly Gas Kiefer Racing	APRILIA
+0	1854	Bastien CHESAUX	48	SWI	WTR San Marino Team	APRILIA
+0	1855	Adrian MARTIN	26	SPA	Bancaja Aspar Team	APRILIA
+0	1856	Federico SANDI	90	ITA	Matteoni Racing	APRILIA
+0	1857	Simone GROTZKYJ	35	ITA	Campetella Racing	GILERA
+0	1858	PJ JACOBSEN	54	USA	Bancaja Aspar Team	APRILIA
+0	1859	Jonas FOLGER	94	GER	Red Bull KTM 125	KTM
+0	1860	Davide STIRPE	74	ITA	ISPA KTM Aran	KTM
+0	1861	Kristian Lee TURNER	90	USA	Veloce Racing	APRILIA
+0	1862	Barrett LONG	29	USA	Longevity Racing	YAMAHA
+0	1863	Stefano BIANCO	27	ITA	Campetella Racing	GILERA
+0	1864	Kyle FERRIS	38	USA	Team Infinity Replicast	YAMAHA
+0	1865	Hiroomi IWATA	50	JPN	DYDO Miu Racing	HONDA
+0	1866	Iori NAMIHIRA	57	JPN	Honda Suzuka Racing	HONDA
+0	1867	Kazuma WATANABE	62	JPN	Team Plus One	HONDA
+0	1868	Yuuichi YANAGISAWA	58	JPN	Garage Racing	HONDA
+0	1869	Hiroki ONO	59	JPN	Battle Factory	HONDA
+0	1870	Shoya TOMIZAWA	66	JPN	Project U FRS	HONDA
+0	1871	Kazuki WATANABE	67	JPN	RT Morinokumasan-Satohjuku	YAMAHA
+0	1872	Takumi TAKAHASHI	65	JPN	Burning Blood Racing Team	HONDA
+0	1873	Yuuki ITO	68	JPN	Dog Fight Racing	YAMAHA
+0	1874	Daniel ARCAS	92	SPA	Blusens Aprilia	APRILIA
+0	1875	Takumi ENDOH	69	JPN	Ser.Spruce/Pro-Tec	YAMAHA
+0	1876	Blake LEIGH-SMITH	32	AUS	Leigh-Smith Racing	HONDA
+0	1877	Brad GROSS	46	AUS	Gross Racing	YAMAHA
+0	1878	Jed METCHER	91	AUS	Angelo's Aluminium Racing	HONDA
+0	1879	Rhys MOLLER	70	AUS	Rhys Moller Racing	HONDA
+0	1880	Jake HORNE	92	AUS	Team Anchor Yamaha	HONDA
+0	1881	Enrique JEREZ	28	SPA	ISPA KTM Aran	KTM
+0	1882	Stefano BIANCO	27	ITA	Team Toth Aprilia	APRILIA
+0	1883	Lorenzo SAVADORI	40	ITA	I.C. Team	APRILIA
+0	1884	Pere TUTUSAUS	30	SPA	Alpo Atletico de Madrid	APRILIA
+0	1885	Julian MIRALLES	23	SPA	Bancaja Mir CEV	APRILIA
+0	1886	Cristian TRABALON	25	SPA	Alpo Atletico de Madrid	APRILIA
+0	1887	Alen GYORFI	93	HUN	Team Toth Aprilia	APRILIA
+0	1888	Federico SANDI	90	ITA	Zongshen AOS Racing	APRILIA
+0	1889	Julian SIMON	60	SPA	Bancaja Aspar Team 125cc	APRILIA
+0	1890	Bradley SMITH	38	GBR	Bancaja Aspar Team 125cc	APRILIA
+0	1891	Nicolas TEROL	18	SPA	Jack  Jones Team	APRILIA
+0	1892	Marc MARQUEZ	93	SPA	Red Bull KTM Motorsport	KTM
+0	1893	Sergio GADEA	33	SPA	Bancaja Aspar Team 125cc	APRILIA
+0	1894	Sandro CORTESE	11	GER	Ajo Interwetten	DERBI
+0	1895	Andrea IANNONE	29	ITA	Ongetta Team I.S.P.A.	APRILIA
+0	1896	Stefan BRADL	17	GER	Viessmann Kiefer Racing	APRILIA
+0	1897	Pol ESPARGARO	44	SPA	Derbi Racing Team	DERBI
+0	1898	Jonas FOLGER	94	GER	Ongetta Team I.S.P.A.	APRILIA
+0	1899	Scott REDDING	45	GBR	Blusens Aprilia	APRILIA
+0	1900	Dominique AEGERTER	77	SWI	Ajo Interwetten	DERBI
+0	1901	Esteve RABAT	12	SPA	Blusens Aprilia	APRILIA
+0	1902	Takaaki NAKAGAMI	73	JPN	Ongetta Team I.S.P.A.	APRILIA
+0	1903	Joan OLIVE	6	SPA	Derbi Racing Team	DERBI
+0	1904	Simone CORSI	24	ITA	Jack  Jones Team	APRILIA
+0	1905	Lorenzo SAVADORI	32	ITA	Fontana Racing	APRILIA
+0	1906	Lorenzo ZANETTI	8	ITA	Ongetta Team I.S.P.A.	APRILIA
+0	1907	Johann ZARCO	14	FRA	WTR San Marino Team	APRILIA
+0	1908	Luca MARCONI	87	ITA	CBC Corse	APRILIA
+0	1909	Cameron BEAUBIER	16	USA	Red Bull KTM Motorsport	KTM
+0	1910	Jasper IWEMA	53	NED	Racing Team Germany	HONDA
+0	1911	Efren VAZQUEZ	7	SPA	Derbi Racing Team	DERBI
+0	1912	Tomoyoshi KOYAMA	71	JPN	Loncin Racing	LONCIN
+0	1913	Michael RANSEDER	88	AUT	Haojue Team	HAOJUE
+0	1914	Lukas SEMBERA	69	CZE	Matteoni Racing	APRILIA
+0	1915	Luca VITALI	10	ITA	CBC Corse	APRILIA
+0	1916	Matthew HOYLE	66	GBR	Haojue Team	HAOJUE
+0	1917	Randy KRUMMENACHER	35	SWI	Degraaf Grand Prix	APRILIA
+0	1918	Cameron BEAUBIER	16	USA	Red Bull KTM Motosport	KTM
+0	1919	Randy KRUMMENACHE	35	SWI	Degraaf Grand Prix	APRILIA
+0	1920	Marc MARQUEZ	93	SPA	Red Bull KTM Motosport	KTM
+0	1921	Gabor TALMACSI	28	HUN	Balaton Racing Team 250cc	APRILIA
+0	1922	Mattia PASINI	75	ITA	Team Toth Aprilia	APRILIA
+0	1923	Hiroshi AOYAMA	4	JPN	Scot Racing Team 250cc	HONDA
+0	1924	Hector BARBERA	40	SPA	Pepe World Team	APRILIA
+0	1925	Jules CLUZEL	16	FRA	Matteoni Racing	APRILIA
+0	1926	Hector FAUBEL	55	SPA	Honda - SAG	HONDA
+0	1927	Mike DI MEGLIO	63	FRA	Mapfre Aspar Team 250cc	APRILIA
+0	1928	Raffaele DE ROSA	35	ITA	Scot Racing Team 250cc	HONDA
+0	1929	Alex DEBON	6	SPA	Aeropuerto-Castello-Blusens	APRILIA
+0	1930	Shoya TOMIZAWA	48	JPN	CIP Moto - GP250	HONDA
+0	1931	Alex BALDOLINI	25	ITA	WTR San Marino Team	APRILIA
+0	1932	Axel PONS	7	SPA	Pepe World Team	APRILIA
+0	1933	Vladimir LEONOV	56	RUS	Viessmann Kiefer Racing	APRILIA
+0	1934	Bastien CHESAUX	8	SWI	Racing Team Germany	HONDA
+0	1935	Aitor RODRIGUEZ	77	SPA	Milar - Juegos Lucky	APRILIA
+0	1936	Hector FAUBEL	55	SPA	Valencia C.F. - Honda SAG	HONDA
+0	1937	Hector FAUBEL	55	SPA	Valencia CF - Honda SAG	HONDA
+0	1938	Colin EDWARDS	5	USA	Monster Yamaha Tech 3	YAMAHA
+0	1939	Jorge LORENZO	99	SPA	Fiat Yamaha Team	YAMAHA
+0	1940	Mika KALLIO	36	FIN	Pramac Racing	DUCATI
+0	1941	Andrea DOVIZIOSO	4	ITA	Repsol Honda Team	HONDA
+0	1942	Marco MELANDRI	33	ITA	Hayate Racing Team	KAWASAKI
+0	1943	James TOSELAND	52	GBR	Monster Yamaha Tech 3	YAMAHA
+0	1944	Toni ELIAS	24	SPA	San Carlo Honda Gresini	HONDA
+0	1945	Nicky HAYDEN	69	USA	Ducati Marlboro Team	DUCATI
+0	1946	Yuki TAKAHASHI	72	JPN	Scot Racing Team MotoGP	HONDA
+0	1947	Sete GIBERNAU	59	SPA	Grupo Francisco Hernando	DUCATI
+0	1948	Niccolo CANEPA	88	ITA	Pramac Racing	DUCATI
+0	1949	Dani PEDROSA	3	SPA	Repsol Honda Team	HONDA
+0	1950	Yuuichi YANAGISAWA	58	JPN	Grage Racing	HONDA
+0	1951	Yuma YAHAGI	56	JPN	Okegawajuku  Endurance	HONDA
+0	1952	Satoru KAMADA	59	JPN	Endurance  Osl	HONDA
+0	1953	Hiroomi IWATA	55	JPN	Dydo Miu Racing	HONDA
+0	1954	Yuki OOGANE	57	JPN	Endurance  Okegawajuku	HONDA
+0	1955	Gabor TALMACSI	28	HUN	Balatonring Team	APRILIA
+0	1956	Shuhei AOYAMA	73	JPN	Harc-Pro	HONDA
+0	1957	Kazuki WATANABE	59	JPN	Bardral Racing with SJ-R	YAMAHA
+0	1958	Alberto MONCAYO	42	SPA	Andalucia Aprilia	APRILIA
+0	1959	Luis SALOM	39	SPA	SAG-Castrol	HONDA
+0	1960	Jordi DALMAU	31	SPA	SAG-Castrol	HONDA
+0	1961	Eduard LOPEZ	40	SPA	TCR Competicion	APRILIA
+0	1962	Borja MAESTRO	41	SPA	Hune Racing Team-TMM	APRILIA
+0	1963	Ivan MAESTRO	76	SPA	Milar - Juegos Lucky	APRILIA
+0	1964	Valentin DEBISE	53	FRA	CIP Moto - GP250	HONDA
+0	1965	Marc MARQUEZ	93	SPA	Red Bull KTM Moto Sport	KTM
+0	1966	Cameron BEAUBIER	16	USA	Red Bull KTM Moto Sport	KTM
+0	1967	Sturla FAGERHAUG	50	NOR	Red Bull KTM Moto Sport	KTM
+0	1968	Cyril CARRILLO	36	FRA	TJP-TVX Racing	HONDA
+0	1969	Gregory DI CARLO	48	FRA	Equipe de France	HONDA
+0	1970	Angel RODRIGUEZ	47	SPA	Balatonring Team	APRILIA
+0	1971	Toby MARKHAM	54	GBR	CL Racing	HONDA
+0	1972	Riccardo MORETTI	51	ITA	Elligi Racing	APRILIA
+0	1973	Luigi MORCIANO	61	ITA	Junior GP Racing Dream	APRILIA
+0	1974	Gennaro SABATINO	63	ITA	Junior GP Racing Dream	APRILIA
+0	1975	Davide STIRPE	64	ITA	CRP Racing	HONDA
+0	1976	Alessandro TONUCCI	62	ITA	Junior GP Racing Dream	APRILIA
+0	1977	Balazs NEMETH	11	HUN	Balatonring Team	APRILIA
+0	1978	Daniel ARCAS	37	SPA	Milar - Juegos Lucky	APRILIA
+0	1979	Johnny ROSELL	43	SPA	Blusens BQR	APRILIA
+0	1980	Stevie BONSEY	51	USA	Milar - Juegos Lucky	APRILIA
+0	1981	Gabor TALMACSI	41	HUN	Scot Racing Team MotoGP	HONDA
+0	1982	Simone CORSI	24	ITA	Fontana Racing	APRILIA
+0	1983	Marvin FRITZ	85	GER	LHF-Project Racing	HONDA
+0	1984	Karel PESEK	86	CZE	Pesek Team	DERBI
+0	1985	Luis SALOM	39	SPA	Jack  Jones Team	APRILIA
+0	1986	Pepijn BIJSTERBOSCH	83	NED	Racing Team Bijsterbosch	HONDA
+0	1987	Aleix ESPARGARO	41	SPA	Balatonring Team	APRILIA
+0	1988	Stevie BONSEY	80	USA	Milar - Juegos Lucky	APRILIA
+0	1989	Nicky HAYDEN	69	USA	Ducati Team	DUCATI
+0	1990	Marcel SCHROTTER	78	GER	Toni - Mang Team	HONDA
+0	1991	Daniel KARTHEININGER	79	GER	Freudenberg Racing Team	HONDA
+0	1992	Michael RANSEDER	88	AUT	CBC Corse	APRILIA
+0	1993	Toni FINSTERBUSCH	76	GER	Freudenberg Racing Team	HONDA
+0	1994	Eeki KUPARINEN	81	FIN	Ajo Motorsport Jr.	HONDA
+0	1995	Damien RAEMY	80	SWI	RBS - Honda Racing	HONDA
+0	1996	Hector FAUBEL	55	SPA	Honda SAG	HONDA
+0	1997	Toby MARKHAM	54	GBR	CL Racing	APRILIA
+0	1998	Joakim STENSMO	66	SWE	Nordgren Racing	HONDA
+0	1999	Martin GLOSSOP	91	GBR	KRP/Bradley Smith Racing	HONDA
+0	2000	Timothy HASTINGS	90	GBR	KRP/Bradley Smith Racing	HONDA
+0	2001	James LODGE	89	GBR	KRP/Bradley Smith Racing	HONDA
+0	2002	Paul JORDAN	92	IRL	KRP/Bradley Smith Racing	HONDA
+0	2003	Ralf WALDMANN	95	GER	Viessmann Kiefer Racing	APRILIA
+0	2004	Luke MOSSEY	64	GBR	Sabresport Grand Prix	APRILIA
+0	2005	Aitor RODRIGUEZ	77	SPA	Matteoni Racing	APRILIA
+0	2006	Ladislav CHMELIK	67	CZE	Moto FGR	HONDA
+0	2007	Ivan VISAK	68	CRO	Team Migomoto	HONDA
+0	2008	Mika KALLIO	36	FIN	Ducati Marlboro Team	DUCATI
+0	2009	Michel FABRIZIO	84	ITA	Pramac Racing	DUCATI
+0	2010	Miles THORNTON	75	USA	Veloce Racing	APRILIA
+0	2011	Ben YOUNG	74	USA	Veloce Racing	APRILIA
+0	2012	Adam ROBERTS	30	CAN	Rat Racing	YAMAHA
+0	2013	Mika KALLIO	36	FIN	Ducati Team	DUCATI
+0	2014	Aleix ESPARGARO	44	SPA	Pramac Racing	DUCATI
+0	2015	Riccardo MORETTI	51	ITA	Ellegi Racing	APRILIA
+0	2016	Gabriele FERRO	65	ITA	Grillini Bridgestone Team	APRILIA
+0	2017	Jakub KORNFEIL	21	CZE	Loncin Racing	LONCIN
+0	2018	Jacub JANTULIK	70	SVK	JJ Racing Team	APRILIA
+0	2019	Quentin JACQUET	19	FRA	Matteoni Racing	APRILIA
+0	2020	Shuhei AOYAMA	73	JPN	Racing Team Germany	HONDA
+0	2021	Mattia PASINI	75	ITA	Team Globalgest	APRILIA
+0	2022	Bastien CHESAUX	8	SWI	Matteoni Racing	APRILIA
+0	2023	Christopher MORETTI	88	ITA	Matteoni Racing	APRILIA
+0	2024	Levi DAY	98	AUS	Racetrix / Angelo's Aluminium	HONDA
+0	2025	Nicky DILES	96	AUS	RSW Racing	APRILIA
+0	2026	Brad GROSS	97	AUS	Gross Racing	YAMAHA
+0	2027	Dylan MAVIN	30	AUS	Mavin Industries	HONDA
+0	2028	Andrew LAWSON	54	AUS	Champions Ride Days	HONDA
+0	2029	Mattia PASINI	75	ITA	Paddock GP Racing Team	APRILIA
+0	2030	Elly ILIAS	28	MAL	Air Asia Team Malaysia	APRILIA
+0	2031	Muhammad ZULFAHMI	23	MAL	Air Asia Team Malaysia	YAMAHA
+0	2032	Blake LEIGH-SMITH	47	AUS	Degraaf Grand Prix	HONDA
+0	2033	Joan PERELLO	95	SPA	SAG Castrol	HONDA
+0	2034	Ivan MAESTRO	76	SPA	Hune Racing Team-RZT	APRILIA
+0	2035	Lorenzo SAVADORI	32	ITA	Junior GP Racing Dream	APRILIA
+0	2036	William DUNLOP	33	IRL	Bigman Racing	HONDA
+0	2037	Ben SPIES	11	USA	Sterilgarda Yamaha Team	YAMAHA
+0	2038	Pol ESPARGARO	44	SPA	Tuenti Racing	DERBI
+0	2039	Efren VAZQUEZ	7	SPA	Tuenti Racing	DERBI
+0	2040	Marc MARQUEZ	93	SPA	Red Bull Ajo Motorsport	DERBI
+0	2041	Sandro CORTESE	11	GER	Avant Mitsubishi Ajo	DERBI
+0	2042	Nicolas TEROL	40	SPA	Bancaja Aspar Team	APRILIA
+0	2043	Randy KRUMMENACHER	35	SWI	Stipa-Molenaar Racing GP	APRILIA
+0	2044	Esteve RABAT	12	SPA	Blusens-STX	APRILIA
+0	2045	Tomoyoshi KOYAMA	71	JPN	Racing Team Germany	APRILIA
+0	2046	Danny WEBB	99	GBR	Andalucia Cajasol	APRILIA
+0	2047	Alexis MASBOU	5	FRA	Ongetta Team	APRILIA
+0	2048	Bradley SMITH	38	GBR	Bancaja Aspar Team	APRILIA
+0	2049	Jonas FOLGER	94	GER	Ongetta Team	APRILIA
+0	2050	Alberto MONCAYO	23	SPA	Andalucia Cajasol	APRILIA
+0	2051	Louis ROSSI	69	FRA	CBC Corse	APRILIA
+0	2052	Marcel SCHROTTER	78	GER	Interwetten Honda 125	HONDA
+0	2053	Jasper IWEMA	53	NED	CBC Corse	APRILIA
+0	2054	Lorenzo SAVADORI	32	ITA	Matteoni CP Racing	APRILIA
+0	2055	Sturla FAGERHAUG	50	NOR	AirAsia - Sepang Int. Circuit	APRILIA
+0	2056	Luca MARCONI	87	ITA	Ongetta Team	APRILIA
+0	2057	Jakub KORNFEIL	84	CZE	Racing Team Germany	APRILIA
+0	2058	Adrian MARTIN	26	SPA	Aeroport de Castello - Ajo	APRILIA
+0	2059	Zulfahmi KHAIRUDDIN	63	MAL	AirAsia - Sepang Int. Circuit	APRILIA
+0	2060	Luis SALOM	39	SPA	Lambretta Reparto Corse	LAMBRETTA
+0	2061	Quentin JACQUET	80	FRA	Stipa-Molenaar Racing GP	APRILIA
+0	2062	Marco RAVAIOLI	72	ITA	Lambretta Reparto Corse	LAMBRETTA
+0	2063	Randy KRUMMENACHE	35	SWI	Stipa-Molenaar Racing GP	APRILIA
+0	2064	Alex DE ANGELIS	15	RSM	RSM Team Scot	FORCE
+0	2065	Scott REDDING	45	GBR	Marc VDS Racing Team	SUTER
+0	2066	Julian SIMON	60	SPA	Mapfre Aspar Team	RSV
+0	2067	Dominique AEGERTER	77	SWI	Technomag-CIP	SUTER
+0	2068	Stefan BRADL	65	GER	Viessmann Kiefer Racing	SUTER
+0	2069	Roberto ROLFO	44	ITA	Italtrans S.T.R.	SUTER
+0	2070	Alex DEBON	6	SPA	Aeroport de Castello - Ajo	FTR
+0	2071	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	RSV
+0	2072	Gabor TALMACSI	2	HUN	Fimmco Speed Up	SPEED
+0	2073	Alex BALDOLINI	25	ITA	Caretta Technology Race Dept	I.C.P.
+0	2074	Yuki TAKAHASHI	72	JPN	Tech 3 Racing	TECH
+0	2075	Jules CLUZEL	16	FRA	Forward Racing	SUTER
+0	2076	Toni ELIAS	24	SPA	Gresini Racing Moto2	MORIWAKI
+0	2077	Shoya TOMIZAWA	48	JPN	Technomag-CIP	SUTER
+0	2078	Mattia PASINI	75	ITA	JIR Moto2	MOTOBI
+0	2079	Sergio GADEA	40	SPA	Tenerife 40 Pons	PONS
+0	2080	Ratthapark WILAIROT	14	THA	Thai Honda PTT Singha SAG	BIMOTA
+0	2081	Arne TODE	41	GER	Racing Team Germany	SUTER
+0	2082	Claudio CORTI	71	ITA	Forward Racing	SUTER
+0	2083	Anthony WEST	8	AUS	MZ Racing Team	MZ-RE
+0	2084	Kenny NOYES	9	USA	Jack  Jones by A.Banderas	PROMOHARRIS
+0	2085	Vladimir IVANOV	61	UKR	Gresini Racing Moto2	MORIWAKI
+0	2086	Raffaele DE ROSA	35	ITA	Tech 3 Racing	TECH
+0	2087	Fonsi NIETO	10	SPA	Holiday Gym G22	MORIWAKI
+0	2088	Valentin DEBISE	53	FRA	WTR San Marino Team	ADV
+0	2089	Axel PONS	80	SPA	Tenerife 40 Pons	PONS
+0	2090	Simone CORSI	3	ITA	JIR Moto2	MOTOBI
+0	2091	Niccolo CANEPA	59	ITA	RSM Team Scot	FORCE
+0	2092	Thomas LUTHI	12	SWI	Interwetten Moriwaki Moto2	MORIWAKI
+0	2093	Mike DI MEGLIO	63	FRA	Mapfre Aspar Team	RSV
+0	2094	Yonny HERNANDEZ	68	COL	Blusens-STX	BQR-MOTO2
+0	2095	Andrea IANNONE	29	ITA	Fimmco Speed Up	SPEED
+0	2096	Joan OLIVE	5	SPA	Jack  Jones by A.Banderas	PROMOHARRIS
+0	2097	Lukas PESEK	52	CZE	Matteoni CP Racing	MORIWAKI
+0	2098	Robertino PIETRI	39	VEN	Italtrans S.T.R.	SUTER
+0	2099	Vladimir LEONOV	21	RUS	Vector Kiefer Racing	SUTER
+0	2100	Anthony DELHALLE	96	FRA	Qatar Endurance Racing Team	BQR-MOTO2
+0	2101	Mashel AL NAIMI	95	QAT	Blusens-STX	BQR-MOTO2
+0	2102	Hector FAUBEL	55	SPA	Marc VDS Racing Team	SUTER
+0	2103	Yannick GUERRA	88	SPA	Holiday Gym G22	MORIWAKI
+0	2104	Bernat MARTINEZ	76	SPA	Maquinza-SAG Team	BIMOTA
+0	2105	Ben SPIES	11	USA	Monster Yamaha Tech 3	YAMAHA
+0	2106	Alvaro BAUTISTA	19	SPA	Rizla Suzuki MotoGP	SUZUKI
+0	2107	Mika KALLIO	36	FIN	Pramac Racing Team	DUCATI
+0	2108	Hector BARBERA	40	SPA	Paginas Amarillas Aspar	DUCATI
+0	2109	Marco SIMONCELLI	58	ITA	San Carlo Honda Gresini	HONDA
+0	2110	Aleix ESPARGARO	41	SPA	Pramac Racing Team	DUCATI
+0	2111	Marco MELANDRI	33	ITA	San Carlo Honda Gresini	HONDA
+0	2112	Hiroshi AOYAMA	7	JPN	Interwetten Honda MotoGP	HONDA
+0	2113	Riccardo MORETTI	51	ITA	Fontana Racing	APRILIA
+0	2114	Luis SALOM	39	SPA	Stipa-Molenaar Racing GP	APRILIA
+0	2115	Kevin SZALAI	82	FRA	Equipe de France Vitesse Espoi	HONDA
+0	2116	Michael VAN DER MARK	60	NED	Lambretta Reparto Corse	LAMBRETTA
+0	2117	Morgan BERCHET	83	FRA	Xtreme Racing Team	HONDA
+0	2118	Gregory DI CARLO	81	FRA	Equipe de France Vitesse Espoi	HONDA
+0	2119	Kevin SZALAI	82	FRA	Equipe de France Vitesse Espo	HONDA
+0	2120	Gregory DI CARLO	81	FRA	Equipe de France Vitesse Espo	HONDA
+0	2121	Julian SIMON	60	SPA	Mapfre Aspar Team	SUTER
+0	2122	Mike DI MEGLIO	63	FRA	Mapfre Aspar Team	SUTER
+0	2123	Xavier SIMEON	19	BEL	Holiday Gym Racing	MORIWAKI
+0	2124	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	FTR
+0	2125	Luigi MORCIANO	92	ITA	Junior GP Racing Team FMI	APRILIA
+0	2126	Alessandro TONUCCI	95	ITA	Junior GP Racing Team FMI	APRILIA
+0	2127	Armando PONTONE	97	ITA	Junior GP Racing Team FMI	APRILIA
+0	2128	Riccardo MORETTI	51	ITA	Junior GP FMI	APRILIA
+0	2129	Simone GROTZKYJ	15	ITA	Fontana Racing	APRILIA
+0	2130	Tommaso GABRIELLI	96	ITA	Racing Team Gabrielli	APRILIA
+0	2131	Mattia TAROZZI	98	ITA	Faenza Racing	APRILIA
+0	2132	Anthony DELHALLE	96	FRA	Blusens-STX	BQR-MOTO2
+0	2133	Danny KENT	52	GBR	Aztec Grand Prix	HONDA
+0	2134	James LODGE	74	GBR	RS Earnshaws Motorcycles	HONDA
+0	2135	Taylor MACKENZIE	73	GBR	KRP	HONDA
+0	2136	Deane BROWN	75	GBR	Colin Appleyard/Macadam Raci	HONDA
+0	2137	Xavier SIMEON	19	BEL	Holiday Gym G22	MORIWAKI
+0	2138	Kev COGHLAN	54	GBR	Monlau Joey Darcey	FTR
+0	2139	Toni FINSTERBUSCH	68	GER	Freudenberg Racing Team	KTM
+0	2140	Jerry VAN DE BUNT	67	NED	Jerrys Racing	HONDA
+0	2141	Ernst DUBBINK	64	NED	RV Racing	HONDA
+0	2142	Roy POUW	65	NED	Team Holland Mototechnic	APRILIA
+0	2143	Pepijn BIJSTERBOSCH	66	NED	RacingTeam Bijsterbosch	HONDA
+0	2144	Kousuke AKIYOSHI	64	JPN	Interwetten Honda MotoGP	HONDA
+0	2145	Isaac VIALES	55	SPA	Catalunya Racing Team	APRILIA
+0	2146	Johnny ROSELL	59	SPA	SAG Castrol	HONDA
+0	2147	Joan PERELLO	58	SPA	SAG Castrol	HONDA
+0	2148	Eduard LOPEZ	17	SPA	Catalunya Racing Team	APRILIA
+0	2149	Peter SEBESTYEN	56	HUN	Right Guard Racing	APRILIA
+0	2150	Carmelo MORALES	31	SPA	Tenerife 40 Pons	PONS
+0	2151	Ricard CARDUS	4	SPA	Viessmann Kiefer Racing	SUTER
+0	2152	Jordi TORRES	18	SPA	MR Griful	PROMOHARRIS
+0	2153	Dani RIVAS	7	SPA	MR Griful	PROMOHARRIS
+0	2154	Yusuke TESHIMA	11	JPN	JIR Moto2	MOTOBI
+0	2155	Wataru YOSHIKAWA	8	JPN	Fiat Yamaha Team	YAMAHA
+0	2156	Daniel KARTHEININGER	61	GER	Freudenberg Racing Team	KTM
+0	2157	Marvin FRITZ	62	GER	LHF Project Racing	HONDA
+0	2158	Eric HUBSCH	85	GER	Team Sachsenring	APRILIA
+0	2159	Kevin HANUS	86	GER	Thomas Sabo Team Hanusch	HONDA
+0	2160	Damian CUDLIN	50	AUS	Tenerife 40 Pons	PONS
+0	2161	Ricard CARDUS	4	SPA	Maquinza-SAG Team	BIMOTA
+0	2162	Sascha HOMMEL	32	GER	MGM Racing Performance MC	KALEX
+0	2163	Alex DE ANGELIS	15	RSM	Interwetten Honda MotoGP	HONDA
+0	2164	Roger Lee HAYDEN	95	USA	LCR Honda MotoGP	HONDA
+0	2165	Isaac VIALES	55	SPA	Lambretta Reparto Corse	LAMBRETTA
+0	2166	Ladislav CHMELIK	48	CZE	Moto FGR	HONDA
+0	2167	Patrik VOSTAREK	81	CZE	Vector Kiefer Racing	SUTER
+0	2168	Niccolo CANEPA	59	ITA	RSM Team Scot	SUTER
+0	2169	Jason DI SALVO	42	USA	GP Tech	FTR
+0	2170	Roger Lee HAYDEN	34	USA	American Honda	MORIWAKI
+0	2171	Michael RANSEDER	56	AUT	Vector Kiefer Racing	SUTER
+0	2172	Francesco MAURIELLO	76	ITA	Team Semprucci	APRILIA
+0	2173	Armando PONTONE	97	ITA	Junior GP FMI	APRILIA
+0	2174	Giovanni BONATI	79	ITA	Junior GP FMI	APRILIA
+0	2175	Joan PERELLO	36	SPA	Lambretta Reparto Corse	LAMBRETTA
+0	2176	Alex DE ANGELIS	15	RSM	JIR Moto2	MOTOBI
+0	2177	Mattia PASINI	75	ITA	Italtrans S.T.R.	SUTER
+0	2178	Ferruccio LAMBORGHINI	70	ITA	Forward Racing	SUTER
+0	2179	Joan OLIVE	5	SPA	Jack  Jones by A.Banderas	FTR
+0	2180	Niccolo CANEPA	59	ITA	M Racing	BIMOTA
+0	2181	Tatsuya YAMAGUCHI	99	JPN	Gresini Racing Moto2	MORIWAKI
+0	2182	Alejandro PARDO	27	ITA	Matteoni CP Racing	APRILIA
+0	2183	Josep RODRIGUEZ	28	SPA	Hune Racing	APRILIA
+0	2184	Pedro RODRIGUEZ	16	SPA	Ongetta Team	APRILIA
+0	2185	Robin BARBOSA	37	FRA	Ongetta Team	APRILIA
+0	2186	Santiago HERNANDEZ	64	COL	Matteoni CP Racing	MORIWAKI
+0	2187	Roman RAMOS	43	SPA	MIR Racing	MIR
+0	2188	Mattia PASINI	75	ITA	Vector Kiefer Racing	SUTER
+0	2189	Michele PIRRO	51	ITA	Gresini Racing Moto2	MORIWAKI
+0	2190	Kazuki WATANABE	28	JPN	Racing Team Germany	SUTER
+0	2191	Niccolo CANEPA	59	ITA	Bimota - M Racing	BIMOTA
+0	2192	Takehiro YAMAMOTO	43	JPN	Team Nobby	HONDA
+0	2193	Danny KENT	52	GBR	Lambretta Reparto Corse	LAMBRETTA
+0	2194	Sasuke SHINOZAKI	91	JPN	Team Tec2	TEC2
+0	2195	Syunya MORI	42	JPN	Racing Sayama	HONDA
+0	2196	Lorenzo SAVADORI	32	ITA	Matteoni Racing	APRILIA
+0	2197	Hikari OOKUBO	88	JPN	Garage Racing Team	HONDA
+0	2198	Yuma YAHAGI	89	JPN	Endurance	HONDA
+0	2199	Tommaso GABRIELLI	96	ITA	Ongetta Team	APRILIA
+0	2200	Sasuke SHINOZAKI	91	JPN	Team Tec2	YAMAHA
+0	2201	Yusuke TESHIMA	11	JPN	FCC TSR	TSR
+0	2202	Shogo MORIWAKI	83	JPN	Moriwaki Racing	MORIWAKI
+0	2203	Ferruccio LAMBORGHINI	70	ITA	Matteoni Racing	MORIWAKI
+0	2204	Hiromichi KUNIKAWA	66	JPN	Bimota - M Racing	BIMOTA
+0	2205	Kouki TAKAHASHI	93	JPN	Burning Blood RT	RBB
+0	2206	Mohamad ZAMRI BABA	87	MAL	Petronas SIC TWMR Malaysia	MORIWAKI
+0	2207	Javier FORES	46	SPA	Maquinza-SAG Team	BIMOTA
+0	2208	Joel TAYLOR	57	AUS	BRP Racing	APRILIA
+0	2209	Joshua HOOK	46	AUS	Hook Racing.com	APRILIA
+0	2210	Wayne MAXWELL	47	AUS	Matteoni Racing	MORIWAKI
+0	2211	Alexander CUDLIN	49	AUS	Qatar Moto2 Team	BQR-MOTO2
+0	2212	Robin BARBOSA	37	FRA	H43/Hernandez Racing	APRILIA
+0	2213	Kenan SOFUOGLU	54	TUR	Technomag-CIP	SUTER
+0	2214	Carmelo MORALES	31	SPA	Racing Team Germany	SUTER
+0	2215	Dani RIVAS	7	SPA	Blusens-STX	BQR-MOTO2
+0	2216	Carlos CHECA	71	SPA	Pramac Racing Team	DUCATI
+0	2217	Nicolas TEROL	18	SPA	Bankia Aspar Team	APRILIA
+0	2218	Jonas FOLGER	94	GER	Red Bull Ajo MotorSport	APRILIA
+0	2219	Sandro CORTESE	11	GER	Intact-Racing Team Germany	APRILIA
+0	2220	Luis SALOM	39	SPA	RW Racing GP	APRILIA
+0	2221	Efren VAZQUEZ	7	SPA	Avant-AirAsia-Ajo	DERBI
+0	2222	Johann ZARCO	5	FRA	Avant-AirAsia-Ajo	DERBI
+0	2223	Hector FAUBEL	55	SPA	Bankia Aspar Team	APRILIA
+0	2224	Sergio GADEA	33	SPA	Pev-Blusens-SMX-Paris Hilton	APRILIA
+0	2225	Miguel OLIVEIRA	44	POR	Andalucia Banca Civica	APRILIA
+0	2226	Alberto MONCAYO	23	SPA	Andalucia Banca Civica	APRILIA
+0	2227	Adrian MARTIN	26	SPA	Bankia Aspar Team	APRILIA
+0	2228	Danny KENT	52	GBR	Red Bull Ajo MotorSport	APRILIA
+0	2229	Louis ROSSI	96	FRA	Matteoni Racing	APRILIA
+0	2230	Maverick VIALES	25	SPA	Pev-Blusens-SMX-Paris Hilton	APRILIA
+0	2231	Luigi MORCIANO	3	ITA	Team Italia FMI	APRILIA
+0	2232	Danny WEBB	99	GBR	Mahindra Racing	MAHINDRA
+0	2233	Zulfahmi KHAIRUDDIN	63	MAL	Airasia-Sic-Ajo	DERBI
+0	2234	Simone GROTZKYJ	15	ITA	Phonica Racing	APRILIA
+0	2235	Hiroki ONO	76	JPN	Caretta Technology Forward Te	KTM
+0	2236	Niklas AJO	31	FIN	TT Motion Events Racing	APRILIA
+0	2237	Jasper IWEMA	53	NED	Ongetta-Abbink Metaal	APRILIA
+0	2238	Marcel SCHROTTER	77	GER	Mahindra Racing	MAHINDRA
+0	2239	Alessandro TONUCCI	19	ITA	Team Italia FMI	APRILIA
+0	2240	Harry STAFFORD	21	GBR	Ongetta-Centro Seta	APRILIA
+0	2241	Jakub KORNFEIL	84	CZE	Ongetta-Centro Seta	APRILIA
+0	2242	Taylor MACKENZIE	17	GBR	Phonica Racing	APRILIA
+0	2243	Giulian PEDONE	30	SWI	Phonica Racing	APRILIA
+0	2244	Joan PERELLO	36	SPA	Matteoni Racing	APRILIA
+0	2245	Francesco MAURIELLO	43	ITA	WTR-Ten10 Racing	APRILIA
+0	2246	Daniel KARTHEININGER	12	GER	Caretta Technology Forward Te	KTM
+0	2247	Nicolas TEROL	18	SPA	Bankia Aspar Team 125cc	APRILIA
+0	2248	Hector FAUBEL	55	SPA	Bankia Aspar Team 125cc	APRILIA
+0	2249	Adrian MARTIN	26	SPA	Bankia Aspar Team 125cc	APRILIA
+0	2250	Stefan BRADL	65	GER	Viessmann Kiefer Racing	KALEX
+0	2251	Marc MARQUEZ	93	SPA	Team Catalunya Caixa Repsol	SUTER
+0	2252	Thomas LUTHI	12	SWI	Interwetten Paddock Moto2	SUTER
+0	2253	Andrea IANNONE	29	ITA	Speed Master	SUTER
+0	2254	Aleix ESPARGARO	40	SPA	Pons HP 40	PONS
+0	2255	Mattia PASINI	75	ITA	Ioda Racing Project	FTR
+0	2256	Julian SIMON	60	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2257	Javier FORES	21	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2258	Simone CORSI	3	ITA	Ioda Racing Project	FTR
+0	2259	Randy KRUMMENACHER	4	SWI	GP Team Switzerland Kiefer Ra	KALEX
+0	2260	Esteve RABAT	34	SPA	Blusens-STX	FTR
+0	2261	Claudio CORTI	71	ITA	Italtrans Racing Team	SUTER
+0	2262	Pol ESPARGARO	44	SPA	HP Tuenti Speed Up	FTR
+0	2263	Yuki TAKAHASHI	72	JPN	Gresini Racing Moto2	MORIWAKI
+0	2264	Max NEUKIRCHNER	76	GER	MZ Racing Team	MZ-RE
+0	2265	Bradley SMITH	38	GBR	Tech 3 Racing	TECH
+0	2266	Ricard CARDUS	88	SPA	QMMF Racing Team	MORIWAKI
+0	2267	Mika KALLIO	36	FIN	Marc VDS Racing Team	SUTER
+0	2268	Alex BALDOLINI	25	ITA	Forward Racing	SUTER
+0	2269	Valentin DEBISE	53	FRA	Speed Up	FTR
+0	2270	Yonny HERNANDEZ	68	COL	Blusens-STX	FTR
+0	2271	Mike DI MEGLIO	63	FRA	Tech 3 Racing	TECH
+0	2272	Ratthapark WILAIROT	14	THA	Thai Honda Singha SAG	FTR
+0	2273	Raffaele DE ROSA	35	ITA	Desguaces La Torre G22	MORIWAKI
+0	2274	Xavier SIMEON	19	BEL	Tech 3 B	TECH
+0	2275	Axel PONS	80	SPA	Pons HP 40	PONS
+0	2276	Kenny NOYES	9	USA	Avintia-STX	FTR
+0	2277	Anthony WEST	13	AUS	MZ Racing Team	MZ-RE
+0	2278	Kev COGHLAN	49	GBR	Aeroport de Castello	FTR
+0	2279	Nasser Hasan AL MALKI	96	QAT	QMMF Racing Team	MORIWAKI
+0	2280	Mashel AL NAIMI	95	QAT	QMMF Racing Team	MORIWAKI
+0	2281	Robertino PIETRI	39	VEN	Italtrans Racing Team	SUTER
+0	2282	Santiago HERNANDEZ	64	COL	SAG Team	FTR
+0	2283	Randy KRUMMENACHE	4	SWI	GP Team Switzerland Kiefer Ra	KALEX
+0	2284	Casey STONER	27	AUS	Repsol Honda Team	HONDA
+0	2285	Hector BARBERA	8	SPA	Mapfre Aspar Team MotoGP	DUCATI
+0	2286	Valentino ROSSI	46	ITA	Ducati Team	DUCATI
+0	2287	Ben SPIES	11	USA	Yamaha Factory Racing	YAMAHA
+0	2288	Jorge LORENZO	1	SPA	Yamaha Factory Racing	YAMAHA
+0	2289	Randy DE PUNIET	14	FRA	Pramac Racing Team	DUCATI
+0	2290	Hiroshi AOYAMA	7	JPN	San Carlo Honda Gresini	HONDA
+0	2291	Loris CAPIROSSI	65	ITA	Pramac Racing Team	DUCATI
+0	2292	Cal CRUTCHLOW	35	GBR	Monster Yamaha Tech 3	YAMAHA
+0	2293	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	DUCATI
+0	2294	Toni ELIAS	24	SPA	LCR Honda MotoGP	HONDA
+0	2295	Josep RODRIGUEZ	28	SPA	Wild Wolf-Racc-MS	APRILIA
+0	2296	Daniel RUIZ	34	SPA	Larresport	HONDA
+0	2297	Kevin HANUS	86	GER	Team Hanusch	HONDA
+0	2298	Marc MARQUEZ	93	SPA	Team CatalunyaCaixa Repsol	SUTER
+0	2299	Steven ODENDAAL	97	RSA	MS Racing	SUTER
+0	2300	Lukasz WARGALA	99	POL	Desguaces La Torre G22	MORIWAKI
+0	2301	Sergio GADEA	33	SPA	Blusens by Paris Hilton Racing	APRILIA
+0	2302	Maverick VIALES	25	SPA	Blusens by Paris Hilton Racing	APRILIA
+0	2303	Peter SEBESTYEN	56	HUN	Caretta Technology Race DPT.	KTM
+0	2304	Hiroki ONO	76	JPN	Caretta Technology	KTM
+0	2305	Peter SEBESTYEN	56	HUN	Caretta Technology	KTM
+0	2306	Sarath KUMAR	69	IND	WTR-Ten10 Racing	APRILIA
+0	2307	Jules CLUZEL	16	FRA	NGM Forward Racing	SUTER
+0	2308	Alex BALDOLINI	25	ITA	NGM Forward Racing	SUTER
+0	2309	Alexis MASBOU	10	FRA	WTR-Ten10 Racing	APRILIA
+0	2310	Kevin SZALAI	91	FRA	Maxiscoot MVT Racing	APRILIA
+0	2311	Kevin THOBOIS	92	FRA	Team RMS	HONDA
+0	2312	Alexander CUDLIN	8	AUS	QMMF Racing Team	MORIWAKI
+0	2313	Alexis MASBOU	10	FRA	Caretta Technology	KTM
+0	2314	John McPHEE	71	GBR	Racing Steps Foundation KRP	APRILIA
+0	2315	Sturla FAGERHAUG	50	NOR	WTR-Ten10 Racing	APRILIA
+0	2316	Kevin HANUS	86	GER	Team Hanush	HONDA
+0	2317	Carmelo MORALES	31	SPA	Desguaces La Torre G22	MORIWAKI
+0	2318	Raffaele DE ROSA	35	ITA	SAG Team	FTR
+0	2319	Jordi TORRES	18	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2320	Luca GRUENWALD	41	GER	Freudenberg Racing Team	KTM
+0	2321	Bryan SCHOUTEN	51	NED	Dutch Racing Team	HONDA
+0	2322	Jerry VAN DE BUNT	67	NED	JerrysRacingTeam	HONDA
+0	2323	Ernst DUBBINK	61	NED	RV Racing Team	HONDA
+0	2324	Josep RODRIGUEZ	28	SPA	Andalucia Banca Civica	APRILIA
+0	2325	Thomas VAN LEEUWEN	75	NED	RacingTeam Van Leeuwen	HONDA
+0	2326	Michael VAN DER MARK	66	NED	EAB Racing	TEN
+0	2327	Hiroshi AOYAMA	7	JPN	Repsol Honda Team	HONDA
+0	2328	Kousuke AKIYOSHI	64	JPN	San Carlo Honda Gresini	HONDA
+0	2329	Massimo PARZIANI	88	ITA	Faenza Racing	APRILIA
+0	2330	Miroslav POPOV	95	CZE	Ellegi Racing	APRILIA
+0	2331	Kevin CALIA	74	ITA	MGP Racing	APRILIA
+0	2332	Raffaele DE ROSA	35	ITA	Mapfre Aspar Team Moto2	SUTER
+0	2333	Tommaso LORENZETTI	24	ITA	Aeroport de Castello	FTR
+0	2334	Mattia TAROZZI	70	ITA	Faenza Racing	SUTER
+0	2335	Toni FINSTERBUSCH	42	GER	Freudenberg Racing Team	KTM
+0	2336	Marvin FRITZ	70	GER	LHF Project Racing	HONDA
+0	2337	Felix FORSTENHAEUSLE	78	GER	Schwaben Racing Team	HONDA
+0	2338	Jack MILLER	73	AUS	RZT Racing	APRILIA
+0	2339	Felix FORSTENHAEUSL	78	GER	Schwaben Racing Team	HONDA
+0	2340	Carmelo MORALES	31	SPA	Desguaces La Torre G22	SUTER
+0	2341	Sylvain GUINTOLI	50	FRA	Pramac Racing Team	DUCATI
+0	2342	Ben BOSTROM	23	USA	LCR Honda MotoGP	HONDA
+0	2343	Manuel TATASCIORE	60	ITA	Phonica Racing	APRILIA
+0	2344	Ladislav CHMELIK	24	CZE	RJR Racing	APRILIA
+0	2345	Brad BINDER	14	RSA	RW Racing GP	APRILIA
+0	2346	Martin CARDENAS	10	COL	Blusens-STX	FTR
+0	2347	Jacob GAGNE	32	USA	GPTech	FTR
+0	2348	Alex BALDOLINI	25	ITA	Pons HP 40	PONS
+0	2349	Raffaele DE ROSA	35	ITA	NGM Forward Racing	SUTER
+0	2350	JD BEACH	73	USA	Aeroport de Castello	FTR
+0	2351	Jack MILLER	8	AUS	Caretta Technology	KTM
+0	2352	Alessandro GIORGI	27	ITA	VFT Racing	APRILIA
+0	2353	Alessandro ANDREOZZI	22	ITA	Andreozzi Reparto Corse	FTR
+0	2354	Tomoyoshi KOYAMA	7	JPN	Technomag-CIP	SUTER
+0	2355	Joan OLIVE	6	SPA	Blusens-STX	FTR
+0	2356	Jacob GAGNE	32	USA	Aeroport de Castello	FTR
+0	2357	Josep RODRIGUEZ	28	SPA	Blusens by Paris Hilton Racing	APRILIA
+0	2358	Pedro RODRIGUEZ	37	SPA	Turismo de Aragon - DVJ	APRILIA
+0	2359	Damien RAEMY	90	SWI	Caretta Technology	KTM
+0	2360	Joan OLIVE	6	SPA	Aeroport de Castello	FTR
+0	2361	Sergio GADEA	33	SPA	Desguaces La Torre G22	MORIWAKI
+0	2362	Elena ROSELL	82	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2363	Hikari OOKUBO	82	JPN	Garage Racing Team	HONDA
+0	2364	Brad BINDER	14	RSA	Andalucia Banca Civica	APRILIA
+0	2365	Syunya MORI	65	JPN	Phonica Racing	APRILIA
+0	2366	Takehiro YAMAMOTO	79	JPN	Team Nobby	HONDA
+0	2367	Hyuga WATANABE	81	JPN	Project u 7C Harc	HONDA
+0	2368	Jun OHNISHI	80	JPN	Project u 7C Harc	HONDA
+0	2369	Luca FABRIZIO	89	ITA	WTR-Ten10 Racing	APRILIA
+0	2370	Takaaki NAKAGAMI	30	JPN	Italtrans Racing Team	SUTER
+0	2371	Tomoyoshi KOYAMA	7	JPN	CIP with TSR	TSR
+0	2372	Kousuke AKIYOSHI	64	JPN	LCR Honda MotoGP	HONDA
+0	2373	Shinichi ITO	72	JPN	Honda Racing Team	HONDA
+0	2374	Damian CUDLIN	6	AUS	Pramac Racing Team	DUCATI
+0	2375	Nicky DILES	47	AUS	Aprilia RSW Racing	APRILIA
+0	2376	Marco COLANDREA	40	SWI	WTR-Ten10 Racing	APRILIA
+0	2377	Ivan MORENO	20	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2378	Kris McLAREN	43	AUS	BRP Racing	SUTER
+0	2379	Blake LEIGH-SMITH	56	AUS	BRP Racing	FTR
+0	2380	Damian CUDLIN	6	AUS	Mapfre Aspar Team MotoGP	DUCATI
+0	2381	Arthur SISSIS	32	AUS	TT Motion Events Racing	APRILIA
+0	2382	Farid BADRUL	64	MAL	AirAsia-Sic-Ajo	DERBI
+0	2383	Mohamad ZAMRI BABA	87	MAL	Petronas Malaysia	MORIWAKI
+0	2384	Hafizh SYAHRIN	86	MAL	Petronas Malaysia	MORIWAKI
+0	2385	Apiwat WONGTHANANON	23	THA	Thai Honda Singha SAG	FTR
+0	2386	Katsuyuki NAKASUGA	89	JPN	Yamaha Factory Racing	YAMAHA
+0	2387	Maverick VIALES	25	SPA	Blusens Avintia	FTR
+0	2388	Louis ROSSI	96	FRA	Racing Team Germany	FTR
+0	2389	Luis SALOM	39	SPA	RW Racing GP	KALEX
+0	2390	Miguel OLIVEIRA	44	POR	Estrella Galicia 0,0	SUTER
+0	2391	Sandro CORTESE	11	GER	Red Bull KTM Ajo	KTM
+0	2392	Romano FENATI	5	ITA	Team Italia FMI	FTR
+0	2393	Niklas AJO	31	FIN	TT Motion Events Racing	KTM
+0	2394	Zulfahmi KHAIRUDDIN	63	MAL	AirAsia-Sic-Ajo	KTM
+0	2395	Hector FAUBEL	55	SPA	Bankia Aspar Team	KALEX
+0	2396	Alexis MASBOU	10	FRA	Caretta Technology	HONDA
+0	2397	Alberto MONCAYO	23	SPA	Bankia Aspar Team	KALEX
+0	2398	Brad BINDER	41	RSA	RW Racing GP	KALEX
+0	2399	Niccolo ANTONELLI	27	ITA	San Carlo Gresini Moto3	HONDA
+0	2400	Jakub KORNFEIL	84	CZE	Redox-Ongetta-Centro Seta	FTR
+0	2401	Alex RINS	42	SPA	Estrella Galicia 0,0	SUTER
+0	2402	Alessandro TONUCCI	19	ITA	Team Italia FMI	FTR
+0	2403	Alan TECHER	89	FRA	Technomag-CIP-TSR	TSR
+0	2404	Jasper IWEMA	53	NED	Moto FGR	FGR
+0	2405	Arthur SISSIS	61	AUS	Red Bull KTM Ajo	KTM
+0	2406	Adrian MARTIN	26	SPA	JHK T-Shirt Laglisse	HONDA
+0	2407	Isaac VIALES	32	SPA	Ongetta-Centro Seta	FTR
+0	2408	Ivan MORENO	21	SPA	Andalucia JHK Laglisse	FTR
+0	2409	Kenta FUJII	51	JPN	Technomag-CIP-TSR	TSR
+0	2410	Jack MILLER	8	AUS	Caretta Technology	HONDA
+0	2411	Toni FINSTERBUSCH	9	GER	Cresto Guide MZ Racing	MZ-RE
+0	2412	Danny KENT	52	GBR	Red Bull KTM Ajo	KTM
+0	2413	Efren VAZQUEZ	7	SPA	JHK T-Shirt Laglisse	HONDA
+0	2414	Simone GROTZKYJ	15	ITA	Ambrogio Next Racing	ORAL
+0	2415	Jonas FOLGER	94	GER	IodaRacing Project	IODA
+0	2416	Luigi MORCIANO	3	ITA	Ioda Team Italia	IODA
+0	2417	Thomas LUTHI	12	SWI	Interwetten-Paddock	SUTER
+0	2418	Esteve RABAT	80	SPA	Pons 40 HP Tuenti	KALEX
+0	2419	Pol ESPARGARO	40	SPA	Pons 40 HP Tuenti	KALEX
+0	2420	Simone CORSI	3	ITA	Came IodaRacing Project	FTR
+0	2421	Andrea IANNONE	29	ITA	Speed Master	SPEED
+0	2422	Mika KALLIO	36	FIN	Marc VDS Racing Team	KALEX
+0	2423	Scott REDDING	45	GBR	Marc VDS Racing Team	KALEX
+0	2424	Mike DI MEGLIO	63	FRA	S/Master Speed Up	SPEED
+0	2425	Takaaki NAKAGAMI	30	JPN	Italtrans Racing Team	KALEX
+0	2426	Julian SIMON	60	SPA	Blusens Avintia	FTR
+0	2427	Johann ZARCO	5	FRA	JIR Moto2	MOTOBI
+0	2428	Claudio CORTI	71	ITA	Italtrans Racing Team	KALEX
+0	2429	Alex DE ANGELIS	15	RSM	NGM Mobile Forward Racing	SUTER
+0	2430	Max NEUKIRCHNER	76	GER	Kiefer Racing	KALEX
+0	2431	Roberto ROLFO	44	ITA	Technomag-CIP	SUTER
+0	2432	Toni ELIAS	24	SPA	Mapfre Aspar Team	SUTER
+0	2433	Xavier SIMEON	19	BEL	Tech 3 Racing	TECH
+0	2434	Randy KRUMMENACHER	4	SWI	GP Team Switzerland	KALEX
+0	2435	Yuki TAKAHASHI	72	JPN	NGM Mobile Forward Racing	SUTER
+0	2436	Gino REA	8	GBR	Federal Oil Gresini Moto2	MORIWAKI
+0	2437	Ricard CARDUS	88	SPA	Arguiano Racing Team	AJR
+0	2438	Nicolas TEROL	18	SPA	Mapfre Aspar Team	SUTER
+0	2439	Angel RODRIGUEZ	47	SPA	Desguaces La Torre SAG	FTR
+0	2440	Ratthapark WILAIROT	14	THA	Thai Honda Gresini Moto2	MORIWAKI
+0	2441	Axel PONS	49	SPA	Pons 40 HP Tuenti	KALEX
+0	2442	Alexander LUNDH	7	SWE	Cresto Guide MZ Racing	MZ
+0	2443	Anthony WEST	95	AUS	QMMF Racing Team	MORIWAKI
+0	2444	Marco COLANDREA	10	SWI	SAG Team	FTR
+0	2445	Elena ROSELL	82	SPA	QMMF Racing Team	MORIWAKI
+0	2446	Randy KRUMMENACHE	4	SWI	GP Team Switzerland	KALEX
+0	2447	Casey STONER	1	AUS	Repsol Honda Team	HONDA
+0	2448	Jorge LORENZO	99	SPA	Yamaha Factory Racing	YAMAHA
+0	2449	Alvaro BAUTISTA	19	SPA	San Carlo Honda Gresini	HONDA
+0	2450	Andrea DOVIZIOSO	4	ITA	Monster Yamaha Tech 3	YAMAHA
+0	2451	Hector BARBERA	8	SPA	Pramac Racing Team	DUCATI
+0	2452	Stefan BRADL	6	GER	LCR Honda MotoGP	HONDA
+0	2453	Randy DE PUNIET	14	FRA	Power Electronics Aspar	ART
+0	2454	Colin EDWARDS	5	USA	NGM Mobile Forward Racing	SUTER
+0	2455	Michele PIRRO	51	ITA	San Carlo Honda Gresini	FTR
+0	2456	Aleix ESPARGARO	41	SPA	Power Electronics Aspar	ART
+0	2457	Ivan SILVA	22	SPA	Avintia Blusens	BQR-FTR
+0	2458	Mattia PASINI	54	ITA	Speed Master	ART
+0	2459	Yonny HERNANDEZ	68	COL	Avintia Blusens	BQR-FTR
+0	2460	Danilo PETRUCCI	9	ITA	Came IodaRacing Project	IODA
+0	2461	James ELLISON	77	GBR	Paul Bird Motorsport	ART
+0	2462	Alex MARQUEZ	12	SPA	Estrella Galicia 0,0	SUTER
+0	2463	Niccolo ANTONELLI	27	ITA	San Carlo Gresini Moto3	FTR
+0	2464	Toni FINSTERBUSCH	9	GER	Cresto Guide MZ Racing	MZ
+0	2465	Josep RODRIGUEZ	28	SPA	Wild Wolf BST	FTR
+0	2466	Giulian PEDONE	30	SWI	Ambrogio Next Racing	ORAL
+0	2467	Efren VAZQUEZ	7	SPA	JHK T-Shirt Laglisse	FTR
+0	2468	Adrian MARTIN	26	SPA	JHK T-Shirt Laglisse	FTR
+0	2469	Julian SIMON	60	SPA	Blusens Avintia	SUTER
+0	2470	Alexander LUNDH	7	SWE	Cresto Guide MZ Racing	MZ-RE
+0	2471	Ivan SILVA	22	SPA	Avintia Blusens	BQR
+0	2472	Yonny HERNANDEZ	68	COL	Avintia Blusens	BQR
+0	2473	Niccol ANTONELLI	27	ITA	San Carlo Gresini Moto3	FTR
+0	2474	Joan OLIVE	6	SPA	TT Motion Events Racing	KTM
+0	2475	Manuel TATASCIORE	73	ITA	Caretta Technology	HONDA
+0	2476	Kevin HANUS	86	GER	Thomas Sabo GP Team	HONDA
+0	2477	Toni FINSTERBUSCH	9	GER	Cresto Guide MZ Racing	HONDA
+0	2478	Armando PONTONE	80	ITA	IodaRacing Project	IODA
+0	2479	Ratthapark WILAIROT	14	THA	Thai Honda PTT Gresini Moto2	MORIWAKI
+0	2480	Simone GROTZKYJ	15	ITA	Ambrogio Next Racing	SUTER
+0	2481	Giulian PEDONE	30	SWI	Ambrogio Next Racing	SUTER
+0	2482	Angel RODRIGUEZ	47	SPA	Desguaces La Torre SAG	BIMOTA
+0	2483	Ratthapark WILAIROT	14	THA	Thai Honda PTT Gresini Moto2	SUTER
+0	2484	Gino REA	8	GBR	Federal Oil Gresini Moto2	SUTER
+0	2485	Pol ESPARGARO	40	SPA	Tuenti Movil HP 40	KALEX
+0	2486	Esteve RABAT	80	SPA	Tuenti Movil HP 40	KALEX
+0	2487	Toni ELIAS	24	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2488	Nicolas TEROL	18	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2489	Axel PONS	49	SPA	Tuenti Movil HP 40	KALEX
+0	2490	Chris VERMEULEN	7	AUS	NGM Mobile Forward Racing	SUTER
+0	2491	John McPHEE	17	GBR	Racing Steps Foundation KRP	KRP
+0	2492	Jordi TORRES	81	SPA	Tech 3 Racing	TECH
+0	2493	Efren VAZQUEZ	7	SPA	JHK Laglisse	HONDA
+0	2494	Adrian MARTIN	26	SPA	JHK Laglisse	HONDA
+0	2495	Fraser ROGERS	79	GBR	Racing Steps Foundation KRP	KRP
+0	2496	Efren VAZQUEZ	7	SPA	JHK Laglisse	FTR
+0	2497	Adrian MARTIN	26	SPA	JHK Laglisse	FTR
+0	2498	Eric GRANADO	57	BRA	JIR Moto2	MOTOBI
+0	2499	Julian MIRALLES	40	SPA	MIR Racing	HONDA
+0	2500	Bryan SCHOUTEN	22	NED	Dutch Racing Team	HONDA
+0	2501	Alex DE ANGELIS	15	RSM	NGM Mobile Forward Racing	FTR
+0	2502	Yuki TAKAHASHI	72	JPN	NGM Mobile Forward Racing	FTR
+0	2503	Damian CUDLIN	50	AUS	Desguaces La Torre SAG	BIMOTA
+0	2504	Hector FAUBEL	55	SPA	Mapfre Aspar Team Moto3	KALEX
+0	2505	Alberto MONCAYO	23	SPA	Mapfre Aspar Team Moto3	KALEX
+0	2506	Luca GRUENWALD	43	GER	Freudenberg Racing Team	HONDA
+0	2507	Markus REITERBERGER	21	GER	Cresto Guide MZ Racing	MZ-RE
+0	2508	Kevin WAHR	11	GER	Kiefer Racing	IAMT
+0	2509	Alessandro ANDREOZZI	22	ITA	S/Master Speed Up	SPEED
+0	2510	Franco BATTAINI	2	ITA	Cardion AB Motoracing	DUCATI
+0	2511	Kevin CALIA	74	ITA	Elle 2 Ciatti	HONDA
+0	2512	Michael Ruben RINALDI	71	ITA	Racing Team Gabrielli	HONDA
+0	2513	Riccardo MORETTI	20	ITA	Mahindra Racing	MAHINDRA
+0	2514	Mike DI MEGLIO	63	FRA	Cresto Guide MZ Racing	MZ-RE
+0	2515	Massimo ROCCOLI	55	ITA	Desguaces La Torre SAG	BIMOTA
+0	2516	Toni ELIAS	24	SPA	Pramac Racing Team	DUCATI
+0	2517	Jonas FOLGER	94	GER	Mapfre Aspar Team Moto3	KALEX
+0	2518	Alex MARQUEZ	12	SPA	Ambrogio Next Racing	SUTER
+0	2519	Alberto MONCAYO	23	SPA	Andalucia JHK Laglisse	FTR
+0	2520	Toni FINSTERBUSCH	9	GER	MZ Racing	HONDA
+0	2521	Jordi TORRES	81	SPA	Mapfre Aspar Team Moto2	SUTER
+0	2522	Marcel SCHROTTER	23	GER	Desguaces La Torre SAG	BIMOTA
+0	2523	Steve RAPP	15	USA	Attack Performance	APR
+0	2524	Aaron YATES	20	USA	GPTech	BCL
+0	2525	Efren VAZQUEZ	7	SPA	JHK t-shirt Laglisse	FTR
+0	2526	Adrian MARTIN	26	SPA	JHK t-shirt Laglisse	FTR
+0	2527	Michael Ruben RINALDI	71	ITA	Caretta Technology	HONDA
+0	2528	Alberto MONCAYO	23	SPA	Andalucia JHK t-shirt Laglisse	FTR
+0	2529	Miroslav POPOV	95	CZE	Mahindra Racing	MAHINDRA
+0	2530	Elena ROSELL	82	SPA	QMMF Racing Team	SPEED
+0	2531	Kevin CALIA	74	ITA	Elle 2-Ciatti	HONDA
+0	2532	Josep RODRIGUEZ	28	SPA	Ongetta-Centro Seta	FTR
+0	2533	Stefano VALTULINI	33	ITA	Team Imperiali Racing	HONDA
+0	2534	Toni FINSTERBUSCH	9	GER	Racing Team Germany	HONDA
+0	2535	Tomoyoshi KOYAMA	75	JPN	Technomag-CIP	SUTER
+0	2536	Mike DI MEGLIO	63	FRA	Kiefer Racing	KALEX
+0	2537	Steven ODENDAAL	84	RSA	Arguiano Racing Team	AJR
+0	2538	Anthony WEST	95	AUS	QMMF Racing Team	SPEED
+0	2539	Danilo PETRUCCI	9	ITA	Came IodaRacing Project	IODA-SUTER
+0	2540	David SALOM	44	SPA	Avintia Blusens	BQR
+0	2541	Jonathan REA	56	GBR	Repsol Honda Team	HONDA
+0	2542	Jorge NAVARRO	49	SPA	Bradol Larresport	HONDA
+0	2543	John McPHEE	17	GBR	Caretta Technology	HONDA
+0	2544	Luca AMATO	29	GER	Mapfre Aspar Team Moto3	KALEX
+0	2545	Juan Francisco GUEVAR	58	SPA	Wild Wolf BST	FTR
+0	2546	John McPHEE	17	GBR	Caretta Technology	KRP
+0	2547	Alex MARIELARENA	92	SPA	Targo Bank CNS Motorsport	SUTER
+0	2548	Jesko RAFFIN	20	SWI	GP Team Switzerland	KALEX
+0	2549	Hyuga WATANABE	81	JPN	Project U 7C Harc	HONDA
+0	2550	Yuudai KAMEI	82	JPN	Garage Racing Team	HONDA
+0	2551	Josep RODRIGUEZ	28	SPA	Moto FGR	FGR
+0	2552	Toni ELIAS	24	SPA	Italtrans Racing Team	KALEX
+0	2553	Kohta NOZANE	31	JPN	SAG Team	FTR
+0	2554	Katsuyuki NAKASUGA	21	JPN	Yamaha YSP Racing Team	YAMAHA
+0	2555	Roberto ROLFO	84	ITA	Speed Master	ART
+0	2556	Armando PONTONE	80	ITA	Ioda Team Italia	IODA
+0	2557	Hafizh SYAHRIN	86	MAL	Petronas Raceline Malaysia	FTR
+0	2558	Lincoln GILDING	75	AUS	K1 Racing	HONDA
+0	2559	Sam CLARKE	36	GBR	Fastline GP Racing	HONDA
+0	2560	Sam CLARKE	36	AUS	Fastline GP Racing	HONDA
+0	2561	Alex RINS	42	SPA	Estrella Galicia 0,0	KTM
+0	2562	Luis SALOM	39	SPA	Red Bull KTM Ajo	KTM
+0	2563	Efren VAZQUEZ	7	SPA	Mahindra Racing	MAHINDRA
+0	2564	Niccol ANTONELLI	23	ITA	GOFUN Gresini Moto3	FTR
+0	2565	Miguel OLIVEIRA	44	POR	Mahindra Racing	MAHINDRA
+0	2566	Brad BINDER	41	RSA	Ambrogio Racing	SUTER
+0	2567	Jack MILLER	8	AUS	Caretta Technology - RTG	FTR
+0	2568	Jasper IWEMA	53	NED	RW Racing GP	KALEX
+0	2569	Maverick VIALES	25	SPA	Team Calvo	KTM
+0	2570	Jakub KORNFEIL	84	CZE	Redox RW Racing GP	KALEX
+0	2571	Niklas AJO	31	FIN	Avant Tecno	KTM
+0	2572	Zulfahmi KHAIRUDDIN	63	MAL	Red Bull KTM Ajo	KTM
+0	2573	Alex MARQUEZ	12	SPA	Estrella Galicia 0,0	KTM
+0	2574	Danny WEBB	99	GBR	Ambrogio Racing	SUTER
+0	2575	Alan TECHER	89	FRA	CIP Moto3	TSR
+0	2576	John McPHEE	17	GBR	Caretta Technology - RTG	FTR
+0	2577	Alexis MASBOU	10	FRA	Ongetta-Rivacold	FTR
+0	2578	Romano FENATI	5	ITA	San Carlo Team Italia	FTR
+0	2579	Alessandro TONUCCI	19	ITA	La Fonte Tascaracing	HONDA
+0	2580	Isaac VIALES	32	SPA	Bimbo-Ongetta-Centro Seta	FTR
+0	2581	Juanfran GUEVARA	58	SPA	CIP Moto3	TSR
+0	2582	Eric GRANADO	57	BRA	Mapfre Aspar Team Moto3	KALEX
+0	2583	Toni FINSTERBUSCH	9	GER	Kiefer Racing	KALEX
+0	2584	Matteo FERRARI	3	ITA	Ongetta-Centro Seta	FTR
+0	2585	Ana CARRASCO	22	SPA	Team Calvo	KTM
+0	2586	Lorenzo BALDASSARRI	77	ITA	GOFUN Gresini Moto3	FTR
+0	2587	Francesco BAGNAIA	4	ITA	San Carlo Team Italia	FTR
+0	2588	Florian ALT	66	GER	Kiefer Racing	KALEX
+0	2589	Philipp OETTL	65	GER	Paddock TT Motion Events	KALEX
+0	2590	Hyuga WATANABE	29	JPN	La Fonte Tascaracing	HONDA
+0	2591	Pol ESPARGARO	40	SPA	Tuenti HP 40	PONS
+0	2592	Esteve RABAT	80	SPA	Tuenti HP 40	PONS
+0	2593	Julian SIMON	60	SPA	Italtrans Racing Team	KALEX
+0	2594	Simone CORSI	3	ITA	NGM Mobile Racing	SPEED
+0	2595	Dominique AEGERTER	77	SWI	Technomag carXpert	SUTER
+0	2596	Johann ZARCO	5	FRA	Came Iodaracing Project	SUTER
+0	2597	Alex DE ANGELIS	15	RSM	NGM Mobile Forward Racing	SPEED
+0	2598	Randy KRUMMENACHER	4	SWI	Technomag carXpert	SUTER
+0	2599	Marcel SCHROTTER	23	GER	Desguaces La Torre SAG	KALEX
+0	2600	Xavier SIMEON	19	BEL	Desguaces La Torre Maptaq	KALEX
+0	2601	Mattia PASINI	54	ITA	NGM Mobile Racing	SPEED
+0	2602	Sandro CORTESE	11	GER	Dynavolt Intact GP	KALEX
+0	2603	Mike DI MEGLIO	63	FRA	Jir Moto2	MOTOBI
+0	2604	Ricard CARDUS	88	SPA	NGM Mobile Forward Racing	SPEED
+0	2605	Yuki TAKAHASHI	72	JPN	Idemitsu Honda Team Asia	MORIWAKI
+0	2606	Louis ROSSI	96	FRA	Tech 3	TECH
+0	2607	Toni ELIAS	24	SPA	Blusens Avintia	KALEX
+0	2608	Axel PONS	49	SPA	Tuenti HP 40	PONS
+0	2609	Sergio GADEA	33	SPA	Interwetten Paddock	SUTER
+0	2610	Danny KENT	52	GBR	Tech 3	TECH
+0	2611	Doni Tata PRADITA	7	INA	Federal Oil Gresini Moto2	SUTER
+0	2612	Steven ODENDAAL	44	RSA	Argiano  Gines Racing	SPEED
+0	2613	Alberto MONCAYO	17	SPA	Argiano  Gines Racing	SPEED
+0	2614	Kyle SMITH	9	GBR	Blusens Avintia	KALEX
+0	2615	Rafid Topan SUCIPTO	97	INA	QMMF Racing Team	SPEED
+0	2616	Yuki TAKAHASHI	72	JPN	IDEMITSU Honda Team Asia	MORIWAKI
+0	2617	Pol ESPARGARO	40	SPA	Tuenti HP 40	KALEX
+0	2618	Esteve RABAT	80	SPA	Tuenti HP 40	KALEX
+0	2619	Axel PONS	49	SPA	Tuenti HP 40	KALEX
+0	2620	Marc MARQUEZ	93	SPA	Repsol Honda Team	HONDA
+0	2621	Andrea DOVIZIOSO	4	ITA	Ducati Team	DUCATI
+0	2622	Alvaro BAUTISTA	19	SPA	GOFUN Honda Gresini	HONDA
+0	2623	Bradley SMITH	38	GBR	Monster Yamaha Tech 3	YAMAHA
+0	2624	Andrea IANNONE	29	ITA	Energy T.I. Pramac Racing	DUCATI
+0	2625	Ben SPIES	11	USA	Ignite Pramac Racing	DUCATI
+0	2626	Hector BARBERA	8	SPA	Avintia Blusens	FTR
+0	2627	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	ART
+0	2628	Colin EDWARDS	5	USA	NGM Mobile Forward Racing	FTR
+0	2629	Yonny HERNANDEZ	68	COL	Paul Bird Motorsport	ART
+0	2630	Hiroshi AOYAMA	7	JPN	Avintia Blusens	FTR
+0	2631	Claudio CORTI	71	ITA	NGM Mobile Forward Racing	FTR
+0	2632	Bryan STARING	67	AUS	GOFUN Honda Gresini	FTR
+0	2633	Lukas PESEK	52	CZE	Came IodaRacing Project	IODA-SUTER
+0	2634	Michael LAVERTY	70	GBR	Paul Bird Motorsport	PBM
+0	2635	Thomas LUTHI	12	SWI	Interwetten Paddock	SUTER
+0	2636	Mike DI MEGLIO	63	FRA	JiR Moto2	MOTOBI
+0	2637	Blake YOUNG	79	USA	Attack Performance Racing	APR
+0	2638	Livio LOI	11	BEL	Marc VDS Racing Team	KALEX
+0	2639	Philipp OETTL	65	GER	Tec Interwetten Moto3 Racing	KALEX
+0	2640	Jorge NAVARRO	49	SPA	MIR Racing	MIR
+0	2641	Jorge NAVARRO	49	SPA	Cuna de Campeones	MIR
+0	2642	Thomas LUTHI	12	SWI	Interwetten Paddock Moto2 Rac	SUTER
+0	2643	Alex MARIELARENA	92	SPA	TargoBank Motorsport	SUTER
+0	2644	Dani RIVAS	27	SPA	TSR Motorsport	KALEX
+0	2645	Randy KRUMMENACHE	4	SWI	Technomag carXpert	SUTER
+0	2646	Michele PIRRO	51	ITA	Ducati Test Team	DUCATI
+0	2647	Alessandro TONUCCI	19	ITA	La Fonte Tascaracing	FTR
+0	2648	Jules DANILO	95	FRA	Marc VDS Racing Team	KALEX
+0	2649	Christophe ARCIERO	18	FRA	ARC	SUTER
+0	2650	Hyuga WATANABE	29	JPN	La Fonte Tascaracing	FTR
+0	2651	Gino REA	8	GBR	Gino Rea Race Team	FTR
+0	2652	Hafizh SYAHRIN	55	MAL	Petronas Raceline Malaysia	KALEX
+0	2653	Michele PIRRO	51	ITA	Ignite Pramac Racing	DUCATI
+0	2654	Andrea LOCATELLI	55	ITA	Mahindra Racing	MAHINDRA
+0	2655	Michael COLETTI	93	ITA	Minimoto Portomaggiore	HONDA
+0	2656	Andrea MIGNO	16	ITA	GMT Racing	FTR
+0	2657	Jordi TORRES	81	SPA	Aspar Team Moto2	SUTER
+0	2658	Nicolas TEROL	18	SPA	Aspar Team Moto2	SUTER
+0	2659	Dani RIVAS	27	SPA	TSR Motorsports	KALEX
+0	2660	Javier DEL AMOR	77	SPA	Avintia Blusens	FTR
+0	2661	Bryan SCHOUTEN	51	NED	Dutch Racing Team	FTR
+0	2662	Thomas VAN LEEUWEN	71	NED	Racing Team Van Leeuwen	BAKKER
+0	2663	Ivan SILVA	22	SPA	Avintia Blusens	FTR
+0	2664	Luca AMATO	21	GER	Mahindra Spiel-Kiste	MAHINDRA
+0	2665	Jules DANILO	95	FRA	Ambrogio Racing	SUTER
+0	2666	John MCPHEE	17	GBR	Caretta Technology - RTG	FTR
+0	2667	Roman RAMOS	28	SPA	Argiano  Gines Racing	SPEED
+0	2668	Xavier SIMEON	19	BEL	Maptaq SAG Zelos Team	KALEX
+0	2669	Marcel SCHROTTER	23	GER	Maptaq SAG Zelos Team	KALEX
+0	2670	Alex DE ANGELIS	15	RSM	Ignite Pramac Racing	DUCATI
+0	2671	James RISPOLI	43	USA	GP Tech	MISTRAL
+0	2672	Thitipong WAROKORN	10	THA	Thai Honda PTT Gresini Moto2	SUTER
+0	2673	Luca AMATO	21	GER	Ambrogio Racing	SUTER
+0	2674	Dani RIVAS	27	SPA	Blusens Avintia	KALEX
+0	2675	Lucas MAHIAS	99	FRA	Promoto Sport	TRANSFIORMERS
+0	2676	Gino REA	8	GBR	Gino Rea Montaze Broz Racing	FTR
+0	2677	Martin BAUER	45	AUT	Remus Racing Team	SB
+0	2678	Wayne RYAN	98	GBR	Racing Steps Foundation KRP	KRP
+0	2679	Kyle RYDE	37	GBR	Racing Steps Foundation KRP	KRP
+0	2680	Jason O'HALLORAN	22	AUS	JiR Moto2	MOTOBI
+0	2681	Luca AMATO	21	GER	Ambrogio Racing	MAHINDRA
+0	2682	Brad BINDER	41	RSA	Ambrogio Racing	MAHINDRA
+0	2683	Luca MARINI	97	ITA	Twelve Racing	FTR
+0	2684	Franco MORBIDELLI	94	ITA	Federal Oil Gresini Moto2	SUTER
+0	2685	Alex MARIELARENA	92	SPA	Blusens Avintia	KALEX
+0	2686	Azlan SHAH	25	MAL	IDEMITSU Honda Team Asia	MORIWAKI
+0	2687	Ezequiel ITURRIOZ	34	ARG	Blusens Avintia	KALEX
+0	2688	Maria HERRERA	6	SPA	Junior Team Estrella Galicia 0,0	KTM
+0	2689	Roman RAMOS	28	SPA	JiR Moto2	MOTOBI
+0	2690	Robin MULHAUSER	70	SWI	Technomag carXpert	SUTER
+0	2691	Yonny HERNANDEZ	68	COL	Ignite Pramac Racing	DUCATI
+0	2692	Luca SCASSA	23	ITA	Cardion AB Motoracing	ART
+0	2693	Michael LAVERTY	70	GBR	Paul Bird Motorsport	ART
+0	2694	Damian CUDLIN	50	AUS	Paul Bird Motorsport	PBM
+0	2695	Hafiq AZMI	80	MAL	Touchline-SIC-AJO	KTM
+0	2696	Aizat MALIK	79	MAL	Touchline-SIC-AJO	KTM
+0	2697	Decha KRAISART	46	THA	Singha Eneos Yamaha Tech3	TECH3
+0	2698	Gino REA	8	GBR	Argiano  Gines Racing	SPEED
+0	2699	Fadli IMMAMMUDDIN	62	INA	JiR Moto2	MOTOBI
+0	2700	Zaqhwan ZAIDI	21	MAL	Technomag carXpert	SUTER
+0	2701	Philipp OETTL	65	GER	Interwetten Paddock Moto3	KALEX
+0	2702	Luca GRUENWALD	43	GER	Kiefer Racing	KALEX
+0	2703	Hafiq AZMI	80	MAL	La Fonte Tascaracing	FTR
+0	2704	Lachlan KAVNEY	75	AUS	Bullet Racing	BULLET
+0	2705	Kohta NOZANE	31	JPN	JiR Moto2	MOTOBI
+0	2706	Sena YAMADA	33	JPN	Team Plus One  Endurance	HONDA
+0	2707	Hiroki ONO	91	JPN	Honda Team Asia	HONDA
+0	2708	Kohta NOZANE	31	JPN	Webike Team Norick NTS	TSR
+0	2709	Tetsuta NAGASHIMA	35	JPN	JiR Moto2	MOTOBI
+0	2710	Romano FENATI	5	ITA	SKY Racing Team VR46	KTM
+0	2711	Jakub KORNFEIL	84	CZE	Calvo Team	KTM
+0	2712	Isaac VIALES	32	SPA	Calvo Team	KTM
+0	2713	Alex MARQUEZ	12	SPA	Estrella Galicia 0,0	HONDA
+0	2714	Efren VAZQUEZ	7	SPA	SaxoPrint-RTG	HONDA
+0	2715	Jack MILLER	8	AUS	Red Bull KTM Ajo	KTM
+0	2716	Alex RINS	42	SPA	Estrella Galicia 0,0	HONDA
+0	2717	Danny KENT	52	GBR	Red Bull Husqvarna Ajo	HUSQVARNA
+0	2718	Francesco BAGNAIA	21	ITA	SKY Racing Team VR46	KTM
+0	2719	Eric GRANADO	57	BRA	Calvo Team	KTM
+0	2720	Alexis MASBOU	10	FRA	Ongetta-Rivacold	HONDA
+0	2721	Niccol ANTONELLI	23	ITA	Junior Team GOFUN Moto3	KTM
+0	2722	Scott DEROUE	9	NED	RW Racing GP	KALEX
+0	2723	Juanfran GUEVARA	58	SPA	Mapfre Aspar Team Moto3	KALEX
+0	2724	Alessandro TONUCCI	19	ITA	CIP	MAHINDRA
+0	2725	Ana CARRASCO	22	SPA	RW Racing GP	KALEX
+0	2726	Niklas AJO	31	FIN	Avant Tecno Husqvarna Ajo	HUSQVARNA
+0	2727	Karel HANIKA	98	CZE	Red Bull KTM Ajo	KTM
+0	2728	Luca GRNWALD	43	GER	Kiefer Racing	KALEX
+0	2729	Enea BASTIANINI	33	ITA	Junior Team GoFUN Moto3	KTM
+0	2730	Zulfahmi KHAIRUDDIN	63	MAL	Ongetta-AirAsia	HONDA
+0	2731	Arthur SISSIS	61	AUS	Mahindra Racing	MAHINDRA
+0	2732	John MCPHEE	17	GBR	SaxoPrint-RTG	HONDA
+0	2733	Andrea LOCATELLI	55	ITA	San Carlo Team Italia	MAHINDRA
+0	2734	Matteo FERRARI	3	ITA	San Carlo Team Italia	MAHINDRA
+0	2735	Hafiq AZMI	38	MAL	SIC-AJO	KTM
+0	2736	Jules DANILO	95	FRA	Ambrogio Racing	MAHINDRA
+0	2737	Bryan SCHOUTEN	51	NED	CIP	MAHINDRA
+0	2738	Gabriel RAMOS	4	VEN	Kiefer Racing	KALEX
+0	2739	Takaaki NAKAGAMI	30	JPN	IDEMITSU Honda Team Asia	KALEX
+0	2740	Esteve RABAT	53	SPA	Marc VDS Racing Team	KALEX
+0	2741	Xavier SIMEON	19	BEL	Federal Oil Gresini Moto2	SUTER
+0	2742	Mattia PASINI	54	ITA	NGM Forward Racing	FORWARD
+0	2743	Simone CORSI	3	ITA	NGM Forward Racing	FORWARD
+0	2744	Maverick VIALES	40	SPA	Pons HP 40	KALEX
+0	2745	Jonas FOLGER	94	GER	AGR Team	KALEX
+0	2746	Alex DE ANGELIS	15	RSM	Tasca Racing Moto2	SUTER
+0	2747	Johann ZARCO	5	FRA	AirAsia Caterham	CATERHAM
+0	2748	Sam LOWES	22	GBR	Speed Up	SPEED
+0	2749	Louis ROSSI	96	FRA	SAG Team	KALEX
+0	2750	Ricard CARDUS	88	SPA	Tech 3	TECH
+0	2751	Marcel SCHROTTER	23	GER	Tech 3	TECH
+0	2752	Gino REA	8	GBR	AGT REA Racing	SUTER
+0	2753	Luis SALOM	39	SPA	Pons HP 40	KALEX
+0	2754	Lorenzo BALDASSARRI	7	ITA	Gresini Moto2	SUTER
+0	2755	Azlan SHAH	25	MAL	IDEMITSU Honda Team Asia	KALEX
+0	2756	Axel PONS	49	SPA	AGR Team	KALEX
+0	2757	Franco MORBIDELLI	21	ITA	Italtrans Racing Team	KALEX
+0	2758	Randy KRUMMENACHER	4	SWI	IodaRacing Project	SUTER
+0	2759	Roman RAMOS	97	SPA	QMMF Racing Team	SPEED
+0	2760	Josh HERRIN	2	USA	AirAsia Caterham	CATERHAM
+0	2761	Mashel AL NAIMI	98	QAT	QMMF Racing Team	SPEED
+0	2762	Tetsuta NAGASHIMA	45	JPN	Teluru Team JiR Webike	TSR
+0	2763	Thitipong WAROKORN	10	THA	APH PTT The Pizza SAG	KALEX
+0	2764	Randy KRUMMENACHE	4	SWI	IodaRacing Project	SUTER
+0	2765	Aleix ESPARGARO	41	SPA	NGM Forward Racing	FORWARD
+0	2766	Andrea IANNONE	29	ITA	Pramac Racing	DUCATI
+0	2767	Pol ESPARGARO	44	SPA	Monster Yamaha Tech 3	YAMAHA
+0	2768	Valentino ROSSI	46	ITA	Movistar Yamaha MotoGP	YAMAHA
+0	2769	Colin EDWARDS	5	USA	NGM Forward Racing	FORWARD
+0	2770	Jorge LORENZO	99	SPA	Movistar Yamaha MotoGP	YAMAHA
+0	2771	Nicky HAYDEN	69	USA	Drive M7 Aspar	HONDA
+0	2772	Cal CRUTCHLOW	35	GBR	Ducati Team	DUCATI
+0	2773	Yonny HERNANDEZ	68	COL	Energy T.I. Pramac Racing	DUCATI
+0	2774	Karel ABRAHAM	17	CZE	Cardion AB Motoracing	HONDA
+0	2775	Hiroshi AOYAMA	7	JPN	Drive M7 Aspar	HONDA
+0	2776	Hector BARBERA	8	SPA	Avintia Racing	AVINTIA
+0	2777	Scott REDDING	45	GBR	GOFUN Honda Gresini	HONDA
+0	2778	Mike DI MEGLIO	63	FRA	Avintia Racing	AVINTIA
+0	2779	Danilo PETRUCCI	9	ITA	IodaRacing Project	ART
+0	2780	Broc PARKES	23	AUS	Paul Bird Motorsport	PBM
+0	2781	Enea BASTIANINI	33	ITA	Junior Team GOFUN Moto3	KTM
+0	2782	Sebastian PORTO	99	ARG	Argentina TSR Motorsport	KALEX
+0	2783	Michele PIRRO	51	ITA	Ducati Team	DUCATI
+0	2784	Maria HERRERA	6	SPA	Junior Team Estrella Galicia 0,0	HONDA
+0	2785	Marcos RAMIREZ	24	SPA	Calvo Team Laglisse	KTM
+0	2786	Gabriel RODRIGO	91	ARG	RBA Racing Team	KTM
+0	2787	Ratthapark WILAIROT	14	THA	Caterham Moto Racing	CATERHAM
+0	2788	Edgar PONS	57	SPA	Pons HP 40	KALEX
+0	2789	Ratthapark WILAIROT	14	THA	AirAsia Caterham	CATERHAM
+0	2790	Michael Ruben RINALDI	34	ITA	San Carlo Team Italia	MAHINDRA
+0	2791	Mattia PASINI	54	ITA	NGM Forward Racing	KALEX
+0	2792	Simone CORSI	3	ITA	NGM Forward Racing	KALEX
+0	2793	Lucas MAHIAS	90	FRA	Promoto Sport	TRANSFIORMERS
+0	2794	Anthony GROPPI	69	ITA	Pos Corse	FTR
+0	2795	Simone MAZZOLA	16	ITA	MT Racing Honda	FTR
+0	2796	Randy KRUMMENACHER	4	SWI	Octo IodaRacing Team	SUTER
+0	2797	Randy KRUMMENACHE	4	SWI	Octo IodaRacing Team	SUTER
+0	2798	Michel FABRIZIO	84	ITA	Octo IodaRacing Team	ART
+0	2799	Luis SALOM	39	SPA	Paginas Amarillas HP 40	KALEX
+0	2800	Maverick VIALES	40	SPA	Paginas Amarillas HP 40	KALEX
+0	2801	Jasper IWEMA	13	NED	KRP Abbink Racing	FTR
+0	2802	Thomas VAN LEEUWEN	71	NED	71Workx.com Racing Team	KALEX
+0	2803	Danilo PETRUCCI	9	ITA	Octo IodaRacing Team	ART
+0	2804	Maximilian KAPPLER	97	GER	SaxoPrint RTG	FTR
+0	2805	Livio LOI	11	BEL	Marc VDS Racing Team	KTM
+0	2806	Kevin HANUS	86	GER	Fai Rent-A-Jet	HONDA
+0	2807	Gabriel RODRIGO	91	ARG	Avant Tecno Husqvarna Ajo	HUSQVARNA
+0	2808	Nina PRINZ	33	GER	QMMF Racing Team	SPEED
+0	2809	Jorge NAVARRO	99	SPA	Marc VDS Racing Team	KALEX
+0	2810	Leon CAMIER	2	GBR	Drive M7 Aspar	HONDA
+0	2811	Riccardo RUSSO	84	ITA	Tasca Racing Moto2	SUTER
+0	2812	Miroslav POPOV	59	CZE	Montaze Broz Racing Team	SUTER
+0	2813	Alex DE ANGELIS	15	RSM	NGM Forward Racing	FORWARD
+0	2814	Andrea MIGNO	16	ITA	Mahindra Racing	MAHINDRA
+0	2815	Joe IRVING	66	GBR	Redline Motorcycles/KTM UK	KTM
+0	2816	Dakota MAMOLA	80	BEL	Mapfre Aspar Team Moto2	SUTER
+0	2817	Jeremy MCWILLIAMS	9	GBR	Brough Superior Racing	TAYLOR
+0	2818	Lorenzo PETRARCA	77	ITA	Team Ciatti	KTM
+0	2819	Remy GARDNER	2	AUS	Kiefer Racing	KALEX
+0	2820	Federico CARICASULO	64	ITA	Teluru Team JiR Webike	TSR
+0	2821	Florian MARINO	20	FRA	NGM Forward Racing	KALEX
+0	2822	Federico FULIGNI	32	ITA	Ciatti	SUTER
+0	2823	Jasper IWEMA	13	NED	CIP	MAHINDRA
+0	2824	Hiroki ONO	50	JPN	Honda Team Asia	HONDA
+0	2825	Thomas LUTHI	12	SWI	Interwetten Sitag	SUTER
+0	2826	Kenny NOYES	9	USA	Teluru Team JiR Webike	TSR
+0	2827	Hector BARBERA	8	SPA	Avintia Racing	DUCATI
+0	2828	Hikari OKUBO	83	JPN	Hot Racing with I-Factory	HONDA
+0	2829	Sena YAMADA	81	JPN	Liberto Plusone  Endurance	HONDA
+0	2830	Yuki TAKAHASHI	72	JPN	Moriwaki Racing	MORIWAKI
+0	2831	Chalermpol POLAMAI	65	THA	Singha Eneos Yamaha Tech 3	TECH
+0	2832	Tomoyoshi KOYAMA	71	JPN	Teluru Team JiR Webike	NTS
+0	2833	Katsuyuki NAKASUGA	21	JPN	YAMALUBE Racing Team with	YAMAHA
+0	2834	Remy GARDNER	2	AUS	Team Laglisse Calvo	KTM
+0	2835	Olly SIMPSON	45	AUS	Olly Simpson Racing	KTM
+0	2836	Aiden WAGNER	41	AUS	Marc VDS Racing Team	KALEX
+0	2837	Max CROKER	42	AUS	Tasca Racing Moto2	SUTER
+0	2838	Remy GARDNER	2	AUS	Calvo Team	KTM
+0	2839	Hafiza ROFA	88	MAL	SIC-AJO	KTM
+0	2840	Ramdan ROSLI	93	MAL	Petronas AHM Malaysia	KTM
+0	2841	Roberto ROLFO	44	ITA	Tasca Racing Moto2	SUTER
+0	2842	Decha KRAISART	46	THA	Singha Eneos Yamaha Tech 3	TECH
+0	2843	Albert ARENAS	14	SPA	Calvo Team	KTM
+0	2844	Tetsuta NAGASHIMA	45	JPN	Teluru Team JiR Webike	NTS
+0	2845	Randy DE PUNIET	14	FRA	Team Suzuki MotoGP	SUZUKI
+0	2846	Danny KENT	52	GBR	Leopard Racing	HONDA
+0	2847	Miguel OLIVEIRA	44	POR	Red Bull KTM Ajo	KTM
+0	2848	Niccol ANTONELLI	23	ITA	Ongetta-Rivacold	HONDA
+0	2849	Isaac VIALES	32	SPA	Husqvarna Factory Laglisse	HUSQVARNA
+0	2850	Brad BINDER	41	RSA	Red Bull KTM Ajo	KTM
+0	2851	Jorge NAVARRO	9	SPA	Estrella Galicia 0,0	HONDA
+0	2852	Alexis MASBOU	10	FRA	SaxoPrint RTG	HONDA
+0	2853	Jorge MARTIN	88	SPA	MAPFRE Team MAHINDRA	MAHINDRA
+0	2854	Jakub KORNFEIL	84	CZE	Drive M7 SIC	KTM
+0	2855	Hiroki ONO	76	JPN	Leopard Racing	HONDA
+0	2856	Efren VAZQUEZ	7	SPA	Leopard Racing	HONDA
+0	2857	Francesco BAGNAIA	21	ITA	MAPFRE Team MAHINDRA	MAHINDRA
+0	2858	Fabio QUARTARARO	20	FRA	Estrella Galicia 0,0	HONDA
+0	2859	Alessandro TONUCCI	19	ITA	Outox Reset Drink Team	MAHINDRA
+0	2860	John MCPHEE	17	GBR	SaxoPrint RTG	HONDA
+0	2861	Livio LOI	11	BEL	RW Racing GP	HONDA
+0	2862	Philipp OETTL	65	GER	Schedl GP Racing	KTM
+0	2863	Niklas AJO	31	FIN	RBA Racing Team	KTM
+0	2864	Juanfran GUEVARA	58	SPA	MAPFRE Team MAHINDRA	MAHINDRA
+0	2865	Enea BASTIANINI	33	ITA	Gresini Racing Team Moto3	HONDA
+0	2866	Andrea LOCATELLI	55	ITA	Gresini Racing Team Moto3	HONDA
+0	2867	Jules DANILO	95	FRA	Ongetta-Rivacold	HONDA
+0	2868	Zulfahmi KHAIRUDDIN	63	MAL	Drive M7 SIC	KTM
+0	2869	Remy GARDNER	2	AUS	CIP	MAHINDRA
+0	2870	Andrea MIGNO	16	ITA	SKY Racing Team VR46	KTM
+0	2871	Matteo FERRARI	12	ITA	San Carlo Team Italia	MAHINDRA
+0	2872	Marco BEZZECCHI	53	ITA	San Carlo Team Italia	MAHINDRA
+0	2873	Maria HERRERA	6	SPA	Husqvarna Factory Laglisse	HUSQVARNA
+0	2874	Darryn BINDER	40	RSA	Outox Reset Drink Team	MAHINDRA
+0	2875	Tatsuki SUZUKI	24	JPN	CIP	MAHINDRA
+0	2876	John MCPHEE	17	GBR	SAXOPRINT RTG	HONDA
+0	2877	Alexis MASBOU	10	FRA	SAXOPRINT RTG	HONDA
+0	2878	Loris CRESSON	61	BEL	RBA Racing Team	KTM
+0	2879	Sam LOWES	22	GBR	Speed Up Racing	SPEED
+0	2880	Johann ZARCO	5	FRA	Ajo Motorsport	KALEX
+0	2881	Tito RABAT	1	SPA	Estrella Galicia 0,0 Marc VDS	KALEX
+0	2882	Thomas LUTHI	12	SWI	Derendinger Racing Interwetten	KALEX
+0	2883	Alex RINS	40	SPA	Paginas Amarillas HP 40	KALEX
+0	2884	Julian SIMON	60	SPA	QMMF Racing Team	SPEED
+0	2885	Xavier SIMEON	19	BEL	Federal Oil Gresini Moto2	KALEX
+0	2886	Simone CORSI	3	ITA	Athin Forward Racing	KALEX
+0	2887	Randy KRUMMENACHER	4	SWI	JIR Moto2	KALEX
+0	2888	Alex MARQUEZ	73	SPA	Estrella Galicia 0,0 Marc VDS	KALEX
+0	2889	Mika KALLIO	36	FIN	Italtrans Racing Team	KALEX
+0	2890	Louis ROSSI	96	FRA	Tasca Racing Scuderia Moto2	TECH
+0	2891	Dominique AEGERTER	77	SWI	Technomag Racing Interwetten	KALEX
+0	2892	Lorenzo BALDASSARRI	7	ITA	Athin Forward Racing	KALEX
+0	2893	Florian ALT	66	GER	Octo Iodaracing Team	SUTER
+0	2894	Zaqhwan ZAIDI	51	MAL	JPMoto Malaysia	SUTER
+0	2895	Jesko RAFFIN	2	SWI	Sports-Millions-Emwe-SAG	KALEX
+0	2896	Robin MULHAUSER	70	SWI	Technomag Racing Interwetten	KALEX
+0	2897	Tito RABAT	1	SPA	EG 0,0 Marc VDS	KALEX
+0	2898	Alex MARQUEZ	73	SPA	EG 0,0 Marc VDS	KALEX
+0	2899	Jesko RAFFIN	2	SWI	sports-millions-EMWE-SAG	KALEX
+0	2900	Randy KRUMMENACHER	4	SWI	JIR Racing Team	KALEX
+0	2901	Randy KRUMMENACHE	4	SWI	JIR Racing Team	KALEX
+0	2902	Aleix ESPARGARO	41	SPA	Team SUZUKI ECSTAR	SUZUKI
+0	2903	Cal CRUTCHLOW	35	GBR	CWM LCR Honda	HONDA
+0	2904	Danilo PETRUCCI	9	ITA	Pramac Racing	DUCATI
+0	2905	Yonny HERNANDEZ	68	COL	Pramac Racing	DUCATI
+0	2906	Andrea IANNONE	29	ITA	Ducati Team	DUCATI
+0	2907	Scott REDDING	45	GBR	Estrella Galicia 0,0 Marc VDS	HONDA
+0	2908	Stefan BRADL	6	GER	Athin Forward Racing	YAMAHA
+0	2909	Karel ABRAHAM	17	CZE	AB Motoracing	HONDA
+0	2910	Alex DE ANGELIS	15	RSM	Octo IodaRacing Team	ART
+0	2911	Maverick VIALES	25	SPA	Team SUZUKI ECSTAR	SUZUKI
+0	2912	Jack MILLER	43	AUS	CWM LCR Honda	HONDA
+0	2913	Loris BAZ	76	FRA	Athin Forward Racing	YAMAHA
+0	2914	Nicky HAYDEN	69	USA	Aspar MotoGP Team	HONDA
+0	2915	Alvaro BAUTISTA	19	SPA	Aprilia Racing Team Gresini	APRILIA
+0	2916	Eugene LAVERTY	50	IRL	Aspar MotoGP Team	HONDA
+0	2917	Mike DI MEGLIO	63	FRA	Avintia Racing	DUCATI
+0	2918	Marco MELANDRI	33	ITA	Aprilia Racing Team Gresini	APRILIA
+0	2919	Scott REDDING	45	GBR	EG 0,0 Marc VDS	HONDA
+0	2920	Stefano MANZI	29	ITA	San Carlo Team Italia	MAHINDRA
+0	2921	Ana CARRASCO	22	SPA	RBA Racing Team	KTM
+0	2922	Steven ODENDAAL	44	RSA	AGR Team	KALEX
+0	2923	Edgar PONS	57	SPA	Paginas Amarillas HP 40	KALEX
+0	2924	Louis BULLE	20	FRA	Promoto Sport	TRANSFIORMERS
+0	2925	Marco BEZZECCHI	72	ITA	Minimoto Portmaggiore	MAHINDRA
+0	2926	Anthony GROPPI	73	ITA	Pos Corse	FTR
+0	2927	Mattia PASINI	54	ITA	Gresini Racing	KALEX
+0	2928	Florian ALT	66	GER	E-Motion IodaRacing Team	SUTER
+0	2929	Yonny HERNANDEZ	68	COL	Octo Pramac Racing	DUCATI
+0	2930	Danilo PETRUCCI	9	ITA	Octo Pramac Racing	DUCATI
+0	2931	Alex DE ANGELIS	15	RSM	E-Motion IodaRacing Team	ART
+0	2932	Ratthapark WILAIROT	15	THA	JPMoto Malaysia	SUTER
+0	2933	Ramdan ROSLI	93	MAL	Petronas AHM Malaysia	KALEX
