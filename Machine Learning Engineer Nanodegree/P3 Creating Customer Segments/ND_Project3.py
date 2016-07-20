@@ -104,6 +104,8 @@ df_data_std
 
 # ####Answer
 
+# PCA combines features in order to create a set of composite features with minimal information loss. By doing so, we can reduce the feature set to those which are able to best explain the wider dataset. PCA does this by projecting each data point to the line of largest variance, retaining those data with the greatest variance. PCA then orders its component output in terms of explained variance, that is, the fraction of variance in the data explained by each principle component. As such, the first component will explain the most variance, followed by the second component and so forth.
+
 # Fit PCA.
 
 # In[9]:
@@ -252,6 +254,8 @@ plt.show()
 
 # ####Answer
 
+# Within each vector of the ICA, the magnitude of each features coefficient provides insights as to how important that feature is to that ICA vector. By focusing on those coefficients which have the greatest magnitude within each vector, we are able to gain insights as to how customers purchase products within each feature group. If two coefficients have the same sign, then those features tend to trend together, implying that customers tend to purchase these items together. Whilst, if two coefficients have the opposite sign, it implies that customers who buy more of one item, tend to buy less of the other.
+
 # Fit ICA.
 
 # In[16]:
@@ -318,13 +322,13 @@ ica_component_45 = format(ica.components_[3][4]*10**5, ".4f")
 ica_component_46 = format(ica.components_[3][5]*10**5, ".4f")
 
 
-# Observing the first row, we see that the first vector has a high representation of the 'Fresh' feature, with a coefficient of {{ica_component_11}}. The other features have weaker representation on the first dimension.
+# Observing the first row, we see that the first vector has a high representation of the 'Fresh' feature, with a coefficient of {{ica_component_11}}. The other features have weaker representation on the first dimension. However, noting the polarity of each coefficient over this vector, we can make the assessment that customers represented by this vector tend to purchase 'Fresh' and 'Detergentspaper' products together, and 'Milk', 'Frozen' and 'Delicatessen' products together.
 # 
-# Observing the second row, we see that the second vector has a high representation of both 'Grocery' and 'Detergents paper', however the coefficients of each are of different polarity ({{ica_component_23}} and {{ica_component_25}} respectively). This indicates that, with all else held equal, high spending in 'Grocery' is associated with low spending in 'Detergents paper', and visa versa.
+# Observing the second row, we see that the second vector has a high representation of both 'Grocery' and 'Detergents paper', however the coefficients of each are of different polarity ({{ica_component_23}} and {{ica_component_25}} respectively). This indicates that, with all else held equal, high spending in 'Grocery' is associated with low spending in 'Detergents paper', and visa versa. We can also make the assessment that customers represented by this vector tend to purchase 'Milk' and 'Grocery' products together, and 'Fresh', 'Frozen', 'Detergentspaper' and 'Delicatessen' products together.
 # 
-# Observing the third row, we see that the third vector has a high representation of the 'Delicatessen' feature, with a negative coefficient of {{ica_component_36}}. Indicating low spending on this feature within the vector.
+# Observing the third row, we see that the third vector has a high representation of the 'Delicatessen' feature, with a negative coefficient of {{ica_component_36}}. Indicating low spending on this feature within the vector. Customers represented by this vector tend to purchase 'Fresh', 'Milk', 'Frozen' and 'Grocery' products together.
 # 
-# Finally, observing the forth row, we see that the forth vector has a high representation of the 'Milk' feature, with a positive coefficient of {{ica_component_42}}. Indicating high spending on this feature within the vector.
+# Finally, observing the forth row, we see that the forth vector has a high representation of the 'Milk' feature, with a positive coefficient of {{ica_component_42}}. Indicating high spending on this feature within the vector. Customers represented by this vector tend to purchase 'Fresh', 'Frozen', 'Detergentspaper', 'Delicatessen' and 'Grocery' products together.
 # 
 # Below shows a plot of each vector of the ICA.
 
@@ -341,7 +345,7 @@ plt.xlabel("ICA Vector")
 plt.show()
 
 
-# Like with the PCA analysis shown above, interpreting these results allows us to form an initial impression about the customer segments contained in the data by showing which variables matter the most.
+# As described above, interpreting these results allows us to form an initial impression about the customer segments contained in the data by providing insights as to their purchasing behavior.
 
 # ###Question 5
 
